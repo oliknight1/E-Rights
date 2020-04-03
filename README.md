@@ -1,4 +1,4 @@
-# e-rights
+# E-Rights
 E-learning web application prototype
 
 ## How to use
