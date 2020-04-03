@@ -34,7 +34,7 @@ This essentially creates a FileZilla in vscode, press f1 and type sftp:config, i
 
 remotePath is where you specify the exact folder that you want to open so this will change depending on how you files are setup. You may also put "password" in so you dont need to put your password in everytime you satrt a new session but i haven't done that, you don't need to enter your password every upload so isn't that annoying 
 
-
+Also it will likely create and save itself in a file called `.vscode` this will be ignored by git when you upload stuff. If for you use certain plugins or whatever that create configuration files either see if that can be saved into this .vscode folder (They likely will already be saved there) or if not look into .gitignore
 
 ## Workflow
 
