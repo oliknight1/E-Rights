@@ -30,9 +30,9 @@ This essentially creates a FileZilla in vscode, press f1 and type sftp:config, i
     "username": "USERNAME",
     "remotePath": "/home/ok131/public_html/ci536/site",
     "uploadOnSave": true
-`}
+}`
 
-__"remotePath": is where you specify the exact folder that you want to open so this will change depending on how you files are setup. You may also put "password" in so you dont need to put your password in everytime you satrt a new session but i haven't done that, you don't need to enter your password every upload so isn't that annoying 
+remotePath is where you specify the exact folder that you want to open so this will change depending on how you files are setup. You may also put "password" in so you dont need to put your password in everytime you satrt a new session but i haven't done that, you don't need to enter your password every upload so isn't that annoying 
 
 
 
