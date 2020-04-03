@@ -20,7 +20,7 @@ When it comes to working locally it is likely we will have to constantly upload 
 
 This essentially creates a FileZilla in vscode, press f1 and type sftp:config, it will open a file and that is where you put your configuration, it should look like this:
 
-`{
+    {
 
 
     "name": "Brighton Domains",
@@ -30,7 +30,7 @@ This essentially creates a FileZilla in vscode, press f1 and type sftp:config, i
     "username": "USERNAME",
     "remotePath": "/home/ok131/public_html/ci536/site",
     "uploadOnSave": true
-}`
+    }
 
 remotePath is where you specify the exact folder that you want to open so this will change depending on how you files are setup. You may also put "password" in so you dont need to put your password in everytime you satrt a new session but i haven't done that, you don't need to enter your password every upload so isn't that annoying 
 
@@ -50,10 +50,14 @@ Make sure your names are clear and as concise as possible. e.g no box1, box2 if 
 
 Also use 'wrapper' and 'container' as much as possible as they're common naming conventions e.g:
 
-<div class = "course-wrapper">
-  <div class = "course-container">
-    <div class = "course-img">
-   
+    <div class = "course-wrapper">
+
+
+        <div class = "course-container">
+  
+  
+             <div class = "course-img">
+  
    etc.,
     
   
