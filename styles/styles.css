@@ -10,6 +10,12 @@
     font-family: 'Raleway', sans-serif;
 }
 
+/* CSS Variables */
+:root {
+    --main-blue: #189dd9;
+    --darker-blue: #082e40;
+}
+
 /* LOGIN PAGE STYLING */
 
 /* Wrapper around the login page, used to layout the image adn form correctly */
@@ -56,7 +62,7 @@
 .login-form-container h1 {
     font-size: 5em;
     font-weight: 600;
-    color: #082e40;
+    color: var(--darker-blue);
 }
 
 .login-form-container form {
@@ -70,7 +76,7 @@
     font-size: 2em;
     text-align: center;
     border-radius: 25em;
-    border: #189dd9 5px solid;
+    border: var(--main-blue) 5px solid;
 }
 
 .login-form-container button {
@@ -79,7 +85,7 @@
     margin: 0 auto;
     font-size: 2em;
     border-radius: 25em;
-    background: #189dd9;
+    background: var(--main-blue);
     color: #ffffff;
 
 }
