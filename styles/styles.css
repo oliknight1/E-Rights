@@ -1,10 +1,16 @@
+/* Raleway font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
+
+
 /* Default stylings */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
+/* LOGIN PAGE STYLING */
 
 /* Wrapper around the login page, used to layout the image adn form correctly */
 .login-wrapper {
@@ -15,16 +21,65 @@
     flex-direction: row;
 }
 
+/* Container on login page with the large image inside */
 .login-img-container {
     width: 50vw;
     height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(../assets/login-img.jpeg);
+    background-position: 8% 100%;
 }
 
+
+
+
+/* Contains the form and the logo of the site */
 .login-form-container {
     width: 50vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Logo img */
+.login-form-container img {
+    width: 40%;
 }
 
 .login-form-container form {
-    background: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form-container h1 {
+    font-size: 5em;
+    font-weight: 600;
+    color: #082e40;
+}
+
+.login-form-container form {
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.login-form-container form input {
+    padding: .5em;
+    font-size: 2em;
+    text-align: center;
+    border-radius: 25em;
+    border: #189dd9 5px solid;
+}
+
+.login-form-container button {
+    width: fit-content;
+    padding: .5em 2em;
+    margin: 0 auto;
+    font-size: 2em;
+    border-radius: 25em;
+    background: #189dd9;
+    color: #ffffff;
+
 }
