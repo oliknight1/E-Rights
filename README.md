@@ -48,6 +48,8 @@ Also make sure to comment everything, even if it seems obvious to you it may not
 
 ### Naming conventions
 
+When naming colours don't use color: blue etc., as not sure how well that worls across different editors, or how well it interact with JavaScript. Most colours are going to be reused so we can make them into CCS variables
+
 Make sure your names are clear and as concise as possible. e.g no box1, box2 if it can be helped
 
 Also use 'wrapper' and 'container' as much as possible as they're common naming conventions e.g:
