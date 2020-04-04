@@ -4,19 +4,19 @@ E-learning web application prototype
 ## How to use
 
 ### Using GitHub
-Clone the repository to your local machine. When you want to make changes first switch to the 'testing' branch, and then create a new bracnch from there, __be careful not branch directly from master.__ Then when you think you're feature is complete push it into testing and we will all test to make sure it fully works , only then do we push to master branch
+Clone the repository to your local machine. When you want to make changes first switch to the 'testing' branch, and then create a new branch from there, __be careful not branch directly from master.__ Then when you think your feature is complete push it into testing and we will all test to make sure it fully works, only then do we push to master branch
 
 **DO NOT EDIT FILES DIRECTLY IN THE MASTER BRANCH!**
 
 
 Super easy to make that mistake but can lead to trouble.
 
-Don't be afraid to make multiple branches e.g master -> testing -> nav-web -> nav-mobile ->nav-tablet etc., more branches the more organizded.
+Don't be afraid to make multiple branches e.g master -> testing -> nav-web -> nav-mobile -> nav-tablet etc, more branches the more organised.
 
 Always add a message to the commit, make it clear what you did, makes it easier in the long run.
 
 ### Working locally
-When it comes to working locally it is likely we will have to constantly upload to Brighton Domaisn because of the database, but I am not 100% sure right now as depends how to PHP works. To make this as easy as possible use this vscode extension - https://marketplace.visualstudio.com/items?itemName=liximomo.sftp
+When it comes to working locally it is likely we will have to constantly upload to Brighton Domain because of the database, but I am not 100% sure right now as depends how to PHP works. To make this as easy as possible use this vscode extension - https://marketplace.visualstudio.com/items?itemName=liximomo.sftp
 
 This essentially creates a FileZilla in vscode, press f1 and type sftp:config, it will open a file and that is where you put your configuration, it should look like this:
 
@@ -34,7 +34,7 @@ This essentially creates a FileZilla in vscode, press f1 and type sftp:config, i
 
 remotePath is where you specify the exact folder that you want to open so this will change depending on how you files are setup. You may also put "password" in so you dont need to put your password in everytime you satrt a new session but i haven't done that, you don't need to enter your password every upload so isn't that annoying 
 
-Also it will likely create and save itself in a file called `.vscode` this will be ignored by git when you upload stuff. If for you use certain plugins or whatever that create configuration files either see if that can be saved into this .vscode folder (They likely will already be saved there) or if not look into .gitignore
+Also it will likely create and save itself in a file called `.vscode` this will be ignored by git when you upload stuff. If you use certain plugins or whatever that create configuration files either see if that can be saved into this .vscode folder (They likely will already be saved there) or if not look into .gitignore
 
 ## Workflow
 
