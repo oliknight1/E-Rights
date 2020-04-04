@@ -1,0 +1,30 @@
+/* Default stylings */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Wrapper around the login page, used to layout the image adn form correctly */
+.login-wrapper {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.login-img-container {
+    width: 50vw;
+    height: 100vh;
+}
+
+.login-form-container {
+    width: 50vw;
+    height: 100vh;
+}
+
+.login-form-container form {
+    background: #000;
+}
