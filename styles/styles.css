@@ -25,15 +25,19 @@
     overflow: hidden;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(../assets/login-img.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 80%;
 }
 
 /* Container on login page with the large image inside */
 .login-img-container {
-    width: 50vw;
+    width: 45vw;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url(../assets/login-img.jpeg);
-    background-position: 8% 100%;
+    background-position: 5% 100%;
 }
 
 
@@ -41,12 +45,21 @@
 
 /* Contains the form and the logo of the site */
 .login-form-container {
-    width: 50vw;
+    background: #ffffff;
+    width: 55vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    transform: translateX(100%);
+    animation: loginAnimation forwards 1.5s;
+}
+
+/* Select all of the child elements of .login-form-container */
+.login-form-container>* {
+    opacity: 0;
+    animation: fadeIn forwards 1.5s 1.2s;
 }
 
 /* Logo img */
@@ -88,4 +101,16 @@
     background: var(--main-blue);
     color: #ffffff;
 
+}
+
+@keyframes loginAnimation {
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
 }
