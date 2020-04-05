@@ -18,7 +18,7 @@
 
 /* LOGIN PAGE STYLING */
 
-/* Wrapper around the login page, used to layout the image adn form correctly */
+/* Wrapper around the login page, used for the image and to layout form */
 .login-wrapper {
     height: 100vh;
     width: 100vw;
@@ -32,14 +32,6 @@
     background-size: cover;
     background-position-y: 80%;
 }
-
-/* Container on login page with the large image inside */
-.login-img-container {
-    width: 45vw;
-    height: 100vh;
-    background-position: 5% 100%;
-}
-
 
 
 
@@ -90,8 +82,15 @@
     text-align: center;
     border-radius: 25em;
     border: var(--main-blue) 5px solid;
+    outline: none;
 }
 
+/* Hide the placeholder on focus */
+.login-form-container form input:focus::placeholder {
+    color: transparent;
+}
+
+/* Sign in button */
 .login-form-container button {
     width: fit-content;
     padding: .5em 2em;
@@ -100,15 +99,26 @@
     border-radius: 25em;
     background: var(--main-blue);
     color: #ffffff;
-
+    border: none;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: all ease-in-out .5s;
 }
 
+/* Potentially change hover animation */
+
+.login-form-container button:hover {
+    cursor: pointer;
+    box-shadow: 12px 13px 10px rgba(0, 0, 0, 0.3)
+}
+
+/* Moves the form over when the page loads */
 @keyframes loginAnimation {
     100% {
         transform: translateX(0);
     }
 }
 
+/*  */
 @keyframes fadeIn {
     100% {
         opacity: 1;
