@@ -47,5 +47,5 @@ if ($rowCount > 0) {
 
     echo json_encode(
         array('message' => "No Users Found")
-    )
+    );
 }
