@@ -1,13 +1,13 @@
 /* Small tablets - portrait */
 @media screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait) {
+
+    /* Login Styles */
     .login-form-container {
         width: 100%;
         transform: translateX(0);
     }
 
-    .login-form-container form {
-        align-items: center;
-    }
+
 
     /* Remove delay from fade in */
     .login-form-container>* {
@@ -21,9 +21,6 @@
     }
 
     /*  Forgotton password and sign up links */
-    .form-links {
-        width: 100%;
-    }
 
     .form-links a {
         font-size: 1.5em;
@@ -41,21 +38,17 @@
 
 /* Small tablets - landscape */
 @media screen and (min-width:1024px) and (max-width:1366px) and (orientation: landscape) {
+
+    /* Login Styles */
     .login-form-container img {
         width: 50%;
     }
 
-    .login-form-container form {
-        align-items: center;
-    }
+
 
     .login-form-container form input {
         font-size: 1.6em;
         width: 30vw;
-    }
-
-    .form-links {
-        width: 100%;
     }
 
     .form-links a {
@@ -77,9 +70,6 @@
         transform: translateX(0);
     }
 
-    .login-form-container form {
-        align-items: center;
-    }
 
     /* Remove delay from fade in */
     .login-form-container>* {
@@ -93,9 +83,7 @@
     }
 
     /*  Forgotton password and sign up links */
-    .form-links {
-        width: 100%;
-    }
+
 
     .form-links a {
         font-size: 1.8em;

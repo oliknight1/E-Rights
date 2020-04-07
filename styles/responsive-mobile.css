@@ -2,6 +2,210 @@
 
 /* Small Phones */
 
+@media screen and (min-width: 320px) and (max-width:375px) and (orientation: portrait) {
+    .login-wrapper {
+        background: none;
+    }
+
+    .login-form-container {
+        width: 100%;
+        transform: translateX(0);
+    }
+
+
+    /* Remove delay from fade in */
+    .login-form-container>* {
+
+        animation: fadeIn forwards 1.5s;
+    }
+
+    .login-form-container img {
+        width: 70%;
+    }
+
+    /*  Forgotton password and sign up links */
+
+    .form-links a {
+        font-size: .8em;
+    }
+
+    .login-form-container form input {
+        width: 70vw;
+        font-size: 1.2em;
+        border: var(--main-blue) 3px solid;
+    }
+
+    .login-form-container button {
+        font-size: 1.2em;
+    }
+}
+
+/* Medium Phones */
+
+@media screen and (min-width: 375x) and (max-width:414px) and (orientation: portrait) {
+    .login-wrapper {
+        background: none;
+    }
+
+    .login-form-container {
+        width: 100%;
+        transform: translateX(0);
+    }
+
+
+    /* Remove delay from fade in */
+    .login-form-container>* {
+
+        animation: fadeIn forwards 1.5s;
+    }
+
+    .login-form-container img {
+        width: 70%;
+    }
+
+    /*  Forgotton password and sign up links */
+
+    .form-links a {
+        font-size: .8em;
+    }
+
+    .login-form-container form input {
+        width: 70vw;
+        font-size: 1.2em;
+        border: var(--main-blue) 3px solid;
+    }
+
+    .login-form-container button {
+        font-size: 1.2em;
+    }
+}
+
+/* Large Phones */
+
+@media screen and (min-width: 414px) and (max-width:768px) and (orientation: portrait) {
+    .login-wrapper {
+        background: none;
+    }
+
+    .login-form-container {
+        width: 100%;
+        transform: translateX(0);
+    }
+
+
+    /* Remove delay from fade in */
+    .login-form-container>* {
+
+        animation: fadeIn forwards 1.5s;
+    }
+
+    .login-form-container img {
+        width: 70%;
+    }
+
+    /*  Forgotton password and sign up links */
+
+    .form-links a {
+        font-size: .8em;
+    }
+
+    .login-form-container form input {
+        width: 70vw;
+        font-size: 1.2em;
+        border: var(--main-blue) 3px solid;
+    }
+
+    .login-form-container button {
+        font-size: 1.2em;
+    }
+}
+
 /* Landscape Phones */
 
 /* Small Phones */
+@media screen and (min-width: 568px) and (max-width:667px) and (orientation: landscape) {
+    .login-form-container form {
+        margin-top: 5vh;
+    }
+
+    .login-form-container form input {
+        font-size: .7em;
+        border: var(--main-blue) 3px solid;
+    }
+
+
+
+    .form-links a {
+        font-size: .6em;
+    }
+
+    .login-form-container button {
+        font-size: 1em;
+    }
+
+}
+
+/* Medium Phones */
+@media screen and (min-width: 667px) and (max-width:736px) and (orientation: landscape) {
+    .login-form-container form {
+        margin-top: 5vh;
+    }
+
+    .login-form-container form input {
+        font-size: .9em;
+        border: var(--main-blue) 3px solid;
+    }
+
+
+    .form-links a {
+        font-size: .7em;
+    }
+
+    .login-form-container button {
+        font-size: 1em;
+    }
+
+}
+
+/* Large Phones */
+@media screen and (min-width: 736px) and (max-width:812px) and (orientation: landscape) {
+    .login-form-container form {
+        margin-top: 5vh;
+    }
+
+    .login-form-container form input {
+        font-size: .9em;
+        border: var(--main-blue) 3px solid;
+    }
+
+
+    .form-links a {
+        font-size: .7em;
+    }
+
+    .login-form-container button {
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (min-width: 812px) and (max-width:1024px) and (orientation: landscape) {
+    .login-form-container form {
+        margin-top: 5vh;
+    }
+
+    .login-form-container form input {
+        font-size: .9em;
+        border: var(--main-blue) 3px solid;
+    }
+
+
+    .form-links a {
+        font-size: .7em;
+    }
+
+    .login-form-container button {
+        font-size: 1em;
+    }
+
+}
