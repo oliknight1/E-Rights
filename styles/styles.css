@@ -42,7 +42,7 @@ button:hover {
 
 /* Contains the form and the logo of the site */
 .login-form-container {
-    background: #ffffff;
+    background: #fdfdfd;
     width: 55vw;
     height: 100vh;
     display: flex;
