@@ -1,5 +1,7 @@
 /* Small tablets - portrait */
 @media screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait) {
+
+    /* Login Styles */
     .login-form-container {
         width: 100%;
         transform: translateX(0);
@@ -41,6 +43,8 @@
 
 /* Small tablets - landscape */
 @media screen and (min-width:1024px) and (max-width:1366px) and (orientation: landscape) {
+
+    /* Login Styles */
     .login-form-container img {
         width: 50%;
     }
