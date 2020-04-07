@@ -7,9 +7,7 @@
         transform: translateX(0);
     }
 
-    .login-form-container form {
-        align-items: center;
-    }
+
 
     /* Remove delay from fade in */
     .login-form-container>* {
@@ -23,9 +21,6 @@
     }
 
     /*  Forgotton password and sign up links */
-    .form-links {
-        width: 100%;
-    }
 
     .form-links a {
         font-size: 1.5em;
@@ -49,17 +44,11 @@
         width: 50%;
     }
 
-    .login-form-container form {
-        align-items: center;
-    }
+
 
     .login-form-container form input {
         font-size: 1.6em;
         width: 30vw;
-    }
-
-    .form-links {
-        width: 100%;
     }
 
     .form-links a {
@@ -81,9 +70,6 @@
         transform: translateX(0);
     }
 
-    .login-form-container form {
-        align-items: center;
-    }
 
     /* Remove delay from fade in */
     .login-form-container>* {
@@ -97,9 +83,7 @@
     }
 
     /*  Forgotton password and sign up links */
-    .form-links {
-        width: 100%;
-    }
+
 
     .form-links a {
         font-size: 1.8em;
