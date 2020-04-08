@@ -9,14 +9,13 @@ include_once '../config/User.php';
 
 // Instantiate database and connect to it
 $db = new Database();
-$connection = $db->connect();
+$db->connect();
 
 // Instantiate user object
 $user = new User($db);
 
-$user->getUsers();
+$result = $user->getUsers();
 $rowCount = $result->num_rows;
-
 // Check if there are any users
 
 if ($rowCount > 0) {
