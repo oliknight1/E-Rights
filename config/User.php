@@ -28,29 +28,49 @@ class User
 
         return $result;
     }
+
+
+
+
+
+    public function getSingleUser($id)
+    {
+        // ? is the id of the user we want to get
+        $query = "SELECT * from `users` WHERE `id` = " . $id . " LIMIT 0,1";
+
+        $result = $this->conn->query($query);
+        $row = $result->fetch_assoc();
+
+        // Set user properties 
+        $this->id = $row["id"];
+        $this->username = $row["username"];
+        $this->password = $row["password"];
+        $this->security_question = $row["security_question"];
+        $this->security_answer = $row["security_answer"];
+    }
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function getUsername()
+    {
+        return $this->username;
+    }
+
+    public function getPassword()
+    {
+        return $this->password;
+    }
+
+    public function getSecurityQuesion()
+    {
+        return $this->security_question;
+    }
+
+    public function getSecurityAnswer()
+    {
+        return $this->security_answer;
+    }
 }
-
-
-// Not quite ready yet
-
-//     public function getSingleUser()
-//     {
-//         // ? is the id of the user we want to get
-//         $query = "SELECT * from `users` WHERE `id` = ? LIMIT 0,1";
-
-//         // here we bind ? to the id of the user
-//         $query->bind_param("i", $this->id);
-
-//         $result = $this->conn->prepare($query);
-
-//         $result->execute();
-//         $row = $result->fetch_assoc();
-
-//         // Set user properties 
-
-//         $this->username = $row["username"];
-//         $this->password = $row["password"];
-//         $this->securityQ = $row["security_question"];
-//         $this->securityA = $row["security_answer"];
-//     }
-// }
