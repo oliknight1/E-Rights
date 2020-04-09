@@ -24,18 +24,15 @@ if ($rowCount > 0) {
 
     while ($row = $result->fetch_assoc()) {
         extract($row);
-
+        // array keys needs to be the same as column names in db
         $userItem = array(
             'id' => $id,
             'username' => $username,
             'password' => $password,
-            'security_question' => $securityQ,
-            'security_answer' => $securityA
-
+            'security_question' => $security_question,
+            'security_answer' => $security_answer
         );
-
         // Push to 'data'
-
         array_push($userArr['data'], $userItem);
     }
     // Turn into JSON & output

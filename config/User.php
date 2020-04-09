@@ -11,8 +11,8 @@ class User
     private $id;
     private $username;
     private $password;
-    private $securityQ;
-    private $securityA;
+    private $security_question;
+    private $security_answer;
 
     public function __construct($db)
     {
