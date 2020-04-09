@@ -15,23 +15,11 @@ $db->connect();
 $user = new User($db);
 
 
-// ADD A CHECK IF THERE IS A USER WITH THAT ID
+// Check if there has been a GET request
 if (isset($_GET['id'])) {
 
-    $user->getSingleUser($_GET["id"]);
-
-
-    $userArr = array(
-        'id' => $user->getId(),
-        'username' => $user->getUsername(),
-        'password' => $user->getPassword(),
-        'security_question' => $user->getSecurityQuesion(),
-        'security_answer' => $user->getSecurityAnswer(),
-
-    );
-
-    // Print out the json data
-    print_r(json_encode($userArr));
+    // display the data
+    print_r($user->getSingleUser($_GET["id"]));
 } else {
     echo "No id selected";
 }

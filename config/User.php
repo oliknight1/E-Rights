@@ -39,14 +39,22 @@ class User
         $query = "SELECT * from `users` WHERE `id` = " . $id . " LIMIT 0,1";
 
         $result = $this->conn->query($query);
-        $row = $result->fetch_assoc();
 
-        // Set user properties 
-        $this->id = $row["id"];
-        $this->username = $row["username"];
-        $this->password = $row["password"];
-        $this->security_question = $row["security_question"];
-        $this->security_answer = $row["security_answer"];
+        if ($result->num_rows > 0) {
+
+            $row = $result->fetch_assoc();
+
+            // Set user properties 
+            $this->id = $row["id"];
+            $this->username = $row["username"];
+            $this->password = $row["password"];
+            $this->security_question = $row["security_question"];
+            $this->security_answer = $row["security_answer"];
+
+            return json_encode($row);
+        } else {
+            echo "No users found";
+        }
     }
 
     public function getId()
