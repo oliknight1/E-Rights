@@ -15,11 +15,18 @@ $db->connect();
 $user = new User($db);
 
 
-// Check if there has been a GET request
-if (isset($_GET['id'])) {
 
-    // display the data
-    print_r($user->getSingleUser($_GET["id"]));
-} else {
-    echo "No id selected";
+
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    // Check if there has been a GET request
+    if (isset($_GET['id'])) {
+
+        // display the data
+        // make sure the id is an int
+        print_r($user->getSingleUserById(intval($_GET['id'])));
+    } else if (isset($_GET['username'])) {
+        // display the data
+        // make sure the username is an is string
+        print_r($user->getSingleUserById(strval($_GET['username'])));
+    }
 }

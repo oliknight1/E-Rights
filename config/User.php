@@ -33,13 +33,22 @@ class User
 
 
 
-    public function getSingleUser($id)
+    public function getSingleUserById($data)
     {
-        // ? is the id of the user we want to get
-        $query = "SELECT * from `users` WHERE `id` = " . $id . " LIMIT 0,1";
+
+        // if $data is a int, then it will be an id
+        // if $data is a string, it will be a username
+        if (is_int($data)) {
+
+            $query = "SELECT * from `users` WHERE `id` = " . $data . " LIMIT 0,1";
+        } else if (is_string($data)) {
+
+
+            $query = "SELECT * from `users` WHERE `username` = \"" . $data . "\" LIMIT 0,1";
+        }
 
         $result = $this->conn->query($query);
-
+        // Place the data into an array
         if ($result->num_rows > 0) {
 
             $row = $result->fetch_assoc();
@@ -55,30 +64,5 @@ class User
         } else {
             echo "No users found";
         }
-    }
-
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    public function getUsername()
-    {
-        return $this->username;
-    }
-
-    public function getPassword()
-    {
-        return $this->password;
-    }
-
-    public function getSecurityQuesion()
-    {
-        return $this->security_question;
-    }
-
-    public function getSecurityAnswer()
-    {
-        return $this->security_answer;
     }
 }
