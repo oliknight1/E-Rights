@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
         // display the data
         // make sure the id is an int
-        print_r($user->getSingleUserById(intval($_GET['id'])));
+        print_r($user->getSingleUser(intval($_GET['id'])));
     } else if (isset($_GET['username'])) {
         // display the data
         // make sure the username is an is string
