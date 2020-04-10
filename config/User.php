@@ -33,7 +33,7 @@ class User
 
 
 
-    public function getSingleUserById($data)
+    public function getSingleUser($data)
     {
 
         // if $data is a int, then it will be an id
