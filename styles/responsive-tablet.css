@@ -1,0 +1,138 @@
+/* Small tablets - portrait */
+@media screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait) {
+
+    /* Login Styles */
+
+    .login-img-container {
+        display: none;
+    }
+
+    .login-form-container {
+        width: 100%;
+        transform: translateX(0);
+    }
+
+
+    /* Remove delay from fade in */
+    .login-form-container>* {
+
+        animation: fadeIn forwards 1.5s;
+    }
+
+
+    .login-form-container img {
+        width: 50%;
+    }
+
+    /*  Forgotton password and sign up links */
+
+    .form-links a {
+        font-size: 1.5em;
+    }
+
+    .login-form-container form input {
+        width: 50vw;
+        font-size: 2em;
+    }
+
+    .login-form-container button {
+        font-size: 2em;
+    }
+}
+
+/* Small tablets - landscape */
+@media screen and (min-width:1024px) and (max-width:1366px) and (orientation: landscape) {
+
+    /* Login Styles */
+    .login-form-container img {
+        width: 50%;
+    }
+
+    .login-img-container img {
+        position: absolute;
+        width: auto;
+        height: 100%;
+        transform: translateY(0%);
+    }
+
+    .login-form-container form input {
+        font-size: 1.6em;
+        width: 30vw;
+    }
+
+    .form-links a {
+        font-size: 1em;
+    }
+}
+
+/* Large tablets - portrait */
+@media screen and (min-width:1024px) and (max-width:1366px) and (orientation: portrait) {
+    /*  Login page stylings */
+
+
+
+
+    .login-form-container {
+        width: 100%;
+        transform: translateX(0);
+    }
+
+
+    /* Remove delay from fade in */
+    .login-form-container>* {
+
+        animation: fadeIn forwards 1.5s;
+    }
+
+
+    .login-form-container img {
+        width: 50%;
+    }
+
+    /*  Forgotton password and sign up links */
+
+
+    .form-links a {
+        font-size: 1.8em;
+    }
+
+    .login-form-container form input {
+        width: 50vw;
+        font-size: 2.5em;
+    }
+
+    .login-form-container button {
+        font-size: 3em;
+    }
+}
+
+/* Large tablets - landscape */
+
+@media screen and (min-width:1366px) and (max-width:1440px) and (orientation: landscape) {
+
+    /*  Login page stylings */
+
+    .login-form-container img {
+        width: 60%;
+    }
+
+    .login-img-container img {
+        position: absolute;
+        width: auto;
+        height: 100%;
+        transform: translateY(0%);
+    }
+
+    .login-form-container form input {
+        width: 30vw;
+        font-size: 2em;
+    }
+
+    .form-links a {
+        font-size: 1.4em;
+    }
+
+    .login-form-container button {
+        font-size: 2.2em;
+    }
+}
