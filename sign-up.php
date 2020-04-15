@@ -41,8 +41,8 @@
 
                 <input type="text" placeholder="Answer" required>
                 <div class="form-links">
-                    <a href="under-construction.html">Forgotten Password</a>
-                    <a href="#">Sign Up</a>
+                    <p>Already signed up?</p>
+                    <a href="login.php" class="sign-in-link">Sign in</a>
                 </div>
                 <button>Sign Up</button>
             </form>

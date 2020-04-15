@@ -98,10 +98,11 @@ button:hover {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin: 0 2vw;
+    padding: 0 3vw;
 }
 
-.form-links a {
+.form-links a,
+.form-links p {
     text-decoration: none;
     color: #969494;
     font-size: 1.3em;
@@ -205,6 +206,11 @@ button:hover {
 .signup-title h1 {
     position: absolute;
     font-size: 3em;
+    color: var(--main-blue);
+    font-weight: 600;
+}
+
+.form-links .sign-in-link {
     color: var(--main-blue);
     font-weight: 600;
 }
