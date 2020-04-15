@@ -14,6 +14,7 @@
 :root {
     --main-blue: #189dd9;
     --darker-blue: #082e40;
+    --placeholder-col: #969494;
 }
 
 /* Change cursor of all buttons on hover */
@@ -30,6 +31,7 @@ button:hover {
     overflow: hidden;
     display: flex;
     flex-direction: row;
+
 
 
 }
@@ -76,15 +78,14 @@ button:hover {
 }
 
 /* Logo img */
-.login-form-container img,
-.signup-form-container img {
+.login-form-container img {
     width: 40%;
 }
 
 /* Login form */
 .login-form-container form,
 .signup-form-container form {
-    height: 30vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,24 +108,27 @@ button:hover {
 }
 
 .login-form-container form input,
-.signup-form-container form input {
+.signup-form-container form input,
+.signup-form-container select {
     width: 25vw;
-    padding: .5em;
-    font-size: 2em;
-    text-align: center;
-    border-radius: .9em;
-    border: var(--main-blue) 5px solid;
+    padding: .4em 1.5em;
+    font-size: 1.8em;
+    text-align: left;
+    border-radius: 1em;
+    border: var(--main-blue) 4px solid;
     outline: none;
     margin: 2vh 0;
-}
-
-.signup-form-container form select {
-    background: #000;
-    padding: 10em;
 
 }
 
+/* Giving the placeholder a specific colour
+ * Includes support for all the browsers
+ */
+.login-form-container form input::placeholder,
+.signup-form-container form input::placeholder {
 
+    color: var(--placeholder-col);
+}
 
 /* Hide the placeholder on focus */
 .login-form-container form input:focus::placeholder {
@@ -134,9 +138,10 @@ button:hover {
 /* Sign in button */
 .login-form-container button,
 .signup-form-container button {
+
     width: fit-content;
     padding: .5em 2em;
-    margin: 5vh auto;
+    margin: 3vh auto;
     font-size: 2em;
     border-radius: 25em;
     background: var(--main-blue);
@@ -146,12 +151,7 @@ button:hover {
     transition: all ease-in-out .2s;
 }
 
-.js-loading *,
-.js-loading *:before,
-.js-loading *:after {
-    animation-play-state: paused !important;
-    /*While something is loading, all animations are paused*/
-}
+
 
 /* Moves the form over when the page loads */
 @keyframes loginAnimation {
@@ -160,9 +160,51 @@ button:hover {
     }
 }
 
-/*  */
+/* Fade in animation */
 @keyframes fadeIn {
     100% {
         opacity: 1;
     }
+}
+
+/* Sign up specific stylings */
+
+/* Custom select styling */
+.signup-form-container select {
+    position: relative;
+    /* Allows for more customized styling of the select box
+     * Need both for browser compatability */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: #000000;
+    text-align: center;
+
+    /* Background used to add an arrow to the select box */
+    background: url(../assets/select-box-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 3.5em;
+}
+
+/* Select it required, so we can use the invalid selector to select the disabled option*/
+.signup-form-container select:invalid {
+    color: var(--placeholder-col);
+}
+
+.signup-form-container img {
+    width: 35%;
+    margin-bottom: 3vh;
+}
+
+.signup-title {
+    width: 100%;
+    padding-left: 5vw;
+    margin-top: 5vh;
+}
+
+.signup-title h1 {
+    position: absolute;
+    font-size: 3em;
+    color: var(--main-blue);
+    font-weight: 600;
 }

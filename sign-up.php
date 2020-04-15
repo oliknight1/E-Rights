@@ -15,28 +15,36 @@
     <div class="login-wrapper">
         <!-- Contains only the image shown on the left -->
         <div class="signup-form-container">
-
+            <div class="signup-title">
+                <h1>Sign Up</h1>
+            </div>
             <img src="assets/illustrations/sign-up-img.svg" alt="">
             <form method="POST">
-                <input type="text" placeholder="Username">
+                <input type="text" placeholder="Username" required>
 
-                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Password" required>
 
-                <input type="password" placeholder="Repeat Password">
+                <input type="password" placeholder="Repeat Password" required>
 
-                <select name="security-question" id="">
 
-                    <option value="" selected="selected">Test quesion</option>
-                    <option value=""></option>
-                    <option value=""></option>
+                <select name="security-question" id="" required>
+                    <!-- First option is the default
+                         disabled means it cannot be selected by the user
+                         hidden means it cannot be seen by the use
+                    -->
+                    <option value="" selected="selected" disabled hidden> Security Question</option>
+                    <option value="0">Test quesion 1</option>
+                    <option value="1">Test quesion 1</option>
                 </select>
 
-                <input type="text" placeholder="Answer">
+
+
+                <input type="text" placeholder="Answer" required>
                 <div class="form-links">
                     <a href="under-construction.html">Forgotten Password</a>
                     <a href="#">Sign Up</a>
                 </div>
-                <button>Sign in</button>
+                <button>Sign Up</button>
             </form>
         </div>
 
