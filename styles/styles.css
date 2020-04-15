@@ -1,0 +1,168 @@
+/* Raleway font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
+
+
+/* Default stylings */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* CSS Variables */
+:root {
+    --main-blue: #189dd9;
+    --darker-blue: #082e40;
+}
+
+/* Change cursor of all buttons on hover */
+button:hover {
+    cursor: pointer;
+}
+
+/* LOGIN PAGE STYLING */
+
+/* Wrapper around the login page, used for the image and to layout form */
+.login-wrapper {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+/* Makes sure that the login form takes up slightly more of the page than the image */
+.login-img-container {
+    width: 45vw;
+
+}
+
+/* Moves the image up slightly and darkens it */
+.login-img-container img {
+    transform: translateY(-20%);
+    filter: brightness(50%);
+    opacity: 1;
+}
+
+
+
+/* Contains the form and the logo of the site */
+.login-form-container,
+.signup-form-container {
+    background: #fdfdfd;
+    width: 55vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateX(100%);
+    animation: loginAnimation forwards 1.5s;
+
+}
+
+.signup-form-container {
+    transform: translateX(-100%);
+}
+
+/* Select all of the child elements of .login-form-container */
+.login-form-container>*,
+.signup-form-container>* {
+    opacity: 0;
+    animation: fadeIn forwards 1.5s 1.2s;
+}
+
+/* Logo img */
+.login-form-container img,
+.signup-form-container img {
+    width: 40%;
+}
+
+/* Login form */
+.login-form-container form,
+.signup-form-container form {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*  Forgotton password and sign up links */
+.form-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 2vw;
+}
+
+.form-links a {
+    text-decoration: none;
+    color: #969494;
+    font-size: 1.3em;
+}
+
+.login-form-container form input,
+.signup-form-container form input {
+    width: 25vw;
+    padding: .5em;
+    font-size: 2em;
+    text-align: center;
+    border-radius: .9em;
+    border: var(--main-blue) 5px solid;
+    outline: none;
+    margin: 2vh 0;
+}
+
+.signup-form-container form select {
+    background: #000;
+    padding: 10em;
+
+}
+
+
+
+/* Hide the placeholder on focus */
+.login-form-container form input:focus::placeholder {
+    color: transparent;
+}
+
+/* Sign in button */
+.login-form-container button,
+.signup-form-container button {
+    width: fit-content;
+    padding: .5em 2em;
+    margin: 5vh auto;
+    font-size: 2em;
+    border-radius: 25em;
+    background: var(--main-blue);
+    color: #ffffff;
+    border: none;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: all ease-in-out .2s;
+}
+
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+    animation-play-state: paused !important;
+    /*While something is loading, all animations are paused*/
+}
+
+/* Moves the form over when the page loads */
+@keyframes loginAnimation {
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*  */
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
+}
