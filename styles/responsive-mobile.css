@@ -3,6 +3,8 @@
 /* Small Phones */
 
 @media screen and (min-width: 320px) and (max-width:375px) and (orientation: portrait) {
+
+    /* Login Styles */
     .login-img-container {
         display: none;
     }
@@ -28,20 +30,39 @@
 
     /*  Forgotton password and sign up links */
 
-    .form-links a {
+    .form-links a,
+    .form-links p {
         font-size: .8em;
     }
 
     .login-form-container form input,
-    .signup-form-container form input {
+    .signup-form-container form input,
+    .signup-form-container form select {
         width: 70vw;
-        font-size: 1.2em;
+        font-size: 1em;
         border: var(--main-blue) 3px solid;
     }
 
     .login-form-container button,
-    .signup-form-container {
+    .signup-form-container button {
         font-size: 1.2em;
+    }
+
+    /* Sign Up Styles */
+    .signup-title {
+        padding: 0;
+
+    }
+
+    .signup-title h1 {
+        font-size: 2em;
+        position: relative;
+        text-align: center;
+    }
+
+    .signup-form-container img {
+        margin-top: 2vh;
+        width: 50%;
     }
 }
 
