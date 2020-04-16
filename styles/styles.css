@@ -12,14 +12,19 @@
 
 /* CSS Variables */
 :root {
-    --main-blue: #189dd9;
     --darker-blue: #082e40;
+    --main-blue: #189dd9;
     --placeholder-col: #969494;
 }
 
 /* Change cursor of all buttons on hover */
 button:hover {
     cursor: pointer;
+}
+
+body {
+    width: 100vw;
+    overflow: hidden;
 }
 
 /* LOGIN PAGE STYLING */
