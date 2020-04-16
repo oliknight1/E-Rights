@@ -94,12 +94,14 @@
 
     /*  Forgotton password and sign up links */
 
-    .form-links a {
+    .form-links a,
+    .form-links p {
         font-size: .8em;
     }
 
     .login-form-container form input,
-    .signup-form-container form input {
+    .signup-form-container form input,
+    .signup-form-container form select {
         width: 70vw;
         font-size: 1.2em;
         border: var(--main-blue) 3px solid;
@@ -132,8 +134,8 @@
         animation: fadeIn forwards 1.5s;
     }
 
-    .login-form-container img,
-    .signup-form-container img {
+    .login-form-container img {
+
         width: 70%;
     }
 
@@ -144,7 +146,8 @@
     }
 
     .login-form-container form input,
-    .signup-form-container form input {
+    .signup-form-container form input,
+    .signup-form-container form select {
         width: 70vw;
         font-size: 1.2em;
         border: var(--main-blue) 3px solid;
@@ -154,6 +157,23 @@
     .signup-form-container button {
         font-size: 1.2em;
     }
+
+    /* Sign Up Styles */
+    .signup-title {
+        padding: 0;
+        text-align: center;
+    }
+
+    .signup-title h1 {
+        font-size: 3em;
+        position: relative;
+    }
+
+    .signup-form-container img {
+        width: 60%;
+        margin-top: 2vh;
+    }
+
 }
 
 /* Landscape Phones */
@@ -168,26 +188,41 @@
 
     .login-form-container form,
     .signup-form-container form {
-        margin-top: 5vh;
+        margin-top: 2vh;
     }
 
     .login-form-container form input,
-    .signup-form-container form input {
+    .signup-form-container form input,
+    .signup-form-container form select {
+        width: 30vw;
         font-size: .7em;
-        border: var(--main-blue) 3px solid;
+        border: var(--main-blue) 2px solid;
     }
 
-
-
-    .form-links a {
+    .form-links a,
+    .form-links p {
         font-size: .6em;
     }
 
     .login-form-container button,
     .signup-form-container button {
+        margin-bottom: 10vh;
+        font-size: .8em;
+    }
+
+    /* Sign Up Styles */
+    .signup-title h1 {
         font-size: 1em;
     }
 
+    .signup-form-container img {
+        margin: 0;
+    }
+
+    .signup-form-container form select,
+    .signup-form-container form input {
+        font-size: .5em;
+    }
 }
 
 /* Medium Phones */
@@ -197,9 +232,10 @@
     }
 
     .login-form-container form input,
-    .signup-form-container form input {
+    .signup-form-container form input,
+    .signup-form-container form select {
         font-size: .9em;
-        border: var(--main-blue) 3px solid;
+        border: var(--main-blue) 2px solid;
     }
 
 
@@ -209,7 +245,21 @@
 
     .login-form-container button,
     .signup-form-container button {
+        font-size: .8em;
+    }
+
+    /* Sign Up Styles */
+    .signup-title h1 {
         font-size: 1em;
+    }
+
+    .signup-form-container img {
+        margin: 0;
+    }
+
+    .signup-form-container form select,
+    .signup-form-container form input {
+        font-size: .7em;
     }
 
 }
@@ -221,13 +271,15 @@
     }
 
     .login-form-container form input,
-    .signup-form-container form input {
+    .signup-form-container form input,
+    .signup-form-container form select {
         font-size: .9em;
         border: var(--main-blue) 3px solid;
     }
 
 
-    .form-links a {
+    .form-links a,
+    .form-links p {
         font-size: .7em;
     }
 
@@ -236,6 +288,14 @@
         font-size: 1em;
     }
 
+    /* Sign Up Styles */
+    .signup-title h1 {
+        font-size: 1em;
+    }
+
+    .signup-form-container img {
+        margin: 0;
+    }
 }
 
 /* Long phones e.g iPhone X */
