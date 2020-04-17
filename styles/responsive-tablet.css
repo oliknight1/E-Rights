@@ -2,6 +2,12 @@
 @media screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait) {
 
     /* Login Styles */
+
+
+    .login-img-container {
+        display: none;
+    }
+
     .login-form-container {
         width: 100%;
         transform: translateX(0);
@@ -45,7 +51,12 @@
     }
 
 
-
+    .login-img-container img {
+        position: absolute;
+        width: auto;
+        height: 100%;
+        transform: translateY(0%);
+    }
     .login-form-container form input {
         font-size: 1.6em;
         width: 30vw;
@@ -59,6 +70,7 @@
 /* Large tablets - portrait */
 @media screen and (min-width:1024px) and (max-width:1366px) and (orientation: portrait) {
     /*  Login page stylings */
+
 
     /* Remove the image */
     .login-wrapper {
@@ -108,6 +120,15 @@
     .login-form-container img {
         width: 60%;
     }
+
+
+    .login-img-container img {
+        position: absolute;
+        width: auto;
+        height: 100%;
+        transform: translateY(0%);
+    }
+
 
     .login-form-container form input {
         width: 30vw;
