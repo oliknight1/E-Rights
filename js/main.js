@@ -6,3 +6,4 @@ loginImg.addEventListener("load", () => {
     document.querySelector(".login-form-container").style.animation = "loginAnimation forwards 1.5s";
 
 })
+loginImg.src = "./assets/login-img.jpeg"; 
