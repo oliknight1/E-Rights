@@ -3,6 +3,7 @@
 
     /* Login Styles */
 
+
     .login-img-container {
         display: none;
     }
@@ -55,13 +56,14 @@
 
     .signup-title h1 {
         font-size: 3.5em;
-    }
+
 }
 
 /* Small tablets - landscape */
 @media screen and (min-width:1024px) and (max-width:1366px) and (orientation: landscape) {
 
     /* Login Styles */
+
     .login-form-container img,
     .signup-form-container img {
         width: 50%;
@@ -111,19 +113,22 @@
 @media screen and (min-width:1024px) and (max-width:1366px) and (orientation: portrait) {
     /*  Login page stylings */
 
+
     .login-form-container,
     .signup-form-container {
+
         width: 100%;
         transform: translateX(0);
     }
 
 
     /* Remove delay from fade in */
+
     .login-form-container>*,
     .signup-form-container>* {
-
         animation: fadeIn forwards 1.5s;
     }
+
 
 
     .login-form-container img,
@@ -132,6 +137,7 @@
     }
 
     /*  Forgotton password and sign up links */
+
     .form-links a,
     .form-links p {
         font-size: 1.8em;
@@ -143,6 +149,7 @@
         width: 50vw;
         font-size: 2.5em;
     }
+
 
     .login-form-container button,
     .signup-form-container button {
@@ -160,6 +167,7 @@
         width: 60%;
     }
 
+
     .login-img-container img {
         position: absolute;
         width: auto;
@@ -170,9 +178,11 @@
     .login-form-container form input,
     .signup-form-container form input,
     .signup-form-container form select {
+
         width: 30vw;
         font-size: 2em;
     }
+
 
     .form-links a,
     .form-links p {
@@ -192,4 +202,6 @@
     .signup-title h1 {
         font-size: 3em;
     }
+
+
 }

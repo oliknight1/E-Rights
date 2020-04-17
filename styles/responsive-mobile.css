@@ -3,6 +3,7 @@
 /* Small Phones */
 
 @media screen and (min-width: 320px) and (max-width:375px) and (orientation: portrait) {
+
     .login-img-container {
         display: none;
     }
@@ -15,11 +16,14 @@
 
 
     /* Remove delay from fade in */
+
     .login-form-container>*,
     .signup-form-container>* {
 
+    .login-form-container>* {
         animation: fadeIn forwards 1.5s;
     }
+
 
     .login-form-container img,
     .signup-form-container img {
@@ -32,6 +36,7 @@
         font-size: .8em;
     }
 
+
     .login-form-container form input,
     .signup-form-container form input {
         width: 70vw;
@@ -41,6 +46,7 @@
 
     .login-form-container button,
     .signup-form-container {
+
         font-size: 1.2em;
     }
 }
@@ -48,6 +54,7 @@
 /* Medium Phones */
 
 @media screen and (min-width: 375x) and (max-width:414px) and (orientation: portrait) {
+
     .login-img-container {
         display: none;
     }
@@ -58,13 +65,14 @@
         transform: translateX(0);
     }
 
-
     /* Remove delay from fade in */
+
     .login-form-container>*,
     .signup-form-container>* {
 
         animation: fadeIn forwards 1.5s;
     }
+
 
     .login-form-container img,
     .signup-form-container img {
@@ -77,6 +85,7 @@
         font-size: .8em;
     }
 
+
     .login-form-container form input,
     .signup-form-container form input {
         width: 70vw;
@@ -84,8 +93,10 @@
         border: var(--main-blue) 3px solid;
     }
 
+
     .login-form-container button,
     .signup-form-container button {
+
         font-size: 1.2em;
     }
 }
@@ -93,6 +104,7 @@
 /* Large Phones */
 
 @media screen and (min-width: 414px) and (max-width:768px) and (orientation: portrait) {
+
     .login-img-container {
         display: none;
     }
@@ -105,11 +117,13 @@
 
 
     /* Remove delay from fade in */
+
     .login-form-container>*,
     .signup-form-container>* {
 
         animation: fadeIn forwards 1.5s;
     }
+
 
     .login-form-container img,
     .signup-form-container img {
@@ -122,6 +136,7 @@
         font-size: .8em;
     }
 
+
     .login-form-container form input,
     .signup-form-container form input {
         width: 70vw;
@@ -129,8 +144,10 @@
         border: var(--main-blue) 3px solid;
     }
 
+
     .login-form-container button,
     .signup-form-container button {
+
         font-size: 1.2em;
     }
 }
@@ -139,6 +156,7 @@
 
 /* Small Phones */
 @media screen and (min-width: 568px) and (max-width:667px) and (orientation: landscape) {
+
     .login-img-container img {
         position: absolute;
         width: 100%;
@@ -156,11 +174,10 @@
         border: var(--main-blue) 3px solid;
     }
 
-
-
     .form-links a {
         font-size: .6em;
     }
+
 
     .login-form-container button,
     .signup-form-container button {
@@ -175,6 +192,7 @@
         margin-top: 5vh;
     }
 
+
     .login-form-container form input,
     .signup-form-container form input {
         font-size: .9em;
@@ -185,6 +203,7 @@
     .form-links a {
         font-size: .7em;
     }
+
 
     .login-form-container button,
     .signup-form-container button {
@@ -199,6 +218,7 @@
         margin-top: 5vh;
     }
 
+
     .login-form-container form input,
     .signup-form-container form input {
         font-size: .9em;
@@ -210,12 +230,17 @@
         font-size: .7em;
     }
 
+sign-up-page
     .login-form-container button,
     .signup-form-container button {
+
+    .login-form-container button {
+
         font-size: 1em;
     }
 
 }
+
 
 /* Long phones e.g iPhone X */
 @media screen and (min-width: 812px) and (max-width:1024px) and (orientation: landscape) {
@@ -233,6 +258,7 @@
 
     .login-form-container form input,
     .signup-form-container form input {
+
         font-size: .9em;
         border: var(--main-blue) 3px solid;
     }
@@ -242,8 +268,10 @@
         font-size: .7em;
     }
 
+
     .login-form-container button,
     .signup-form-container button {
+
         font-size: 1em;
     }
 
