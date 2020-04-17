@@ -3,8 +3,10 @@
 /* Small Phones */
 
 @media screen and (min-width: 320px) and (max-width:375px) and (orientation: portrait) {
+
     .login-img-container {
         display: none;
+
     }
 
     .login-form-container {
@@ -43,8 +45,10 @@
 /* Medium Phones */
 
 @media screen and (min-width: 375x) and (max-width:414px) and (orientation: portrait) {
+
     .login-img-container {
         display: none;
+
     }
 
     .login-form-container {
@@ -83,8 +87,10 @@
 /* Large Phones */
 
 @media screen and (min-width: 414px) and (max-width:768px) and (orientation: portrait) {
+
     .login-img-container {
         display: none;
+
     }
 
     .login-form-container {
@@ -124,15 +130,14 @@
 
 /* Small Phones */
 @media screen and (min-width: 568px) and (max-width:667px) and (orientation: landscape) {
+
     .login-img-container img {
         position: absolute;
         width: 100%;
         transform: translateY(-10%);
     }
 
-    .login-form-container form {
-        margin-top: 5vh;
-    }
+
 
     .login-form-container form input {
         font-size: .7em;
@@ -156,8 +161,6 @@
     .login-form-container form {
         margin-top: 5vh;
     }
-
-
 
     .login-form-container form input {
         font-size: .9em;
@@ -197,17 +200,19 @@
 
 }
 
-/* Long phones e.g iPhone X */
+
 @media screen and (min-width: 812px) and (max-width:1024px) and (orientation: landscape) {
     .login-form-container form {
         margin-top: 5vh;
     }
+
 
     .login-img-container img {
         position: absolute;
         width: 100%;
         transform: translateY(-30%);
     }
+
 
     .login-form-container form input {
         font-size: .9em;

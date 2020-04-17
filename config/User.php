@@ -32,8 +32,8 @@ class User
 
 
 
+    public function getSingleUser($data)
 
-    public function getSingleUserById($data)
     {
 
         // if $data is a int, then it will be an id
@@ -48,7 +48,9 @@ class User
         }
 
         $result = $this->conn->query($query);
-        // Check there are
+
+        // Place the data into an array
+
         if ($result->num_rows > 0) {
 
             $row = $result->fetch_assoc();

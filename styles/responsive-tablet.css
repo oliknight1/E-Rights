@@ -3,6 +3,7 @@
 
     /* Login Styles */
 
+
     .login-img-container {
         display: none;
     }
@@ -11,6 +12,7 @@
         width: 100%;
         transform: translateX(0);
     }
+
 
 
     /* Remove delay from fade in */
@@ -48,13 +50,13 @@
         width: 50%;
     }
 
+
     .login-img-container img {
         position: absolute;
         width: auto;
         height: 100%;
         transform: translateY(0%);
     }
-
     .login-form-container form input {
         font-size: 1.6em;
         width: 30vw;
@@ -70,7 +72,10 @@
     /*  Login page stylings */
 
 
-
+    /* Remove the image */
+    .login-wrapper {
+        background: none;
+    }
 
     .login-form-container {
         width: 100%;
@@ -116,12 +121,14 @@
         width: 60%;
     }
 
+
     .login-img-container img {
         position: absolute;
         width: auto;
         height: 100%;
         transform: translateY(0%);
     }
+
 
     .login-form-container form input {
         width: 30vw;
