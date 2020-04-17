@@ -30,28 +30,12 @@ button:hover {
     overflow: hidden;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
 
-
-
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 80%;
 }
-
-/* Makes sure that the login form takes up slightly more of the page than the image */
-.login-img-container {
-    width: 45vw;
-
-}
-
-/* Moves the image up slightly and darkens it */
-.login-img-container img {
-    transform: translateY(-20%);
-    filter: brightness(50%);
-    opacity: 0;
-}
-
-
-
-}
-
 
 /* Contains the form and the logo of the site */
 .login-form-container {
@@ -64,7 +48,6 @@ button:hover {
     align-items: center;
     transform: translateX(100%);
     animation: loginAnimation forwards 1.5s;
-
 }
 
 /* Select all of the child elements of .login-form-container */
@@ -132,7 +115,11 @@ button:hover {
     transition: all ease-in-out .2s;
 }
 
-
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+    animation-play-state: paused !important; /*While something is loading, all animations are paused*/
+}
 
 /* Moves the form over when the page loads */
 @keyframes loginAnimation {
