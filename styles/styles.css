@@ -12,13 +12,21 @@
 
 /* CSS Variables */
 :root {
-    --main-blue: #189dd9;
+
     --darker-blue: #082e40;
+    --main-blue: #189dd9;
+    --placeholder-col: #969494;
+
 }
 
 /* Change cursor of all buttons on hover */
 button:hover {
     cursor: pointer;
+}
+
+body {
+    width: 100vw;
+    overflow: hidden;
 }
 
 /* LOGIN PAGE STYLING */
@@ -30,6 +38,28 @@ button:hover {
     overflow: hidden;
     display: flex;
     flex-direction: row;
+}
+
+/* Makes sure that the login form takes up slightly more of the page than the image */
+.login-img-container {
+    width: 45vw;
+
+}
+
+/* Moves the image up slightly and darkens it */
+.login-img-container img {
+    transform: translateY(-20%);
+    filter: brightness(50%);
+    opacity: 1;
+}
+
+
+
+/* Contains the form and the logo of the site */
+.login-form-container,
+.signup-form-container {
+
+
     justify-content: flex-end;
 
     background-repeat: no-repeat;
@@ -39,6 +69,7 @@ button:hover {
 
 /* Contains the form and the logo of the site */
 .login-form-container {
+
     background: #fdfdfd;
     width: 55vw;
     height: 100vh;
@@ -48,10 +79,16 @@ button:hover {
     align-items: center;
     transform: translateX(100%);
     animation: loginAnimation forwards 1.5s;
+
+}
+
+.signup-form-container {
+    transform: translateX(-100%);
 }
 
 /* Select all of the child elements of .login-form-container */
-.login-form-container>* {
+.login-form-container>*,
+.signup-form-container>* {
     opacity: 0;
     animation: fadeIn forwards 1.5s 1.2s;
 }
@@ -62,8 +99,10 @@ button:hover {
 }
 
 /* Login form */
-.login-form-container form {
-    height: 30vh;
+
+.login-form-container form,
+.signup-form-container form {
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,24 +115,40 @@ button:hover {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin: 0 2vw;
+    padding: 0 3vw;
 }
 
-.form-links a {
+.form-links a,
+.form-links p {
+
+    margin: 0 2vw;
     text-decoration: none;
     color: #969494;
     font-size: 1.3em;
 }
 
-.login-form-container form input {
+
+.login-form-container form input,
+.signup-form-container form input,
+.signup-form-container select {
     width: 25vw;
-    padding: .5em;
-    font-size: 2em;
-    text-align: center;
-    border-radius: .9em;
-    border: var(--main-blue) 5px solid;
+    padding: .4em 1.5em;
+    font-size: 1.8em;
+    text-align: left;
+    border-radius: 1em;
+    border: var(--main-blue) 4px solid;
     outline: none;
     margin: 2vh 0;
+
+}
+
+/* Giving the placeholder a specific colour
+ * Includes support for all the browsers
+ */
+.login-form-container form input::placeholder,
+.signup-form-container form input::placeholder {
+
+    color: var(--placeholder-col);
 }
 
 /* Hide the placeholder on focus */
@@ -102,10 +157,14 @@ button:hover {
 }
 
 /* Sign in button */
-.login-form-container button {
+
+.login-form-container button,
+.signup-form-container button {
+
     width: fit-content;
     padding: .5em 2em;
     margin: 5vh auto;
+
     font-size: 2em;
     border-radius: 25em;
     background: var(--main-blue);
@@ -115,11 +174,7 @@ button:hover {
     transition: all ease-in-out .2s;
 }
 
-.js-loading *,
-.js-loading *:before,
-.js-loading *:after {
-    animation-play-state: paused !important; /*While something is loading, all animations are paused*/
-}
+
 
 /* Moves the form over when the page loads */
 @keyframes loginAnimation {
@@ -128,9 +183,59 @@ button:hover {
     }
 }
 
-/*  */
+
+/* Fade in animation */
 @keyframes fadeIn {
     100% {
         opacity: 1;
     }
+
+}
+
+/* Sign up specific stylings */
+
+/* Custom select styling */
+.signup-form-container select {
+    position: relative;
+    /* Allows for more customized styling of the select box
+     * Need both for browser compatability */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: #000000;
+    text-align: center;
+
+    /* Background used to add an arrow to the select box */
+    background: url(../assets/select-box-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 3.5em;
+}
+
+/* Select it required, so we can use the invalid selector to select the disabled option*/
+.signup-form-container select:invalid {
+    color: var(--placeholder-col);
+}
+
+.signup-form-container img {
+    width: 35%;
+    margin-bottom: 3vh;
+}
+
+.signup-title {
+    width: 100%;
+    padding-left: 5vw;
+    margin-top: 5vh;
+}
+
+.signup-title h1 {
+    position: absolute;
+    font-size: 3em;
+    color: var(--main-blue);
+    font-weight: 600;
+}
+
+.form-links .sign-in-link {
+    color: var(--main-blue);
+    font-weight: 600;
+
 }
