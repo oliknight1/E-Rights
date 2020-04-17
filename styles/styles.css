@@ -48,7 +48,6 @@ body {
 
 /* Moves the image up slightly and darkens it */
 .login-img-container img {
-    transform: translateY(-20%);
     filter: brightness(50%);
     opacity: 1;
 }
