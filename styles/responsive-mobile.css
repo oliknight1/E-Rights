@@ -183,7 +183,7 @@
     .login-img-container img {
         position: absolute;
         width: 100%;
-        transform: translateY(-10%);
+        transform: translateY(0);
     }
 
     .login-form-container form,
@@ -250,7 +250,7 @@
 
     /* Sign Up Styles */
     .signup-title h1 {
-        font-size: 1em;
+        font-size: 1.3em;
     }
 
     .signup-form-container img {
@@ -266,6 +266,13 @@
 
 /* Large Phones */
 @media screen and (min-width: 736px) and (max-width:812px) and (orientation: landscape) {
+
+    .login-img-container img {
+        position: absolute;
+        width: 100%;
+        transform: translateY(0);
+    }
+
     .login-form-container form {
         margin-top: 5vh;
     }
@@ -274,7 +281,7 @@
     .signup-form-container form input,
     .signup-form-container form select {
         font-size: .9em;
-        border: var(--main-blue) 3px solid;
+        border: var(--main-blue) 2px solid;
     }
 
 
@@ -290,7 +297,7 @@
 
     /* Sign Up Styles */
     .signup-title h1 {
-        font-size: 1em;
+        font-size: 1.3em;
     }
 
     .signup-form-container img {
@@ -301,8 +308,7 @@
 /* Long phones e.g iPhone X */
 @media screen and (min-width: 812px) and (max-width:1024px) and (orientation: landscape) {
 
-    .login-form-container form,
-    .signup-form-container form {
+    .login-form-container form {
         margin-top: 5vh;
     }
 
@@ -313,9 +319,10 @@
     }
 
     .login-form-container form input,
-    .signup-form-container form input {
+    .signup-form-container form input,
+    .signup-form-container form select {
         font-size: .9em;
-        border: var(--main-blue) 3px solid;
+        border: var(--main-blue) 2px solid;
     }
 
 
@@ -328,4 +335,13 @@
         font-size: 1em;
     }
 
+    /* Sign up styles */
+    .signup-form-container img {
+        margin: 0;
+        width: 20%;
+    }
+
+    .signup-form-container form {
+        margin: 0;
+    }
 }
