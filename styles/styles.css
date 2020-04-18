@@ -12,9 +12,11 @@
 
 /* CSS Variables */
 :root {
+
     --darker-blue: #082e40;
     --main-blue: #189dd9;
     --placeholder-col: #969494;
+
 }
 
 /* Change cursor of all buttons on hover */
@@ -36,9 +38,6 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: row;
-
-
-
 }
 
 /* Makes sure that the login form takes up slightly more of the page than the image */
@@ -49,7 +48,6 @@ body {
 
 /* Moves the image up slightly and darkens it */
 .login-img-container img {
-    transform: translateY(-20%);
     filter: brightness(50%);
     opacity: 1;
 }
@@ -59,6 +57,18 @@ body {
 /* Contains the form and the logo of the site */
 .login-form-container,
 .signup-form-container {
+
+
+    justify-content: flex-end;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 80%;
+}
+
+/* Contains the form and the logo of the site */
+.login-form-container {
+
     background: #fdfdfd;
     width: 55vw;
     height: 100vh;
@@ -88,6 +98,7 @@ body {
 }
 
 /* Login form */
+
 .login-form-container form,
 .signup-form-container form {
     height: fit-content;
@@ -108,10 +119,13 @@ body {
 
 .form-links a,
 .form-links p {
+
+    margin: 0 2vw;
     text-decoration: none;
     color: #969494;
     font-size: 1.3em;
 }
+
 
 .login-form-container form input,
 .signup-form-container form input,
@@ -142,12 +156,14 @@ body {
 }
 
 /* Sign in button */
+
 .login-form-container button,
 .signup-form-container button {
 
     width: fit-content;
     padding: .5em 2em;
-    margin: 3vh auto;
+    margin: 5vh auto;
+
     font-size: 2em;
     border-radius: 25em;
     background: var(--main-blue);
@@ -166,11 +182,13 @@ body {
     }
 }
 
+
 /* Fade in animation */
 @keyframes fadeIn {
     100% {
         opacity: 1;
     }
+
 }
 
 /* Sign up specific stylings */
@@ -218,4 +236,5 @@ body {
 .form-links .sign-in-link {
     color: var(--main-blue);
     font-weight: 600;
+
 }
