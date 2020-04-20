@@ -12,9 +12,11 @@
 
 /* CSS Variables */
 :root {
+
     --darker-blue: #082e40;
     --main-blue: #189dd9;
     --placeholder-col: #969494;
+
 }
 
 /* Change cursor of all buttons on hover */
@@ -30,15 +32,12 @@ body {
 /* LOGIN PAGE STYLING */
 
 /* Wrapper around the login page, used for the image and to layout form */
-.login-wrapper {
+.user-form-wrapper {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
     display: flex;
     flex-direction: row;
-
-
-
 }
 
 /* Makes sure that the login form takes up slightly more of the page than the image */
@@ -49,7 +48,6 @@ body {
 
 /* Moves the image up slightly and darkens it */
 .login-img-container img {
-    transform: translateY(-20%);
     filter: brightness(50%);
     opacity: 1;
 }
@@ -57,8 +55,8 @@ body {
 
 
 /* Contains the form and the logo of the site */
-.login-form-container,
-.signup-form-container {
+.user-form-container {
+
     background: #fdfdfd;
     width: 55vw;
     height: 100vh;
@@ -71,25 +69,26 @@ body {
 
 }
 
-.signup-form-container {
+/* Signup overrides styles from .user-form-container for the sign-up page */
+.signup {
     transform: translateX(-100%);
+
 }
 
 /* Select all of the child elements of .login-form-container */
-.login-form-container>*,
-.signup-form-container>* {
+.user-form-container>* {
     opacity: 0;
     animation: fadeIn forwards 1.5s 1.2s;
 }
 
 /* Logo img */
-.login-form-container img {
+.user-form-container img {
     width: 40%;
 }
 
 /* Login form */
-.login-form-container form,
-.signup-form-container form {
+
+.user-form-container form {
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -108,14 +107,16 @@ body {
 
 .form-links a,
 .form-links p {
+
+    margin: 0 2vw;
     text-decoration: none;
     color: #969494;
     font-size: 1.3em;
 }
 
-.login-form-container form input,
-.signup-form-container form input,
-.signup-form-container select {
+
+.user-form-container form input,
+.user-form-container select {
     width: 25vw;
     padding: .4em 1.5em;
     font-size: 1.8em;
@@ -130,24 +131,22 @@ body {
 /* Giving the placeholder a specific colour
  * Includes support for all the browsers
  */
-.login-form-container form input::placeholder,
-.signup-form-container form input::placeholder {
-
+.user-form-container form input::placeholder {
     color: var(--placeholder-col);
 }
 
 /* Hide the placeholder on focus */
-.login-form-container form input:focus::placeholder {
+.user-form-container form input:focus::placeholder {
     color: transparent;
 }
 
 /* Sign in button */
-.login-form-container button,
-.signup-form-container button {
+
+.user-form-container button {
 
     width: fit-content;
     padding: .5em 2em;
-    margin: 3vh auto;
+    margin: 5vh auto;
     font-size: 2em;
     border-radius: 25em;
     background: var(--main-blue);
@@ -166,17 +165,19 @@ body {
     }
 }
 
+
 /* Fade in animation */
 @keyframes fadeIn {
     100% {
         opacity: 1;
     }
+
 }
 
 /* Sign up specific stylings */
 
 /* Custom select styling */
-.signup-form-container select {
+.user-form-container select {
     position: relative;
     /* Allows for more customized styling of the select box
      * Need both for browser compatability */
@@ -193,11 +194,11 @@ body {
 }
 
 /* Select it required, so we can use the invalid selector to select the disabled option*/
-.signup-form-container select:invalid {
+.user-form-container select:invalid {
     color: var(--placeholder-col);
 }
 
-.signup-form-container img {
+.signup img {
     width: 35%;
     margin-bottom: 3vh;
 }
@@ -218,4 +219,5 @@ body {
 .form-links .sign-in-link {
     color: var(--main-blue);
     font-weight: 600;
+
 }

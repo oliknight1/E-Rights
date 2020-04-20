@@ -3,12 +3,12 @@
 
     /* Login Styles */
 
+
     .login-img-container {
         display: none;
     }
 
-    .login-form-container,
-    .signup-form-container {
+    .user-form-container {
         width: 100%;
         transform: translateX(0);
 
@@ -16,14 +16,13 @@
 
 
     /* Remove delay from fade in */
-    .login-form-container>*,
-    .signup-form-container>* {
+    .user-form-container>* {
 
         animation: fadeIn forwards 1.5s;
     }
 
 
-    .login-form-container img {
+    .user-form-container img {
         width: 50%;
     }
 
@@ -35,26 +34,25 @@
         font-size: 1.5em;
     }
 
-    .login-form-container form input,
-    .signup-form-container form input,
-    .signup-form-container form select {
+    .user-form-container form input,
+    .user-form-container form select {
         width: 50vw;
         font-size: 1.8em;
     }
 
-    .login-form-container button,
-    .signup-form-container button {
+    .user-form-container button {
         font-size: 2em;
     }
 
     /* Sign Up Styles */
 
-    .signup-form-container img {
+    .signup img {
         width: 45%;
     }
 
     .signup-title h1 {
         font-size: 3.5em;
+
     }
 }
 
@@ -62,8 +60,8 @@
 @media screen and (min-width:1024px) and (max-width:1366px) and (orientation: landscape) {
 
     /* Login Styles */
-    .login-form-container img,
-    .signup-form-container img {
+
+    .user-form-container img {
         width: 50%;
     }
 
@@ -75,9 +73,8 @@
     }
 
 
-    .login-form-container form input,
-    .signup-form-container form input,
-    .signup-form-container form select {
+    .user-form-container form input,
+    .user-form-container form select {
         font-size: 1.5em;
         width: 30vw;
     }
@@ -93,16 +90,16 @@
         font-size: 2em;
     }
 
-    .signup-form-container form {
+    .signup form {
         margin-top: 3vh;
     }
 
-    .signup-form-container img {
+    .signup img {
         width: 35%;
         margin-bottom: 0vh;
     }
 
-    .signup-form-container button {
+    .signup button {
         font-size: 1.6em;
     }
 }
@@ -111,41 +108,38 @@
 @media screen and (min-width:1024px) and (max-width:1366px) and (orientation: portrait) {
     /*  Login page stylings */
 
-    .login-form-container,
-    .signup-form-container {
+
+    .user-form-container {
         width: 100%;
         transform: translateX(0);
     }
 
 
     /* Remove delay from fade in */
-    .login-form-container>*,
-    .signup-form-container>* {
 
+    .user-form-container>* {
         animation: fadeIn forwards 1.5s;
     }
 
-
-    .login-form-container img,
-    .signup-form-container img {
+    .user-form-container img {
         width: 50%;
     }
 
     /*  Forgotton password and sign up links */
+
     .form-links a,
     .form-links p {
         font-size: 1.8em;
     }
 
-    .login-form-container form input,
-    .signup-form-container form input,
-    .signup-form-container form select {
+    .user-form-container form input,
+    .user-form-container form select {
         width: 50vw;
         font-size: 2.5em;
     }
 
-    .login-form-container button,
-    .signup-form-container button {
+
+    .user-form-container button {
         font-size: 3em;
     }
 }
@@ -156,37 +150,36 @@
 
     /*  Login page stylings */
 
-    .login-form-container img {
+    .user-form-container img {
         width: 60%;
     }
 
 
+    .login-img-container img {
+        position: absolute;
+        width: auto;
+        height: 100%;
+        transform: translateY(0%);
+    }
 
-    .login-form-container form input,
-    .signup-form-container form input,
-    .signup-form-container form select {
+    .user-form-container form input,
+    .user-form-container form select {
         width: 30vw;
         font-size: 2em;
     }
 
-
-
-    .login-form-container button {
-        font-size: 2.2em;
-    }
 
     .form-links a,
     .form-links p {
         font-size: 1.4em;
     }
 
-    .login-form-container button,
-    .signup-form-container button {
+    .user-form-container button {
         font-size: 2.2em;
     }
 
     /* Sign Up Styles */
-    .signup-form-container img {
+    .signup img {
         width: 40%;
     }
 
