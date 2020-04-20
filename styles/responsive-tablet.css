@@ -1,4 +1,6 @@
-/* Small tablets - portrait */
+/* Portrait Styles */
+
+/* Small tablets */
 @media screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait) {
 
     /* Login Styles */
@@ -56,55 +58,7 @@
     }
 }
 
-/* Small tablets - landscape */
-@media screen and (min-width:1024px) and (max-width:1366px) and (orientation: landscape) {
-
-    /* Login Styles */
-
-    .user-form-container img {
-        width: 50%;
-    }
-
-    .login-img-container img {
-        position: absolute;
-        width: auto;
-        height: 100%;
-        transform: translateY(0%);
-    }
-
-
-    .user-form-container form input,
-    .user-form-container form select {
-        font-size: 1.5em;
-        width: 30vw;
-    }
-
-    .form-links a,
-    .form-links p {
-        font-size: 1em;
-    }
-
-    /* Sign Up Styles */
-
-    .signup-title h1 {
-        font-size: 2em;
-    }
-
-    .signup form {
-        margin-top: 3vh;
-    }
-
-    .signup img {
-        width: 35%;
-        margin-bottom: 0vh;
-    }
-
-    .signup button {
-        font-size: 1.6em;
-    }
-}
-
-/* Large tablets - portrait */
+/* Large tablets  */
 @media screen and (min-width:1024px) and (max-width:1366px) and (orientation: portrait) {
     /*  Login page stylings */
 
@@ -141,6 +95,55 @@
 
     .user-form-container button {
         font-size: 3em;
+    }
+}
+
+/* Landscape styles */
+
+/* Small tablets - landscape */
+@media screen and (min-width:1024px) and (max-width:1366px) and (orientation: landscape) {
+
+    /* Login Styles */
+
+    .user-form-container img {
+        width: 50%;
+    }
+
+    .login-img-container img {
+        transform: translateY(0);
+        height: 100%;
+        width: 110%;
+    }
+
+
+    .user-form-container form input,
+    .user-form-container form select {
+        font-size: 1.5em;
+        width: 30vw;
+    }
+
+    .form-links a,
+    .form-links p {
+        font-size: 1em;
+    }
+
+    /* Sign Up Styles */
+
+    .signup-title h1 {
+        font-size: 2em;
+    }
+
+    .signup form {
+        margin-top: 3vh;
+    }
+
+    .signup img {
+        width: 35%;
+        margin-bottom: 0vh;
+    }
+
+    .signup button {
+        font-size: 1.6em;
     }
 }
 

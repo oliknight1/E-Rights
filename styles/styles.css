@@ -27,6 +27,7 @@ button:hover {
 body {
     width: 100vw;
     overflow: hidden;
+
 }
 
 /* LOGIN PAGE STYLING */
@@ -43,13 +44,18 @@ body {
 /* Makes sure that the login form takes up slightly more of the page than the image */
 .login-img-container {
     width: 45vw;
-
+    height: 100vh;
+    overflow: hidden;
 }
 
 /* Moves the image up slightly and darkens it */
 .login-img-container img {
     filter: brightness(50%);
     opacity: 1;
+    width: 100%;
+    position: absolute;
+    /* Move the image up so you can see the laptop */
+    transform: translateY(-25%);
 }
 
 

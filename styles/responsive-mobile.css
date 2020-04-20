@@ -192,6 +192,11 @@
 
 /* Large Phones */
 @media screen and (min-width: 736px) and (max-width:812px) and (orientation: landscape) {
+
+    .login-img-container img {
+        transform: translateY(-15%);
+    }
+
     .user-form-container form {
         margin-top: 5vh;
     }
@@ -216,6 +221,7 @@
 
 /* Long phones e.g iPhone X */
 @media screen and (min-width: 812px) and (max-width:1024px) and (orientation: landscape) {
+
 
     .user-form-container form {
         margin-top: 5vh;
