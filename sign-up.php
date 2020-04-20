@@ -13,7 +13,10 @@
 <body>
     <!-- Wrapper around the whole page, so we can apply styles to this rather than body -->
     <div class="user-form-wrapper">
-        <!-- Contains only the image shown on the left -->
+
+        <div class="login-img-container">
+            <img src="./assets/login-img.jpeg" alt="">
+        </div>
         <div class="user-form-container signup">
             <div class="signup-title">
                 <h1>Sign Up</h1>
@@ -48,9 +51,7 @@
             </form>
         </div>
 
-        <div class="login-img-container">
-            <img src="./assets/login-img.jpeg" alt="">
-        </div>
+
     </div>
     <script type="text/javascript" src="js/main.js"></script>
 </body>

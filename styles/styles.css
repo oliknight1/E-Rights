@@ -24,10 +24,11 @@ button:hover {
     cursor: pointer;
 }
 
+html,
 body {
-    width: 100vw;
-    overflow: hidden;
-
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 /* LOGIN PAGE STYLING */
@@ -37,28 +38,20 @@ body {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    display: flex;
-    flex-direction: row;
 }
 
-/* Makes sure that the login form takes up slightly more of the page than the image */
-.login-img-container {
-    width: 45vw;
-    height: 100vh;
-    overflow: hidden;
-}
 
 /* Moves the image up slightly and darkens it */
 .login-img-container img {
     filter: brightness(50%);
     opacity: 1;
     width: 100%;
+
     position: absolute;
     /* Move the image up so you can see the laptop */
-    transform: translateY(-25%);
+    transform: translateY(-26%);
+
 }
-
-
 
 /* Contains the form and the logo of the site */
 .user-form-container {
@@ -72,6 +65,7 @@ body {
     align-items: center;
     transform: translateX(100%);
     animation: loginAnimation forwards 1.5s;
+    float: right;
 
 }
 
@@ -190,8 +184,6 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
     color: #000000;
-    text-align: center;
-
     /* Background used to add an arrow to the select box */
     background: url(../assets/select-box-arrow.svg);
     background-repeat: no-repeat;
@@ -204,7 +196,9 @@ body {
     color: var(--placeholder-col);
 }
 
+/* Image inside the form on login page */
 .signup img {
+
     width: 35%;
     margin-bottom: 3vh;
 }
@@ -226,4 +220,9 @@ body {
     color: var(--main-blue);
     font-weight: 600;
 
+}
+
+/* Make sure the sign up form is on the left */
+.signup {
+    float: left;
 }

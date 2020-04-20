@@ -27,7 +27,7 @@
                 <input type="password" placeholder="Password">
                 <div class="form-links">
                     <a href="under-construction.html">Forgotten Password</a>
-                    <a href="#">Sign Up</a>
+                    <a href="sign-up.php">Sign Up</a>
                 </div>
                 <button>Sign in</button>
             </form>
