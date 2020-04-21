@@ -1,0 +1,162 @@
+
+/* Small Phones - portrait*/
+
+@media screen and (min-width: 320px) and (max-width:375px) and (orientation: portrait) {
+
+.container-404 {
+    width: 95vw;
+}
+
+.image-404 img {
+    width: 70vw;
+    height: 25vh;
+}
+
+.header-404 {
+    font-size: 3vh;
+    padding-top: 0vh;
+}
+
+.text-404 {
+    font-size: 2.5vh;
+}
+
+.button-container-404 {
+    width: 50vw;
+}
+
+.button-404 {
+    width: 50vw;
+    border-radius: 55px;
+}
+
+.button-404:active{
+width: 50vw;
+height: 7.5vh;
+}
+}
+
+/* Medium Phones - portrait*/
+
+@media screen and (min-width: 375px) and (max-width:414px) and (orientation: portrait) {
+
+.container-404 {
+    width: 95vw;
+}
+
+.image-404 img {
+    width: 70vw;
+    height: 25vh;
+}
+
+.header-404 {
+    font-size: 3vh;
+    padding-top: 0vh;
+}
+
+.text-404 {
+    font-size: 2.5vh;
+}
+
+.button-container-404 {
+    width: 50vw;
+}
+
+.button-404 {
+    width: 50vw;
+    border-radius: 55px;
+}
+
+.button-404:active{
+width: 50vw;
+height: 7.5vh;
+}
+}
+
+
+
+/* Large Phones - portrait*/
+
+@media screen and (min-width: 414px) and (max-width:768px) and (orientation: portrait) {
+
+.container-404 {
+    width: 95vw;
+}
+
+.image-404 img {
+    width: 70vw;
+    height: 25vh;
+}
+
+.header-404 {
+    font-size: 4vh;
+    padding-top: 0vh;
+}
+
+.text-404 {
+    font-size: 2.5vh;
+}
+
+.button-container-404 {
+    width: 60vw;
+}
+
+.button-404 {
+    width: 60vw;
+    border-radius: 55px;
+}
+
+
+}
+
+
+
+/* Small Phones -Landscape Phones*/
+@media screen and (min-width: 568px) and (max-width:667px) and (orientation: landscape) {
+.container-404 {
+    width: 80vw;
+}
+
+.button-404 {
+    width: 20vw;
+    border-radius: 55px;
+}
+
+.button-404:active {
+    width: 20vw;
+}
+}
+
+/* Medium Phones */
+@media screen and (min-width: 667px) and (max-width:736px) and (orientation: landscape) {
+
+.container-404 {
+    width: 80vw;
+}
+
+.button-404 {
+    width: 20vw;
+    border-radius: 55px;
+}
+
+.button-404:active {
+    width: 20vw;
+}
+}
+
+/* Large Phones */
+@media screen and (min-width: 736px) and (max-width:812px) and (orientation: landscape) {
+
+.button-container-404 {
+    width: 60vw;
+}
+
+.button-404 {
+    width: 20vw;
+    border-radius: 55px;
+}
+
+.button-404:active {
+    width: 20vw;
+}
+}

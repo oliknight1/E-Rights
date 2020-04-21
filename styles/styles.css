@@ -1,0 +1,169 @@
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* 404 page CSS*/
+.wrapper-404 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-404 {
+    height: 100vh;
+    width: 60vw;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-404 img {
+    height: 25vh;
+    width: 25vw;
+}
+
+.header-404 {
+    padding-top:2vh;
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: #707070;
+    font-size: 6vh;
+    text-align: center;
+}
+
+.text-404 {
+       padding-top:1vh;
+    font-family: 'Raleway';
+    color: #008ED2;
+    font-size: 3vh;
+       text-align: center;
+}
+
+.button-404 {
+    height:7.5vh;
+    width:12vw;
+    background-color: #008ED2;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway';
+    color: white;
+    font-size: 3vh;
+    font-weight: 550;
+    box-shadow: 0 10px 6px -6px #777;
+     transition: ease-in-out 0.3s;
+     text-decoration: none;
+}
+
+.button-404:hover{
+    background-color: #707070;
+     transition: ease-in-out 0.3s;
+}
+
+.button-404:active{
+    height: 7.2vh;
+    width: 11.5vw;
+    transition: ease-in-out 0.1s;
+}
+
+.button-container-404 {
+    margin-top: 5vh;
+    height:7.5vh;
+    width:12vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Construction Page CSS*/
+
+.construction-wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.construction-container {
+    height: 100vh;
+    width: 60vw;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.construction-image img {
+    height: 25vh;
+    width: 25vw;
+}
+
+.construction-header {
+    padding-top:2vh;
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: #707070;
+    font-size: 6vh;
+    text-align: center;
+}
+
+.construction-text {
+       padding-top:1vh;
+    font-family: 'Raleway';
+    color: #008ED2;
+    font-size: 3vh;
+       text-align: center;
+}
+
+.construction-button {
+    height:7.5vh;
+    width:12vw;
+    background-color: #008ED2;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway';
+    color: white;
+    font-size: 3vh;
+    font-weight: 550;
+    box-shadow: 0 10px 6px -6px #777;
+     transition: ease-in-out 0.3s;
+     text-decoration: none;
+}
+
+.construction-button:hover{
+    background-color: #707070;
+     transition: ease-in-out 0.3s;
+}
+
+.construction-button:active{
+    height: 7.2vh;
+    width: 11.5vw;
+    transition: ease-in-out 0.1s;
+}
+
+.construction-button-container {
+    margin-top: 5vh;
+    height:7.5vh;
+    width:12vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
