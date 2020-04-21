@@ -40,6 +40,15 @@ body {
     overflow: hidden;
 }
 
+.login-img-container {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background: #000;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
 
 /* Moves the image up slightly and darkens it */
 .login-img-container img {
@@ -47,7 +56,6 @@ body {
     opacity: 1;
     width: 100%;
 
-    position: absolute;
     /* Move the image up so you can see the laptop */
     transform: translateY(-26%);
 
