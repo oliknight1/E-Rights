@@ -23,7 +23,7 @@ if (isset($_POST["username"])) {
     <div class="user-form-wrapper">
 
         <div class="login-img-container">
-            <img src="./assets/login-img.jpeg" alt="">
+            <img src="./assets/login-img.jpeg" class="signup-img">
         </div>
         <div class="user-form-container signup">
             <div class="signup-title">
