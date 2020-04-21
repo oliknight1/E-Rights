@@ -17,4 +17,4 @@ function togglePasswordVisibility(textBoxID) {
     } else {
         textBox.type = 'text';
     }
-
+}
