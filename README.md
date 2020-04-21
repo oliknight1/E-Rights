@@ -36,8 +36,6 @@ remotePath is where you specify the exact folder that you want to open so this w
 
 Also it will likely create and save itself in a file called `.vscode` this will be ignored by git when you upload stuff. If you use certain plugins or whatever that create configuration files either see if that can be saved into this .vscode folder (They likely will already be saved there) or if not look into .gitignore
 
-Another great plugin is GitLens (https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens), it makes working with Git inside vscode  
-
 ## Workflow
 
 If we work feature by feature that will be the best way of working (pretty sure it's also the Agile way of working) e.g I create the navigation for desktop, then instead of moving onto the rest of the page, I make sure the nav works on all screen sizes.
