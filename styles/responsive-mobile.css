@@ -198,7 +198,7 @@
     .login-img-container img {
         position: absolute;
         width: 100%;
-        transform: translateY(-10%);
+
     }
 
     .user-form-container form {
@@ -282,9 +282,7 @@
 /* Large Phones */
 @media screen and (min-width: 736px) and (max-width:812px) and (orientation: landscape) {
 
-    .login-img-container img {
-        transform: translateY(-15%);
-    }
+    .login-img-container img {}
 
     .user-form-container form {
         margin-top: 2vh;

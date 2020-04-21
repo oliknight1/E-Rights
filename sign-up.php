@@ -1,3 +1,11 @@
+<?php
+
+if (isset($_POST["username"])) {
+    echo "<script> console.log(true) </script>";
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +23,7 @@
     <div class="user-form-wrapper">
 
         <div class="login-img-container">
-            <img src="./assets/login-img.jpeg" alt="">
+            <img src="./assets/login-img.jpeg" class="signup-img">
         </div>
         <div class="user-form-container signup">
             <div class="signup-title">
@@ -23,14 +31,14 @@
             </div>
             <img src="assets/illustrations/sign-up-img.svg" alt="">
             <form method="POST">
-                <input type="text" placeholder="Username" required>
+                <input type="text" placeholder="Username" required name="username">
 
-                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Password" required name="password">
 
                 <input type="password" placeholder="Repeat Password" required>
 
 
-                <select name="security-question" id="" required>
+                <select name="security-question" required>
                     <!-- First option is the default
                          disabled means it cannot be selected by the user
                          hidden means it cannot be seen by the use
@@ -42,7 +50,7 @@
 
 
 
-                <input type="text" placeholder="Answer" required>
+                <input type="text" placeholder="Answer" required name="security-answer">
                 <div class="form-links">
                     <p>Already signed up?</p>
                     <a href="login.php" class="sign-in-link">Sign in</a>
