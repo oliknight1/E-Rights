@@ -3,6 +3,8 @@
 
 @media screen and (min-width: 320px) and (max-width:375px) and (orientation: portrait) {
 
+
+/* 404 */
 .container-404 {
     width: 95vw;
 }
@@ -34,11 +36,50 @@
 width: 50vw;
 height: 7.5vh;
 }
+
+
+/* construction */
+
+/* 404 */
+.construction-container {
+    width: 95vw;
+}
+
+.construction-image img {
+    width: 70vw;
+    height: 25vh;
+}
+
+.construction-header {
+    font-size: 3vh;
+    padding-top: 0vh;
+}
+
+.construction-text {
+    font-size: 2.5vh;
+}
+
+.construction-button-container {
+    width: 50vw;
+}
+
+.construction-button {
+    width: 50vw;
+    border-radius: 55px;
+}
+
+.construction-button:active{
+width: 50vw;
+height: 7.5vh;
+}
 }
 
 /* Medium Phones - portrait*/
 
 @media screen and (min-width: 375px) and (max-width:414px) and (orientation: portrait) {
+
+
+/* 404 */
 
 .container-404 {
     width: 95vw;
@@ -68,6 +109,42 @@ height: 7.5vh;
 }
 
 .button-404:active{
+width: 50vw;
+height: 7.5vh;
+}
+
+
+
+/* construction */
+
+.construction-container {
+    width: 95vw;
+}
+
+.construction-image img {
+    width: 70vw;
+    height: 25vh;
+}
+
+.construction-header {
+    font-size: 3vh;
+    padding-top: 0vh;
+}
+
+.construction-text {
+    font-size: 2.5vh;
+}
+
+.construction-button-container {
+    width: 50vw;
+}
+
+.construction-button {
+    width: 50vw;
+    border-radius: 55px;
+}
+
+.construction-button:active{
 width: 50vw;
 height: 7.5vh;
 }
@@ -78,6 +155,8 @@ height: 7.5vh;
 /* Large Phones - portrait*/
 
 @media screen and (min-width: 414px) and (max-width:768px) and (orientation: portrait) {
+
+/* 404 */
 
 .container-404 {
     width: 95vw;
@@ -107,12 +186,45 @@ height: 7.5vh;
 }
 
 
+/* construction */
+
+.construction-container {
+    width: 95vw;
+}
+
+.construction-image img {
+    width: 70vw;
+    height: 25vh;
+}
+
+.construction-header {
+    font-size: 4vh;
+    padding-top: 0vh;
+}
+
+.construction-text {
+    font-size: 2.5vh;
+}
+
+.construction-button-container {
+    width: 60vw;
+}
+
+.construction-button {
+    width: 60vw;
+    border-radius: 55px;
+}
+
+
 }
 
 
 
 /* Small Phones -Landscape Phones*/
 @media screen and (min-width: 568px) and (max-width:667px) and (orientation: landscape) {
+
+/* 404 */
+
 .container-404 {
     width: 80vw;
 }
@@ -123,6 +235,22 @@ height: 7.5vh;
 }
 
 .button-404:active {
+    width: 20vw;
+}
+
+
+/* construction */
+
+.construction-container {
+    width: 80vw;
+}
+
+.construction-button {
+    width: 20vw;
+    border-radius: 55px;
+}
+
+.construction-button:active {
     width: 20vw;
 }
 }
@@ -130,6 +258,8 @@ height: 7.5vh;
 /* Medium Phones */
 @media screen and (min-width: 667px) and (max-width:736px) and (orientation: landscape) {
 
+/* 404 */
+
 .container-404 {
     width: 80vw;
 }
@@ -142,10 +272,28 @@ height: 7.5vh;
 .button-404:active {
     width: 20vw;
 }
+
+
+/* construction */
+
+.construction-container {
+    width: 80vw;
+}
+
+.construction-button {
+    width: 20vw;
+    border-radius: 55px;
+}
+
+.construction-button:active {
+    width: 20vw;
+}
 }
 
 /* Large Phones */
 @media screen and (min-width: 736px) and (max-width:812px) and (orientation: landscape) {
+
+/* 404 */
 
 .button-container-404 {
     width: 60vw;
@@ -157,6 +305,22 @@ height: 7.5vh;
 }
 
 .button-404:active {
+    width: 20vw;
+}
+
+
+/* construction */
+
+.construction-button-container {
+    width: 60vw;
+}
+
+.construction-button {
+    width: 20vw;
+    border-radius: 55px;
+}
+
+.construction-button:active {
     width: 20vw;
 }
 }
