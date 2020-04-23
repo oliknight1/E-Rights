@@ -27,6 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     } else if (isset($_GET['username'])) {
         // display the data
         // make sure the username is an is string
-        print_r($user->getSingleUserById(strval($_GET['username'])));
+        print_r($user->getSingleUser(strval($_GET['username'])));
     }
 }
+?>

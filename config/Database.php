@@ -16,7 +16,7 @@ class Database
         $this->conn = null;
 
         // Set the connection to the database
-        $this->conn = new mysqli($this->dbHost, $this->dbUserName, $this->dbPass, $this->dbName);
+        $this->conn = new mysqli($this->dbHost, $this->dbUserName, $this->dbPass,$this->dbName);
 
         // If there is an error connecting to the database, terminate
         if ($this->conn->connect_error) {
@@ -26,3 +26,11 @@ class Database
         return $this->conn;
     }
 }
+
+$db = new Database();
+
+$db->connect();
+
+
+
+?>
