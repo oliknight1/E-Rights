@@ -148,7 +148,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <h1>Sign Up</h1>
             </div>
             <img src="assets/illustrations/sign-up-img.svg" alt="">
-            <form method="POST" action="index.php">
+
+            <!-- Sing up form -->
+            <form method="POST" action="home.php">
                 <input type="text" placeholder="Username" required name="username">
 
                 <input type="password" placeholder="Password" required name="password">
