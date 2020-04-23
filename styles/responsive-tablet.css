@@ -99,7 +99,7 @@
 /* construction */
 
 .construction-container {
-    width:80vw;
+    width:90vw;
 }
 
 .construction-image img {
@@ -113,20 +113,24 @@
 }
 
 .construction-button-container {
-    width: 30vw;
+    width: 35vw;
     height: 8vh;
     font-size: 2.5vh;
 }
 
 .construction-button {
-    width: 30vw;
+    width: 35vw;
     height: 8vh;
     font-size: 3vh;
 }
 
 .construction-button:active{
-   width: 30vw;
+   width: 35vw;
    height: 8vh;
+}
+
+.construction-text {
+    font-size: 2.5vh;
 }
 }
 
@@ -154,6 +158,24 @@
 
 .construction-button {
     width: 17vw;
+    font-size: 3.5vh;
+}
+
+.construction-button:active{
+   width: 17vw;
+}
+
+.construction-image img {
+    width: 35vw;
+    height:30vh;
+}
+
+.construction-header {
+    font-size: 7vh;
+}
+
+.construction-text {
+    font-size: 4vh;
 }
 }
 
@@ -176,11 +198,16 @@
 /* construction */
 
 .construction-button-container {
-    width: 17vw;
+    width: 18vw;
 }
 
 .construction-button {
-    width: 17vw;
-    font-size: 2.5vh;
+    width: 18vw;
+    font-size: 3.5vh;
+}
+
+.construction-button:active{
+   width: 18vw;
+
 }
 }
