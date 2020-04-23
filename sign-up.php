@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 if ($stmt->num_rows == 1) {
                     $usernameErr = "Username has already been taken";
                 } else {
-                    $username = strip_tags(trim($_POST['username']));
+                    $username = htmlspecialchars((trim($_POST['username'])));
                 }
             } else {
             }
@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $passwordErr = "Password needs to be at least 5 characters";
     } else {
-        $password = strip_tags(trim($_POST['password']));
+        $password = htmlspecialchars((trim($_POST['password'])));
 
         // Validate the repeated password
         if (empty(trim($_POST['repeat-password']))) {
@@ -75,9 +75,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // // Validate secuirty answer
         if (empty(trim($_POST['security-answer']))) {
             $securityAnswerErr = "Please enter a security answer";
-            echo "<h1>ERROR</h1>";
         } else {
-            $securityAnswer = strip_tags(trim($_POST['securityAnswer']));
+            $securityAnswer  = htmlspecialchars((trim($_POST['security-answer'])));
         }
 
         // Check for any input errors before inserting data into the database
@@ -94,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $stmt->bind_param("ssss", $paramUsername, $paramPass, $paramSecurityQ, $paramSecurityA);
 
                 // Set the parameters
-                $paramUsername = $username;
+                $paramUsername = mysqli_real_escape_string($conn, $username);
 
                 // Hash the password so the users actual password isn't saved in a database, instead a hashed version is stored
                 $paramPass = password_hash($password, PASSWORD_DEFAULT);
@@ -104,16 +103,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 }
 
                 if (isset($_POST['security-answer'])) {
-                    $paramSecurityA = $_POST['security-answer'];
+                    $paramSecurityA = mysqli_real_escape_string($conn, $_POST['security-answer']);
                 }
+
 
                 // Execute prepared statement
-                if ($stmt->execute()) {
-
-                    //
-                } else {
-                    // echo "<h1>errror</h1>";
-                }
+                $stmt->execute();
                 $stmt->close();
             }
         }
@@ -150,7 +145,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <img src="assets/illustrations/sign-up-img.svg" alt="">
 
             <!-- Sing up form -->
-            <form method="POST" action="home.php">
+            <form method="POST" action="">
                 <input type="text" placeholder="Username" required name="username">
 
                 <input type="password" placeholder="Password" required name="password">
