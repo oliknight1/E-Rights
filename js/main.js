@@ -20,3 +20,21 @@ function togglePasswordVisibility(textBoxID) {
 
 }
 
+function checkUserPassInput(input) {
+    if(/^[a-zA-Z0-9-_]*$/.test(input) && input.length>= 5) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function checkSecurityInput(input) {
+    if(/^[a-zA-Z0-9-_ ]*$/.test(input) && input.length>= 3) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
+
