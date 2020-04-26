@@ -1,122 +1,60 @@
 <?php
+require_once 'core/init.php';
 
-require_once "config/Database.php";
+if (Input::exists()) {
+    if (Token::checkToken(Input::getInput('token')))
 
-$username = '';
-$usernameErr = '';
 
-$password = '';
-$passwordErr = '';
+        echo 'Ran';
+    $validate = new Validation();
 
-$repeatPass = '';
-$repeatPassErr = '';
+    // Checks the input fields against certain validation checks
+    $validation = $validate->checkData($_POST, array(
+        'username' => array(
+            'name' => 'username',
+            'required' => true,
+            'min' => 3,
+            'max' => 30,
+            'unique' => 'users'
+        ),
+        'password' => array(
+            'name' => 'password',
+            'required' => true,
+            'min' => 5
+        ),
+        'repeat-password' => array(
+            'name' => 'repated password',
+            'required' => true,
+            'matches' => 'password'
+        ),
+        'security-answer' => array(
+            'name' => 'security answer',
+            'required' => true,
+            'min' => 3
+        ),
 
-$securityAnswer = '';
-$securityAnswerErr = '';
-
-$db = new Database();
-$conn = $db->connect();
-// Check if POST request was made
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
-    // Valdiate username 
-    if (empty(trim($_POST['username']))) {
-        $usernameErr = 'Please enter a username';
+    ));
+    if ($validation->checkPassed()) {
+        $user = new User();
+        try {
+            $user->createUser(array(
+                'username' => Input::getInput('username'),
+                'password' => password_hash(Input::getInput('password'), PASSWORD_DEFAULT),
+                'security_question' => Input::getInput('security-question'),
+                'security_answer' =>  Input::getInput('security-answer'),
+            ));
+            Redirect::redirectTo('index.php');
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
     } else {
-
-        // Create a prepared statement to protect against SQL injection
-        // We later bind ? to the username
-        $sql = "SELECT id FROM users WHERE username = ?";
-        // Check the statement prepares successfully
-        if ($stmt = $conn->prepare($sql)) {
-
-            // // This binds the username to the ? in the sql statement
-            // // 's' stands for string
-            $stmt->bind_param('s', $paramUsername);
-
-            // // Remove whitespace before and after username
-            $paramUsername = trim($_POST['username']);
-
-            // // Attempt to execute the prepared statement
-            if ($stmt->execute()) {
-                // Store result
-                $stmt->store_result();
-
-                if ($stmt->num_rows == 1) {
-                    $usernameErr = "Username has already been taken";
-                } else {
-                    $username = htmlspecialchars((trim($_POST['username'])));
-                }
-            } else {
-            }
-
-            $stmt->close();
+        foreach ($validation->displayErrors() as $error) {
+            // Displays the errros on the page
+            // Look to change this depending on how we want the errors to appear
+            echo $error;
         }
-    }
-    // // Validate password 
-    if (empty(trim($_POST['password']))) {
-        $passwordErr = 'Please enter a password';
-    } elseif (strlen(trim($_POST['password'])) < 5) {
-
-        $passwordErr = "Password needs to be at least 5 characters";
-    } else {
-        $password = htmlspecialchars((trim($_POST['password'])));
-
-        // Validate the repeated password
-        if (empty(trim($_POST['repeat-password']))) {
-            $repeatPassErr = 'Please repeat your password';
-        } else {
-            $repeatPass = trim($_POST['repeatPassword']);
-            if (empty($repeatPassErr) && ($password != $repeatPass)) {
-                $repeatPassErr = 'Passwords do not match, please try again';
-            }
-        }
-
-        // // Validate secuirty answer
-        if (empty(trim($_POST['security-answer']))) {
-            $securityAnswerErr = "Please enter a security answer";
-        } else {
-            $securityAnswer  = htmlspecialchars((trim($_POST['security-answer'])));
-        }
-
-        // Check for any input errors before inserting data into the database
-        if (empty($usernameErr) && empty($passwordErr) && empty($securityAnswerErr)) {
-
-
-            // Prepare the insert statement
-            $sql = "INSERT INTO `users`( `username`, `password`, `security_question`, `security_answer`) VALUES (?,?,?,?)";
-
-            if ($stmt = $conn->prepare($sql)) {
-
-
-                // Bind variables to the prepared statment 
-                $stmt->bind_param("ssss", $paramUsername, $paramPass, $paramSecurityQ, $paramSecurityA);
-
-                // Set the parameters
-                $paramUsername = mysqli_real_escape_string($conn, $username);
-
-                // Hash the password so the users actual password isn't saved in a database, instead a hashed version is stored
-                $paramPass = password_hash($password, PASSWORD_DEFAULT);
-
-                if (isset($_POST['security-question'])) {
-                    $paramSecurityQ = $_POST['security-question'];
-                }
-
-                if (isset($_POST['security-answer'])) {
-                    $paramSecurityA = mysqli_real_escape_string($conn, $_POST['security-answer']);
-                }
-
-
-                // Execute prepared statement
-                $stmt->execute();
-                $stmt->close();
-            }
-        }
-        $conn->close();
     }
 }
-
-
 ?>
 
 <!DOCTYPE html>
@@ -171,6 +109,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <a href="login.php" class="sign-in-link">Sign in</a>
                 </div>
                 <button>Sign Up</button>
+                <!-- Creates a token that is unique to the user, protects against CSRF attacks  -->
+                <!-- This token is also set as a session to the user -->
+                <input type="hidden" name="token" value=" <?php echo Token::createToken() ?>">
             </form>
         </div>
 
