@@ -53,10 +53,13 @@ class User
 
         // Check if the user exists
         if ($user) {
+
             // verify that the password inputted is the same as the hashed password stored in the db
-            if (password_verify(Input::getInput('password'), $this->getData()->password)); {
+            if (password_verify($password, $this->getData()->password)) {
+
                 // Store user id inside the session
                 Session::putSession($this->sessionName, $this->getData()->id);
+                return true;
             }
         }
         return false;

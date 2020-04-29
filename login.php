@@ -19,7 +19,8 @@ if (Input::exists()) {
             $login = $user->login(Input::getInput('username'), Input::getInput('password'));
 
             if ($login) {
-                Redirect::redirectTo('index.php');
+
+                Redirect::redirectTo('home.php');
             }
         } else {
             foreach ($validation->displayErrors() as $error) {
