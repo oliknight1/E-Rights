@@ -22,6 +22,12 @@ function slideShow() {
         slides[i].style.display = "none";
     }
     slides[slideNum].style.display = "flex";
+
+    var dots = document.getElementsByClassName("welcome-dot");
+    for(var j = 0;j < dots.length; j++) {
+        dots[j].className = dots[j].className.replace(" welcome-dot-selected","");
+    }
+    dots[slideNum].className += " welcome-dot-selected";
     setTimeout(slideShow,5000);
 }
 
