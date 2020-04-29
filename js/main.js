@@ -1,4 +1,3 @@
-
 const loginImg = document.querySelector(".login-img-container img");
 loginImg.addEventListener("load", () => {
     // Use opacity as somr browsers will not attempt to load an image if display:none
@@ -17,24 +16,4 @@ function togglePasswordVisibility(textBoxID) {
     } else {
         textBox.type = 'text';
     }
-
 }
-
-function checkUserPassInput(input) {
-    if(/^[a-zA-Z0-9-_]*$/.test(input) && input.length>= 5) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-function checkSecurityInput(input) {
-    if(/^[a-zA-Z0-9-_ ]*$/.test(input) && input.length>= 3) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-
-

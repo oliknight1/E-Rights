@@ -111,7 +111,7 @@
 
 
     .login-img-container img {
-
+        transform: translateY(0);
         height: 100%;
         width: 110%;
     }
@@ -120,7 +120,8 @@
     .user-form-container form input,
     .user-form-container form select {
         font-size: 1.5em;
-        width: 30vw;
+        width: 35vw;
+
     }
 
     .form-links a,
@@ -168,7 +169,6 @@
 
     .user-form-container form input,
     .user-form-container form select {
-        width: 30vw;
         font-size: 2em;
     }
 

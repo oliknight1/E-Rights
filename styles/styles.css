@@ -49,16 +49,18 @@ body {
     overflow: hidden;
 }
 
-/* Moves the image up slightly and darkens it */
+/*  Darkens the image */
 .login-img-container img {
     filter: brightness(50%);
-    opacity: 1;
-    height: 100%;
-
+    transform: translateY(-20%);
+    width: 100%;
 }
 
 .signup-img {
     float: right;
+
+
+
 }
 
 /* Contains the form and the logo of the site */
@@ -72,14 +74,14 @@ body {
     justify-content: space-evenly;
     align-items: center;
     transform: translateX(100%);
-    animation: loginAnimation forwards 1.5s;
+
     float: right;
 
 }
 
 /* Signup overrides styles from .user-form-container for the sign-up page */
 .signup {
-    transform: translateX(-100%);
+    transform: translateX(-200%);
 
 }
 
@@ -125,12 +127,12 @@ body {
 
 .user-form-container form input,
 .user-form-container select {
-    width: 25vw;
+    width: 20vw;
     padding: .4em 1.5em;
-    font-size: 1.8em;
+    font-size: 1.4em;
     text-align: left;
     border-radius: 1em;
-    border: var(--main-blue) 4px solid;
+    border: var(--main-blue) 3px solid;
     outline: none;
     margin: 2vh 0;
 
@@ -191,7 +193,6 @@ body {
      * Need both for browser compatability */
     -webkit-appearance: none;
     -moz-appearance: none;
-    color: #000000;
     /* Background used to add an arrow to the select box */
     background: url(../assets/select-box-arrow.svg);
     background-repeat: no-repeat;
@@ -204,22 +205,28 @@ body {
     color: var(--placeholder-col);
 }
 
+.user-form-container select:valid {
+    color: #000000;
+
+}
+
 /* Image inside the form on login page */
 .signup img {
-
-    width: 35%;
+    width: 30%;
     margin-bottom: 3vh;
 }
 
 .signup-title {
     width: 100%;
     padding-left: 5vw;
-    margin-top: 5vh;
+    padding-top: 2vh;
+    position: absolute;
+    top: 0;
 }
 
 .signup-title h1 {
-    position: absolute;
-    font-size: 3em;
+
+    font-size: 2em;
     color: var(--main-blue);
     font-weight: 600;
 }
@@ -227,7 +234,6 @@ body {
 .form-links .sign-in-link {
     color: var(--main-blue);
     font-weight: 600;
-
 }
 
 /* Make sure the sign up form is on the left */
