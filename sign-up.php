@@ -1,5 +1,4 @@
 <?php
-
 require_once 'core/init.php';
 
 if (Input::exists()) {
@@ -51,7 +50,6 @@ if (Input::exists()) {
         }
     }
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -79,12 +77,9 @@ if (Input::exists()) {
             </div>
             <img src="assets/illustrations/sign-up-img.svg" alt="">
 
-
             <!-- Sing up form -->
-
-            <form method="POST">
+            <form method="POST" action="">
                 <input type="text" placeholder="Username" required name="username">
-
 
                 <input type="password" placeholder="Password" required name="password">
 
@@ -96,9 +91,9 @@ if (Input::exists()) {
                          disabled means it cannot be selected by the user
                          hidden means it cannot be seen by the use
                     -->
-                    <option selected="selected" disabled hidden>Security Question</option>
-                    <option>Test quesion 1</option>
-                    <option>Test quesion 2</option>
+                    <option value="" selected disabled hidden>Security Question</option>
+                    <option value="0">Test quesion 1</option>
+                    <option value="1">Test quesion 2</option>
                 </select>
 
 

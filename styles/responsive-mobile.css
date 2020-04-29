@@ -23,6 +23,7 @@
 
     .user-form-container img {
         width: 70%;
+        margin-top: 10vh;
     }
 
     /*  Forgotton password and sign up links */
@@ -37,7 +38,7 @@
     .user-form-container form select {
         width: 70vw;
         font-size: 1.2em;
-        border: var(--main-blue) 3px solid;
+        border: var(--main-blue) 2px solid;
     }
 
 
@@ -56,6 +57,7 @@
         font-size: 1.8em;
         text-align: center;
         position: relative;
+        margin-top: 3vh;
     }
 
     .signup img {
@@ -91,7 +93,7 @@
 
 
     .user-form-container img {
-        width: 70%;
+        width: 50%;
     }
 
     /*  Forgotton password and sign up links */
@@ -101,13 +103,6 @@
         font-size: 1em;
     }
 
-
-    .user-form-container form input,
-    .user-form-container form select {
-        width: 70vw;
-        font-size: 1.4em;
-        border: var(--main-blue) 3px solid;
-    }
 
 
     .user-form-container button {
@@ -150,6 +145,7 @@
 
 
     .user-form-container img {
+        margin-top: 10vh;
         width: 70%;
     }
 
@@ -169,7 +165,7 @@
 
 
     .user-form-container button {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
 
     /* Sign up styles */
@@ -184,9 +180,10 @@
     }
 
     .signup-title h1 {
-        font-size: 3em;
+        font-size: 2.5em;
         text-align: center;
         position: relative;
+        margin-top: 3vh;
     }
 }
 
@@ -198,16 +195,19 @@
     .login-img-container img {
         position: absolute;
         width: 100%;
+        transform: translateY(-15%);
+
 
     }
 
     .user-form-container form {
-        margin-top: 5vh;
+        margin-top: 2vh;
     }
 
     .user-form-container form input,
     .user-form-container form select {
-        font-size: .7em;
+        width: 25vw;
+        font-size: .6em;
         border: var(--main-blue) 2px solid;
     }
 
@@ -242,9 +242,7 @@
 
 /* Medium Phones */
 @media screen and (min-width: 667px) and (max-width:736px) and (orientation: landscape) {
-    .user-form-container form {
-        margin-top: 5vh;
-    }
+
 
     .user-form-container form input,
     .user-form-container form select {
@@ -282,15 +280,16 @@
 /* Large Phones */
 @media screen and (min-width: 736px) and (max-width:812px) and (orientation: landscape) {
 
-    .login-img-container img {}
-
-    .user-form-container form {
-        margin-top: 2vh;
+    .login-img-container img {
+        transform: translateY(-15%);
     }
+
+
 
     .user-form-container form input,
     .user-form-container form select {
-        font-size: .9em;
+        width: 30vw;
+        font-size: .8em;
         border: var(--main-blue) 2px solid;
     }
 
@@ -309,6 +308,9 @@
 /* Long phones e.g iPhone X */
 @media screen and (min-width: 812px) and (max-width:1024px) and (orientation: landscape) {
 
+    .login-img-container img {
+        transform: translateY(-15%);
+    }
 
     .user-form-container form {
         margin-top: 2vh;
@@ -318,7 +320,7 @@
 
     .user-form-container form input,
     .user-form-container form select {
-
+        width: 25vw;
         font-size: .7em;
         border: var(--main-blue) 2px solid;
     }
