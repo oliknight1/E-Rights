@@ -6,7 +6,7 @@ loginImg.addEventListener("load", () => {
 
 
 })
-loginImg.src = "./assets/login-img.jpeg";
+
 
 //textBoxName = id of text box to toggle
 function togglePasswordVisibility(textBoxID) {
