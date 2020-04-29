@@ -1,4 +1,5 @@
 <?php
+
 require_once 'core/init.php';
 
 if (Input::exists()) {
@@ -50,6 +51,7 @@ if (Input::exists()) {
         }
     }
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -77,9 +79,12 @@ if (Input::exists()) {
             </div>
             <img src="assets/illustrations/sign-up-img.svg" alt="">
 
+
             <!-- Sing up form -->
-            <form method="POST" action="">
+
+            <form method="POST">
                 <input type="text" placeholder="Username" required name="username">
+
 
                 <input type="password" placeholder="Password" required name="password">
 

@@ -111,7 +111,7 @@
 
 
     .login-img-container img {
-        transform: translateY(0);
+
         height: 100%;
         width: 110%;
     }
@@ -163,7 +163,7 @@
         position: absolute;
         width: auto;
         height: 100%;
-        transform: translateY(0%);
+
     }
 
     .user-form-container form input,

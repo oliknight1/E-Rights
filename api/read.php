@@ -35,8 +35,6 @@ if ($rowCount > 0) {
         // Push to 'data'
         array_push($userArr['data'], $userItem);
     }
-    // Turn into JSON & output
-
     echo json_encode($userArr);
 } else {
     // No users
@@ -45,3 +43,6 @@ if ($rowCount > 0) {
         array('message' => "No Users Found")
     );
 }
+
+?>
+
