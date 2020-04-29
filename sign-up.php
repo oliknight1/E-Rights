@@ -69,7 +69,7 @@ if (Input::exists()) {
     <div class="user-form-wrapper">
 
         <div class="login-img-container">
-            <img src="./assets/login-img.jpeg" class="signup-img">
+            <img src="./assets/sign-up-img.jpg" class="signup-img">
         </div>
         <div class="user-form-container signup">
             <div class="signup-title">
