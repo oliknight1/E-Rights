@@ -1,3 +1,36 @@
+<?php
+
+require_once 'core/init.php';
+
+if (Input::exists()) {
+
+    // Check the token is correct to protect against CSRF attacks
+    if (Token::checkToken(Input::getInput('token'))) {
+
+
+        $validate = new Validation();
+        $validation = $validate->checkData($_POST, array(
+            'username' => array('required' => 'true'),
+            'password' => array('required' => 'true')
+        ));
+        if ($validate->checkPassed()) {
+            // Log user in
+            $user = new User();
+            $login = $user->login(Input::getInput('username'), Input::getInput('password'));
+
+            if ($login) {
+                Redirect::redirectTo('index.php');
+            }
+        } else {
+            foreach ($validation->displayErrors() as $error) {
+                // DISPLAY ERRORS HERE!!
+
+            }
+        }
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,14 +54,16 @@
         <div class="user-form-container">
 
             <img src="assets/illustrations/login-illustration.svg" alt="">
-            <form>
-                <input type="text" placeholder="Username">
+            <form method="POST">
+                <input type="text" placeholder="Username" name="username">
 
-                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Password" name="password">
                 <div class="form-links">
                     <a href="under-construction.html">Forgotten Password</a>
                     <a href="sign-up.php">Sign Up</a>
                 </div>
+                <!-- Token protects against CSRF attacks -->
+                <input type="hidden" name="token" value='<?php echo Token::createToken(); ?>'>
                 <button>Sign in</button>
             </form>
         </div>
