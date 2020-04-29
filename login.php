@@ -23,7 +23,8 @@ if (Input::exists()) {
             }
         } else {
             foreach ($validation->displayErrors() as $error) {
-                echo $error;
+                // DISPLAY ERRORS HERE!!
+
             }
         }
     }

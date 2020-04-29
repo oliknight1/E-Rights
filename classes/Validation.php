@@ -34,7 +34,6 @@ class Validation
                             // Add an error if string length of $value is less than than the rule min value
                             if (strlen($value) < $ruleValue) {
                                 $this->addError("{$rules['name']} must be a minimum of {$ruleValue} characters");
-                                echo $inputName . "<br>";
                             }
                             break;
                         case 'max':

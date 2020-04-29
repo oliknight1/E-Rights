@@ -3,10 +3,7 @@ require_once 'core/init.php';
 
 if (Input::exists()) {
     if (Token::checkToken(Input::getInput('token')))
-
-
-        echo 'Ran';
-    $validate = new Validation();
+        $validate = new Validation();
 
     // Checks the input fields against certain validation checks
     $validation = $validate->checkData($_POST, array(
@@ -49,9 +46,7 @@ if (Input::exists()) {
         }
     } else {
         foreach ($validation->displayErrors() as $error) {
-            // Displays the errros on the page
-            // Look to change this depending on how we want the errors to appear
-            echo $error;
+            //   DISPLAY ERRORS HERE!!!!
         }
     }
 }
