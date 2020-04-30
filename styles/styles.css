@@ -222,29 +222,47 @@ a {
     width: 12vw;
     border-radius: 25px;
     text-decoration: none;
-  
     border: 2px solid #008ED2;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    transition: ease-in-out .3s;
+}
+
+.welcome-buttons:hover .welcome-buttons-text{
+    color: white;
+    transition: ease-in-out .3s;
+}
+
+.welcome-buttons:hover {
+    background-color: #707070;
+    border: 2px solid #707070;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: ease-in-out .3s;
+}
+
+.welcome-buttons:hover i{
+    color: white;
+    transition: ease-in-out .3s;
 }
 
 .welcome-buttons-text {
     width: 6vw;
     height:5vh;
     font-family: 'Raleway';
-     font-size:3vh;
+    font-size:3vh;
     font-weight: 550;
     color: #008ED2;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: ease-in-out .3s;
 }
 
 .welcome-buttons i{
-color: #008ED2;
+    color: #008ED2;
     width: 100%;
     height: 100%;
     font-size:2.5vh;
@@ -252,6 +270,7 @@ color: #008ED2;
     justify-content: center;
     flex-direction: column; 
     align-items: center;
+    transition: ease-in-out .3s;
 }
 
 .welcome-buttons a {
@@ -313,9 +332,11 @@ color: #008ED2;
 
 .welcome-course-container {
     height: 60vh;
-    width: 90vw;
+    width: 80vw;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    margin-top: 20vh;
 }
 
 .welcome-course-header {
@@ -326,11 +347,12 @@ color: #008ED2;
     font-weight: 550;
     color: #707070;
     margin-left: 4vw;
+    margin-top: 4vh;
 }
 
 .welcome-course-content {
     height:42vh;
-    width: 90vw;
+    width: 80vw;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row; 
@@ -339,16 +361,33 @@ color: #008ED2;
     margin: 0;
 }
 
+.welcome-course-box-container {
+    height: 35vh;
+    width: 14vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+}
+
 .welcome-course-box {
-    height: 38vh;
-    width: 15vw;
+    height: 34vh;
+    width: 13vw;
     border-radius: 20px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-    font-size: 3.5vh;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    font-size: 3vh;
     font-family: 'Raleway';
     text-align: center;
     color: #707070;
   text-decoration: none;
+  transition: ease-in-out .3s;
+}
+
+.welcome-course-box-container:hover .welcome-course-box{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: ease-in-out .3s;
+    height: 35vh;
+    width: 14vw;
 }
 
 .welcome-course-box a {
@@ -356,47 +395,71 @@ color: #008ED2;
 }
 
 .welcome-course-color-1 {
-    height: 29vh;
-    width: 15vw;
+    height: 25vh;
+    width: 13vw;
     border-radius: 20px 20px 0px 0px;
     background-color: #009180;
     display: flex;
     justify-content: center;
     flex-direction: column; 
     align-items: center;
+       transition: ease-in-out .3s;
+}
+
+.welcome-course-box-container:hover .welcome-course-color-1{
+    width: 14vw;
+    transition: ease-in-out .3s;
 }
 
 .welcome-course-color-2 {
-    height: 29vh;
-    width: 15vw;
+    height: 25vh;
+    width: 13vw;
     border-radius: 20px 20px 0px 0px;
     background-color: #00B9C8;
     display: flex;
     justify-content: center;
     flex-direction: column; 
     align-items: center;
+        transition: ease-in-out .3s;
+}
+
+.welcome-course-box-container:hover .welcome-course-color-2{
+    width: 14vw;
+    transition: ease-in-out .3s;
 }
 
 .welcome-course-color-3 {
-    height: 29vh;
-    width: 15vw;
+    height: 25vh;
+    width: 13vw;
     border-radius: 20px 20px 0px 0px;
     background-color: #B5C7DC;
     display: flex;
     justify-content: center;
     flex-direction: column; 
     align-items: center;
+        transition: ease-in-out .3s;
+}
+
+.welcome-course-box-container:hover .welcome-course-color-3{
+    width: 14vw;
+    transition: ease-in-out .3s;
 }
 
 .welcome-course-color-4 {
-    height: 29vh;
-    width: 15vw;
+    height: 25vh;
+    width: 13vw;
     border-radius: 20px 20px 0px 0px;
     background-color: #389BA3;
     display: flex;
     justify-content: center;
     flex-direction: column; 
     align-items: center;
+        transition: ease-in-out .3s;
+}
+
+.welcome-course-box-container:hover .welcome-course-color-4{
+    width: 14vw;
+    transition: ease-in-out .3s;
 }
 
 .welcome-course-title {
@@ -441,6 +504,13 @@ color: #008ED2;
     justify-content: center;
     flex-direction: column; 
     align-items: center;
+    background-color: white;
+}
+
+.welcome-slide {
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
 }
 
 .welcome-slides {
@@ -454,11 +524,12 @@ color: #008ED2;
     font-family: 'Raleway';
     color: #008ED2;
     font-weight: bold;
+    margin-top: 3vh;
 }
 
 .welcome-slider-text {
     width: 40vw;
-    height: 17vh;
+    height: 14vh;
     margin-top: 5vh;
     font-size: 2.5vh;
     font-family: 'Raleway';
@@ -470,14 +541,24 @@ color: #008ED2;
     height: 4vh;
     width: 8vw;
     background-color: #008ED2;
-    color: white;
-    font-size: 2vh;
-    font-family: 'Raleway';
     border-radius: 20px;
+    display: flex;
     justify-content: center;
     flex-direction: column; 
     align-items: center;
     margin-left: 40vw;
+    color: white;
+    font-size: 2vh;
+    font-family: 'Raleway';
+
+    text-align: center;
+}
+
+.welcome-slider-button-text {
+    color: white;
+    font-size: 2vh;
+    font-family: 'Raleway';
+    align-items: center;
 }
 
 .welcome-fade {
@@ -487,20 +568,27 @@ color: #008ED2;
     animation-duration: 2s;
 }
 
+.welcome-dot-container {
+    text-align:center;
+    margin-top: 2vh;
+}
+
 .welcome-dot {
-    height: 8px;
-    width: 8px;
+    height: 12px;
+    width: 12px;
     display: inline-block;
     border-radius: 50%;
     margin: 0 2px;
     background-color: #9ED3CE;
     margin-top: 10px;
+    transition: ease-in-out .2s;
 }
 
 .welcome-dot-selected {
-    height: 10px;
-    width: 10px;
+    height: 14px;
+    width: 14px;
     background-color: #1B9DD9;
+    transition: ease-in-out .2s;
 }
 
 @-webkit-keyframes fade {
