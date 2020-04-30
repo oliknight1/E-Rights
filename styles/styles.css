@@ -893,11 +893,7 @@ a {
 }
 
 
-
-
-
-
-/* header */
+/* Navigation */
 
 nav {
     height: 15vh;
@@ -950,7 +946,7 @@ nav .logo img {
 
 .link-container a:hover>* {
     color: #707070;
-    margin: .8vh 0;
+    margin: .6vh 0;
 
 }
 
