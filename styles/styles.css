@@ -905,7 +905,7 @@ nav {
     border-bottom: #707070;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
 
@@ -913,6 +913,7 @@ nav {
 
 nav .logo {
     height: 75%;
+    padding-left: 3vw;
 
 }
 
@@ -928,10 +929,11 @@ nav .logo img {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+
 }
 
 .link-container a {
-    font-size: 4vh;
+    font-size: 3.5vh;
     color: var(--main-blue);
     display: flex;
     flex-direction: column;
