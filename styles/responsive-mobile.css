@@ -1,4 +1,5 @@
 
+
 /* Small Phones - portrait*/
 
 @media screen and (min-width: 320px) and (max-width:375px) and (orientation: portrait) {
@@ -253,10 +254,253 @@ height: 7.5vh;
 .construction-button:active {
     width: 20vw;
 }
+
+/* Portrait Phones */
+
+/* Small Phones */
+
+@media screen and (min-width: 320px) and (max-width:375px) and (orientation: portrait) {
+
+    .login-img-container {
+        display: none;
+    }
+
+    .user-form-container {
+        width: 100%;
+        transform: translateX(0);
+    }
+
+
+    /* Remove delay from fade in */
+
+    .user-form-container>* {
+        animation: fadeIn forwards 1.5s;
+    }
+
+
+    .user-form-container img {
+        width: 70%;
+        margin-top: 10vh;
+    }
+
+    /*  Forgotton password and sign up links */
+
+    .form-links a,
+    .form-links p {
+        font-size: .8em;
+    }
+
+
+    .user-form-container form input,
+    .user-form-container form select {
+        width: 70vw;
+        font-size: 1.2em;
+        border: var(--main-blue) 2px solid;
+    }
+
+
+
+    .user-form-container button {
+        font-size: 1.2em;
+    }
+
+    /* Sign up styles */
+    .signup-title {
+
+        padding: 0;
+    }
+
+    .signup-title h1 {
+        font-size: 1.8em;
+        text-align: center;
+        position: relative;
+        margin-top: 3vh;
+    }
+
+    .signup img {
+        width: 50%;
+    }
+
+    .signup input,
+    .signup select {
+        font-size: .9em !important;
+    }
+
+}
+
+/* Medium Phones */
+
+@media screen and (min-width: 375px) and (max-width:414px) and (orientation: portrait) {
+
+    .login-img-container {
+        display: none;
+    }
+
+    .user-form-container {
+
+        width: 100%;
+        transform: translateX(0);
+    }
+
+    /* Remove delay from fade in */
+
+    .user-form-container>* {
+        animation: fadeIn forwards 1.5s;
+    }
+
+
+    .user-form-container img {
+        width: 50%;
+    }
+
+    /*  Forgotton password and sign up links */
+
+    .form-links a,
+    .form-links p {
+        font-size: 1em;
+    }
+
+
+
+    .user-form-container button {
+        font-size: 1.2em;
+    }
+
+    .signup-title {
+        margin-top: 0vh;
+        margin-bottom: 3vh;
+    }
+
+    /* Sign up styles */
+    .signup-title h1 {
+        font-size: 2em;
+    }
+
+}
+
+/* Large Phones */
+
+@media screen and (min-width: 414px) and (max-width:768px) and (orientation: portrait) {
+
+    .login-img-container {
+        display: none;
+    }
+
+    .user-form-container {
+
+        width: 100%;
+        transform: translateX(0);
+    }
+
+
+    /* Remove delay from fade in */
+
+    .user-form-container>* {
+
+        animation: fadeIn forwards 1.5s;
+    }
+
+
+    .user-form-container img {
+        margin-top: 10vh;
+        width: 70%;
+    }
+
+    /*  Forgotton password and sign up links */
+
+    .form-links a {
+        font-size: .8em;
+    }
+
+
+    .user-form-container form input,
+    .user-form-container form select {
+        width: 70vw;
+        font-size: 1.2em;
+        border: var(--main-blue) 3px solid;
+    }
+
+
+    .user-form-container button {
+        font-size: 1.4em;
+    }
+
+    /* Sign up styles */
+
+    .signup img {
+        width: 50%;
+    }
+
+    .signup-title {
+        margin: 0;
+        padding: 0;
+    }
+
+    .signup-title h1 {
+        font-size: 2.5em;
+        text-align: center;
+        position: relative;
+        margin-top: 3vh;
+    }
+}
+
+/* Landscape Phones */
+
+/* Small Phones */
+@media screen and (min-width: 568px) and (max-width:667px) and (orientation: landscape) {
+
+    .login-img-container img {
+        position: absolute;
+        width: 100%;
+        transform: translateY(-15%);
+
+
+    }
+
+    .user-form-container form {
+        margin-top: 2vh;
+    }
+
+    .user-form-container form input,
+    .user-form-container form select {
+        width: 25vw;
+        font-size: .6em;
+        border: var(--main-blue) 2px solid;
+    }
+
+    .form-links a,
+    .form-links p {
+        font-size: .6em;
+    }
+
+
+    .user-form-container button {
+        font-size: 1em;
+    }
+
+    /* Sign-up styles */
+    .signup-title h1 {
+        font-size: 1.2em;
+    }
+
+    .signup img {
+        width: 30%;
+        margin: 0;
+    }
+
+    .signup form {
+        margin-top: 2vh;
+    }
+
+    .signup button {
+        font-size: .8em;
+    }
+
 }
 
 /* Medium Phones */
 @media screen and (min-width: 667px) and (max-width:736px) and (orientation: landscape) {
+
 
 /* 404 */
 
@@ -288,10 +532,45 @@ height: 7.5vh;
 .construction-button:active {
     width: 20vw;
 }
+
+
+    .user-form-container form input,
+    .user-form-container form select {
+        font-size: .7em;
+
+    }
+
+
+    .form-links a,
+    .form-links p {
+        font-size: .7em;
+    }
+
+
+    .user-form-container button {
+        font-size: 1em;
+    }
+
+    /* Sign up styles */
+    .signup img {
+        width: 30%;
+    }
+
+    .signup-title {
+        padding-left: 2vw;
+    }
+
+    .signup-title h1 {
+        font-size: 1.6em;
+    }
+
+
+
 }
 
 /* Large Phones */
 @media screen and (min-width: 736px) and (max-width:812px) and (orientation: landscape) {
+
 
 /* 404 */
 
@@ -323,4 +602,73 @@ height: 7.5vh;
 .construction-button:active {
     width: 20vw;
 }
+=======
+    .login-img-container img {
+        transform: translateY(-15%);
+    }
+
+
+
+    .user-form-container form input,
+    .user-form-container form select {
+        width: 30vw;
+        font-size: .8em;
+        border: var(--main-blue) 2px solid;
+    }
+
+    .form-links a,
+    .form-links p {
+        font-size: .7em;
+    }
+
+    .user-form-container button {
+        font-size: 1em;
+    }
+
+}
+
+
+/* Long phones e.g iPhone X */
+@media screen and (min-width: 812px) and (max-width:1024px) and (orientation: landscape) {
+
+    .login-img-container img {
+        transform: translateY(-15%);
+    }
+
+    .user-form-container form {
+        margin-top: 2vh;
+    }
+
+
+
+    .user-form-container form input,
+    .user-form-container form select {
+        width: 25vw;
+        font-size: .7em;
+        border: var(--main-blue) 2px solid;
+    }
+
+
+    .form-links a,
+    .form-links p {
+        font-size: .7em;
+    }
+
+
+    .user-form-container button {
+        font-size: 1em;
+    }
+
+    /* Sign up styles */
+
+    .signup-title h1 {
+        font-size: 1.7em;
+    }
+
+    .signup img {
+        width: 25%;
+        margin: 0;
+    }
+
+
 }
