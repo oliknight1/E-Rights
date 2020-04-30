@@ -38,10 +38,10 @@ class User
     {
         if ($user) {
             $field = (is_numeric($user)) ? 'id' : 'username';
-            $data = $this->db->getData('users', array($field, '=', $user));
+            $userData = $this->db->getData('users', array($field, '=', $user));
 
-            if ($data->count()) {
-                $this->data = $data->firstResult();
+            if ($userData->count()) {
+                $this->userData = $userData->firstResult();
                 return true;
             }
         }
@@ -72,7 +72,7 @@ class User
 
     public function getData()
     {
-        return $this->data;
+        return $this->userData;
     }
 
     public function getIsLoggedIn()
