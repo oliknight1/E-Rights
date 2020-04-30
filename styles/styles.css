@@ -1,7 +1,7 @@
 /* Raleway font */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
 
- body {
+body {
     padding: 0;
     margin: 0;
     max-width: 100vw;
@@ -57,7 +57,7 @@ a {
 .container-404 {
     height: 100vh;
     width: 60vw;
-      display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -69,7 +69,7 @@ a {
 }
 
 .header-404 {
-    padding-top:2vh;
+    padding-top: 2vh;
     font-family: 'Raleway';
     font-weight: bold;
     color: #707070;
@@ -78,16 +78,16 @@ a {
 }
 
 .text-404 {
-       padding-top:1vh;
+    padding-top: 1vh;
     font-family: 'Raleway';
     color: #008ED2;
     font-size: 3vh;
-       text-align: center;
+    text-align: center;
 }
 
 .button-404 {
-    height:7.5vh;
-    width:12vw;
+    height: 7.5vh;
+    width: 12vw;
     background-color: #008ED2;
     border-radius: 35px;
     display: flex;
@@ -99,16 +99,16 @@ a {
     font-size: 3vh;
     font-weight: 550;
     box-shadow: 0 10px 6px -6px #777;
-     transition: ease-in-out 0.3s;
-     text-decoration: none;
+    transition: ease-in-out 0.3s;
+    text-decoration: none;
 }
 
-.button-404:hover{
+.button-404:hover {
     background-color: #707070;
-     transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
 }
 
-.button-404:active{
+.button-404:active {
     height: 7.2vh;
     width: 11.5vw;
     transition: ease-in-out 0.1s;
@@ -116,8 +116,8 @@ a {
 
 .button-container-404 {
     margin-top: 5vh;
-    height:7.5vh;
-    width:12vw;
+    height: 7.5vh;
+    width: 12vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,7 +140,7 @@ a {
 .construction-container {
     height: 100vh;
     width: 60vw;
-      display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -152,7 +152,7 @@ a {
 }
 
 .construction-header {
-    padding-top:2vh;
+    padding-top: 2vh;
     font-family: 'Raleway';
     font-weight: bold;
     color: #707070;
@@ -161,16 +161,16 @@ a {
 }
 
 .construction-text {
-       padding-top:1vh;
+    padding-top: 1vh;
     font-family: 'Raleway';
     color: #008ED2;
     font-size: 3vh;
-       text-align: center;
+    text-align: center;
 }
 
 .construction-button {
-    height:7.5vh;
-    width:12vw;
+    height: 7.5vh;
+    width: 12vw;
     background-color: #008ED2;
     border-radius: 35px;
     display: flex;
@@ -182,16 +182,16 @@ a {
     font-size: 3vh;
     font-weight: 550;
     box-shadow: 0 10px 6px -6px #777;
-     transition: ease-in-out 0.3s;
-     text-decoration: none;
+    transition: ease-in-out 0.3s;
+    text-decoration: none;
 }
 
-.construction-button:hover{
+.construction-button:hover {
     background-color: #707070;
-     transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
 }
 
-.construction-button:active{
+.construction-button:active {
     height: 7.2vh;
     width: 11.5vw;
     transition: ease-in-out 0.1s;
@@ -199,8 +199,8 @@ a {
 
 .construction-button-container {
     margin-top: 5vh;
-    height:7.5vh;
-    width:12vw;
+    height: 7.5vh;
+    width: 12vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -252,7 +252,7 @@ a {
     width: 12vw;
     border-radius: 25px;
     text-decoration: none;
-  
+
     border: 2px solid #008ED2;
     display: flex;
     justify-content: center;
@@ -262,9 +262,9 @@ a {
 
 .welcome-buttons-text {
     width: 6vw;
-    height:5vh;
+    height: 5vh;
     font-family: 'Raleway';
-     font-size:3vh;
+    font-size: 3vh;
     font-weight: 550;
     color: #008ED2;
     display: flex;
@@ -273,25 +273,25 @@ a {
     flex-direction: column;
 }
 
-.welcome-buttons i{
-color: #008ED2;
+.welcome-buttons i {
+    color: #008ED2;
     width: 100%;
     height: 100%;
-    font-size:2.5vh;
+    font-size: 2.5vh;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
 
 .welcome-buttons a {
-     text-decoration: none;
+    text-decoration: none;
 }
 
 .welcome-body {
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     height: 85vh;
     width: 100vw;
@@ -308,11 +308,11 @@ color: #008ED2;
     width: 100%;
     height: 100%;
     border-radius: 50%;
-      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .welcome-title {
-    height:10vh;
+    height: 10vh;
     width: 100vw;
     text-align: center;
     font-size: 8vh;
@@ -327,7 +327,7 @@ color: #008ED2;
     background-color: #008ED2;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
 
@@ -350,7 +350,7 @@ color: #008ED2;
 
 .welcome-course-header {
     height: 8vh;
-    width:80vw;
+    width: 80vw;
     font-size: 5vh;
     font-family: 'Raleway';
     font-weight: 550;
@@ -359,11 +359,11 @@ color: #008ED2;
 }
 
 .welcome-course-content {
-    height:42vh;
+    height: 42vh;
     width: 90vw;
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -378,7 +378,7 @@ color: #008ED2;
     font-family: 'Raleway';
     text-align: center;
     color: #707070;
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .welcome-course-box a {
@@ -392,7 +392,7 @@ color: #008ED2;
     background-color: #009180;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
 
@@ -403,7 +403,7 @@ color: #008ED2;
     background-color: #00B9C8;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
 
@@ -414,7 +414,7 @@ color: #008ED2;
     background-color: #B5C7DC;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
 
@@ -425,12 +425,12 @@ color: #008ED2;
     background-color: #389BA3;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
 
 .welcome-course-title {
-    text-decoration: none ;
+    text-decoration: none;
 }
 
 .welcome-course img {
@@ -445,18 +445,18 @@ color: #008ED2;
     color: #707070;
     font-weight: 550;
     margin-right: 3vw;
-    margin-top:2vh;
+    margin-top: 2vh;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: flex-end;
     text-decoration: none;
     transition: ease-in-out 0.3s;
 }
 
-.welcome-course-view:hover{
+.welcome-course-view:hover {
     color: #008ED2;
-     transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
 }
 
 .welcome-split {
@@ -469,7 +469,7 @@ color: #008ED2;
     width: 55vw;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
 
@@ -505,16 +505,16 @@ color: #008ED2;
     font-family: 'Raleway';
     border-radius: 20px;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     margin-left: 40vw;
 }
 
-.welcome-slide{
-      height: 35vh;
+.welcome-slide {
+    height: 35vh;
     width: 55vw;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
 
@@ -542,11 +542,23 @@ color: #008ED2;
 }
 
 @-webkit-keyframes fade {
-    from {opacity: 0;} to {opacity: 1}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fade {
-    from {opacity: 0;} to {opacity: 1}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 
@@ -559,7 +571,7 @@ color: #008ED2;
     background-color: #EAEAEA;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
 
@@ -568,21 +580,21 @@ color: #008ED2;
     height: 10vh;
     display: flex;
     justify-content: center;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
 }
 
 .footer-row-links {
     margin-right: 3vw;
-      font-size: 2vh;
+    font-size: 2vh;
     font-family: 'Raleway';
     color: #707070;
 }
 
 .footer-social-media {
-     display: flex;
+    display: flex;
     justify-content: space-evenly;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
     width: 15vw;
     height: 6vh;
@@ -593,7 +605,7 @@ color: #008ED2;
     color: #707070;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
 
@@ -629,7 +641,7 @@ color: #008ED2;
 
 .home-info-text-container {
     height: 30vh;
-    width:50vw;
+    width: 50vw;
 }
 
 .home-info-text-title {
@@ -658,9 +670,9 @@ color: #008ED2;
     flex-direction: column;
 }
 
-.home-info-profile-icon {
+.profile-icon {
     height: 26vh;
-    width:13vw;
+    width: 13vw;
     background-color: white;
     border-radius: 50%;
     display: flex;
@@ -686,7 +698,7 @@ color: #008ED2;
 .home-info-profile-content-box {
     height: 15vh;
     width: 14vw;
-     display: flex;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
@@ -709,7 +721,7 @@ color: #008ED2;
     font-family: 'Raleway';
     font-size: 4vh;
     font-weight: bold;
-     text-align: center;
+    text-align: center;
 }
 
 .home-course-container {
@@ -718,12 +730,12 @@ color: #008ED2;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     background-color: white;
-    margin-top: 20vh;
+    margin: 5vw;
 }
 
 .home-course-header {
     height: 8vh;
-    width:80vw;
+    width: 80vw;
     font-size: 5vh;
     font-family: 'Raleway';
     font-weight: 550;
@@ -733,11 +745,11 @@ color: #008ED2;
 }
 
 .home-course-content {
-    height:42vh;
+    height: 42vh;
     width: 80vw;
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -748,7 +760,7 @@ color: #008ED2;
     width: 14vw;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
 
@@ -761,11 +773,11 @@ color: #008ED2;
     font-family: 'Raleway';
     text-align: center;
     color: #707070;
-  text-decoration: none;
-  transition: ease-in-out .3s;
+    text-decoration: none;
+    transition: ease-in-out .3s;
 }
 
-.home-course-box-container:hover .home-course-box{
+.home-course-box-container:hover .home-course-box {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     transition: ease-in-out .3s;
     height: 35vh;
@@ -783,12 +795,12 @@ color: #008ED2;
     background-color: #009180;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-       transition: ease-in-out .3s;
+    transition: ease-in-out .3s;
 }
 
-.home-course-box-container:hover .home-course-color-1{
+.home-course-box-container:hover .home-course-color-1 {
     width: 14vw;
     transition: ease-in-out .3s;
 }
@@ -800,12 +812,12 @@ color: #008ED2;
     background-color: #00B9C8;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-        transition: ease-in-out .3s;
+    transition: ease-in-out .3s;
 }
 
-.home-course-box-container:hover .home-course-color-2{
+.home-course-box-container:hover .home-course-color-2 {
     width: 14vw;
     transition: ease-in-out .3s;
 }
@@ -817,12 +829,12 @@ color: #008ED2;
     background-color: #B5C7DC;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-        transition: ease-in-out .3s;
+    transition: ease-in-out .3s;
 }
 
-.home-course-box-container:hover .home-course-color-3{
+.home-course-box-container:hover .home-course-color-3 {
     width: 14vw;
     transition: ease-in-out .3s;
 }
@@ -834,18 +846,18 @@ color: #008ED2;
     background-color: #389BA3;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-        transition: ease-in-out .3s;
+    transition: ease-in-out .3s;
 }
 
-.home-course-box-container:hover .home-course-color-4{
+.home-course-box-container:hover .home-course-color-4 {
     width: 14vw;
     transition: ease-in-out .3s;
 }
 
 .home-course-title {
-    text-decoration: none ;
+    text-decoration: none;
 }
 
 .home-course img {
@@ -860,27 +872,19 @@ color: #008ED2;
     color: #707070;
     font-weight: 550;
     margin-right: 3vw;
-    margin-top:2vh;
+    margin-top: 2vh;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: flex-end;
     text-decoration: none;
     transition: ease-in-out 0.3s;
 }
 
-.home-course-view:hover{
+.home-course-view:hover {
     color: #008ED2;
-     transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
 }
-
-.home-gap {
-    height: 35vh;
-    width: 100vw;
-    background-color: transparent;
-}
-
-
 
 
 
@@ -896,7 +900,7 @@ color: #008ED2;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-    
+
 }
 
 .header-logo {
@@ -910,7 +914,7 @@ color: #008ED2;
 }
 
 .header-nav {
-    width :60vw;
+    width: 60vw;
     height: 11vh;
     display: flex;
     justify-content: space-evenly;
@@ -919,7 +923,7 @@ color: #008ED2;
 }
 
 .header-nav-containers {
-   display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -945,7 +949,7 @@ color: #008ED2;
     transition: ease-in-out .2s;
 }
 
-.header-nav-containers:hover .header-nav-icon a{
+.header-nav-containers:hover .header-nav-icon a {
     margin-bottom: 1vh;
     transition: ease-in-out .2s;
     color: #707070;
@@ -955,7 +959,7 @@ color: #008ED2;
     font-size: 3vh;
     color: #008ED2;
     transition: ease-in-out .2s;
-    
+
 }
 
 .header-nav-icon {
@@ -1178,4 +1182,3 @@ color: #008ED2;
 .signup {
     float: left;
 }
-
