@@ -1,3 +1,259 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+    background-color: #f5f5f5;
+}
+
+/* Large tablets - portrait */
+@media screen and (min-width:1024px) and (max-width:1366px) and (orientation: portrait) {
+
+/* 404 */
+.container-404 {
+    width:80vw;
+}
+
+.image-404 img {
+    height: 25vh;
+    width: 60vw;
+}
+
+.header-404 {
+    padding-top:2vh;
+    font-size: 5vh;
+}
+
+.button-container-404 {
+    width: 30vw;
+    height: 8vh;
+    font-size: 2.5vh;
+}
+
+.button-404 {
+    width: 30vw;
+    height: 8vh;
+    font-size: 3vh;
+    border-radius: 60px;
+}
+
+/* construction */
+
+.construction-container {
+    width:80vw;
+}
+
+.construction-image img {
+    height: 25vh;
+    width: 60vw;
+}
+
+.construction-header {
+    padding-top:2vh;
+    font-size: 5vh;
+}
+
+.construction-button-container {
+    width: 30vw;
+    height: 8vh;
+    font-size: 2.5vh;
+}
+
+.construction-button {
+    width: 30vw;
+    height: 8vh;
+    font-size: 3vh;
+    border-radius: 60px;
+}
+
+/* welcome */
+
+.welcome-logo {
+    width: 30vw
+}
+
+.welcome-buttons {
+    width: 20vw;
+}
+
+.welcome-buttons-text {
+    font-size: 2.5vh;
+    width: 10vw;
+}
+
+.welcome-button-icon {
+    margin-right: 2vw;
+}
+
+.circle-box {
+    height: 35vh;
+    margin-top: -15vh;
+}
+
+.welcome-text-box {
+    height: 25vh;
+    margin-top: -40vh;
+}
+
+.welcome-text {
+    font-size: 1.5vh;
+    width: 40vw;
+    margin-left: 35vw;
+}
+
+
+/* Small tablets - portrait */
+@media screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait) {
+
+/* 404 */
+
+.container-404 {
+    width:80vw;
+}
+
+.image-404 img {
+    height: 25vh;
+    width: 60vw;
+}
+
+.header-404 {
+    padding-top:2vh;
+    font-size: 5vh;
+}
+
+.button-container-404 {
+    width: 30vw;
+    height: 8vh;
+    font-size: 2.5vh;
+}
+
+.button-404 {
+    width: 30vw;
+    height: 8vh;
+    font-size: 3vh;
+}
+
+.button-404:active{
+   width: 30vw;
+   height: 8vh;
+}
+
+/* construction */
+
+.construction-container {
+    width:90vw;
+}
+
+.construction-image img {
+    height: 25vh;
+    width: 60vw;
+}
+
+.construction-header {
+    padding-top:2vh;
+    font-size: 5vh;
+}
+
+.construction-button-container {
+    width: 35vw;
+    height: 8vh;
+    font-size: 2.5vh;
+}
+
+.construction-button {
+    width: 35vw;
+    height: 8vh;
+    font-size: 3vh;
+}
+
+.construction-button:active{
+   width: 35vw;
+   height: 8vh;
+}
+
+.construction-text {
+    font-size: 2.5vh;
+}
+}
+
+/* Large tablets - landscape */
+
+@media screen and (min-width:1366px) and (max-width:1440px) and (orientation: landscape) {
+
+/* 404 */
+
+.button-container-404 {
+    width: 17vw;
+}
+
+.button-404 {
+    width: 17vw;
+}
+
+
+
+/* construction */
+
+.construction-button-container {
+    width: 17vw;
+}
+
+.construction-button {
+    width: 17vw;
+    font-size: 3.5vh;
+}
+
+.construction-button:active{
+   width: 17vw;
+}
+
+.construction-image img {
+    width: 35vw;
+    height:30vh;
+}
+
+.construction-header {
+    font-size: 7vh;
+}
+
+.construction-text {
+    font-size: 4vh;
+}
+}
+
+/* Small tablets - landscape */
+@media screen and (min-width:1024px) and (max-width:1366px) and (orientation: landscape) {
+
+/* 404 */
+
+.button-container-404 {
+    width: 17vw;
+}
+
+.button-404 {
+    width: 17vw;
+    font-size: 2.5vh;
+}
+
+
+
+/* construction */
+
+.construction-button-container {
+    width: 18vw;
+}
+
+.construction-button {
+    width: 18vw;
+    font-size: 3.5vh;
+}
+
+.construction-button:active{
+   width: 18vw;
+
+}
+
 /* Portrait Styles */
 
 /* Small tablets */
@@ -190,6 +446,7 @@
     .signup-title h1 {
         font-size: 3em;
     }
+
 
 
 }
