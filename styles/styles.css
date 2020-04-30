@@ -17,15 +17,6 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-/* CSS Variables */
-:root {
-
-    --darker-blue: #082e40;
-    --main-blue: #189dd9;
-    --placeholder-col: #969494;
-
-}
-
 /* Change cursor of all buttons on hover */
 button:hover {
     cursor: pointer;
@@ -42,6 +33,29 @@ body {
 a {
     text-decoration: none;
 }
+
+h1 {
+    font-size: 4em;
+    font-weight: 600;
+    color: var(--heading-col);
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 500;
+    color: var(--heading-col);
+}
+
+/* CSS Variables */
+:root {
+
+    --darker-blue: #082e40;
+    --main-blue: #189dd9;
+    --placeholder-col: #969494;
+    --heading-col: #494949;
+
+}
+
 
 /* 404 page CSS*/
 .wrapper-404 {
@@ -673,7 +687,7 @@ a {
 .profile-icon {
     height: 26vh;
     width: 13vw;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -684,6 +698,12 @@ a {
     font-family: 'Raleway';
     font-size: 14vh;
     font-weight: bold;
+}
+
+/* Blue version of the profile icon */
+.blue-icon {
+    background: var(--main-blue);
+    color: #ffffff;
 }
 
 .home-info-profile-content {
@@ -950,6 +970,28 @@ nav .logo img {
 
 }
 
+/* Account Page Styling */
+
+.account-wrapper {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.account-overview {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-right: solid 2px var(--main-blue);
+}
+
+
 
 /* Login Page Styling */
 
@@ -978,9 +1020,6 @@ nav .logo img {
 
 .signup-img {
     float: right;
-
-
-
 }
 
 /* Contains the form and the logo of the site */

@@ -35,10 +35,28 @@
                 <i class="fas fa-user"></i>
                 <span>Account</span>
             </a>
-
-
         </div>
     </nav>
+    <main class="account-wrapper">
+        <!-- Part with the user icon and stats -->
+        <div class="account-overview">
+
+            <div class="profile-icon blue-icon">
+                T
+            </div>
+            <h2>USERNAME</h2>
+            <ul>
+                <li>In Progress: NUMBER</li>
+                <li>Assigned: NUMBER</li>
+                <li>Certificates: NUMBER</li>
+            </ul>
+        </div>
+        <!-- Users details such as username and security password -->
+        <div class="account-details">
+
+        </div>
+
+    </main>
 </body>
 
 </html>
