@@ -69,7 +69,7 @@
             </div>
             <div class="home-info-profile-container">
 
-                <div class="home-info-profile-icon">
+                <div class="profile-icon">
                     T
                 </div>
                 <div class="home-info-profile-content">
