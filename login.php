@@ -19,7 +19,6 @@ if (Input::exists()) {
             $login = $user->login(Input::getInput('username'), Input::getInput('password'));
 
             if ($login) {
-
                 Redirect::redirectTo('home.php');
             }
         } else {
