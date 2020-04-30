@@ -190,9 +190,7 @@ $user->findUser($_SESSION['user']);
 
     </div>
 
-    <div class="home-gap">
 
-    </div>
 
     <div class="footer">
         <div class="footer-row-container">
