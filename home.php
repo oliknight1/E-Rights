@@ -1,3 +1,9 @@
+<?php
+require_once 'core/init.php';
+$user = new User();
+$user->findUser($_SESSION['user']);
+?>
+
 <html lang="en">
 
 <head>
@@ -59,28 +65,28 @@
             <div class="home-info-text-container">
 
                 <div class="home-info-text-title">
-                    Hi Username!
+                    <p>Hi <?php echo $user->getData()['username']; ?>!</p>
                 </div>
                 <div class="home-info-text-content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro in adipisci dolor quia obcaecati nemo
-                    quis! Tenetur magni deleniti illo quo sapiente laboriosam illum, qui minus totam hic ut quibusdam.
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro in adipisci dolor quia obcaecati nemo
+                        quis! Tenetur magni deleniti illo quo sapiente laboriosam illum, qui minus totam hic ut quibusdam.</p>
                 </div>
 
             </div>
             <div class="home-info-profile-container">
 
-                <div class="home-info-profile-icon">
-                    T
+                <div class="profile-icon">
+                    <p><?php echo $user->getData()['username'][0]; ?></p>
                 </div>
                 <div class="home-info-profile-content">
 
                     <div class="home-info-profile-content-box">
 
                         <div class="home-info-profile-content-title">
-                            Assigned
+                            <p>Assigned</p>
                         </div>
                         <div class="home-info-profile-content-amount">
-                            4
+                            <p>4</p>
                         </div>
 
                     </div>
@@ -88,10 +94,10 @@
                     <div class="home-info-profile-content-box">
 
                         <div class="home-info-profile-content-title">
-                            Completed
+                            <p>Completed</p>
                         </div>
                         <div class="home-info-profile-content-amount">
-                            0
+                            <p>0</p>
                         </div>
 
                     </div>
@@ -110,7 +116,7 @@
         <div class="home-course-container">
 
             <div class="home-course-header">
-                Assigned
+                <p>Assigned</p>
             </div>
             <div class="home-course-content">
                 <a href="#">
@@ -122,7 +128,7 @@
                                 </div>
 
                             </div>
-                            Principles
+                            <p>Principles</p>
                         </div>
                     </div>
                 </a>
@@ -136,7 +142,7 @@
                                 </div>
 
                             </div>
-                            Rights
+                            <p>Rights</p>
                         </div>
                     </div>
                 </a>
@@ -150,7 +156,7 @@
                                 </div>
 
                             </div>
-                            Why is GDPR Important
+                            <p>Why is GDPR important?</p>
                         </div>
                     </div>
                 </a>
@@ -164,7 +170,7 @@
                                 </div>
 
                             </div>
-                            Data Minimalism
+                            <p>Data Minimalism</p>
                         </div>
                     </div>
                 </a>
@@ -176,7 +182,7 @@
 
         <div class="home-course-container">
             <div class="home-course-header">
-                In Progress
+                <p>In Progress</p>
             </div>
         </div>
 
