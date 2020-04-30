@@ -671,23 +671,19 @@ a {
 }
 
 .profile-icon {
-
-    height: 25vh;
+    height: 26vh;
     width: 13vw;
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.profile-icon p {
-    font-size: 12em;
+    flex-direction: column;
+    text-align: center;
     color: #008ED2;
-
-
-
-
+    font-family: 'Raleway';
+    font-size: 14vh;
+    font-weight: bold;
 }
 
 .home-info-profile-content {
