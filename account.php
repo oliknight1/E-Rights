@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="navbar">
         <div class="logo">
             <a href="home.php">
                 <img src=assets/logo/logo-horizontal-2.svg alt="Site Logo">
