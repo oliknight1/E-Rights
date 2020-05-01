@@ -927,6 +927,10 @@ h2 {
 
 }
 
+.hamburger-btn {
+    display: none;
+}
+
 .navbar .logo {
     height: 75%;
     padding-left: 3vw;

@@ -37,6 +37,9 @@
             </a>
         </div>
     </nav>
+    <nav class="hamburger-btn">
+
+    </nav>
     <main class="account-wrapper">
         <!-- Part with the user icon and stats -->
         <div class="account-overview">
