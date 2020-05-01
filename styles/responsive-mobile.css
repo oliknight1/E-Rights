@@ -253,6 +253,18 @@ height: 7.5vh;
 .construction-button:active {
     width: 20vw;
 }
+
+/* welcome */
+
+.welcome-dot {
+    height: 10px;
+    width: 10px;
+}
+
+.welcome-dot-selected {
+    height: 12px;
+    width: 12px;
+}
 }
 
 /* Medium Phones */
@@ -288,6 +300,13 @@ height: 7.5vh;
 .construction-button:active {
     width: 20vw;
 }
+
+
+/* welcome */
+
+.welcome-buttons-text {
+    width: 8vw;
+}
 }
 
 /* Large Phones */
@@ -322,5 +341,11 @@ height: 7.5vh;
 
 .construction-button:active {
     width: 20vw;
+}
+
+/* welcome */
+
+.welcome-buttons-text {
+    width: 8vw;
 }
 }
