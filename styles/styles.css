@@ -102,7 +102,7 @@ h2 {
 .button-404 {
     height: 7.5vh;
     width: 12vw;
-    background-color: var(--main-blue);
+    background-color: #008ED2;
     border-radius: 35px;
     display: flex;
     flex-direction: column;
@@ -266,7 +266,6 @@ h2 {
     width: 12vw;
     border-radius: 25px;
     text-decoration: none;
-
     border: 2px solid var(--main-blue);
     display: flex;
     justify-content: center;
@@ -727,7 +726,7 @@ h2 {
 .home-info-profile-content-title {
     height: 5vh;
     width: 12vw;
-    color: white;
+    color: #ffffff;
     font-family: 'Raleway';
     font-size: 4vh;
     font-weight: 550;
@@ -737,7 +736,7 @@ h2 {
 .home-info-profile-content-amount {
     height: 5vh;
     width: 12vw;
-    color: white;
+    color: #ffffff;
     font-family: 'Raleway';
     font-size: 4vh;
     font-weight: bold;
@@ -749,8 +748,8 @@ h2 {
     width: 80vw;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-    background-color: white;
-    margin-top: 20vh;
+    background-color: #ffffff;
+    margin: 5vw;
 }
 
 .home-course-header {
@@ -906,11 +905,6 @@ h2 {
     transition: ease-in-out 0.3s;
 }
 
-.home-gap {
-    height: 35vh;
-    width: 100vw;
-    background-color: transparent;
-}
 
 
 /* Navigation */
