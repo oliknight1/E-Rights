@@ -1037,7 +1037,7 @@ h2 {
     justify-content: space-evenly;
     align-items: center;
     transform: translateX(100%);
-
+    animation: loginAnimation forwards 1.5s;
     float: right;
 
 }
