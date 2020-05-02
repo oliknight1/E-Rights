@@ -102,7 +102,7 @@ h2 {
 .button-404 {
     height: 7.5vh;
     width: 12vw;
-    background-color: #008ED2;
+    background-color: var(--main-blue);
     border-radius: 35px;
     display: flex;
     flex-direction: column;
@@ -266,6 +266,7 @@ h2 {
     width: 12vw;
     border-radius: 25px;
     text-decoration: none;
+
     border: 2px solid var(--main-blue);
     display: flex;
     justify-content: center;
@@ -726,7 +727,7 @@ h2 {
 .home-info-profile-content-title {
     height: 5vh;
     width: 12vw;
-    color: #ffffff;
+    color: white;
     font-family: 'Raleway';
     font-size: 4vh;
     font-weight: 550;
@@ -736,7 +737,7 @@ h2 {
 .home-info-profile-content-amount {
     height: 5vh;
     width: 12vw;
-    color: #ffffff;
+    color: white;
     font-family: 'Raleway';
     font-size: 4vh;
     font-weight: bold;
@@ -748,8 +749,8 @@ h2 {
     width: 80vw;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-    background-color: #ffffff;
-    margin: 5vw;
+    background-color: white;
+    margin-top: 20vh;
 }
 
 .home-course-header {
@@ -906,10 +907,9 @@ h2 {
 }
 
 
-
 /* Navigation */
 
-.navbar {
+nav {
     height: 15vh;
     width: 100vw;
     border-bottom: #707070;
@@ -921,19 +921,17 @@ h2 {
 
 }
 
-.hamburger-btn {
+/* Hide elements from the hambruger */
+#open-menu,
+.hamburger-menu {
     display: none;
 }
 
-.navbar .logo {
-    height: 75%;
+nav img {
+
+    height: 10vh;
     padding-left: 3vw;
 
-}
-
-.navbar .logo img {
-
-    height: 100%;
 }
 
 .link-container {
@@ -975,6 +973,7 @@ h2 {
     height: 85vh;
     display: flex;
     flex-direction: row;
+    align-items: center;
 
 
 }
@@ -987,6 +986,34 @@ h2 {
     justify-content: space-evenly;
     align-items: center;
     border-right: solid 2px var(--main-blue);
+}
+
+.account-overview h2 {
+    color: rgb(17, 17, 17);
+    font-weight: 600;
+    margin-bottom: 6vh;
+}
+
+.overview-wrapper {
+    background: #ffffff;
+    height: 80%;
+    width: 80%;
+    border-radius: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+.overview-wrapper li {
+    list-style-type: none;
+    font-size: 1.5em;
+    color: #707070;
+    margin: 2vh 0;
+    font-weight: 100;
+
 }
 
 
