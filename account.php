@@ -64,7 +64,7 @@ $user->findUser($_SESSION['user']);
         </a>
 
         <div class="link-container">
-            <a href="#">
+            <a href="home.php">
                 <i class="fas fa-home"></i>
                 <span>Home</span>
             </a>
@@ -87,9 +87,9 @@ $user->findUser($_SESSION['user']);
     <main class="account-wrapper">
         <!-- Part with the user icon and stats -->
         <div class="account-overview">
-            <div class="overview-wrapper">
+            <div class="overview-container">
                 <div class="profile-icon blue-icon">
-                    T
+                    <p>T</p>
                 </div>
                 <!-- Div is just used to group together the <h2> and <ul> -->
                 <div>
@@ -103,7 +103,28 @@ $user->findUser($_SESSION['user']);
             </div>
         </div>
         <!-- Users details such as username and security password -->
+        <div class="account-details">
+            <div class="details-container">
+                <h2>Your information</h2>
+                <ul>
+                    <li>
+                        <h3>Username</h3>
+                        <p>USERNAME</p>
+                    </li>
+                    <li>
+                        <h3>Security Question</h3>
+                        <p>QUESTION</p>
+                    </li>
+                    <li>
+                        <h3>Security Question</h3>
+                        <p>ANSWER</p>
+                    </li>
+                </ul>
 
+
+
+            </div>
+        </div>
 
     </main>
     <div class="footer">

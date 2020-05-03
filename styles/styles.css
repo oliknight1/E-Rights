@@ -994,7 +994,7 @@ nav img {
     margin-bottom: 6vh;
 }
 
-.overview-wrapper {
+.overview-container {
     background: #ffffff;
     height: 80%;
     width: 80%;
@@ -1007,7 +1007,7 @@ nav img {
 
 }
 
-.overview-wrapper li {
+.overview-container li {
     list-style-type: none;
     font-size: 1.5em;
     color: #707070;
@@ -1016,7 +1016,44 @@ nav img {
 
 }
 
+.account-details {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.details-container {
+    width: 80%;
+    height: 70%;
+    background: #ffffff;
+    box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.4);
+    padding: 2em 3em;
+
+}
+
+.details-container h2 {
+    color: var(--main-blue);
+    margin: 0;
+    margin-bottom: 3vh;
+}
+
+.details-container h3 {
+    font-weight: 100;
+    font-size: 1.5em;
+}
+
+.details-container p {
+    width: 20vw;
+    border: solid 2px #bdbdbd;
+    padding: .5em;
+}
+
+.details-container li {
+    list-style-type: none;
+    margin-bottom: 5vh;
+}
 
 /* Login Page Styling */
 

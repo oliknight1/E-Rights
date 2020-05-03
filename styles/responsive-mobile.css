@@ -10,6 +10,7 @@
         display: none;
     }
 
+
     /* Hamburger menu button */
     #open-menu {
         font-size: 2.5em;
@@ -65,30 +66,23 @@
     }
 
     .hamburger-menu ul {
-
+        margin-top: 3vh;
         padding: 0 1.5em;
     }
 
     .hamburger-menu li {
         list-style-type: none;
         font-size: 1.8em;
-        margin: 8vh 0;
         color: var(--heading-col);
         position: relative;
         display: flex;
         flex-direction: row;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+        background: #ffffff;
+        border-radius: 5em;
+        padding: .5em .8em;
+        margin: 5vh 0;
     }
-
-    /* .hamburger-menu li::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -1vh;
-        height: 3px;
-        width: 100%;
-        background: var(--main-blue);
-    } */
 
     .hamburger-menu li i {
         font-size: 1.4em;
@@ -101,11 +95,75 @@
 
     /* Center the logo in the center */
     nav {
+        position: relative;
         justify-content: center;
     }
 
     nav img {
         padding-left: 0;
+    }
+
+    /* Account Page Styling */
+
+    .account-wrapper {
+        flex-direction: column;
+        height: 200vh;
+    }
+
+    .account-overview {
+        width: 100vw;
+        height: 100vh;
+        border: none;
+    }
+
+    .profile-icon {
+        width: 50vw;
+    }
+
+    .profile-icon p {
+        font-size: 1.4em;
+    }
+
+    .overview-container {
+        width: 90%;
+        border-radius: 3em;
+    }
+
+    .overview-container h2 {
+        font-size: 1.8em;
+        text-align: center;
+        margin-top: 2vh;
+    }
+
+    .overview-container li {
+        font-size: 1.2em;
+    }
+
+    .account-details {
+        width: 100vw;
+
+    }
+
+    .details-container {
+        width: 90%;
+        border-radius: 3em;
+        padding: 2em 2em;
+        height: fit-content;
+    }
+
+    .details-container h2 {
+        display: inline-block;
+        font-size: 1.8em;
+        margin-bottom: 5vh;
+    }
+
+    .details-container h3 {
+
+        margin-bottom: 3vh;
+    }
+
+    .details-container p {
+        width: 100%;
     }
 
     /* Login Page */
@@ -184,6 +242,7 @@
         height: 25vh;
     }
 
+    /* Do we need this as well as .construction-header? */
     .header-404 {
         font-size: 3vh;
         padding-top: 0vh;
@@ -248,6 +307,12 @@
 /* Medium Phones */
 
 @media screen and (min-width: 375px) and (max-width:414px) and (orientation: portrait) {
+
+    /* Navigation */
+
+    .hamburger-menu header p {
+        font-size: 1.7em;
+    }
 
     .login-img-container {
         display: none;
@@ -367,6 +432,167 @@
 /* Large Phones */
 
 @media screen and (min-width: 414px) and (max-width:768px) and (orientation: portrait) {
+    /* Navigation */
+
+    /* Hide the links displayed on desktop */
+    .link-container {
+        display: none;
+    }
+
+
+    /* Hamburger menu button */
+    #open-menu {
+        font-size: 2.5em;
+        display: inline-block;
+        position: absolute;
+        left: 5%;
+        color: var(--main-blue);
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #F5F5F5;
+        height: 100vh;
+        width: 100vw;
+        /* Hide the menu by default */
+        transform: translateX(-100%);
+        transition: all .8s ease-in-out;
+    }
+
+
+    .hamburger-menu>* {
+        opacity: 1;
+        transition: all .8s ease-in-out;
+
+    }
+
+    /* Blue section with the username */
+    .hamburger-menu header {
+        width: 100%;
+        height: 20%;
+        background: var(--main-blue);
+        display: flex;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1em 0 1.5em;
+    }
+
+    .hamburger-menu header p {
+        color: #ffffff;
+        font-size: 2em;
+    }
+
+    .hamburger-menu header i {
+
+        margin-right: 2vw;
+        color: #ffffff;
+        font-size: 3em;
+    }
+
+    .hamburger-menu ul {
+        margin-top: 3vh;
+        padding: 0 1.5em;
+    }
+
+    .hamburger-menu li {
+        list-style-type: none;
+        font-size: 1.8em;
+        color: var(--heading-col);
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+        background: #ffffff;
+        border-radius: 5em;
+        padding: .5em .8em;
+        margin: 5vh 0;
+    }
+
+    .hamburger-menu li i {
+        font-size: 1.4em;
+        display: inline-block;
+    }
+
+    .icon-container {
+        width: 18vw;
+    }
+
+    /* Center the logo in the center */
+    nav {
+        position: relative;
+        justify-content: center;
+    }
+
+    nav img {
+        padding-left: 0;
+    }
+
+    /* Account Page Styling */
+
+    .account-wrapper {
+        flex-direction: column;
+        height: 200vh;
+    }
+
+    .account-overview {
+        width: 100vw;
+        height: 100vh;
+        border: none;
+    }
+
+    .profile-icon {
+        width: 50vw;
+    }
+
+    .profile-icon p {
+        font-size: 1.4em;
+    }
+
+    .overview-container {
+        width: 90%;
+        border-radius: 3em;
+    }
+
+    .overview-container h2 {
+        font-size: 1.8em;
+        text-align: center;
+        margin-top: 2vh;
+    }
+
+    .overview-container li {
+        font-size: 1.2em;
+    }
+
+    .account-details {
+        width: 100vw;
+
+    }
+
+    .details-container {
+        width: 90%;
+        border-radius: 3em;
+        padding: 2em 2em;
+        height: fit-content;
+    }
+
+    .details-container h2 {
+        display: inline-block;
+        font-size: 1.8em;
+        margin-bottom: 5vh;
+    }
+
+    .details-container h3 {
+        margin-bottom: 2vh;
+    }
+
+    .details-container p {
+        width: 100%;
+    }
 
     .login-img-container {
         display: none;
@@ -495,6 +721,62 @@
 /* Small Phones */
 @media screen and (min-width: 568px) and (max-width:667px) and (orientation: landscape) {
 
+    /* Navigation */
+
+    .link-container a {
+        font-size: 4vh;
+    }
+
+    /* Account Page */
+
+    .overview-container {
+        border-radius: 3em;
+    }
+
+    .account-overview h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .overview-container li {
+        font-size: .8em;
+    }
+
+    .profile-icon {
+        width: 15vw;
+    }
+
+    .details-container {
+        padding: .5em;
+    }
+
+    .details-container h2 {
+        font-size: 1.8em;
+    }
+
+    .details-container ul {
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+
+    .details-container h3 {
+        font-size: .9em;
+
+    }
+
+    .details-container p {
+        padding: .2em;
+        font-size: .8em;
+    }
+
+    /* Login styling */
+
     .login-img-container img {
         position: absolute;
         width: 100%;
@@ -577,6 +859,10 @@
 /* Medium Phones */
 @media screen and (min-width: 667px) and (max-width:736px) and (orientation: landscape) {
 
+    /* Account stylings */
+    .details-container {
+        padding: .8em;
+    }
 
     /* 404 */
 
@@ -647,6 +933,59 @@
 /* Large Phones */
 @media screen and (min-width: 736px) and (max-width:812px) and (orientation: landscape) {
 
+    /* Navigation */
+
+    .link-container a {
+        font-size: 4vh;
+    }
+
+    /* Account Page */
+
+    .overview-container {
+        border-radius: 3em;
+    }
+
+    .account-overview h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .overview-container li {
+        font-size: .8em;
+    }
+
+    .profile-icon {
+        width: 15vw;
+    }
+
+    .details-container {
+        padding: 1em;
+    }
+
+    .details-container h2 {
+        font-size: 1.8em;
+    }
+
+    .details-container ul {
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+
+    .details-container h3 {
+        font-size: 1.1em;
+
+    }
+
+    .details-container p {
+        padding: .4em;
+        font-size: .9em;
+    }
 
     /* 404 */
 
