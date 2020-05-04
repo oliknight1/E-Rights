@@ -670,6 +670,28 @@
 /* Laptop styles */
 
 @media screen and (min-width:1440px) {
+
+    /* Account Stylings */
+
+    .profile-icon {
+        width: 15vw;
+    }
+
+    .details-container h2 {
+        font-size: 3em;
+    }
+
+    .details-container h3 {
+        font-size: 2.3em;
+        margin-bottom: 1vh;
+    }
+
+    .details-container p {
+        font-size: 1.8em;
+        width: 30vw;
+    }
+
+    /* Login stylings */
     .login-img-container img {
         transform: translateY(-12%);
     }
