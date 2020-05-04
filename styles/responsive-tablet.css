@@ -51,6 +51,14 @@
         font-size: 1.6em;
     }
 
+    /* My Learning Page Styling */
+
+    .assigned-bar li {
+
+        font-size: 1.5em !important;
+    }
+
+
     /* 404 */
 
     .container-404 {
@@ -343,6 +351,14 @@
         width: 100%;
     }
 
+    /* My Learning Styling */
+
+    .assigned-bar li {
+        width: 25vw;
+        font-size: 1.7em !important;
+    }
+
+
     /* Login Page */
     .login-img-container {
         display: none;
@@ -628,6 +644,13 @@
         font-size: 4vh;
     }
 
+    /* My Learning Stylings */
+    .assigned-bar li {
+        width: 20vw;
+        font-size: 2em;
+    }
+
+
     /*  Login page stylings */
 
     .user-form-container img {
@@ -670,8 +693,7 @@
 /* Laptop styles */
 
 
-@media screen and (min-width:1440px)and (max-width:1599px)  {
-
+@media screen and (min-width:1440px)and (max-width:1599px) {
     /* Account Stylings */
 
     .profile-icon {
