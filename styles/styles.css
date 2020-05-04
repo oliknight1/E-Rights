@@ -342,7 +342,7 @@ p {
     margin-top: 20vh;
 }
 
-.welcome-course-header {
+.course-header {
     height: 8vh;
     width:80vw;
     font-size: 5vh;
@@ -353,7 +353,7 @@ p {
     margin-top: 4vh;
 }
 
-.welcome-course-content {
+.course-content {
     height:42vh;
     width: 80vw;
     display: flex;
@@ -364,7 +364,7 @@ p {
     margin: 0;
 }
 
-.welcome-course-box-wrapper {
+.course-box-wrapper {
     height: 35vh;
     width: 14vw;
     display: flex;
@@ -373,7 +373,7 @@ p {
     align-items: center;
 }
 
-.welcome-course-box {
+.course-box {
     height: 34vh;
     width: 13vw;
     border-radius: 20px 20px 20px 20px;
@@ -385,7 +385,7 @@ p {
   transition: ease-in-out .3s;
 }
 
-.welcome-course-box-wrapper:hover .welcome-course-box{
+.course-box-wrapper:hover .course-box{
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     transition: ease-in-out .3s;
     height: 35vh;
@@ -395,7 +395,7 @@ p {
 
 
 
-.welcome-course-text {
+.course-text {
     height: 9vh;
     width: 13vw;
     font-size: 3vh;
@@ -411,11 +411,11 @@ p {
 
 
 
-.welcome-course-text a {
+.course-text a {
     text-decoration: none;
 }
 
-.welcome-course-color{
+.course-color{
     height: 25vh;
     width: 13vw;
     border-radius: 20px 20px 0px 0px;
@@ -429,35 +429,35 @@ p {
 
 
 
-.welcome-course-color:nth-of-type(1){
+.course-color:nth-of-type(1){
     background-color: #009180;
 }
-.welcome-course-color:nth-of-type(2){
+.course-color:nth-of-type(2){
     background-color: #00B9C8;
 }
-.welcome-course-color:nth-of-type(3){
+.course-color:nth-of-type(3){
     background-color: #B5C7DC;
 }
-.welcome-course-color:nth-of-type(4){
+.course-color:nth-of-type(4){
     background-color: #389BA3;
 }
 
-.welcome-course-box-wrapper:hover .welcome-course-color{
+.course-box-wrapper:hover .course-color{
     width: 14vw;
     height: 26vh;
     transition: ease-in-out .3s;
 }
 
-.welcome-course-title {
+.course-title {
     text-decoration: none ;
 }
 
-.welcome-course-img img {
+.course-img img {
     height: 20vh;
     width: 12vw
 }
 
-.welcome-course-view {
+.course-view {
     font-size: 3.5vh;
     font-family: 'Raleway';
     text-align: right;
@@ -473,7 +473,7 @@ p {
     transition: ease-in-out 0.3s;
 }
 
-.welcome-course-view:hover{
+.course-view:hover{
     color: #008ED2;
      transition: ease-in-out 0.3s;
 }
