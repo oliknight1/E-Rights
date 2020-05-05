@@ -9,133 +9,14 @@ body {
 
 
 
-/* Small tablets - landscape */
-@media screen and (min-width:1024px) and (max-width:1366px) and (orientation: landscape) {
 
-/* 404 */
+/* Portrait Styles */
 
-.button-container-404 {
-    width: 17vw;
-}
-
-.button-404 {
-    width: 17vw;
-    font-size: 2.5vh;
-}
-
-
-
-/* construction */
-
-.construction-button-container {
-    width: 18vw;
-}
-
-.construction-button {
-    width: 18vw;
-    font-size: 3.5vh;
-}
-
-.construction-button:active{
-   width: 18vw;
-
-}
-
-/* welcome */
-
-.welcome-buttons-text {
-    width: 8vw;
-}
-
-.welcome-slider-button {
-    width: 10vw;
-}
-
-.circle-box {
-    height: 50vh;
-}
-
-.welcome-text-box {
-    height: 45vh;
-
-
-    
-}
-
-.welcome-text {
-    height: 35vh;
-}
-.welcome-title {
-    margin-top: -10vh;
-}
-
-}
-
-
-
-
-/* Large tablets - landscape */
-
-@media screen and (min-width:1366px) and (max-width:1440px) and (orientation: landscape) {
-
-/* 404 */
-
-.button-container-404 {
-    width: 17vw;
-}
-
-.button-404 {
-    width: 17vw;
-}
-
-
-
-/* construction */
-
-.construction-button-container {
-    width: 17vw;
-}
-
-.construction-button {
-    width: 17vw;
-    font-size: 3.5vh;
-}
-
-.construction-button:active{
-   width: 17vw;
-}
-
-.construction-image img {
-    width: 35vw;
-    height:30vh;
-}
-
-.construction-header {
-    font-size: 7vh;
-}
-
-.construction-text {
-    font-size: 4vh;
-}
-
-
-/* welcome */
-
-.circle-box {
-    height: 66vh;
-}
-
-.welcome-slider-button {
-    width: 8vw;
-}
-
-}
-
-
-/* Small tablets - portrait */
+/* Small tablets */
 @media screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait) {
 
-/* 404 */
+
+    /* 404 */
 
 .container-404 {
     width:80vw;
@@ -353,13 +234,66 @@ body {
     font-size: 2.5vh;
 }
 
+    /* Login Styles */
 
+
+    .login-img-container {
+        display: none;
+    }
+
+    .user-form-container {
+        width: 100%;
+        transform: translateX(0);
+
+    }
+
+
+    /* Remove delay from fade in */
+    .user-form-container>* {
+
+        animation: fadeIn forwards 1.5s;
+    }
+
+
+    .user-form-container img {
+        width: 50%;
+    }
+
+
+    /*  Forgotton password and sign up links */
+
+    .form-links a,
+    .form-links p {
+        font-size: 1.5em;
+    }
+
+    .user-form-container form input,
+    .user-form-container form select {
+        width: 50vw;
+        font-size: 1.8em;
+    }
+
+    .user-form-container button {
+        font-size: 2em;
+    }
+
+    /* Sign Up Styles */
+
+    .signup img {
+        width: 45%;
+    }
+
+    .signup-title h1 {
+        font-size: 3.5em;
+
+    }
 }
 
-/* Large tablets - portrait */
+/* Large tablets  */
 @media screen and (min-width:1024px) and (max-width:1366px) and (orientation: portrait) {
 
-/* 404 */
+
+    /* 404 */
 .container-404 {
     width:80vw;
 }
@@ -558,68 +492,6 @@ body {
     width: 25vw;
 }
 
-/* Portrait Styles */
-
-/* Small tablets */
-@media screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait) {
-
-    /* Login Styles */
-
-
-    .login-img-container {
-        display: none;
-    }
-
-    .user-form-container {
-        width: 100%;
-        transform: translateX(0);
-
-    }
-
-
-    /* Remove delay from fade in */
-    .user-form-container>* {
-
-        animation: fadeIn forwards 1.5s;
-    }
-
-
-    .user-form-container img {
-        width: 50%;
-    }
-
-
-    /*  Forgotton password and sign up links */
-
-    .form-links a,
-    .form-links p {
-        font-size: 1.5em;
-    }
-
-    .user-form-container form input,
-    .user-form-container form select {
-        width: 50vw;
-        font-size: 1.8em;
-    }
-
-    .user-form-container button {
-        font-size: 2em;
-    }
-
-    /* Sign Up Styles */
-
-    .signup img {
-        width: 45%;
-    }
-
-    .signup-title h1 {
-        font-size: 3.5em;
-
-    }
-}
-
-/* Large tablets  */
-@media screen and (min-width:1024px) and (max-width:1366px) and (orientation: portrait) {
     /*  Login page stylings */
 
 
@@ -662,6 +534,68 @@ body {
 
 /* Small tablets - landscape */
 @media screen and (min-width:1024px) and (max-width:1366px) and (orientation: landscape) {
+
+
+
+
+    /* 404 */
+
+.button-container-404 {
+    width: 17vw;
+}
+
+.button-404 {
+    width: 17vw;
+    font-size: 2.5vh;
+}
+
+
+
+/* construction */
+
+.construction-button-container {
+    width: 18vw;
+}
+
+.construction-button {
+    width: 18vw;
+    font-size: 3.5vh;
+}
+
+.construction-button:active{
+   width: 18vw;
+
+}
+
+/* welcome */
+
+.welcome-buttons-text {
+    width: 8vw;
+}
+
+.welcome-slider-button {
+    width: 10vw;
+}
+
+.circle-box {
+    height: 50vh;
+}
+
+.welcome-text-box {
+    height: 45vh;
+
+
+    
+}
+
+.welcome-text {
+    height: 35vh;
+}
+.welcome-title {
+    margin-top: -10vh;
+}
+
+
 
     /* Login Styles */
 
@@ -713,6 +647,62 @@ body {
 
 @media screen and (min-width:1366px) and (max-width:1440px) and (orientation: landscape) {
 
+
+
+
+    /* 404 */
+
+.button-container-404 {
+    width: 17vw;
+}
+
+.button-404 {
+    width: 17vw;
+}
+
+
+
+/* construction */
+
+.construction-button-container {
+    width: 17vw;
+}
+
+.construction-button {
+    width: 17vw;
+    font-size: 3.5vh;
+}
+
+.construction-button:active{
+   width: 17vw;
+}
+
+.construction-image img {
+    width: 35vw;
+    height:30vh;
+}
+
+.construction-header {
+    font-size: 7vh;
+}
+
+.construction-text {
+    font-size: 4vh;
+}
+
+
+/* welcome */
+
+.circle-box {
+    height: 66vh;
+}
+
+.welcome-slider-button {
+    width: 8vw;
+}
+
+
+
     /*  Login page stylings */
 
     .user-form-container img {
@@ -754,4 +744,4 @@ body {
 
 
 }
-}
+
