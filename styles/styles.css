@@ -374,6 +374,132 @@ p {
     margin-top: 20vh;
 }
 
+.welcome-split {
+    height: 6vh;
+    border-bottom: thin solid #707070;
+}
+
+.welcome-slider-container {
+    height: 35vh;
+    width: 55vw;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+    background-color: white;
+}
+
+.welcome-slide {
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.welcome-slides {
+    display: none;
+}
+
+.welcome-slider-name {
+    width: 45vw;
+    height: 5vh;
+    font-size: 4vh;
+    font-family: 'Raleway';
+    color: #008ED2;
+    font-weight: bold;
+    margin-top: 3vh;
+}
+
+.welcome-slider-text {
+    width: 40vw;
+    height: 14vh;
+    margin-top: 5vh;
+    font-size: 2.5vh;
+    font-family: 'Raleway';
+    color: #707070;
+    font-style: italic;
+}
+
+.welcome-slider-button {
+    height: 4vh;
+    width: 8vw;
+    background-color: #008ED2;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+    margin-left: 40vw;
+    color: white;
+    font-size: 2vh;
+    font-family: 'Raleway';
+
+    text-align: center;
+}
+
+.welcome-slider-button-text {
+    color: white;
+    font-size: 2vh;
+    font-family: 'Raleway';
+    align-items: center;
+}
+
+.welcome-slide{
+      height: 35vh;
+    width: 55vw;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.welcome-fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 5s;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
+.welcome-dot-container {
+    text-align:center;
+    margin-top: 2vh;
+}
+
+.welcome-dot {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 2px;
+    background-color: #9ED3CE;
+    margin-top: 10px;
+    transition: ease-in-out .2s;
+}
+
+.welcome-dot-selected {
+    height: 14px;
+    width: 14px;
+    background-color: #1B9DD9;
+    transition: ease-in-out .2s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 0;} to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: 0;} to {opacity: 1}
+}
+
+/* course box */
+
+.course-container {
+    height: 60vh;
+    width: 80vw;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    margin-top: 20vh;
+}
+
 .course-header {
     height: 8vh;
     width:80vw;
@@ -509,122 +635,6 @@ p {
     color: #008ED2;
      transition: ease-in-out 0.3s;
 }
-
-.welcome-split {
-    height: 6vh;
-    border-bottom: thin solid #707070;
-}
-
-.welcome-slider-container {
-    height: 35vh;
-    width: 55vw;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-    justify-content: center;
-    flex-direction: column; 
-    align-items: center;
-    background-color: white;
-}
-
-.welcome-slide {
-    justify-content: center;
-    flex-direction: column; 
-    align-items: center;
-}
-
-.welcome-slides {
-    display: none;
-}
-
-.welcome-slider-name {
-    width: 45vw;
-    height: 5vh;
-    font-size: 4vh;
-    font-family: 'Raleway';
-    color: #008ED2;
-    font-weight: bold;
-    margin-top: 3vh;
-}
-
-.welcome-slider-text {
-    width: 40vw;
-    height: 14vh;
-    margin-top: 5vh;
-    font-size: 2.5vh;
-    font-family: 'Raleway';
-    color: #707070;
-    font-style: italic;
-}
-
-.welcome-slider-button {
-    height: 4vh;
-    width: 8vw;
-    background-color: #008ED2;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column; 
-    align-items: center;
-    margin-left: 40vw;
-    color: white;
-    font-size: 2vh;
-    font-family: 'Raleway';
-
-    text-align: center;
-}
-
-.welcome-slider-button-text {
-    color: white;
-    font-size: 2vh;
-    font-family: 'Raleway';
-    align-items: center;
-}
-
-.welcome-slide{
-      height: 35vh;
-    width: 55vw;
-    justify-content: center;
-    flex-direction: column; 
-    align-items: center;
-}
-
-.welcome-fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 5s;
-    animation-name: fade;
-    animation-duration: 5s;
-}
-
-.welcome-dot-container {
-    text-align:center;
-    margin-top: 2vh;
-}
-
-.welcome-dot {
-    height: 12px;
-    width: 12px;
-    display: inline-block;
-    border-radius: 50%;
-    margin: 0 2px;
-    background-color: #9ED3CE;
-    margin-top: 10px;
-    transition: ease-in-out .2s;
-}
-
-.welcome-dot-selected {
-    height: 14px;
-    width: 14px;
-    background-color: #1B9DD9;
-    transition: ease-in-out .2s;
-}
-
-@-webkit-keyframes fade {
-    from {opacity: 0;} to {opacity: 1}
-}
-
-@keyframes fade {
-    from {opacity: 0;} to {opacity: 1}
-}
-
 
 
 /* footer CSS */

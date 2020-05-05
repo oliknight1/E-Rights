@@ -153,32 +153,9 @@ body {
     height: 30vh;
 }
 
-.course-header {
-    font-size: 3vh;
-    margin-top: 2vh;
-}
 
-.course-content {
-    margin-top: -5vh;
-}
 
-.course-box {
-    height: 15vh;
-    
-}
 
-.course-text {
-    font-size: 1.5vh;
-}
-
-.course-color {
-    height: 10vh;
-}
-
-.course-box-wrapper {
-    height: 15vh;
-    margin-top: -16vh;
-}
 
 .welcome-split {
     margin-top: -35vh;
@@ -210,6 +187,54 @@ body {
 .welcome-dot-selected {
     height: 24px;
     width: 24px;
+}
+
+/* course box */
+
+.course-container{ 
+    margin-top: 10vh;
+    height: 30vh;
+}
+
+.course-header {
+    font-size: 3vh;
+    margin-top: 2vh;
+}
+
+.course-content {
+    margin-top: -5vh;
+}
+
+.course-box {
+    height: 15vh;
+    
+}
+
+.course-text {
+    font-size: 1.5vh;
+}
+
+.course-color {
+    height: 10vh;
+}
+
+.course-box-wrapper {
+    height: 15vh;
+    margin-top: -16vh;
+}
+
+
+.course-text {
+    font-size: 1.5vh;
+}
+
+.course-color {
+    height: 10vh;
+}
+
+.course-box-wrapper {
+    height: 15vh;
+    margin-top: -16vh;
 }
 
 /* footer */
@@ -286,6 +311,44 @@ body {
     .signup-title h1 {
         font-size: 3.5em;
 
+    }
+
+    /* info box */
+
+    .home-info-text-title {
+        width: 50vw;
+        font-size: 5vh;
+    }
+
+    .home-info-text-content {
+        width: 45vw;
+        margin-left: 4vw;
+        font-size: 1.7vh;
+    }
+
+    .home-info-profile-container {
+        width: 45vw;
+    }
+
+    .home-info-profile-icon {
+        width: 28vw;
+        height: 20vh;
+        margin-top: 5vh;
+    }
+
+    .home-info-profile-content {
+        width: 45vw;
+    }
+
+    .home-info-profile-content-title {
+        font-size: 2.5vh;
+        width: 20vw;
+        height: 4vh;
+    }
+
+    .home-info-profile-content-amount {
+        font-size: 3vh;
+        margin-top: -3vh;
     }
 }
 
@@ -415,33 +478,6 @@ body {
     height: 30vh;
 }
 
-.course-header {
-    font-size: 3vh;
-    margin-top: 2vh;
-}
-
-.course-content {
-    margin-top: -5vh;
-}
-
-.course-box {
-    height: 15vh;
-    
-}
-
-.course-text {
-    font-size: 1.5vh;
-}
-
-.course-color {
-    height: 10vh;
-}
-
-.course-box-wrapper {
-    height: 15vh;
-    margin-top: -16vh;
-}
-
 .welcome-split {
     margin-top: -35vh;
 }
@@ -473,6 +509,41 @@ body {
     height: 34px;
     width: 34px;
 }
+
+/* course box */
+
+.course-container{ 
+    margin-top: 10vh;
+    height: 30vh;
+}
+
+.course-header {
+    font-size: 3vh;
+    margin-top: 2vh;
+}
+
+.course-content {
+    margin-top: -5vh;
+}
+
+.course-box {
+    height: 15vh;
+    
+}
+
+.course-text {
+    font-size: 1.5vh;
+}
+
+.course-color {
+    height: 10vh;
+}
+
+.course-box-wrapper {
+    height: 15vh;
+    margin-top: -16vh;
+}
+
 
 /* footer */
 
@@ -527,6 +598,44 @@ body {
 
     .user-form-container button {
         font-size: 3em;
+    }
+
+/* info box */
+
+    .home-info-text-title {
+        width: 50vw;
+        font-size: 5vh;
+    }
+
+    .home-info-text-content {
+        width: 45vw;
+        margin-left: 4vw;
+        font-size: 1.7vh;
+    }
+
+    .home-info-profile-container {
+        width: 45vw;
+    }
+
+    .home-info-profile-icon {
+        width: 28vw;
+        height: 20vh;
+        margin-top: 5vh;
+    }
+
+    .home-info-profile-content {
+        width: 45vw;
+    }
+
+    .home-info-profile-content-title {
+        font-size: 2.5vh;
+        width: 20vw;
+        height: 4vh;
+    }
+
+    .home-info-profile-content-amount {
+        font-size: 3vh;
+        margin-top: -3vh;
     }
 }
 
@@ -641,6 +750,13 @@ body {
     .signup button {
         font-size: 1.6em;
     }
+
+
+/* info box */
+
+.home-info-profile-icon {
+    width: 18vw;
+}
 }
 
 /* Large tablets - landscape */
@@ -741,7 +857,11 @@ body {
         font-size: 3em;
     }
 
+/* info box */
 
+.home-info-profile-icon {
+    width: 16vw;
+}
 
 }
 
