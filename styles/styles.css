@@ -43,6 +43,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin: 0;
+}
+
 /* 404 page CSS*/
 .wrapper-404 {
     height: 100vh;
@@ -252,36 +256,53 @@ a {
     width: 12vw;
     border-radius: 25px;
     text-decoration: none;
-  
     border: 2px solid #008ED2;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    transition: ease-in-out .3s;
+}
+
+.welcome-buttons:hover .welcome-buttons-text{
+    color: white;
+    transition: ease-in-out .3s;
+}
+
+.welcome-buttons:hover {
+    background-color: #707070;
+    border: 2px solid #707070;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: ease-in-out .3s;
+}
+
+.welcome-buttons:hover i{
+    color: white;
+    transition: ease-in-out .3s;
 }
 
 .welcome-buttons-text {
     width: 6vw;
     height:5vh;
     font-family: 'Raleway';
-     font-size:3vh;
+    font-size:3vh;
     font-weight: 550;
     color: #008ED2;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: ease-in-out .3s;
 }
 
 .welcome-buttons i{
-color: #008ED2;
-    width: 100%;
-    height: 100%;
+    color: #008ED2;
     font-size:2.5vh;
     display: flex;
     justify-content: center;
     flex-direction: column; 
     align-items: center;
+    transition: ease-in-out .3s;
 }
 
 .welcome-buttons a {
@@ -338,17 +359,22 @@ color: #008ED2;
     height: 45vh;
     width: 50vw;
     margin-left: 40vw;
-    margin-top: 5vh
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
 }
 
 .welcome-course-container {
     height: 60vh;
-    width: 90vw;
+    width: 80vw;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    margin-top: 20vh;
 }
 
-.welcome-course-header {
+.course-header {
     height: 8vh;
     width:80vw;
     font-size: 5vh;
@@ -356,11 +382,12 @@ color: #008ED2;
     font-weight: 550;
     color: #707070;
     margin-left: 4vw;
+    margin-top: 4vh;
 }
 
-.welcome-course-content {
+.course-content {
     height:42vh;
-    width: 90vw;
+    width: 80vw;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row; 
@@ -369,76 +396,100 @@ color: #008ED2;
     margin: 0;
 }
 
-.welcome-course-box {
-    height: 38vh;
-    width: 15vw;
-    border-radius: 20px;
+.course-box-wrapper {
+    height: 35vh;
+    width: 14vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.course-box {
+    height: 34vh;
+    width: 13vw;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+  transition: ease-in-out .3s;
+}
+
+.course-box-wrapper:hover .course-box{
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-    font-size: 3.5vh;
+    transition: ease-in-out .3s;
+    height: 35vh;
+    width: 14vw;
+}
+
+
+
+
+.course-text {
+    height: 9vh;
+    width: 13vw;
+    font-size: 3vh;
     font-family: 'Raleway';
     text-align: center;
     color: #707070;
-  text-decoration: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
 }
 
-.welcome-course-box a {
+
+
+.course-text a {
     text-decoration: none;
 }
 
-.welcome-course-color-1 {
-    height: 29vh;
-    width: 15vw;
+.course-color{
+    height: 25vh;
+    width: 13vw;
     border-radius: 20px 20px 0px 0px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+       transition: ease-in-out .3s;
+}
+
+
+
+.course-color:nth-of-type(1){
     background-color: #009180;
-    display: flex;
-    justify-content: center;
-    flex-direction: column; 
-    align-items: center;
 }
-
-.welcome-course-color-2 {
-    height: 29vh;
-    width: 15vw;
-    border-radius: 20px 20px 0px 0px;
+.course-color:nth-of-type(2){
     background-color: #00B9C8;
-    display: flex;
-    justify-content: center;
-    flex-direction: column; 
-    align-items: center;
 }
-
-.welcome-course-color-3 {
-    height: 29vh;
-    width: 15vw;
-    border-radius: 20px 20px 0px 0px;
+.course-color:nth-of-type(3){
     background-color: #B5C7DC;
-    display: flex;
-    justify-content: center;
-    flex-direction: column; 
-    align-items: center;
 }
-
-.welcome-course-color-4 {
-    height: 29vh;
-    width: 15vw;
-    border-radius: 20px 20px 0px 0px;
+.course-color:nth-of-type(4){
     background-color: #389BA3;
-    display: flex;
-    justify-content: center;
-    flex-direction: column; 
-    align-items: center;
 }
 
-.welcome-course-title {
+.course-box-wrapper:hover .course-color{
+    width: 14vw;
+    height: 26vh;
+    transition: ease-in-out .3s;
+}
+
+.course-title {
     text-decoration: none ;
 }
 
-.welcome-course img {
+.course-img img {
     height: 20vh;
     width: 12vw
 }
 
-.welcome-course-view {
+.course-view {
     font-size: 3.5vh;
     font-family: 'Raleway';
     text-align: right;
@@ -454,7 +505,7 @@ color: #008ED2;
     transition: ease-in-out 0.3s;
 }
 
-.welcome-course-view:hover{
+.course-view:hover{
     color: #008ED2;
      transition: ease-in-out 0.3s;
 }
@@ -471,6 +522,13 @@ color: #008ED2;
     justify-content: center;
     flex-direction: column; 
     align-items: center;
+    background-color: white;
+}
+
+.welcome-slide {
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
 }
 
 .welcome-slides {
@@ -484,11 +542,12 @@ color: #008ED2;
     font-family: 'Raleway';
     color: #008ED2;
     font-weight: bold;
+    margin-top: 3vh;
 }
 
 .welcome-slider-text {
     width: 40vw;
-    height: 17vh;
+    height: 14vh;
     margin-top: 5vh;
     font-size: 2.5vh;
     font-family: 'Raleway';
@@ -500,14 +559,24 @@ color: #008ED2;
     height: 4vh;
     width: 8vw;
     background-color: #008ED2;
-    color: white;
-    font-size: 2vh;
-    font-family: 'Raleway';
     border-radius: 20px;
+    display: flex;
     justify-content: center;
     flex-direction: column; 
     align-items: center;
     margin-left: 40vw;
+    color: white;
+    font-size: 2vh;
+    font-family: 'Raleway';
+
+    text-align: center;
+}
+
+.welcome-slider-button-text {
+    color: white;
+    font-size: 2vh;
+    font-family: 'Raleway';
+    align-items: center;
 }
 
 .welcome-slide{
@@ -520,25 +589,32 @@ color: #008ED2;
 
 .welcome-fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 5s;
     animation-name: fade;
-    animation-duration: 2s;
+    animation-duration: 5s;
+}
+
+.welcome-dot-container {
+    text-align:center;
+    margin-top: 2vh;
 }
 
 .welcome-dot {
-    height: 8px;
-    width: 8px;
+    height: 12px;
+    width: 12px;
     display: inline-block;
     border-radius: 50%;
     margin: 0 2px;
     background-color: #9ED3CE;
     margin-top: 10px;
+    transition: ease-in-out .2s;
 }
 
 .welcome-dot-selected {
-    height: 10px;
-    width: 10px;
+    height: 14px;
+    width: 14px;
     background-color: #1B9DD9;
+    transition: ease-in-out .2s;
 }
 
 @-webkit-keyframes fade {
