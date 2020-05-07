@@ -693,11 +693,11 @@
 /* Laptop styles */
 
 
-@media screen and (min-width:1440px)and (max-width:1599px) {
+@media screen and (min-width:1440px)and (max-width:1920px) {
     /* Account Stylings */
 
     .profile-icon {
-        width: 15vw;
+        width: 16vw;
     }
 
     .details-container h2 {
