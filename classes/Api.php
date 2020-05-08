@@ -10,11 +10,22 @@ class Api
 
     public function getCourse($col = null, $data = null)
     {
-        if (is_null($col) || is_null($data)) {
-            $data = $this->db->getData('courses');
-            return json_encode($data->allResults());
+        switch ($col) {
+
+                // No GET parameter was set, so get all courses
+            case null:
+                $returnData = $this->db->getData('courses');
+                return json_encode($returnData->allResults());
+
+                // Name GET parameter was set, so return only the course with that name
+            case 'name':
+                $returnData = $this->db->getData('courses', array($col, '=', $data));
+                return json_encode($returnData->firstResult());
+
+                // Tag GET parameter was set, so return all courses with that tag
+            case 'tag':
+                $returnData = $this->db->getData('courses', array($col, '=', $data));
+                return json_encode($returnData->allResults());
         }
-        $data = $this->db->getData('courses', array($col, '=', $data));
-        return json_encode($data->firstResult());
     }
 }
