@@ -16,7 +16,9 @@ $GLOBALS['config'] = array(
 
 // Auto requires all the classes needed
 spl_autoload_register(function ($class) {
-    require_once 'classes/' . $class . '.php';
+    if (file_exists('classes/' . $class . '.php')) {
+        require_once 'classes/' . $class . '.php';
+    } elseif (file_exists($class . '.php')) {
+        require_once $class . '.php';
+    }
 });
-
-require_once 'functions/sanitize.php';
