@@ -1125,6 +1125,7 @@ nav img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 15vh;
 }
 
 .course-overview h1 {
