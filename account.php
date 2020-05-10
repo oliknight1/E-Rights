@@ -13,6 +13,9 @@ $user->findUser($_SESSION['user']);
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/responsive-tablet.css">
     <link rel="stylesheet" href="styles/responsive-mobile.css">
+    <link rel="stylesheet" href="styles/general-styles.css">
+    <link rel="stylesheet" href="styles/general-styles-mobile.css">
+    <link rel="stylesheet" href="styles/general-styles-tablet.css">
     <script src="https://kit.fontawesome.com/96867cee00.js"></script>
     <title>E-Rights</title>
 </head>
