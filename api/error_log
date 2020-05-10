@@ -1,6 +1,0 @@
-[07-May-2020 16:49:35 UTC] PHP Warning:  require_once(/core/init.php): failed to open stream: No such file or directory in /home/ok131/public_html/ci536/site/e-rights/api/single-course.php on line 2
-[07-May-2020 16:49:35 UTC] PHP Fatal error:  require_once(): Failed opening required '/core/init.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/ok131/public_html/ci536/site/e-rights/api/single-course.php on line 2
-[07-May-2020 16:49:35 UTC] PHP Warning:  require_once(/core/init.php): failed to open stream: No such file or directory in /home/ok131/public_html/ci536/site/e-rights/api/single-course.php on line 2
-[07-May-2020 16:49:35 UTC] PHP Fatal error:  require_once(): Failed opening required '/core/init.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/ok131/public_html/ci536/site/e-rights/api/single-course.php on line 2
-[07-May-2020 16:49:36 UTC] PHP Warning:  require_once(/core/init.php): failed to open stream: No such file or directory in /home/ok131/public_html/ci536/site/e-rights/api/single-course.php on line 2
-[07-May-2020 16:49:36 UTC] PHP Fatal error:  require_once(): Failed opening required '/core/init.php' (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/ok131/public_html/ci536/site/e-rights/api/single-course.php on line 2
