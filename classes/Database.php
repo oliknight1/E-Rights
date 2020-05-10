@@ -21,6 +21,7 @@ class Database
         try {
             $this->pdo  = new PDO('mysql:host=' . Config::get('mysql/host') . ';dbname=' . Config::get('mysql/dbName'), Config::get('mysql/username'), Config::get('mysql/password'));
         } catch (PDOException $e) {
+
             // kill the connection if there is an error connecting to the db and print out an error message for the user
             // make the message friendly to make the user less worried about running into an error]
             // also do not give any details about the error, as could be used by hackers
@@ -31,10 +32,12 @@ class Database
     // Allows us to get an instance of our databse if it has already been instantiated, means we do not need to keep create a new Database object on each page
     public static function getInstance()
     {
+
         // Check if we have instantiated a db object (e.g already connected to the db)
         // If not instantiate a new Database object
 
         // Need to use self on static variables
+
         if (!isset(self::$instance)) {
             self::$instance = new Database();
         }
@@ -46,10 +49,8 @@ class Database
     {
         // Set error to false to make sure we do not return an error from a query that has been made previously
         $this->error = false;
-
         // Check if query has been prepared successfully
         if ($this->query = $this->pdo->prepare($sql)) {
-
             $x = 1;
             // Check if parameters exist
             if (count($params)) {
@@ -62,6 +63,8 @@ class Database
             }
             // Execute the query and check that it has been successful
             if ($this->query->execute()) {
+
+
                 // Fetch the object of the results
                 // Allows you to get rows and collumns of the table
                 $this->results = $this->query->fetchAll(PDO::FETCH_ASSOC);
@@ -77,8 +80,10 @@ class Database
 
     public function action($action, $table, $where = array())
     {
+
         // Check that when the fucntion is called, $where has all the parameters it needs
         if (count($where) === 3) {
+
             // Define what comparison operators are allowed
             // Prevents unwanted characters being entered
             $operators = array('=', '<', '>', '<=', '>=');
@@ -94,14 +99,24 @@ class Database
 
             // Make sure there isn't an error in the query
             if (!$this->query($sql, array($value))->error()) {
+
+                return $this;
+            }
+        } else {
+
+            $sql = "{$action} FROM {$table}";
+
+            // Make sure there isn't an error in the query
+            if (!$this->query($sql)->error()) {
                 return $this;
             }
         }
     }
 
 
-    public function getData($table, $where)
+    public function getData($table, $where = null)
     {
+
         // Passes parameters to action()
         return $this->action('SELECT *', $table, $where);
     }
@@ -146,6 +161,12 @@ class Database
     public function firstResult()
     {
         return $this->results()[0];
+    }
+    public function allResults()
+    {
+
+
+        return $this->results();
     }
 
     // Returns false be default, but will return true if there has been an error

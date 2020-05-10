@@ -5,77 +5,191 @@
 @media screen and (min-width: 320px) and (max-width:375px) and (orientation: portrait) {
     /* Navigation */
 
+    /* Hide the links displayed on desktop */
+    .link-container {
+        display: none;
+    }
+
+    /* Hamburger menu button */
+    #open-menu {
+        font-size: 2.5em;
+        display: inline-block;
+        position: absolute;
+        left: 5%;
+        color: var(--main-blue);
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #F5F5F5;
+        height: 100vh;
+        width: 100vw;
+        /* Hide the menu by default */
+        transform: translateX(-100%);
+        transition: all .8s ease-in-out;
+    }
 
 
-    /* 404 */
-.container-404 {
-    width: 95vw;
-}
+    .hamburger-menu>* {
+        opacity: 1;
+        transition: all .8s ease-in-out;
 
-.image-404 img {
-    width: 70vw;
-    height: 25vh;
-}
+    }
 
-.header-404 {
-    font-size: 3vh;
-    padding-top: 0vh;
-}
+    /* Blue section with the username */
+    .hamburger-menu header {
+        width: 100%;
+        height: 20%;
+        background: var(--main-blue);
+        display: flex;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1em 0 1.5em;
+    }
 
-.text-404 {
-    font-size: 2.5vh;
-}
+    .hamburger-menu header p {
+        color: #ffffff;
+        font-size: 1.5em;
+    }
 
-.button-container-404 {
-    width: 50vw;
-}
+    .hamburger-menu header i {
 
-.button-404 {
-    width: 50vw;
-    border-radius: 55px;
-}
+    .hamburger-menu ul {
+        margin-top: 3vh;
+        padding: 0 1.5em;
+    }
 
-.button-404:active{
-width: 50vw;
-height: 7.5vh;
-}
+    .hamburger-menu li {
+        list-style-type: none;
+        font-size: 1.8em;
+        color: var(--heading-col);
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+        background: #ffffff;
+        border-radius: 5em;
+        padding: .5em .8em;
+        margin: 5vh 0;
+    }
 
+    .hamburger-menu li i {
+        font-size: 1.4em;
+        display: inline-block;
+    }
 
-/* construction */
+    .icon-container {
+        width: 18vw;
+    }
 
-.construction-container {
-    width: 95vw;
-}
-
-.construction-image img {
-    width: 70vw;
-    height: 25vh;
-}
-
-.construction-header {
-    font-size: 3vh;
-    padding-top: 0vh;
-}
-
-.construction-text {
-    font-size: 2.5vh;
-}
-
-.construction-button-container {
-    width: 50vw;
-}
-
-.construction-button {
-    width: 50vw;
-    border-radius: 55px;
-}
-
-.construction-button:active{
-width: 50vw;
-height: 7.5vh;
-}
+    /* Center the logo in the center */
+    nav {
+        position: relative;
+        justify-content: center;
+    }
 
 
+    nav img {
+        padding-left: 0;
+    }
+
+    /* Account Page Styling */
+
+    .account-wrapper {
+        flex-direction: column;
+        height: 200vh;
+    }
+
+    .account-overview {
+        width: 100vw;
+        height: 100vh;
+        border: none;
+    }
+
+    .profile-icon {
+        width: 50vw;
+    }
+
+    .profile-icon p {
+        font-size: 1.4em;
+    }
+
+    .overview-container {
+        width: 90%;
+        border-radius: 3em;
+    }
+
+    .overview-container h2 {
+        font-size: 1.8em;
+        text-align: center;
+        margin-top: 2vh;
+    }
+
+    .overview-container li {
+        font-size: 1.2em;
+    }
+
+    .account-details {
+        width: 100vw;
+
+    }
+
+    .details-container {
+        width: 90%;
+        border-radius: 3em;
+        padding: 2em 2em;
+        height: fit-content;
+    }
+
+    .details-container h2 {
+        display: inline-block;
+        font-size: 1.8em;
+        margin-bottom: 5vh;
+    }
+
+    .details-container h3 {
+
+        margin-bottom: 3vh;
+    }
+
+    .details-container p {
+        width: 100%;
+    }
+
+    /* My Learning Page */
+    .assigned-bar {
+        width: 100%;
+    }
+
+    .assigned-bar ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        row-gap: 4vh;
+    }
+
+    .assigned-bar li {
+        width: 45vw;
+        border-radius: 1em !important;
+        font-size: .9em;
+        padding: .5em;
+    }
+
+    .my-learning-container {
+        margin-top: 20vh;
+        width: 80%;
+        justify-content: center;
+
+    }
+
+    /* Login Page */
     .login-img-container {
         display: none;
     }
@@ -114,6 +228,195 @@ height: 7.5vh;
     }
 
 
+
+    .user-form-container button {
+        font-size: 1.2em;
+    }
+
+    /* Sign up styles */
+    .signup-title {
+
+        padding: 0;
+    }
+
+    .signup-title h1 {
+        font-size: 1.8em;
+        text-align: center;
+        position: relative;
+        margin-top: 3vh;
+    }
+
+    .signup img {
+        width: 50%;
+    }
+
+    .signup input,
+    .signup select {
+        font-size: .9em !important;
+    }
+
+    /* 404 */
+    .container-404 {
+        width: 95vw;
+    }
+
+    .image-404 img {
+        width: 70vw;
+        height: 25vh;
+    }
+
+
+    .header-404 {
+        font-size: 3vh;
+        padding-top: 0vh;
+    }
+
+    .text-404 {
+        font-size: 2.5vh;
+    }
+
+    .button-container-404 {
+        width: 50vw;
+    }
+
+    .button-404 {
+        width: 50vw;
+        border-radius: 55px;
+    }
+
+    .button-404:active {
+        width: 50vw;
+        height: 7.5vh;
+    }
+
+
+    /* construction */
+
+    /* 404 */
+    .construction-container {
+        width: 95vw;
+    }
+
+    .construction-image img {
+        width: 70vw;
+        height: 25vh;
+    }
+
+    .construction-header {
+        font-size: 3vh;
+        padding-top: 0vh;
+    }
+
+    .construction-text {
+        font-size: 2.5vh;
+    }
+
+    .construction-button-container {
+        width: 50vw;
+    }
+
+    .construction-button {
+        width: 50vw;
+        border-radius: 55px;
+    }
+
+    .construction-button:active {
+        width: 50vw;
+        height: 7.5vh;
+    }
+
+    /* Course Overview Styling */
+    .course-overview h1 {
+        width: fit-content;
+        font-size: 2.5em;
+        margin: 3vh 0;
+    }
+
+    .course-overview {
+        height: fit-content;
+    }
+
+    .overview-wrapper {
+        flex-direction: column;
+        height: fit-content;
+        padding: 1.5em;
+    }
+
+    .img-list-container {
+        flex-direction: column-reverse;
+    }
+
+    .img-list-container div {
+        width: 100%;
+    }
+
+    .overview-wrapper p {
+        width: 100%;
+        border-bottom: solid 1px rgb(122, 122, 122);
+        padding-bottom: 5vh;
+        font-size: .8em;
+
+    }
+
+    .img-list-container ul {
+        border: none;
+    }
+
+    .img-list-container li {
+        font-size: 1.2em;
+    }
+
+
+    .overview-wrapper button {
+
+        margin-top: 3vh;
+        font-size: 1.2em;
+    }
+}
+
+
+/* Medium Phones */
+
+
+    .login-img-container {
+        display: none;
+    }
+
+
+
+    /* Navigation */
+
+    .hamburger-menu header p {
+        font-size: 1.7em;
+    }
+
+    .login-img-container {
+        display: none;
+    }
+
+    .user-form-container {
+
+        width: 100%;
+        transform: translateX(0);
+    }
+
+    /* Remove delay from fade in */
+
+    .user-form-container>* {
+        animation: fadeIn forwards 1.5s;
+    }
+
+
+    .user-form-container img {
+        width: 50%;
+    }
+
+    /*  Forgotton password and sign up links */
+
+    .form-links a,
+    .form-links p {
+        font-size: 1em;
+    }
 
     .user-form-container button {
         font-size: 1.2em;
@@ -265,6 +568,78 @@ height: 7.5vh;
 }
 
 
+
+    .user-form-container button {
+        font-size: 1.2em;
+    }
+
+    .signup-title {
+        margin-top: 0vh;
+        margin-bottom: 3vh;
+    }
+
+    /* Sign up styles */
+    .signup-title h1 {
+        font-size: 2em;
+    }
+
+    /* 404 */
+
+    .container-404 {
+        width: 95vw;
+    }
+
+    .image-404 img {
+        width: 70vw;
+        height: 25vh;
+    }
+
+    .header-404 {
+        font-size: 3vh;
+        padding-top: 0vh;
+    }
+
+    .text-404 {
+        font-size: 2.5vh;
+    }
+
+    .button-container-404 {
+        width: 50vw;
+    }
+
+    .button-404 {
+        width: 50vw;
+        border-radius: 55px;
+    }
+
+    .button-404:active {
+        width: 50vw;
+        height: 7.5vh;
+    }
+
+
+
+    /* construction */
+
+    .construction-container {
+        width: 95vw;
+    }
+
+    .construction-image img {
+        width: 70vw;
+        height: 25vh;
+    }
+
+    .construction-header {
+        font-size: 3vh;
+        padding-top: 0vh;
+    }
+
+    .construction-text {
+        font-size: 2.5vh;
+    }
+
+
     /* course box */
 
     .course-header {
@@ -367,7 +742,6 @@ height: 7.5vh;
     font-size: 2.5vh;
     width: 25vw;
     }
-
     .home-info-profile-content-amount {
    margin-bottom: 8vh;
 }
@@ -420,6 +794,66 @@ height: 7.5vh;
 
     /* Blue section with the username */
     .hamburger-menu header {
+      
+      
+    .construction-button-container {
+        width: 50vw;
+    }
+
+    .construction-button {
+        width: 50vw;
+        border-radius: 55px;
+    }
+
+    .construction-button:active {
+        width: 50vw;
+        height: 7.5vh;
+    }
+}
+
+/* Large Phones */
+
+@media screen and (min-width: 414px) and (max-width:768px) and (orientation: portrait) {
+    /* Navigation */
+
+    /* Hide the links displayed on desktop */
+    .link-container {
+        display: none;
+    }
+
+
+    /* Hamburger menu button */
+    #open-menu {
+        font-size: 2.5em;
+        display: inline-block;
+        position: absolute;
+        left: 5%;
+        color: var(--main-blue);
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #F5F5F5;
+        height: 100vh;
+        width: 100vw;
+        /* Hide the menu by default */
+        transform: translateX(-100%);
+        transition: all .8s ease-in-out;
+    }
+
+
+    .hamburger-menu>* {
+        opacity: 1;
+        transition: all .8s ease-in-out;
+
+    }
+
+    /* Blue section with the username */
+    .hamburger-menu header {
         width: 100%;
         height: 20%;
         background: var(--main-blue);
@@ -432,12 +866,12 @@ height: 7.5vh;
 
     .hamburger-menu header p {
         color: #ffffff;
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     .hamburger-menu header i {
 
-        margin-right: 0vw;
+        margin-right: 2vw;
         color: #ffffff;
         font-size: 3em;
     }
@@ -478,6 +912,179 @@ height: 7.5vh;
 
     nav img {
         padding-left: 0;
+    }
+
+    /* Account Page Styling */
+
+    .account-wrapper {
+        flex-direction: column;
+        height: 200vh;
+    }
+
+    .account-overview {
+        width: 100vw;
+        height: 100vh;
+        border: none;
+    }
+
+    .profile-icon {
+        width: 50vw;
+    }
+
+    .profile-icon p {
+        font-size: 1.4em;
+    }
+
+    .overview-container {
+        width: 90%;
+        border-radius: 3em;
+    }
+
+    .overview-container h2 {
+        font-size: 1.8em;
+        text-align: center;
+        margin-top: 2vh;
+    }
+
+    .overview-container li {
+        font-size: 1.2em;
+    }
+
+    .account-details {
+        width: 100vw;
+
+    }
+
+    .details-container {
+        width: 90%;
+        border-radius: 3em;
+        padding: 2em 2em;
+        height: fit-content;
+    }
+
+    .details-container h2 {
+        display: inline-block;
+        font-size: 1.8em;
+        margin-bottom: 5vh;
+    }
+
+    .details-container h3 {
+        margin-bottom: 2vh;
+    }
+
+    .details-container p {
+        width: 100%;
+    }
+
+    /* My Learning Page Styling */
+    .assigned-bar {
+        margin-bottom: 5vh;
+        width: 100%;
+    }
+
+    .assigned-bar ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        row-gap: 4vh;
+    }
+
+    .assigned-bar li {
+        width: 45vw;
+        border-radius: 1em !important;
+        font-size: .9em;
+        padding: .5em;
+    }
+
+    /* Login Page Stylings */
+    .login-img-container {
+        display: none;
+    }
+
+    .user-form-container {
+
+
+        width: 100%;
+        height: 20%;
+        background: var(--main-blue);
+        display: flex;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1em 0 1.5em;
+    }
+
+    .hamburger-menu header p {
+        color: #ffffff;
+        font-size: 1.5em;
+    }
+
+    .hamburger-menu header i {
+        margin-right: 0vw;
+        color: #ffffff;
+        font-size: 3em;
+
+    .user-form-container>* {
+
+        animation: fadeIn forwards 1.5s;
+
+    }
+
+    .hamburger-menu ul {
+        margin-top: 3vh;
+        padding: 0 1.5em;
+    }
+
+
+    .hamburger-menu li {
+        list-style-type: none;
+        font-size: 1.8em;
+        color: var(--heading-col);
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+        background: #ffffff;
+        border-radius: 5em;
+        padding: .5em .8em;
+        margin: 5vh 0;
+
+    .user-form-container img {
+        margin-top: 10vh;
+        width: 70%;
+    }
+
+    .hamburger-menu li i {
+        font-size: 1.4em;
+        display: inline-block;
+    }
+
+
+    .icon-container {
+        width: 18vw;
+
+    .form-links a {
+        font-size: .8em;
+
+    }
+
+    /* Center the logo in the center */
+    nav {
+        position: relative;
+        justify-content: center;
+    }
+
+
+    nav img {
+        padding-left: 0;
+
+    .user-form-container form input,
+    .user-form-container form select {
+        width: 70vw;
+        font-size: 1.2em;
+        border: var(--main-blue) 3px solid;
     }
 
     /* Account Page Styling */
@@ -1338,6 +1945,7 @@ height: 7.5vh;
     /* course */
 
 
+
     /* making it so only two course display on mobile */
     .course-content >div:nth-child(3) { 
         visibility: hidden; 
@@ -1473,40 +2081,139 @@ height: 7.5vh;
 /* Small Phones */
 @media screen and (min-width: 568px) and (max-width:667px) and (orientation: landscape) {
 
-    /* 404 */
-
-.container-404 {
-    width: 80vw;
-}
-
-.button-404 {
-    width: 20vw;
-    border-radius: 55px;
-}
-
-.button-404:active {
-    width: 20vw;
-}
-
-
-/* construction */
-
-.construction-container {
-    width: 80vw;
-}
-
-.construction-button {
-    width: 20vw;
-    border-radius: 55px;
-}
-
-.construction-button:active {
-    width: 20vw;
-}
-
 
 
     /* Navigation */
+
+
+    .user-form-container button {
+        font-size: 1.4em;
+    }
+
+    /* Sign up styles */
+
+    .signup img {
+        width: 50%;
+    }
+
+    .signup-title {
+        margin: 0;
+        padding: 0;
+    }
+
+    .signup-title h1 {
+        font-size: 2.5em;
+        text-align: center;
+        position: relative;
+        margin-top: 3vh;
+    }
+
+    /* 404 */
+
+    .container-404 {
+        width: 95vw;
+    }
+
+    .image-404 img {
+        width: 70vw;
+        height: 25vh;
+    }
+
+    .header-404 {
+        font-size: 4vh;
+        padding-top: 0vh;
+    }
+
+    .text-404 {
+        font-size: 2.5vh;
+    }
+
+    .button-container-404 {
+        width: 60vw;
+    }
+
+    .button-404 {
+        width: 60vw;
+        border-radius: 55px;
+    }
+
+
+    /* construction */
+
+    .construction-container {
+        width: 95vw;
+    }
+
+    .construction-image img {
+        width: 70vw;
+        height: 25vh;
+    }
+
+    .construction-header {
+        font-size: 4vh;
+        padding-top: 0vh;
+    }
+
+    .construction-text {
+        font-size: 2.5vh;
+    }
+
+    .construction-button-container {
+        width: 60vw;
+    }
+
+    .construction-button {
+        width: 60vw;
+        border-radius: 55px;
+    }
+
+    .course-overview h1 {
+        width: fit-content;
+        font-size: 2.5em;
+        margin: 3vh 0;
+    }
+
+    .course-overview {
+        height: fit-content;
+    }
+
+    .overview-wrapper {
+        flex-direction: column;
+        height: fit-content;
+        padding: 1.5em;
+    }
+
+    .img-list-container {
+        flex-direction: column-reverse;
+    }
+
+    .img-list-container div {
+        width: 100%;
+    }
+
+    .overview-wrapper p {
+        width: 100%;
+        border-bottom: solid 1px rgb(122, 122, 122);
+        padding-bottom: 5vh;
+        font-size: .8em;
+
+    }
+
+    .img-list-container ul {
+        border: none;
+    }
+
+    .img-list-container li {
+        font-size: 1.2em;
+    }
+
+
+    .overview-wrapper button {
+
+        margin-top: 3vh;
+        font-size: 1.2em;
+    }
+}
 
     .link-container a {
         font-size: 4vh;
@@ -1533,6 +2240,9 @@ height: 7.5vh;
 
     .details-container {
         padding: .5em;
+
+      }
+
     }
 
     .details-container h2 {
@@ -1577,6 +2287,7 @@ height: 7.5vh;
     .my-learning-container {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
+
 
     /* Login styling */
 
@@ -1627,9 +2338,64 @@ height: 7.5vh;
         font-size: .8em;
     }
 
+
     /*course */
     .course-content {
         padding: 0;
+
+  
+
+    /* Course Overview Styles */
+    .course-overview h1 {
+        width: fit-content;
+        font-size: 2.5em;
+        margin: 3vh 0;
+    }
+
+    .course-overview {
+        height: fit-content;
+    }
+
+    .overview-wrapper {
+        flex-direction: column;
+        height: fit-content;
+        padding: 3em;
+    }
+
+    .img-list-container {
+        flex-direction: column-reverse;
+    }
+
+    .img-list-container div {
+        width: 100%;
+    }
+
+    .overview-wrapper p {
+        width: 100%;
+        border-bottom: solid 1px rgb(122, 122, 122);
+        padding-bottom: 5vh;
+        font-size: .8em;
+
+    }
+
+    .img-list-container img {
+        width: 80%;
+    }
+
+    .img-list-container ul {
+        border: none;
+    }
+
+    .img-list-container li {
+        font-size: 1.2em;
+    }
+
+
+    .overview-wrapper button {
+
+        margin-top: 3vh;
+        font-size: 1.2em;
+
     }
 }
 
@@ -1753,13 +2519,10 @@ height: 7.5vh;
         align-items: center;
     }
 
-.construction-button:active {
-    width: 20vw;
-}
+
 
     .details-container h3 {
         font-size: 1.1em;
-
     }
 
     .details-container p {
@@ -1797,6 +2560,91 @@ height: 7.5vh;
     .construction-button:active {
         width: 20vw;
     }
+
+    /* My Learning Page Styling */
+    .assigned-bar {
+        margin-bottom: 5vh;
+    }
+
+    .assigned-bar ul {
+        width: 100%;
+    }
+
+    .assigned-bar li {
+        width: 20vw;
+        font-size: 1em;
+    }
+
+    .my-learning-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    /* Login Page Styling */
+    .login-img-container img {
+        transform: translateY(-15%);
+
+    }
+
+    .details-container p {
+        padding: .4em;
+        font-size: .9em;
+    }
+
+   
+
+    /* Course overview stylng */
+    .course-overview h1 {
+        width: fit-content;
+        font-size: 3em;
+        margin: 3vh 0;
+    }
+
+    .course-overview {
+        height: fit-content;
+    }
+
+    .overview-wrapper {
+        flex-direction: column;
+        height: fit-content;
+        padding: 3em 5em;
+    }
+
+    .img-list-container {
+        flex-direction: column-reverse;
+    }
+
+    .img-list-container div {
+        width: 100%;
+    }
+
+    .overview-wrapper p {
+        width: 100%;
+        border-bottom: solid 1px rgb(122, 122, 122);
+        padding-bottom: 5vh;
+        font-size: 1em;
+
+    }
+
+    .img-list-container img {
+        width: 80%;
+    }
+
+    .img-list-container ul {
+        border: none;
+    }
+
+    .img-list-container li {
+        font-size: 1.5em;
+    }
+
+
+    .overview-wrapper button {
+
+        margin-top: 3vh;
+        font-size: 1.5em;
+    }
+}
+
 
     /* My Learning Page Styling */
     .assigned-bar {

@@ -1,9 +1,3 @@
-<?php
-
-require_once 'core/init.php';
-$user = new User();
-$user->findUser($_SESSION['user']);
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -83,79 +77,33 @@ $user->findUser($_SESSION['user']);
         </div>
 
     </nav>
-    <main class="my-learning">
-        <div class="assigned-bar">
-            <ul>
-                <li class="selected">Assigned</li>
-                <li>In Progress</li>
-                <li>Completed</li>
-                <li>Certificates</li>
-            </ul>
+
+    <main class="course-overview">
+
+        <h1>Course Name</h1>
+        <div class="overview-wrapper">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Harum laboriosam at mollitia nihil! Corrupti magnam magni dolorem sunt,
+                quia assumenda cupiditate, possimus quisquam animi temporibus architecto itaque veniam debitis fuga!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Harum laboriosam at mollitia nihil! Corrupti magnam magni dolorem sunt,
+                quia assumenda cupiditate, possimus quisquam animi temporibus architecto itaque veniam debitis fuga!</p>
+            <div class="img-list-container">
+                <div>
+                    <img src='assets/illustrations/course-images/principles.svg'>
+                    <button>Start</button>
+                </div>
+
+
+                <ul>
+                    <li>5 - 15 Minutes</li>
+                    <li>Easy</li>
+                    <li>Level 1 Required</li>
+                </ul>
+            </div>
         </div>
-        <div class="my-learning-container">
-            <a href="#">
-                <div class="home-course-box-container">
-                    <div class="home-course-box">
-                        <div class="home-course-color-1">
-                            <div class="home-course">
 
-                                <img src='assets/illustrations/course-images/principles.svg'>
 
-                            </div>
-
-                        </div>
-                        <p>Principles</p>
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="home-course-box-container">
-                    <div class="home-course-box">
-                        <div class="home-course-color-1">
-                            <div class="home-course">
-
-                                <img src='assets/illustrations/course-images/principles.svg'>
-
-                            </div>
-
-                        </div>
-                        <p>Principles</p>
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="home-course-box-container">
-                    <div class="home-course-box">
-                        <div class="home-course-color-1">
-                            <div class="home-course">
-
-                                <img src='assets/illustrations/course-images/principles.svg'>
-
-                            </div>
-
-                        </div>
-                        <p>Principles</p>
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="home-course-box-container">
-                    <div class="home-course-box">
-                        <div class="home-course-color-1">
-                            <div class="home-course">
-
-                                <img src='assets/illustrations/course-images/principles.svg'>
-
-                            </div>
-
-                        </div>
-                        <p>Principles</p>
-                    </div>
-                </div>
-            </a>
-        </div>
     </main>
-
     <div class="footer">
         <div class="footer-row-container">
             <a href="#" class="footer-row-links">
@@ -191,6 +139,5 @@ $user->findUser($_SESSION['user']);
     </div>
     <script src="js/main.js"></script>
 </body>
-
 
 </html>
