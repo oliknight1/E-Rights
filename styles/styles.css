@@ -1117,6 +1117,87 @@ nav img {
 
 }
 
+/* Course Overview Styling */
+.course-overview {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15vh;
+}
+
+.course-overview h1 {
+    width: 80%;
+    margin-bottom: 5vh;
+}
+
+.overview-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    height: 70%;
+    background: #ffffff;
+    box-shadow: 30px 30px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 2em;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5em;
+}
+
+.img-list-container {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    justify-content: space-evenly;
+}
+
+.img-list-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    height: 75%;
+
+
+}
+
+.img-list-container img {
+    width: 100%;
+}
+
+.overview-wrapper p {
+    width: 35%;
+
+}
+
+.img-list-container button {
+    width: fit-content;
+    padding: .5em 1.5em;
+    font-size: 1.8em;
+    border-radius: 25em;
+    background: var(--main-blue);
+    color: #ffffff;
+    border: none;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: all ease-in-out .2s;
+}
+
+.img-list-container ul {
+    border-left: solid 1px rgb(170, 170, 170);
+    padding-left: 5vw;
+
+}
+
+.overview-wrapper li {
+    list-style-type: none;
+    font-size: 1.5em;
+    margin: 5vh 0;
+}
+
 /* Login Page Styling */
 
 /* Wrapper around the login page, used for the image and to layout form */

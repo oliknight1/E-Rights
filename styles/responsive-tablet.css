@@ -181,6 +181,27 @@
         font-size: 3.5em;
 
     }
+
+    /* Course Overview Page */
+    .course-overview h1 {
+        font-size: 4em !important;
+    }
+
+    .overview-wrapper p {
+        font-size: 1.5em !important;
+    }
+
+    .overview-wrapper {
+        padding: 3em 5em !important;
+    }
+
+    .img-list-container li {
+        font-size: 1.8em !important;
+    }
+
+    .overview-wrapper button {
+        font-size: 1.8em !important;
+    }
 }
 
 /* Large tablets  */
@@ -497,6 +518,54 @@
     .user-form-container button {
         font-size: 3em;
     }
+
+    /* Course Overview Styling */
+    .course-overview h1 {
+        width: fit-content;
+        font-size: 6em !important;
+        margin: 3vh 0;
+    }
+
+    .course-overview {
+        height: fit-content;
+    }
+
+    .overview-wrapper {
+        flex-direction: column;
+        height: fit-content;
+        padding: 1.5em;
+    }
+
+    .img-list-container {
+        flex-direction: column-reverse;
+    }
+
+    .img-list-container div {
+        width: 100%;
+    }
+
+    .overview-wrapper p {
+        width: 100%;
+        border-bottom: solid 1px rgb(122, 122, 122);
+        padding-bottom: 5vh;
+        font-size: 2em !important;
+
+    }
+
+    .img-list-container ul {
+        border: none;
+    }
+
+    .img-list-container li {
+        font-size: 3em !important;
+    }
+
+
+    .overview-wrapper button {
+
+        margin-top: 3vh;
+        font-size: 2.5em !important;
+    }
 }
 
 /* Landscape styles */
@@ -588,6 +657,33 @@
 
     .signup button {
         font-size: 1.6em;
+    }
+
+    /* Course Overview Styling */
+    .overview-wrapper {
+        padding: 0 3em;
+        width: 95%;
+    }
+
+    .overview-wrapper p {
+        font-size: 1.2em;
+        width: 50%;
+    }
+
+    .img-list-container button {
+        font-size: 1.5em;
+    }
+
+    .img-list-container {
+        margin-left: 5vw;
+    }
+
+    .img-list-container img {
+        width: 120%;
+    }
+
+    .img-list-container ul {
+        margin-left: 5vw;
     }
 }
 
@@ -688,34 +784,18 @@
     .signup-title h1 {
         font-size: 3em;
     }
-}
 
-/* Laptop styles */
-
-
-@media screen and (min-width:1440px)and (max-width:1920px) {
-    /* Account Stylings */
-
-    .profile-icon {
-        width: 16vw;
+    /* Course Overview Styling */
+    .overview-wrapper p {
+        font-size: 1.5em;
     }
 
-    .details-container h2 {
-        font-size: 3em;
-    }
-
-    .details-container h3 {
-        font-size: 2.3em;
-        margin-bottom: 1vh;
-    }
-
-    .details-container p {
+    .img-list-container button {
         font-size: 1.8em;
-        width: 30vw;
+
     }
 
-    /* Login stylings */
-    .login-img-container img {
-        transform: translateY(-12%);
+    .img-list-container li {
+        font-size: 1.8em;
     }
 }
