@@ -19,47 +19,31 @@ $user->findUser($_SESSION['user']);
 
 <body>
     <div class="home-wrapper">
-        <div class="header-container">
-            <div class="header-logo">
-                <img src=assets/logo/logo-horizontal-2.svg alt="404">
+        <nav>
+            <div class="logo">
+                <a href="home.php">
+                    <img src=assets/logo/logo-horizontal-2.svg alt="Site Logo">
+                </a>
             </div>
-            <div class="header-nav">
-                <div class="header-nav-containers">
-                    <div class="header-nav-icon">
-                        <a href="#"><i class="fas fa-home"></i></a>
-                    </div>
-                    <a href="#" class="header-nav-name">
-                        Home
-                    </a>
-                </div>
-                <div class="header-nav-containers">
-                    <div class="header-nav-icon">
-                        <a href="#"><i class="fas fa-book-open"></i></a>
-                    </div>
-                    <a href="#" class="header-nav-name">
-                        Courses
-                    </a>
-                </div>
-                <div class="header-nav-containers">
-                    <div class="header-nav-icon">
-                        <a href="#"><i class="fas fa-graduation-cap"></i></a>
-                    </div>
-                    <a href="#" class="header-nav-name">
-                        My Learning
-                    </a>
-                </div>
-                <div class="header-nav-containers">
-                    <div class="header-nav-icon">
-                        <a href="#"><i class="fas fa-user"></i></a>
-                    </div>
-                    <a href="#" class="header-nav-name">
-                        Account
-                    </a>
-                </div>
-
+            <div class="link-container">
+                <a href="#">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#">
+                    <i class="fas fa-book-open"></i>
+                    <p>All Courses</p>
+                </a>
+                <a href="#">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>My Learning</span>
+                </a>
+                <a href="#">
+                    <i class="fas fa-user"></i>
+                    <span>Account</span>
+                </a>
             </div>
-
-        </div>
+        </nav>
 
         <div class="home-info-container">
             <div class="home-info-text-container">
@@ -112,83 +96,6 @@ $user->findUser($_SESSION['user']);
 
 
 
-
-        <div class="home-course-container">
-
-            <div class="home-course-header">
-                <p>Assigned</p>
-            </div>
-            <div class="home-course-content">
-                <a href="#">
-                    <div class="home-course-box-container">
-                        <div class="home-course-box">
-                            <div class="home-course-color-1">
-                                <div class="home-course">
-                                    <img src=assets/illustrations/course-images/principles.svg alt="404">
-                                </div>
-
-                            </div>
-                            <p>Principles</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="home-course-box-container">
-                        <div class="home-course-box">
-                            <div class="home-course-color-2">
-                                <div class="home-course">
-                                    <img src=assets/illustrations/course-images/rights.svg alt="404">
-                                </div>
-
-                            </div>
-                            <p>Rights</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="home-course-box-container">
-                        <div class="home-course-box">
-                            <div class="home-course-color-3">
-                                <div class="home-course">
-                                    <img src=assets/illustrations/course-images/GDPR.svg alt="404">
-                                </div>
-
-                            </div>
-                            <p>Why is GDPR important?</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="home-course-box-container">
-                        <div class="home-course-box">
-                            <div class="home-course-color-4">
-                                <div class="home-course">
-                                    <img src=assets/illustrations/course-images/data.svg alt="404">
-                                </div>
-
-                            </div>
-                            <p>Data Minimalism</p>
-                        </div>
-                    </div>
-                </a>
-
-
-            </div>
-
-        </div>
-
-        <div class="home-course-container">
-            <div class="home-course-header">
-                <p>In Progress</p>
-            </div>
-        </div>
-
-
-
-    </div>
 
 
 

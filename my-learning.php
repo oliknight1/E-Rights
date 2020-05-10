@@ -98,7 +98,9 @@ $user->findUser($_SESSION['user']);
                     <div class="home-course-box">
                         <div class="home-course-color-1">
                             <div class="home-course">
+
                                 <img src='assets/illustrations/course-images/principles.svg'>
+
                             </div>
 
                         </div>
@@ -111,7 +113,9 @@ $user->findUser($_SESSION['user']);
                     <div class="home-course-box">
                         <div class="home-course-color-1">
                             <div class="home-course">
+
                                 <img src='assets/illustrations/course-images/principles.svg'>
+
                             </div>
 
                         </div>
@@ -124,7 +128,9 @@ $user->findUser($_SESSION['user']);
                     <div class="home-course-box">
                         <div class="home-course-color-1">
                             <div class="home-course">
+
                                 <img src='assets/illustrations/course-images/principles.svg'>
+
                             </div>
 
                         </div>
@@ -137,7 +143,9 @@ $user->findUser($_SESSION['user']);
                     <div class="home-course-box">
                         <div class="home-course-color-1">
                             <div class="home-course">
+
                                 <img src='assets/illustrations/course-images/principles.svg'>
+
                             </div>
 
                         </div>
@@ -183,5 +191,6 @@ $user->findUser($_SESSION['user']);
     </div>
     <script src="js/main.js"></script>
 </body>
+
 
 </html>

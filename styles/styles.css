@@ -266,12 +266,29 @@ h2 {
     width: 12vw;
     border-radius: 25px;
     text-decoration: none;
-
     border: 2px solid var(--main-blue);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    transition: ease-in-out .3s;
+}
+
+.welcome-buttons:hover .welcome-buttons-text{
+    color: white;
+    transition: ease-in-out .3s;
+}
+
+.welcome-buttons:hover {
+    background-color: #707070;
+    border: 2px solid #707070;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: ease-in-out .3s;
+}
+
+.welcome-buttons:hover i{
+    color: white;
+    transition: ease-in-out .3s;
 }
 
 .welcome-buttons-text {
@@ -285,6 +302,7 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: ease-in-out .3s;
 }
 
 .welcome-buttons i {
@@ -296,6 +314,7 @@ h2 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    transition: ease-in-out .3s;
 }
 
 .welcome-buttons a {
@@ -352,15 +371,33 @@ h2 {
     height: 45vh;
     width: 50vw;
     margin-left: 40vw;
-    margin-top: 5vh
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .welcome-course-container {
     height: 60vh;
-    width: 90vw;
+    width: 80vw;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    margin-top: 20vh;
 }
+
+
+.welcome-split {
+    height: 6vh;
+    border-bottom: thin solid #707070;
+}
+
+.welcome-slider-container {
+    height: 35vh;
+    width: 55vw;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    flex-direction: column;
 
 .welcome-course-header {
     height: 8vh;
@@ -379,111 +416,12 @@ h2 {
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
-    padding: 0;
-    margin: 0;
+    background-color: white;
 }
 
-.welcome-course-box {
-    height: 38vh;
-    width: 15vw;
-    border-radius: 20px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-    font-size: 3.5vh;
-    font-family: 'Raleway';
-    text-align: center;
-    color: #707070;
-    text-decoration: none;
-}
-
-.welcome-course-box a {
-    text-decoration: none;
-}
-
-.welcome-course-color-1 {
-    height: 29vh;
-    width: 15vw;
-    border-radius: 20px 20px 0px 0px;
-    background-color: #009180;
-    display: flex;
+.welcome-slide {
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.welcome-course-color-2 {
-    height: 29vh;
-    width: 15vw;
-    border-radius: 20px 20px 0px 0px;
-    background-color: #00B9C8;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.welcome-course-color-3 {
-    height: 29vh;
-    width: 15vw;
-    border-radius: 20px 20px 0px 0px;
-    background-color: #B5C7DC;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.welcome-course-color-4 {
-    height: 29vh;
-    width: 15vw;
-    border-radius: 20px 20px 0px 0px;
-    background-color: #389BA3;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.welcome-course-title {
-    text-decoration: none;
-}
-
-.welcome-course img {
-    height: 20vh;
-    width: 12vw
-}
-
-.welcome-course-view {
-    font-size: 3.5vh;
-    font-family: 'Raleway';
-    text-align: right;
-    color: #707070;
-    font-weight: 550;
-    margin-right: 3vw;
-    margin-top: 2vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-end;
-    text-decoration: none;
-    transition: ease-in-out 0.3s;
-}
-
-.welcome-course-view:hover {
-    color: var(--main-blue);
-    transition: ease-in-out 0.3s;
-}
-
-.welcome-split {
-    height: 6vh;
-    border-bottom: thin solid #707070;
-}
-
-.welcome-slider-container {
-    height: 35vh;
-    width: 55vw;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-    justify-content: center;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
 }
 
@@ -498,11 +436,12 @@ h2 {
     font-family: 'Raleway';
     color: var(--main-blue);
     font-weight: bold;
+    margin-top: 3vh;
 }
 
 .welcome-slider-text {
     width: 40vw;
-    height: 17vh;
+    height: 14vh;
     margin-top: 5vh;
     font-size: 2.5vh;
     font-family: 'Raleway';
@@ -514,14 +453,25 @@ h2 {
     height: 4vh;
     width: 8vw;
     background-color: var(--main-blue);
-    color: white;
-    font-size: 2vh;
-    font-family: 'Raleway';
     border-radius: 20px;
+    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     margin-left: 40vw;
+    color: white;
+    font-size: 2vh;
+    font-family: 'Raleway';
+
+    text-align: center;
+}
+
+
+.welcome-slider-button-text {
+    color: white;
+    font-size: 2vh;
+    font-family: 'Raleway';
+    align-items: center;
 }
 
 .welcome-slide {
@@ -532,27 +482,36 @@ h2 {
     align-items: center;
 }
 
+
 .welcome-fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 5s;
     animation-name: fade;
-    animation-duration: 2s;
+    animation-duration: 5s;
 }
 
+.welcome-dot-container {
+    text-align:center;
+    margin-top: 2vh;
+
+
+
 .welcome-dot {
-    height: 8px;
-    width: 8px;
+    height: 12px;
+    width: 12px;
     display: inline-block;
     border-radius: 50%;
     margin: 0 2px;
     background-color: #9ED3CE;
     margin-top: 10px;
+    transition: ease-in-out .2s;
 }
 
 .welcome-dot-selected {
-    height: 10px;
-    width: 10px;
+    height: 14px;
+    width: 14px;
     background-color: #1B9DD9;
+    transition: ease-in-out .2s;
 }
 
 @-webkit-keyframes fade {
@@ -575,6 +534,217 @@ h2 {
     }
 }
 
+/* course box */
+
+.course-container {
+    height: 60vh;
+    width: 80vw;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    margin-top: 20vh;
+}
+
+.course-header {
+    height: 8vh;
+    width:80vw;
+    font-size: 5vh;
+    font-family: 'Raleway';
+    font-weight: 550;
+    color: #707070;
+    margin-left: 4vw;
+    margin-top: 4vh;
+}
+
+.course-content {
+    height:42vh;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13vw, 1fr));
+    row-gap: 8vh;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+    margin-right: 3vw;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+
+}
+
+.course-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.course-box-wrapper {
+    height: 35vh;
+    width: 14vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.course-box {
+    height: 34vh;
+    width: 13vw;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+  transition: ease-in-out .3s;
+
+.welcome-slides {
+    display: none;
+}
+
+.welcome-slider-name {
+    width: 45vw;
+    height: 5vh;
+    font-size: 4vh;
+    font-family: 'Raleway';
+    color: var(--main-blue);
+    font-weight: bold;
+
+}
+
+.course-box-wrapper:hover .course-box{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: ease-in-out .3s;
+    height: 35vh;
+    width: 14vw;
+}
+
+
+
+.course-text {
+    height: 9vh;
+    width: 13vw;
+    font-size: 3vh;
+
+.welcome-slider-button {
+    height: 4vh;
+    width: 8vw;
+    background-color: var(--main-blue);
+    color: white;
+    font-size: 2vh;
+
+    font-family: 'Raleway';
+    text-align: center;
+    color: #707070;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.course-text a {
+    text-decoration: none;
+}
+
+.course-color{
+    height: 25vh;
+    width: 13vw;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+  }
+
+.welcome-slide {
+    height: 35vh;
+    width: 55vw;
+
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+       transition: ease-in-out .3s;
+}
+
+
+
+.course-color:nth-of-type(1){
+    background-color: #009180;
+}
+.course-color:nth-of-type(2){
+    background-color: #00B9C8;
+}
+.course-color:nth-of-type(3){
+    background-color: #B5C7DC;
+}
+.course-color:nth-of-type(4){
+    background-color: #389BA3;
+}
+
+.course-box-wrapper:hover .course-color{
+    width: 14vw;
+    height: 26vh;
+    transition: ease-in-out .3s;
+}
+
+.course-title {
+    text-decoration: none ;
+}
+
+
+.course-img img {
+    height: 20vh;
+    width: 12vw
+}
+
+.course-view {
+    font-size: 3.5vh;
+    font-family: 'Raleway';
+    text-align: right;
+    color: #707070;
+    font-weight: 550;
+    margin-right: 3vw;
+    margin-top:2vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: flex-end;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+
+}
+
+.course-view:hover{
+    color: #008ED2;
+     transition: ease-in-out 0.3s;
+}
 
 
 /* footer CSS */
@@ -587,6 +757,7 @@ h2 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 15vh;
 }
 
 .footer-row-container {
@@ -626,6 +797,14 @@ h2 {
 
 .footer-image {
     width: 20vw;
+}
+
+.footer-row-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 65vw;
 }
 
 
@@ -686,7 +865,7 @@ h2 {
 
 .profile-icon {
     height: 26vh;
-    width: 13vw;
+    width: 10vw;
     background-color: #ffffff;
     border-radius: 50%;
     display: flex;
@@ -1022,6 +1201,99 @@ nav img {
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.details-container {
+    width: 80%;
+    height: 70%;
+    background: #ffffff;
+    box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.4);
+    padding: 2em 3em;
+
+}
+
+.details-container h2 {
+    color: var(--main-blue);
+    margin: 0;
+    margin-bottom: 3vh;
+}
+
+.details-container h3 {
+    font-weight: 100;
+    font-size: 1.5em;
+}
+
+.details-container p {
+    width: 20vw;
+    border: solid 2px #bdbdbd;
+    padding: .5em;
+}
+
+.details-container li {
+    list-style-type: none;
+    margin-bottom: 5vh;
+}
+
+/* My Learning Styling */
+.my-learning {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.assigned-bar {
+    height: 10vh;
+    width: 80%;
+    text-align: center;
+}
+
+.assigned-bar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+
+}
+
+.assigned-bar li {
+    display: inline-block;
+    list-style-type: none;
+    background: #ffffff;
+    padding: 1em;
+    width: 15vw;
+    border: solid 1px #a7a6a6;
+    cursor: pointer;
+
+}
+
+.selected {
+    background-color: var(--main-blue) !important;
+    border: solid 1px var(--main-blue) !important;
+    color: #ffffff;
+}
+
+/* Small margin between all the elements inside the <a> */
+.link-container a>* {
+    margin: .2vh 0;
+    transition: all .2s ease-in-out;
+
+}
+
+.link-container a:hover>* {
+    color: #707070;
+    margin: .6vh 0;
+}
+.assigned-bar li:nth-child(1) {
+    border-radius: 1em 0 0 1em;
+}
+
+.assigned-bar li:nth-child(4) {
+    border-radius: 0 1em 1em 0;
+}
+
 }
 
 .details-container {
@@ -1163,7 +1435,20 @@ nav img {
     height: 75%;
 
 
+.my-learning-container {
+    background: #ffffff;
+    padding: 3em 0;
+    border-radius: 2em;
+    box-shadow: 30px 30px 15px rgba(0, 0, 0, 0.3);
+    margin: 10vh;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+    row-gap: 8vh;
+
 }
+
 
 .img-list-container img {
     width: 100%;
@@ -1197,6 +1482,7 @@ nav img {
     font-size: 1.5em;
     margin: 5vh 0;
 }
+
 
 /* Login Page Styling */
 

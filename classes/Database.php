@@ -68,6 +68,7 @@ class Database
                 // Fetch the object of the results
                 // Allows you to get rows and collumns of the table
                 $this->results = $this->query->fetchAll(PDO::FETCH_ASSOC);
+
                 $this->count = $this->query->rowCount();
             } else {
                 $this->error = true;

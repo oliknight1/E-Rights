@@ -3,6 +3,262 @@
 /* Small tablets */
 @media screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait) {
 
+
+
+    /* 404 */
+
+.container-404 {
+    width:80vw;
+}
+
+.button-404 {
+    width: 30vw;
+    height: 8vh;
+    font-size: 3vh;
+}
+
+.button-404:active{
+   width: 30vw;
+   height: 8vh;
+}
+
+    /* Navigation styling */
+
+    .hamburger-menu header p {
+        font-size: 3.6em !important;
+    }
+
+    #close-menu {
+        font-size: 5em;
+    }
+
+    .hamburger-menu li {
+        font-size: 2.7em !important;
+    }
+
+    /* Account page stylings */
+
+
+    .overview-container {
+        width: 80% !important;
+    }
+
+    .profile-icon {
+        width: 40vw ;
+    }
+
+    .overview-container h2 {
+        font-size: 3em !important;
+    }
+
+    .overview-container li {
+        font-size: 1.8em !important;
+    }
+
+    .account-details {
+        height: 100vh;
+    }
+
+
+    /* construction */
+    
+.construction-container {
+    width:90vw;
+}
+.construction-button-container {
+    width: 35vw;
+    height: 8vh;
+    font-size: 2.5vh;
+}
+
+.construction-button {
+    width: 35vw;
+    height: 8vh;
+    font-size: 3vh;
+}
+
+.construction-button:active{
+   width: 35vw;
+   height: 8vh;
+}
+
+.construction-text {
+    font-size: 2.5vh;
+}
+
+
+
+/* welcome */
+
+.welcome-title {
+   z-index: 2;
+   margin-top: -20vh;
+   font-size: 5vh;
+   padding-left: 30vw;
+   width: 50vw;
+   height: 6vh;
+}
+
+.welcome-body {
+    height: 60vh    
+}
+
+.welcome-logo {
+    width: 30vw
+}
+
+.welcome-logo img{
+    width: 35vw
+}
+
+.welcome-buttons {
+    width: 21vw;
+    height: 4vh;
+    border-radius: 50px;
+}
+
+.welcome-buttons i {
+    font-size: 2vh;
+}
+
+.welcome-buttons-text {
+    font-size: 1.6vh;
+    width: 12vw;
+}
+
+.circle-box {
+    height: 30vh;
+    width: 45vw;
+    margin-top: -8vh;
+}
+
+.welcome-text-box {
+    height: 25vh;
+
+}
+
+.welcome-text {
+    font-size: 1.2vh;
+    width: 43vw;
+    height: 60vh;
+    margin-left: 41vw;
+}
+
+.welcome-course-container{ 
+    margin-top: -50vh;
+    height: 30vh;
+}
+
+.welcome-split {
+    margin-top: -35vh;
+}
+
+.welcome-slider-container {
+    width: 80vw;
+}
+
+.welcome-slider-name {
+    width: 70vw;
+}
+
+.welcome-slider-text {
+    width: 65vw;
+    font-size: 1.7vh;
+}
+
+.welcome-slider-button {
+    width: 20vw;
+    border-radius: 35px;
+}
+
+.welcome-dot {
+    height: 20px;
+    width: 20px;
+}
+
+.welcome-dot-selected {
+    height: 24px;
+    width: 24px;
+}
+
+/* course box */
+
+.course-container{ 
+    margin-top: 10vh;
+    height: 30vh;
+}
+
+.course-header {
+    font-size: 3vh;
+    margin-top: 2vh;
+}
+
+.course-content {
+    margin-top: -5vh;
+    padding: 2.5vw;
+}
+
+.course-box {
+    height: 15vh;
+    
+}
+
+.course-text {
+    font-size: 1.5vh;
+}
+
+.course-color {
+    height: 10vh;
+}
+
+.course-box-wrapper {
+    height: 15vh;
+    margin-top: -16vh;
+}
+
+
+.course-text {
+    font-size: 1.5vh;
+}
+
+.course-color {
+    height: 10vh;
+}
+
+.course-box-wrapper {
+    height: 15vh;
+    margin-top: -16vh;
+}
+
+.course-img img {
+    height: 10vh;
+    width: 8vw;
+}
+
+/* footer */
+
+.footer {
+    height: 20vh;
+}
+
+.footer-row-container {
+    width: 90vw;
+}
+
+.footer-row-links {
+    font-size: 1.5vh;
+}
+
+.footer-social-media {
+    width: 25vw;
+}
+
+.footer-social-media-icons {
+    font-size: 2.5vh;
+}
+
+    /* Login Styles */
+
     /* Navigation styling */
 
     .hamburger-menu header p {
@@ -59,76 +315,7 @@
     }
 
 
-    /* 404 */
-
-    .container-404 {
-        width: 80vw;
-    }
-
-    .image-404 img {
-        height: 25vh;
-        width: 60vw;
-    }
-
-    .header-404 {
-        padding-top: 2vh;
-        font-size: 5vh;
-    }
-
-    .button-container-404 {
-        width: 30vw;
-        height: 8vh;
-        font-size: 2.5vh;
-    }
-
-    .button-404 {
-        width: 30vw;
-        height: 8vh;
-        font-size: 3vh;
-    }
-
-    .button-404:active {
-        width: 30vw;
-        height: 8vh;
-    }
-
-    /* construction */
-
-    .construction-container {
-        width: 90vw;
-    }
-
-    .construction-image img {
-        height: 25vh;
-        width: 60vw;
-    }
-
-    .construction-header {
-        padding-top: 2vh;
-        font-size: 5vh;
-    }
-
-    .construction-button-container {
-        width: 35vw;
-        height: 8vh;
-        font-size: 2.5vh;
-    }
-
-    .construction-button {
-        width: 35vw;
-        height: 8vh;
-        font-size: 3vh;
-    }
-
-    .construction-button:active {
-        width: 35vw;
-        height: 8vh;
-    }
-
-    .construction-text {
-        font-size: 2.5vh;
-    }
-
+   
     /* Login Styles */
 
     .login-img-container {
@@ -204,9 +391,6 @@
     }
 }
 
-/* Large tablets  */
-@media screen and (min-width:1024px) and (max-width:1366px) and (orientation: portrait) {
-
     /* Navigation */
 
     /* Hide the links displayed on desktop */
@@ -263,7 +447,6 @@
     }
 
     .hamburger-menu header i {
-
         margin-right: 0vw;
         color: #ffffff;
         font-size: 3em;
@@ -476,48 +659,49 @@
         height: 25vh;
         margin-top: -40vh;
     }
-
-    .welcome-text {
+ .welcome-text {
         font-size: 1.5vh;
         width: 40vw;
         margin-left: 35vw;
     }
 
-    /*  Login page stylings */
 
-    .user-form-container {
-        width: 100%;
-        transform: translateX(0);
-    }
+    /* info box */
 
 
-    /* Remove delay from fade in */
+   
 
-    .user-form-container>* {
-        animation: fadeIn forwards 1.5s;
-    }
-
-    .user-form-container img {
-        width: 50%;
-    }
-
-    /*  Forgotton password and sign up links */
-
-    .form-links a,
-    .form-links p {
-        font-size: 1.8em;
-    }
-
-    .user-form-container form input,
-    .user-form-container form select {
+    .home-info-text-title {
         width: 50vw;
-        font-size: 2.5em;
+        font-size: 5vh;
     }
 
-
-    .user-form-container button {
-        font-size: 3em;
+    .home-info-text-content {
+        width: 45vw;
+        margin-left: 4vw;
+        font-size: 1.7vh;
     }
+
+    .home-info-profile-container {
+        width: 45vw;
+    }
+
+    .home-info-profile-icon {
+        width: 28vw;
+        height: 20vh;
+        margin-top: 5vh;
+    }
+
+    .home-info-profile-content {
+        width: 45vw;
+    }
+
+    .home-info-profile-content-title {
+        font-size: 2.5vh;
+        width: 20vw;
+        height: 4vh;
+    }
+
 
     /* Course Overview Styling */
     .course-overview h1 {
@@ -568,10 +752,20 @@
     }
 }
 
-/* Landscape styles */
 
-/* Small tablets - landscape */
-@media screen and (min-width:1024px) and (max-width:1366px) and (orientation: landscape) {
+    .home-info-profile-content-amount {
+        font-size: 3vh;
+        margin-top: -3vh;
+    }
+
+        .details-container h2 {
+        font-size: 3em !important;
+    }
+
+
+    .details-container h3 {
+        font-size: 2em;
+    }
 
     /* Account Styling */
 
@@ -581,6 +775,627 @@
 
     .profile-icon {
         width: 20vw;
+    }
+
+
+    .details-container p {
+        font-size: 1.6em;
+    }
+
+    /* My Learning Page Styling */
+
+    .assigned-bar li {
+
+        font-size: 1.5em !important;
+    }
+}
+
+
+/* Large tablets  */
+@media screen and (min-width:1024px) and (max-width:1366px) and (orientation: portrait) {
+
+    /* Navigation */
+
+    /* Hide the links displayed on desktop */
+    .link-container {
+        display: none;
+    }
+
+
+    /* Hamburger menu button */
+    #open-menu {
+        font-size: 5em;
+        display: inline-block;
+        position: absolute;
+        left: 5%;
+        color: var(--main-blue);
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #F5F5F5;
+        height: 100vh;
+        width: 100vw;
+        /* Hide the menu by default */
+        transform: translateX(-100%);
+        transition: all .8s ease-in-out;
+    }
+
+
+
+    /* course box */
+
+.course-container{ 
+    margin-top: 10vh;
+    height: 30vh;
+
+    .signup button {
+        font-size: 1.6em;
+    }
+
+    /* Course Overview Styling */
+    .overview-wrapper {
+        padding: 0 3em;
+        width: 95%;
+    }
+
+    .overview-wrapper p {
+        font-size: 1.2em;
+        width: 50%;
+    }
+
+    .img-list-container button {
+        font-size: 1.5em;
+    }
+
+    .img-list-container {
+        margin-left: 5vw;
+    }
+
+    .img-list-container img {
+        width: 120%;
+    }
+
+    .img-list-container ul {
+        margin-left: 5vw;
+    }
+
+}
+
+.course-header {
+    font-size: 3vh;
+    margin-top: 2vh;
+}
+
+.course-content {
+    margin-top: -5vh;
+}
+
+.profile-icon {
+    width: 40vw;
+}
+
+.course-box {
+    height: 15vh;
+    
+}
+
+.course-text {
+    font-size: 1.5vh;
+}
+
+.course-color {
+    height: 10vh;
+}
+
+.course-box-wrapper {
+    height: 15vh;
+    margin-top: -16vh;
+}
+
+
+/* footer */
+
+.footer {
+    height: 20vh;
+}
+
+.footer-row-container {
+    width: 90vw;
+}
+
+.footer-row-links {
+    font-size: 1.5vh;
+}
+
+.footer-social-media {
+    width: 25vw;
+}
+
+    
+    /* Login Styles */
+
+    
+    .login-img-container {
+        display: none;
+    }
+
+    .user-form-container {
+        width: 100%;
+        transform: translateX(0);
+
+    }
+
+
+    /* Remove delay from fade in */
+    .user-form-container>* {
+
+        animation: fadeIn forwards 1.5s;
+    }
+
+
+    .user-form-container img {
+        width: 50%;
+    }
+
+
+    /*  Forgotton password and sign up links */
+
+    .form-links a,
+    .form-links p {
+        font-size: 1.5em;
+    }
+
+    .user-form-container form input,
+    .user-form-container form select {
+        width: 50vw;
+        font-size: 1.8em;
+    }
+
+    .user-form-container button {
+        font-size: 2em;
+    }
+
+    /* Sign Up Styles */
+
+    .signup img {
+        width: 45%;
+    }
+
+    .signup-title h1 {
+        font-size: 3.5em;
+
+    }
+
+    .hamburger-menu>* {
+        opacity: 1;
+        transition: all .8s ease-in-out;
+
+    }
+
+    /* Blue section with the username */
+    .hamburger-menu header {
+        width: 100%;
+        height: 20%;
+        background: var(--main-blue);
+        display: flex;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 3em;
+    }
+
+    .hamburger-menu header p {
+        color: #ffffff;
+        font-size: 3em;
+    }
+
+    .hamburger-menu header i {
+
+        margin-right: 0vw;
+        color: #ffffff;
+        font-size: 3em;
+    }
+
+    .hamburger-menu ul {
+        margin-top: 3vh;
+        padding: 0 1.5em;
+    }
+
+    .hamburger-menu li {
+        list-style-type: none;
+        font-size: 3em !;
+        color: var(--heading-col);
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+        background: #ffffff;
+        border-radius: 5em;
+        padding: .5em .8em;
+        margin: 5vh 0;
+    }
+
+    .hamburger-menu li i {
+        font-size: 1.4em;
+        display: inline-block;
+    }
+
+    .icon-container {
+        width: 18vw;
+    }
+
+    /* Center the logo in the center */
+    nav {
+        position: relative;
+        justify-content: center;
+    }
+
+    nav img {
+        padding-left: 0;
+    }
+
+    /* Account Page Styling */
+
+    .account-wrapper {
+        flex-direction: column;
+        height: 200vh;
+    }
+
+    .account-overview {
+        width: 100vw;
+        height: 100vh;
+        border: none;
+    }
+
+    .profile-icon p {
+        font-size: 1.4em;
+    }
+
+    .overview-container {
+        width: 90%;
+        border-radius: 3em;
+    }
+
+    .overview-container h2 {
+        font-size: 5em !important;
+        text-align: center;
+        margin-top: 2vh;
+    }
+
+    .overview-container li {
+        font-size: 2.5em !important;
+    }
+
+    .account-details {
+        width: 100vw;
+
+    }
+
+    .details-container {
+        width: 90%;
+        border-radius: 3em;
+        padding: 2em 2em;
+        height: fit-content;
+        padding: 4em !important;
+    }
+
+    .details-container h2 {
+        display: inline-block;
+        font-size: 4em !important;
+        margin-bottom: 5vh;
+    }
+
+    .details-container h3 {
+        font-size: 3em;
+        margin-bottom: 3vh;
+    }
+
+    .details-container p {
+        font-size: 2em;
+        width: 100%;
+    }
+
+    /* My Learning Styling */
+
+    .assigned-bar li {
+        width: 25vw;
+        font-size: 1.7em !important;
+    }
+
+
+   
+
+
+   /* 404 */
+
+    .container-404 {
+        width: 80vw;
+    }
+
+    .image-404 img {
+        height: 25vh;
+        width: 60vw;
+    }
+
+    .header-404 {
+        padding-top: 2vh;
+        font-size: 5vh;
+    }
+
+    .button-container-404 {
+        width: 30vw;
+        height: 8vh;
+        font-size: 2.5vh;
+    }
+
+    .button-404 {
+        width: 30vw;
+        height: 8vh;
+        font-size: 3vh;
+    }
+
+    .button-404:active {
+        width: 30vw;
+        height: 8vh;
+    }
+
+/* info box */
+
+    .home-info-text-title {
+        width: 50vw;
+        font-size: 5vh;
+    }
+
+    .home-info-text-content {
+        width: 45vw;
+        margin-left: 4vw;
+        font-size: 1.7vh;
+    }
+
+    .home-info-profile-container {
+        width: 45vw;
+    }
+
+    .home-info-profile-icon {
+        width: 28vw;
+        height: 20vh;
+        margin-top: 5vh;
+    }
+
+    .home-info-profile-content {
+        width: 45vw;
+    }
+
+        /* construction */
+
+    .construction-container {
+        width: 90vw;
+    }
+
+    .construction-image img {
+        height: 25vh;
+        width: 60vw;
+    }
+
+    .construction-header {
+        padding-top: 2vh;
+        font-size: 5vh;
+    }
+
+    .construction-button-container {
+        width: 35vw;
+        height: 8vh;
+        font-size: 2.5vh;
+    }
+
+    .construction-button {
+        width: 35vw;
+        height: 8vh;
+        font-size: 3vh;
+    }
+
+    .construction-button:active {
+        width: 35vw;
+        height: 8vh;
+    }
+
+    .construction-text {
+        font-size: 2.5vh;
+    }
+
+
+    /* welcome */
+
+.welcome-title {
+   z-index: 2;
+   margin-top: -20vh;
+   font-size: 5vh;
+   padding-left: 30vw;
+   width: 50vw;
+   height: 6vh;
+}
+
+.welcome-body {
+    height: 60vh    
+}
+
+.welcome-logo {
+    width: 30vw
+}
+
+.welcome-logo img{
+    width: 35vw
+}
+
+.welcome-buttons {
+    width: 21vw;
+    height: 4vh;
+    border-radius: 50px;
+}
+
+.welcome-buttons i {
+    font-size: 2vh;
+}
+
+.welcome-buttons-text {
+    font-size: 1.6vh;
+    width: 12vw;
+}
+
+.welcome-button-icon {
+    margin-right: 2vw;
+}
+
+.circle-box {
+    height: 30vh;
+    width: 45vw;
+    margin-top: -8vh;
+}
+
+.welcome-text-box {
+    height: 25vh;
+
+}
+
+.welcome-text {
+    font-size: 1.2vh;
+    width: 43vw;
+    height: 60vh;
+    margin-left: 41vw;
+}
+
+.welcome-course-container{ 
+    margin-top: -50vh;
+    height: 30vh;
+}
+
+.welcome-split {
+    margin-top: -35vh;
+}
+
+.welcome-slider-container {
+    width: 80vw;
+}
+
+.welcome-slider-name {
+    width: 70vw;
+}
+
+.welcome-slider-text {
+    width: 65vw;
+    font-size: 1.7vh;
+}
+
+.welcome-slider-button {
+    width: 20vw;
+    border-radius: 35px;
+}
+
+.welcome-dot {
+    height: 30px;
+    width: 30px;
+}
+
+.welcome-dot-selected {
+    height: 34px;
+    width: 34px;
+}
+
+
+    /*  home */
+
+    .home-info-profile-content-title {
+        font-size: 2.5vh;
+        width: 20vw;
+        height: 4vh;
+    }
+
+    .home-info-profile-content-amount {
+        font-size: 3vh;
+        margin-top: -3vh;
+    }
+}
+
+/* Landscape styles */
+
+/* Small tablets - landscape */
+@media screen and (min-width:1024px) and (max-width:1366px) and (orientation: landscape) {
+
+
+
+
+    /* 404 */
+
+.button-container-404 {
+    width: 17vw;
+}
+
+.button-404 {
+    width: 17vw;
+    font-size: 2.5vh;
+}
+
+
+
+/* construction */
+
+.construction-button-container {
+    width: 18vw;
+}
+
+.construction-button {
+    width: 18vw;
+    font-size: 3.5vh;
+}
+
+.construction-button:active{
+   width: 18vw;
+
+}
+
+/* welcome */
+
+.welcome-buttons-text {
+    width: 8vw;
+}
+
+.welcome-slider-button {
+    width: 10vw;
+}
+
+.circle-box {
+    height: 50vh;
+}
+
+.welcome-text-box {
+    height: 45vh;
+
+
+    
+}
+
+.welcome-text {
+    height: 35vh;
+}
+.welcome-title {
+    margin-top: -10vh;
+}
+
+
+
+    /* Account Styling */
+
+    .account-overview {
+        width: 50%;
+    }
+
+    .profile-icon {
+        width: 18vw;
     }
 
     /* 404 */
@@ -659,37 +1474,73 @@
         font-size: 1.6em;
     }
 
-    /* Course Overview Styling */
-    .overview-wrapper {
-        padding: 0 3em;
-        width: 95%;
-    }
 
-    .overview-wrapper p {
-        font-size: 1.2em;
-        width: 50%;
-    }
+/* info box */
 
-    .img-list-container button {
-        font-size: 1.5em;
-    }
-
-    .img-list-container {
-        margin-left: 5vw;
-    }
-
-    .img-list-container img {
-        width: 120%;
-    }
-
-    .img-list-container ul {
-        margin-left: 5vw;
-    }
+.home-info-profile-icon {
+    width: 18vw;
+}
 }
 
 /* Large tablets - landscape */
 
 @media screen and (min-width:1366px) and (max-width:1440px) and (orientation: landscape) {
+
+
+
+
+    /* 404 */
+
+.button-container-404 {
+    width: 17vw;
+}
+
+.button-404 {
+    width: 17vw;
+}
+  
+  
+
+
+
+/* construction */
+
+.construction-button-container {
+    width: 17vw;
+}
+
+.construction-button {
+    width: 17vw;
+    font-size: 3.5vh;
+}
+
+.construction-button:active{
+   width: 17vw;
+}
+
+.construction-image img {
+    width: 35vw;
+    height:30vh;
+}
+
+.construction-header {
+    font-size: 7vh;
+}
+
+.construction-text {
+    font-size: 4vh;
+}
+
+
+/* welcome */
+
+.circle-box {
+    height: 66vh;
+}
+
+.welcome-slider-button {
+    width: 8vw;
+}
 
     /* Account Styling */
     .details-container p {
@@ -701,14 +1552,7 @@
         margin-bottom: 2vh;
     }
 
-    /* 404 */
-    .button-container-404 {
-        width: 17vw;
-    }
-
-    .button-404 {
-        width: 17vw;
-    }
+   
 
 
 
@@ -738,6 +1582,26 @@
 
     .construction-text {
         font-size: 4vh;
+    }
+
+    /* My Learning Stylings */
+    .assigned-bar li {
+        width: 20vw;
+        font-size: 2em;
+    }
+
+
+    /* Account Styling */
+    .details-container p {
+        font-size: 1.5em;
+    }
+
+    .details-container h3 {
+        font-size: 2em;
+        margin-bottom: 2vh;
+    }
+
+ 
     }
 
     /* My Learning Stylings */
@@ -784,18 +1648,8 @@
     .signup-title h1 {
         font-size: 3em;
     }
-
-    /* Course Overview Styling */
-    .overview-wrapper p {
-        font-size: 1.5em;
-    }
-
-    .img-list-container button {
-        font-size: 1.8em;
-
-    }
-
-    .img-list-container li {
-        font-size: 1.8em;
-    }
 }
+
+
+
+
