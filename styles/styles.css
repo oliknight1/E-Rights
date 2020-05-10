@@ -563,19 +563,15 @@ h2 {
     height: 42vh;
     width: 80vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(13vw, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     row-gap: 8vh;
-    justify-content: center;
-    align-items: center;
+
     padding: 3em;
     margin-right: 3vw;
     margin-top: 2vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-end;
     text-decoration: none;
     transition: ease-in-out 0.3s;
+    text-align: center;
 }
 
 
@@ -663,10 +659,15 @@ h2 {
 }
 
 .course-color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 25vh;
     width: 13vw;
     border-radius: 20px 20px 0px 0px;
     display: flex;
+    transition: all .3s ease-in-out;
 }
 
 .welcome-slide {

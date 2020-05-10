@@ -2262,160 +2262,161 @@
 
     }
 
+    .details-container h2 {
+        font-size: 1.8em;
+    }
+
+    .details-container ul {
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+
+    .details-container h3 {
+        font-size: .9em;
+
+    }
+
+    .details-container p {
+        padding: .2em;
+        font-size: .8em;
+    }
+
+    /* My Learning Page Styling */
+    .assigned-bar {
+        margin-bottom: 5vh;
+    }
+
+    .assigned-bar ul {
+        width: 100%;
+    }
+
+    .assigned-bar li {
+        width: 20vw;
+        font-size: .7em;
+    }
+
+    .my-learning-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+
+    /* Login styling */
+
+    .login-img-container img {
+        position: absolute;
+        width: 100%;
+        transform: translateY(-15%);
+
+
+    }
+
+    .user-form-container form {
+        margin-top: 2vh;
+    }
+
+    .user-form-container form input,
+    .user-form-container form select {
+        width: 25vw;
+        font-size: .6em;
+        border: var(--main-blue) 2px solid;
+    }
+
+    .form-links a,
+    .form-links p {
+        font-size: .6em;
+    }
+
+
+    .user-form-container button {
+        font-size: 1em;
+    }
+
+    /* Sign-up styles */
+    .signup-title h1 {
+        font-size: 1.2em;
+    }
+
+    .signup img {
+        width: 30%;
+        margin: 0;
+    }
+
+    .signup form {
+        margin-top: 2vh;
+    }
+
+    .signup button {
+        font-size: .8em;
+    }
+
+
+    /*course */
+    .course-content {
+        padding: 0;
+    }
+
+
+    /* Course Overview Styles */
+    .course-overview h1 {
+        width: fit-content;
+        font-size: 2.5em;
+        margin: 3vh 0;
+    }
+
+    .course-overview {
+        height: fit-content;
+    }
+
+    .overview-wrapper {
+        flex-direction: column;
+        height: fit-content;
+        padding: 3em;
+    }
+
+    .img-list-container {
+        flex-direction: column-reverse;
+    }
+
+    .img-list-container div {
+        width: 100%;
+    }
+
+    .overview-wrapper p {
+        width: 100%;
+        border-bottom: solid 1px rgb(122, 122, 122);
+        padding-bottom: 5vh;
+        font-size: .8em;
+
+    }
+
+    .img-list-container img {
+        width: 80%;
+    }
+
+    .img-list-container ul {
+        border: none;
+    }
+
+    .img-list-container li {
+        font-size: 1.2em;
+    }
+
+
+    .overview-wrapper button {
+
+        margin-top: 3vh;
+        font-size: 1.2em;
+
+    }
+
 }
 
-.details-container h2 {
-    font-size: 1.8em;
-}
-
-.details-container ul {
-    width: 100%;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-}
-
-
-.details-container h3 {
-    font-size: .9em;
-
-}
-
-.details-container p {
-    padding: .2em;
-    font-size: .8em;
-}
-
-/* My Learning Page Styling */
-.assigned-bar {
-    margin-bottom: 5vh;
-}
-
-.assigned-bar ul {
-    width: 100%;
-}
-
-.assigned-bar li {
-    width: 20vw;
-    font-size: .7em;
-}
-
-.my-learning-container {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-
-
-/* Login styling */
-
-.login-img-container img {
-    position: absolute;
-    width: 100%;
-    transform: translateY(-15%);
-
-
-}
-
-.user-form-container form {
-    margin-top: 2vh;
-}
-
-.user-form-container form input,
-.user-form-container form select {
-    width: 25vw;
-    font-size: .6em;
-    border: var(--main-blue) 2px solid;
-}
-
-.form-links a,
-.form-links p {
-    font-size: .6em;
-}
-
-
-.user-form-container button {
-    font-size: 1em;
-}
-
-/* Sign-up styles */
-.signup-title h1 {
-    font-size: 1.2em;
-}
-
-.signup img {
-    width: 30%;
-    margin: 0;
-}
-
-.signup form {
-    margin-top: 2vh;
-}
-
-.signup button {
-    font-size: .8em;
-}
-
-
-/*course */
-.course-content {
-    padding: 0;
-}
-
-
-/* Course Overview Styles */
-.course-overview h1 {
-    width: fit-content;
-    font-size: 2.5em;
-    margin: 3vh 0;
-}
-
-.course-overview {
-    height: fit-content;
-}
-
-.overview-wrapper {
-    flex-direction: column;
-    height: fit-content;
-    padding: 3em;
-}
-
-.img-list-container {
-    flex-direction: column-reverse;
-}
-
-.img-list-container div {
-    width: 100%;
-}
-
-.overview-wrapper p {
-    width: 100%;
-    border-bottom: solid 1px rgb(122, 122, 122);
-    padding-bottom: 5vh;
-    font-size: .8em;
-
-}
-
-.img-list-container img {
-    width: 80%;
-}
-
-.img-list-container ul {
-    border: none;
-}
-
-.img-list-container li {
-    font-size: 1.2em;
-}
-
-
-.overview-wrapper button {
-
-    margin-top: 3vh;
-    font-size: 1.2em;
-
-}
 
 
 /* Medium Phones */
