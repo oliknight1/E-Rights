@@ -166,6 +166,105 @@ height: 7.5vh;
     margin-top: -10vh;
     }
 
+
+      /* welcome */
+
+.welcome-title {
+   z-index: 2;
+   margin-top: -20vh;
+   font-size: 5vh;
+   padding-left: 20vw;
+   width: 50vw;
+   height: 6vh;
+}
+
+.welcome-body {
+    height: 60vh    
+}
+
+.welcome-logo {
+    width: 30vw
+}
+
+.welcome-logo img{
+    width: 35vw
+}
+
+.welcome-buttons {
+    width: 21vw;
+    height: 4vh;
+    border-radius: 50px;
+}
+
+.welcome-buttons i {
+    font-size: 2vh;
+}
+
+.welcome-buttons-text {
+    font-size: 1.6vh;
+    width: 12vw;
+}
+
+.welcome-button-icon {
+    margin-right: 2vw;
+}
+
+.circle-box {
+    height: 30vh;
+    width: 45vw;
+    margin-top: -8vh;
+}
+
+.welcome-text-box {
+    height: 25vh;
+
+}
+
+.welcome-text {
+    font-size: 1.2vh;
+    width: 43vw;
+    height: 60vh;
+    margin-left: 41vw;
+}
+
+.welcome-course-container{ 
+    margin-top: -50vh;
+    height: 35vh;
+}
+
+.welcome-split {
+    margin-top: -35vh;
+}
+
+.welcome-slider-container {
+    width: 80vw;
+}
+
+.welcome-slider-name {
+    width: 70vw;
+}
+
+.welcome-slider-text {
+    width: 65vw;
+    font-size: 1.7vh;
+}
+
+.welcome-slider-button {
+    width: 20vw;
+    border-radius: 35px;
+}
+
+.welcome-dot {
+    height: 30px;
+    width: 30px;
+}
+
+.welcome-dot-selected {
+    height: 34px;
+    width: 34px;
+}
+
+
     /* course box */
 
     .course-header {
@@ -272,6 +371,9 @@ height: 7.5vh;
     .home-info-profile-content-amount {
    margin-bottom: 8vh;
 }
+
+
+
 
 }
 
@@ -583,6 +685,107 @@ height: 7.5vh;
         width: 50vw;
         height: 7.5vh;
     }
+
+
+
+      /* welcome */
+
+.welcome-title {
+   z-index: 2;
+   margin-top: -20vh;
+   font-size: 5vh;
+   padding-left: 20vw;
+   width: 50vw;
+   height: 6vh;
+}
+
+.welcome-body {
+    height: 60vh    
+}
+
+.welcome-logo {
+    width: 30vw
+}
+
+.welcome-logo img{
+    width: 35vw
+}
+
+.welcome-buttons {
+    width: 21vw;
+    height: 4vh;
+    border-radius: 50px;
+}
+
+.welcome-buttons i {
+    font-size: 2vh;
+}
+
+.welcome-buttons-text {
+    font-size: 1.6vh;
+    width: 12vw;
+}
+
+.welcome-button-icon {
+    margin-right: 2vw;
+}
+
+.circle-box {
+    height: 30vh;
+    width: 45vw;
+    margin-top: -8vh;
+}
+
+.welcome-text-box {
+    height: 25vh;
+
+}
+
+.welcome-text {
+    font-size: 1.2vh;
+    width: 43vw;
+    height: 60vh;
+    margin-left: 41vw;
+}
+
+.welcome-course-container{ 
+    margin-top: -50vh;
+    height: 35vh;
+}
+
+.welcome-split {
+    margin-top: -35vh;
+}
+
+.welcome-slider-container {
+    width: 80vw;
+}
+
+.welcome-slider-name {
+    width: 70vw;
+}
+
+.welcome-slider-text {
+    width: 65vw;
+    font-size: 1.7vh;
+}
+
+.welcome-slider-button {
+    width: 20vw;
+    border-radius: 35px;
+}
+
+.welcome-dot {
+    height: 30px;
+    width: 30px;
+}
+
+.welcome-dot-selected {
+    height: 34px;
+    width: 34px;
+}
+
+
 
 
        /* course */
@@ -1029,6 +1232,107 @@ height: 7.5vh;
         position: relative;
         margin-top: 3vh;
     }
+
+
+     /* welcome */
+
+.welcome-title {
+   z-index: 2;
+   margin-top: -20vh;
+   font-size: 5vh;
+   padding-left: 20vw;
+   width: 50vw;
+   height: 6vh;
+}
+
+.welcome-body {
+    height: 60vh    
+}
+
+.welcome-logo {
+    width: 30vw
+}
+
+.welcome-logo img{
+    width: 35vw
+}
+
+.welcome-buttons {
+    width: 21vw;
+    height: 4vh;
+    border-radius: 50px;
+}
+
+.welcome-buttons i {
+    font-size: 2vh;
+}
+
+.welcome-buttons-text {
+    font-size: 1.6vh;
+    width: 12vw;
+}
+
+.welcome-button-icon {
+    margin-right: 2vw;
+}
+
+.circle-box {
+    height: 30vh;
+    width: 45vw;
+    margin-top: -8vh;
+}
+
+.welcome-text-box {
+    height: 25vh;
+
+}
+
+.welcome-text {
+    font-size: 1.2vh;
+    width: 43vw;
+    height: 60vh;
+    margin-left: 41vw;
+}
+
+.welcome-course-container{ 
+    margin-top: -50vh;
+    height: 35vh;
+}
+
+.welcome-split {
+    margin-top: -35vh;
+}
+
+.welcome-slider-container {
+    width: 80vw;
+}
+
+.welcome-slider-name {
+    width: 70vw;
+}
+
+.welcome-slider-text {
+    width: 65vw;
+    font-size: 1.7vh;
+}
+
+.welcome-slider-button {
+    width: 20vw;
+    border-radius: 35px;
+}
+
+.welcome-dot {
+    height: 30px;
+    width: 30px;
+}
+
+.welcome-dot-selected {
+    height: 34px;
+    width: 34px;
+}
+
+
+
 
 
     /* course */
