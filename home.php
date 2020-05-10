@@ -1,3 +1,9 @@
+<?php
+require_once 'core/init.php';
+$user = new User();
+$user->findUser($_SESSION['user']);
+?>
+
 <html lang="en">
 
 <head>
@@ -7,6 +13,8 @@
     <link rel="stylesheet" href="styles/responsive-tablet.css">
     <link rel="stylesheet" href="styles/responsive-mobile.css">
     <script src="https://kit.fontawesome.com/96867cee00.js"></script>
+    <title>E-Rights</title>
+
 </head>
 
 <body>
@@ -41,28 +49,28 @@
             <div class="home-info-text-container">
 
                 <div class="home-info-text-title">
-                    Hi Username!
+                    <p>Hi <?php echo $user->getData()['username']; ?>!</p>
                 </div>
                 <div class="home-info-text-content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro in adipisci dolor quia obcaecati nemo
-                    quis! Tenetur magni deleniti illo quo sapiente laboriosam illum, qui minus totam hic ut quibusdam.
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro in adipisci dolor quia obcaecati nemo
+                        quis! Tenetur magni deleniti illo quo sapiente laboriosam illum, qui minus totam hic ut quibusdam.</p>
                 </div>
 
             </div>
             <div class="home-info-profile-container">
 
-                <div class="home-info-profile-icon">
-                    T
+                <div class="profile-icon">
+                    <p><?php echo $user->getData()['username'][0]; ?></p>
                 </div>
                 <div class="home-info-profile-content">
 
                     <div class="home-info-profile-content-box">
 
                         <div class="home-info-profile-content-title">
-                            Assigned
+                            <p>Assigned</p>
                         </div>
                         <div class="home-info-profile-content-amount">
-                            4
+                            <p>4</p>
                         </div>
 
                     </div>
@@ -70,10 +78,10 @@
                     <div class="home-info-profile-content-box">
 
                         <div class="home-info-profile-content-title">
-                            Completed
+                            <p>Completed</p>
                         </div>
                         <div class="home-info-profile-content-amount">
-                            0
+                            <p>0</p>
                         </div>
 
                     </div>
@@ -91,8 +99,13 @@
 
         <div class="welcome-course-container">
 
+<<<<<<< HEAD:home.html
             <div class="course-header">
                 Assigned
+=======
+            <div class="home-course-header">
+                <p>Assigned</p>
+>>>>>>> testing:home.php
             </div>
             <div class="course-content">
                 <a href="#">
@@ -104,9 +117,13 @@
                                 </div>
 
                             </div>
+<<<<<<< HEAD:home.html
                             <div class="course-text">
                                 <p>Principles</p>
                             </div>
+=======
+                            <p>Principles</p>
+>>>>>>> testing:home.php
                         </div>
                     </div>
                 </a>
@@ -120,9 +137,13 @@
                                 </div>
 
                             </div>
+<<<<<<< HEAD:home.html
                             <div class="course-text">
                                 <p>Rights</p>
                             </div>
+=======
+                            <p>Rights</p>
+>>>>>>> testing:home.php
                         </div>
                     </div>
                 </a>
@@ -136,9 +157,13 @@
                                 </div>
 
                             </div>
+<<<<<<< HEAD:home.html
                             <div class="course-text">
                                 <p>GDPR</p>
                             </div>
+=======
+                            <p>Why is GDPR important?</p>
+>>>>>>> testing:home.php
                         </div>
                     </div>
                 </a>
@@ -152,12 +177,16 @@
                                 </div>
 
                             </div>
+<<<<<<< HEAD:home.html
                             <div class="course-text">
 
 
                                 <p>Data Minimalism</p>
 
                             </div>
+=======
+                            <p>Data Minimalism</p>
+>>>>>>> testing:home.php
                         </div>
                     </div>
                 </a>
@@ -169,7 +198,7 @@
 
         <div class="home-course-container">
             <div class="home-course-header">
-                In Progress
+                <p>In Progress</p>
             </div>
         </div>
 
@@ -177,9 +206,7 @@
 
     </div>
 
-    <div class="home-gap">
 
-    </div>
 
     <div class="footer">
         <div class="footer-row-container">

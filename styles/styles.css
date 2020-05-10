@@ -1,7 +1,7 @@
 /* Raleway font */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
 
- body {
+body {
     padding: 0;
     margin: 0;
     max-width: 100vw;
@@ -15,15 +15,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-}
-
-/* CSS Variables */
-:root {
-
-    --darker-blue: #082e40;
-    --main-blue: #189dd9;
-    --placeholder-col: #969494;
-
 }
 
 /* Change cursor of all buttons on hover */
@@ -43,9 +34,28 @@ a {
     text-decoration: none;
 }
 
-p {
-    margin: 0;
+h1 {
+    font-size: 4em;
+    font-weight: 600;
+    color: var(--heading-col);
 }
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 500;
+    color: var(--heading-col);
+}
+
+/* CSS Variables */
+:root {
+
+    --darker-blue: #082e40;
+    --main-blue: #189dd9;
+    --placeholder-col: #969494;
+    --heading-col: #494949;
+
+}
+
 
 /* 404 page CSS*/
 .wrapper-404 {
@@ -61,7 +71,7 @@ p {
 .container-404 {
     height: 100vh;
     width: 60vw;
-      display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -73,7 +83,7 @@ p {
 }
 
 .header-404 {
-    padding-top:2vh;
+    padding-top: 2vh;
     font-family: 'Raleway';
     font-weight: bold;
     color: #707070;
@@ -82,17 +92,17 @@ p {
 }
 
 .text-404 {
-       padding-top:1vh;
+    padding-top: 1vh;
     font-family: 'Raleway';
-    color: #008ED2;
+    color: var(--main-blue);
     font-size: 3vh;
-       text-align: center;
+    text-align: center;
 }
 
 .button-404 {
-    height:7.5vh;
-    width:12vw;
-    background-color: #008ED2;
+    height: 7.5vh;
+    width: 12vw;
+    background-color: var(--main-blue);
     border-radius: 35px;
     display: flex;
     flex-direction: column;
@@ -103,16 +113,16 @@ p {
     font-size: 3vh;
     font-weight: 550;
     box-shadow: 0 10px 6px -6px #777;
-     transition: ease-in-out 0.3s;
-     text-decoration: none;
+    transition: ease-in-out 0.3s;
+    text-decoration: none;
 }
 
-.button-404:hover{
+.button-404:hover {
     background-color: #707070;
-     transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
 }
 
-.button-404:active{
+.button-404:active {
     height: 7.2vh;
     width: 11.5vw;
     transition: ease-in-out 0.1s;
@@ -120,8 +130,8 @@ p {
 
 .button-container-404 {
     margin-top: 5vh;
-    height:7.5vh;
-    width:12vw;
+    height: 7.5vh;
+    width: 12vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,7 +154,7 @@ p {
 .construction-container {
     height: 100vh;
     width: 60vw;
-      display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -156,7 +166,7 @@ p {
 }
 
 .construction-header {
-    padding-top:2vh;
+    padding-top: 2vh;
     font-family: 'Raleway';
     font-weight: bold;
     color: #707070;
@@ -165,17 +175,17 @@ p {
 }
 
 .construction-text {
-       padding-top:1vh;
+    padding-top: 1vh;
     font-family: 'Raleway';
-    color: #008ED2;
+    color: var(--main-blue);
     font-size: 3vh;
-       text-align: center;
+    text-align: center;
 }
 
 .construction-button {
-    height:7.5vh;
-    width:12vw;
-    background-color: #008ED2;
+    height: 7.5vh;
+    width: 12vw;
+    background-color: var(--main-blue);
     border-radius: 35px;
     display: flex;
     flex-direction: column;
@@ -186,16 +196,16 @@ p {
     font-size: 3vh;
     font-weight: 550;
     box-shadow: 0 10px 6px -6px #777;
-     transition: ease-in-out 0.3s;
-     text-decoration: none;
+    transition: ease-in-out 0.3s;
+    text-decoration: none;
 }
 
-.construction-button:hover{
+.construction-button:hover {
     background-color: #707070;
-     transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.3s;
 }
 
-.construction-button:active{
+.construction-button:active {
     height: 7.2vh;
     width: 11.5vw;
     transition: ease-in-out 0.1s;
@@ -203,8 +213,8 @@ p {
 
 .construction-button-container {
     margin-top: 5vh;
-    height:7.5vh;
-    width:12vw;
+    height: 7.5vh;
+    width: 12vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -256,7 +266,7 @@ p {
     width: 12vw;
     border-radius: 25px;
     text-decoration: none;
-    border: 2px solid #008ED2;
+    border: 2px solid var(--main-blue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -283,11 +293,11 @@ p {
 
 .welcome-buttons-text {
     width: 6vw;
-    height:5vh;
+    height: 5vh;
     font-family: 'Raleway';
-    font-size:3vh;
+    font-size: 3vh;
     font-weight: 550;
-    color: #008ED2;
+    color: var(--main-blue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -295,24 +305,26 @@ p {
     transition: ease-in-out .3s;
 }
 
-.welcome-buttons i{
-    color: #008ED2;
-    font-size:2.5vh;
+.welcome-buttons i {
+    color: var(--main-blue);
+    width: 100%;
+    height: 100%;
+    font-size: 2.5vh;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     transition: ease-in-out .3s;
 }
 
 .welcome-buttons a {
-     text-decoration: none;
+    text-decoration: none;
 }
 
 .welcome-body {
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     height: 85vh;
     width: 100vw;
@@ -329,11 +341,11 @@ p {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .welcome-title {
-    height:10vh;
+    height: 10vh;
     width: 100vw;
     text-align: center;
     font-size: 8vh;
@@ -345,10 +357,10 @@ p {
 .welcome-text-box {
     height: 50vh;
     width: 100vw;
-    background-color: #008ED2;
+    background-color: var(--main-blue);
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
 
@@ -361,7 +373,7 @@ p {
     margin-left: 40vw;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
 
@@ -384,7 +396,7 @@ p {
     width: 55vw;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     background-color: white;
 }
@@ -404,7 +416,7 @@ p {
     height: 5vh;
     font-size: 4vh;
     font-family: 'Raleway';
-    color: #008ED2;
+    color: var(--main-blue);
     font-weight: bold;
     margin-top: 3vh;
 }
@@ -422,11 +434,11 @@ p {
 .welcome-slider-button {
     height: 4vh;
     width: 8vw;
-    background-color: #008ED2;
+    background-color: var(--main-blue);
     border-radius: 20px;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     margin-left: 40vw;
     color: white;
@@ -443,11 +455,11 @@ p {
     align-items: center;
 }
 
-.welcome-slide{
-      height: 35vh;
+.welcome-slide {
+    height: 35vh;
     width: 55vw;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
 
@@ -482,11 +494,23 @@ p {
 }
 
 @-webkit-keyframes fade {
-    from {opacity: 0;} to {opacity: 1}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fade {
-    from {opacity: 0;} to {opacity: 1}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 /* course box */
@@ -514,12 +538,20 @@ p {
 .course-content {
     height:42vh;
     width: 80vw;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13vw, 1fr));
+    row-gap: 8vh;
+    justify-content: center;
     align-items: center;
-    padding: 0;
-    margin: 0;
+    padding: 3em;
+   
+}
+
+.course-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .course-box-wrapper {
@@ -645,8 +677,9 @@ p {
     background-color: #EAEAEA;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
+    margin-top: 15vh;
 }
 
 .footer-row-container {
@@ -654,21 +687,21 @@ p {
     height: 10vh;
     display: flex;
     justify-content: center;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
 }
 
 .footer-row-links {
     margin-right: 3vw;
-      font-size: 2vh;
+    font-size: 2vh;
     font-family: 'Raleway';
     color: #707070;
 }
 
 .footer-social-media {
-     display: flex;
+    display: flex;
     justify-content: space-evenly;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
     width: 15vw;
     height: 6vh;
@@ -679,13 +712,21 @@ p {
     color: #707070;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
 
 
 .footer-image {
     width: 20vw;
+}
+
+.footer-row-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 65vw;
 }
 
 
@@ -704,7 +745,7 @@ p {
 .home-info-container {
     height: 45vh;
     width: 100vw;
-    background-color: #008ED2;
+    background-color: var(--main-blue);
     z-index: -1;
     position: relative;
     display: flex;
@@ -715,7 +756,7 @@ p {
 
 .home-info-text-container {
     height: 30vh;
-    width:50vw;
+    width: 50vw;
 }
 
 .home-info-text-title {
@@ -744,20 +785,26 @@ p {
     flex-direction: column;
 }
 
-.home-info-profile-icon {
+.profile-icon {
     height: 26vh;
-    width:13vw;
-    background-color: white;
+    width: 10vw;
+    background-color: #ffffff;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    color: #008ED2;
+    color: var(--main-blue);
     font-family: 'Raleway';
     font-size: 14vh;
     font-weight: bold;
+}
+
+/* Blue version of the profile icon */
+.blue-icon {
+    background: var(--main-blue);
+    color: #ffffff;
 }
 
 .home-info-profile-content {
@@ -772,7 +819,7 @@ p {
 .home-info-profile-content-box {
     height: 15vh;
     width: 14vw;
-     display: flex;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
@@ -795,7 +842,7 @@ p {
     font-family: 'Raleway';
     font-size: 4vh;
     font-weight: bold;
-     text-align: center;
+    text-align: center;
 }
 
 .home-course-container {
@@ -809,7 +856,7 @@ p {
 
 .home-course-header {
     height: 8vh;
-    width:80vw;
+    width: 80vw;
     font-size: 5vh;
     font-family: 'Raleway';
     font-weight: 550;
@@ -819,11 +866,11 @@ p {
 }
 
 .home-course-content {
-    height:42vh;
+    height: 42vh;
     width: 80vw;
     display: flex;
     justify-content: space-evenly;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -834,7 +881,7 @@ p {
     width: 14vw;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
 
@@ -847,11 +894,11 @@ p {
     font-family: 'Raleway';
     text-align: center;
     color: #707070;
-  text-decoration: none;
-  transition: ease-in-out .3s;
+    text-decoration: none;
+    transition: ease-in-out .3s;
 }
 
-.home-course-box-container:hover .home-course-box{
+.home-course-box-container:hover .home-course-box {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     transition: ease-in-out .3s;
     height: 35vh;
@@ -869,12 +916,12 @@ p {
     background-color: #009180;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-       transition: ease-in-out .3s;
+    transition: ease-in-out .3s;
 }
 
-.home-course-box-container:hover .home-course-color-1{
+.home-course-box-container:hover .home-course-color-1 {
     width: 14vw;
     transition: ease-in-out .3s;
 }
@@ -886,12 +933,12 @@ p {
     background-color: #00B9C8;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-        transition: ease-in-out .3s;
+    transition: ease-in-out .3s;
 }
 
-.home-course-box-container:hover .home-course-color-2{
+.home-course-box-container:hover .home-course-color-2 {
     width: 14vw;
     transition: ease-in-out .3s;
 }
@@ -903,12 +950,12 @@ p {
     background-color: #B5C7DC;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-        transition: ease-in-out .3s;
+    transition: ease-in-out .3s;
 }
 
-.home-course-box-container:hover .home-course-color-3{
+.home-course-box-container:hover .home-course-color-3 {
     width: 14vw;
     transition: ease-in-out .3s;
 }
@@ -920,18 +967,18 @@ p {
     background-color: #389BA3;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-        transition: ease-in-out .3s;
+    transition: ease-in-out .3s;
 }
 
-.home-course-box-container:hover .home-course-color-4{
+.home-course-box-container:hover .home-course-color-4 {
     width: 14vw;
     transition: ease-in-out .3s;
 }
 
 .home-course-title {
-    text-decoration: none ;
+    text-decoration: none;
 }
 
 .home-course img {
@@ -946,108 +993,19 @@ p {
     color: #707070;
     font-weight: 550;
     margin-right: 3vw;
-    margin-top:2vh;
+    margin-top: 2vh;
     display: flex;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: flex-end;
     text-decoration: none;
     transition: ease-in-out 0.3s;
 }
 
-.home-course-view:hover{
-    color: #008ED2;
-     transition: ease-in-out 0.3s;
+.home-course-view:hover {
+    color: var(--main-blue);
+    transition: ease-in-out 0.3s;
 }
-
-.home-gap {
-    height: 35vh;
-    width: 100vw;
-    background-color: transparent;
-}
-
-
-
-
-
-
-/* header */
-
-.header-container {
-    height: 15vh;
-    width: 100vw;
-    border-bottom: #707070;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    
-}
-
-.header-logo {
-    height: 11vh;
-    width: 30vw;
-}
-
-.header-logo img {
-    height: 11vh;
-    width: 25vw;
-}
-
-.header-nav {
-    width :60vw;
-    height: 11vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-}
-
-.header-nav-containers {
-   display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 4vh;
-    transition: ease-in-out .3s;
-}
-
-
-.header-nav-name {
-    font-size: 3.5vh;
-    font-family: 'Raleway';
-    color: #008ED2;
-    transition: ease-in-out .2s;
-}
-
-.header-nav-name:hover {
-    transition: ease-in-out .2s;
-    color: #707070;
-}
-
-.header-nav-containers:hover .header-nav-icon {
-    margin-bottom: 1vh;
-    transition: ease-in-out .2s;
-}
-
-.header-nav-containers:hover .header-nav-icon a{
-    margin-bottom: 1vh;
-    transition: ease-in-out .2s;
-    color: #707070;
-}
-
-.header-nav-icon a {
-    font-size: 3vh;
-    color: #008ED2;
-    transition: ease-in-out .2s;
-    
-}
-
-.header-nav-icon {
-    transition: ease-in-out .2s;
-}
-
 
 
 /* Navigation */
@@ -1096,7 +1054,6 @@ nav img {
     align-items: center;
 }
 
-
 /* Small margin between all the elements inside the <a> */
 .link-container a>* {
     margin: .2vh 0;
@@ -1110,7 +1067,169 @@ nav img {
 
 }
 
-/* LOGIN PAGE STYLING */
+/* Account Page Styling */
+
+.account-wrapper {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+.account-overview {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-right: solid 2px var(--main-blue);
+}
+
+.account-overview h2 {
+    color: rgb(17, 17, 17);
+    font-weight: 600;
+    margin-bottom: 6vh;
+}
+
+.overview-container {
+    background: #ffffff;
+    height: 80%;
+    width: 80%;
+    border-radius: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+.overview-container li {
+    list-style-type: none;
+    font-size: 1.5em;
+    color: #707070;
+    margin: 2vh 0;
+    font-weight: 100;
+
+}
+
+.account-details {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-container {
+    width: 80%;
+    height: 70%;
+    background: #ffffff;
+    box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.4);
+    padding: 2em 3em;
+
+}
+
+.details-container h2 {
+    color: var(--main-blue);
+    margin: 0;
+    margin-bottom: 3vh;
+}
+
+.details-container h3 {
+    font-weight: 100;
+    font-size: 1.5em;
+}
+
+.details-container p {
+    width: 20vw;
+    border: solid 2px #bdbdbd;
+    padding: .5em;
+}
+
+.details-container li {
+    list-style-type: none;
+    margin-bottom: 5vh;
+}
+
+/* My Learning Styling */
+.my-learning {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.assigned-bar {
+    height: 10vh;
+    width: 80%;
+    text-align: center;
+}
+
+.assigned-bar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+
+}
+
+.assigned-bar li {
+    display: inline-block;
+    list-style-type: none;
+    background: #ffffff;
+    padding: 1em;
+    width: 15vw;
+    border: solid 1px #a7a6a6;
+    cursor: pointer;
+
+}
+
+.selected {
+    background-color: var(--main-blue) !important;
+    border: solid 1px var(--main-blue) !important;
+    color: #ffffff;
+}
+
+/* Small margin between all the elements inside the <a> */
+.link-container a>* {
+    margin: .2vh 0;
+    transition: all .2s ease-in-out;
+
+}
+
+.link-container a:hover>* {
+    color: #707070;
+    margin: .6vh 0;
+}
+.assigned-bar li:nth-child(1) {
+    border-radius: 1em 0 0 1em;
+}
+
+.assigned-bar li:nth-child(4) {
+    border-radius: 0 1em 1em 0;
+}
+
+.my-learning-container {
+    background: #ffffff;
+    padding: 3em 0;
+    border-radius: 2em;
+    box-shadow: 30px 30px 15px rgba(0, 0, 0, 0.3);
+    margin: 10vh;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+    row-gap: 8vh;
+
+}
+
+/* Login Page Styling */
 
 /* Wrapper around the login page, used for the image and to layout form */
 .user-form-wrapper {
@@ -1137,9 +1256,6 @@ nav img {
 
 .signup-img {
     float: right;
-
-
-
 }
 
 /* Contains the form and the logo of the site */
@@ -1153,7 +1269,7 @@ nav img {
     justify-content: space-evenly;
     align-items: center;
     transform: translateX(100%);
-
+    animation: loginAnimation forwards 1.5s;
     float: right;
 
 }
@@ -1319,4 +1435,3 @@ nav img {
 .signup {
     float: left;
 }
-
