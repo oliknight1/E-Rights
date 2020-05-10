@@ -87,17 +87,19 @@
                 quia assumenda cupiditate, possimus quisquam animi temporibus architecto itaque veniam debitis fuga!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Harum laboriosam at mollitia nihil! Corrupti magnam magni dolorem sunt,
                 quia assumenda cupiditate, possimus quisquam animi temporibus architecto itaque veniam debitis fuga!</p>
-            <div> <img src='assets/illustrations/course-images/principles.svg'>
-                <button>Start</button>
+            <div class="img-list-container">
+                <div>
+                    <img src='assets/illustrations/course-images/principles.svg'>
+                    <button>Start</button>
+                </div>
+
+
+                <ul>
+                    <li>5 - 15 Minutes</li>
+                    <li>Easy</li>
+                    <li>Level 1 Required</li>
+                </ul>
             </div>
-
-
-            <ul>
-                <li>5 - 15 Minutes</li>
-                <li>Easy</li>
-                <li>Level 1 Required</li>
-            </ul>
-
         </div>
 
 

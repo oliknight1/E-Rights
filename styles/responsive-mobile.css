@@ -270,7 +270,7 @@
         height: 25vh;
     }
 
-    /* Do we need this as well as .construction-header? */
+
     .header-404 {
         font-size: 3vh;
         padding-top: 0vh;
@@ -328,6 +328,54 @@
     .construction-button:active {
         width: 50vw;
         height: 7.5vh;
+    }
+
+    /* Course Overview Styling */
+    .course-overview h1 {
+        width: fit-content;
+        font-size: 2.5em;
+        margin: 3vh 0;
+    }
+
+    .course-overview {
+        height: fit-content;
+    }
+
+    .overview-wrapper {
+        flex-direction: column;
+        height: fit-content;
+        padding: 1.5em;
+    }
+
+    .img-list-container {
+        flex-direction: column-reverse;
+    }
+
+    .img-list-container div {
+        width: 100%;
+    }
+
+    .overview-wrapper p {
+        width: 100%;
+        border-bottom: solid 1px rgb(122, 122, 122);
+        padding-bottom: 5vh;
+        font-size: .8em;
+
+    }
+
+    .img-list-container ul {
+        border: none;
+    }
+
+    .img-list-container li {
+        font-size: 1.2em;
+    }
+
+
+    .overview-wrapper button {
+
+        margin-top: 3vh;
+        font-size: 1.2em;
     }
 }
 
@@ -765,6 +813,52 @@
         border-radius: 55px;
     }
 
+    .course-overview h1 {
+        width: fit-content;
+        font-size: 2.5em;
+        margin: 3vh 0;
+    }
+
+    .course-overview {
+        height: fit-content;
+    }
+
+    .overview-wrapper {
+        flex-direction: column;
+        height: fit-content;
+        padding: 1.5em;
+    }
+
+    .img-list-container {
+        flex-direction: column-reverse;
+    }
+
+    .img-list-container div {
+        width: 100%;
+    }
+
+    .overview-wrapper p {
+        width: 100%;
+        border-bottom: solid 1px rgb(122, 122, 122);
+        padding-bottom: 5vh;
+        font-size: .8em;
+
+    }
+
+    .img-list-container ul {
+        border: none;
+    }
+
+    .img-list-container li {
+        font-size: 1.2em;
+    }
+
+
+    .overview-wrapper button {
+
+        margin-top: 3vh;
+        font-size: 1.2em;
+    }
 }
 
 /* Landscape Phones */
@@ -922,6 +1016,58 @@
 
     .construction-button:active {
         width: 20vw;
+    }
+
+    /* Course Overview Styles */
+    .course-overview h1 {
+        width: fit-content;
+        font-size: 2.5em;
+        margin: 3vh 0;
+    }
+
+    .course-overview {
+        height: fit-content;
+    }
+
+    .overview-wrapper {
+        flex-direction: column;
+        height: fit-content;
+        padding: 3em;
+    }
+
+    .img-list-container {
+        flex-direction: column-reverse;
+    }
+
+    .img-list-container div {
+        width: 100%;
+    }
+
+    .overview-wrapper p {
+        width: 100%;
+        border-bottom: solid 1px rgb(122, 122, 122);
+        padding-bottom: 5vh;
+        font-size: .8em;
+
+    }
+
+    .img-list-container img {
+        width: 80%;
+    }
+
+    .img-list-container ul {
+        border: none;
+    }
+
+    .img-list-container li {
+        font-size: 1.2em;
+    }
+
+
+    .overview-wrapper button {
+
+        margin-top: 3vh;
+        font-size: 1.2em;
     }
 }
 
@@ -1128,6 +1274,57 @@
         font-size: 1em;
     }
 
+    /* Course overview stylng */
+    .course-overview h1 {
+        width: fit-content;
+        font-size: 3em;
+        margin: 3vh 0;
+    }
+
+    .course-overview {
+        height: fit-content;
+    }
+
+    .overview-wrapper {
+        flex-direction: column;
+        height: fit-content;
+        padding: 3em 5em;
+    }
+
+    .img-list-container {
+        flex-direction: column-reverse;
+    }
+
+    .img-list-container div {
+        width: 100%;
+    }
+
+    .overview-wrapper p {
+        width: 100%;
+        border-bottom: solid 1px rgb(122, 122, 122);
+        padding-bottom: 5vh;
+        font-size: 1em;
+
+    }
+
+    .img-list-container img {
+        width: 80%;
+    }
+
+    .img-list-container ul {
+        border: none;
+    }
+
+    .img-list-container li {
+        font-size: 1.5em;
+    }
+
+
+    .overview-wrapper button {
+
+        margin-top: 3vh;
+        font-size: 1.5em;
+    }
 }
 
 

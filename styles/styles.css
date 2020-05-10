@@ -1140,35 +1140,42 @@ nav img {
     background: #ffffff;
     box-shadow: 30px 30px 15px rgba(0, 0, 0, 0.3);
     border-radius: 2em;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    padding: 0 5em;
 }
 
-.overview-wrapper div {
+.img-list-container {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    justify-content: space-evenly;
+}
+
+.img-list-container div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-right: solid 1px rgb(170, 170, 170);
-
+    width: 50%;
     align-items: center;
-    width: 35%;
+    justify-content: space-between;
     height: 75%;
+
 
 }
 
-.overview-wrapper img {
-    width: 85%;
+.img-list-container img {
+    width: 100%;
 }
 
 .overview-wrapper p {
-    width: 25%;
+    width: 35%;
 
 }
 
-.overview-wrapper button {
+.img-list-container button {
     width: fit-content;
     padding: .5em 1.5em;
-
     font-size: 1.8em;
     border-radius: 25em;
     background: var(--main-blue);
@@ -1176,6 +1183,12 @@ nav img {
     border: none;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     transition: all ease-in-out .2s;
+}
+
+.img-list-container ul {
+    border-left: solid 1px rgb(170, 170, 170);
+    padding-left: 5vw;
+
 }
 
 .overview-wrapper li {
