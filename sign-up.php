@@ -62,6 +62,9 @@ if (Input::exists()) {
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/responsive-mobile.css">
     <link rel="stylesheet" href="styles/responsive-tablet.css">
+    <link rel="stylesheet" href="styles/general-styles.css">
+    <link rel="stylesheet" href="styles/general-styles-mobile.css">
+    <link rel="stylesheet" href="styles/general-styles-tablet.css">
 </head>
 
 <body>

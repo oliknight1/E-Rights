@@ -13,6 +13,9 @@ $user->findUser($_SESSION['user']);
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/responsive-tablet.css">
     <link rel="stylesheet" href="styles/responsive-mobile.css">
+    <link rel="stylesheet" href="styles/general-styles.css">
+    <link rel="stylesheet" href="styles/general-styles-mobile.css">
+    <link rel="stylesheet" href="styles/general-styles-tablet.css">
     <script src="https://kit.fontawesome.com/96867cee00.js"></script>
     <title>E-Rights</title>
 </head>
@@ -92,71 +95,95 @@ $user->findUser($_SESSION['user']);
                 <li>Certificates</li>
             </ul>
         </div>
-        <div class="my-learning-container">
-            <a href="#">
-                <div class="home-course-box-container">
-                    <div class="home-course-box">
-                        <div class="home-course-color-1">
-                            <div class="home-course">
+        <!-- Container around the list of courses -->
+        <div class="general-container">
 
-                                <img src='assets/illustrations/course-images/principles.svg'>
-
-                            </div>
-
+            <!-- Course box -->
+            <div class="course-container">
+                <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
+                <div class="course-info">
+                    <h3>Principles</h3>
+                    <!-- Empty div to group progress and label together for layout -->
+                    <div>
+                        <p id="progress-amount"> </p>
+                        <div class="progress-bar">
+                            <div class="progress-done" data-done="50"></div>
                         </div>
-                        <p>Principles</p>
                     </div>
                 </div>
-            </a>
-            <a href="#">
-                <div class="home-course-box-container">
-                    <div class="home-course-box">
-                        <div class="home-course-color-1">
-                            <div class="home-course">
-
-                                <img src='assets/illustrations/course-images/principles.svg'>
-
-                            </div>
-
+            </div>
+            <div class="course-container">
+                <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
+                <div class="course-info">
+                    <h3>Principles</h3>
+                    <!-- Empty div to group progress and label together for layout -->
+                    <div>
+                        <p id="progress-amount"> </p>
+                        <div class="progress-bar">
+                            <div class="progress-done" data-done="50"></div>
                         </div>
-                        <p>Principles</p>
                     </div>
                 </div>
-            </a>
-            <a href="#">
-                <div class="home-course-box-container">
-                    <div class="home-course-box">
-                        <div class="home-course-color-1">
-                            <div class="home-course">
-
-                                <img src='assets/illustrations/course-images/principles.svg'>
-
-                            </div>
-
+            </div>
+            <div class="course-container">
+                <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
+                <div class="course-info">
+                    <h3>Principles</h3>
+                    <!-- Empty div to group progress and label together for layout -->
+                    <div>
+                        <p id="progress-amount"> </p>
+                        <div class="progress-bar">
+                            <div class="progress-done" data-done="50"></div>
                         </div>
-                        <p>Principles</p>
                     </div>
                 </div>
-            </a>
-            <a href="#">
-                <div class="home-course-box-container">
-                    <div class="home-course-box">
-                        <div class="home-course-color-1">
-                            <div class="home-course">
-
-                                <img src='assets/illustrations/course-images/principles.svg'>
-
-                            </div>
-
+            </div>
+            <div class="course-container">
+                <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
+                <div class="course-info">
+                    <h3>Principles</h3>
+                    <!-- Empty div to group progress and label together for layout -->
+                    <div>
+                        <p id="progress-amount"> </p>
+                        <div class="progress-bar">
+                            <div class="progress-done" data-done="50"></div>
                         </div>
-                        <p>Principles</p>
                     </div>
                 </div>
-            </a>
+            </div>
+            <div class="course-container">
+                <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
+                <div class="course-info">
+                    <h3>Principles</h3>
+                    <!-- Empty div to group progress and label together for layout -->
+                    <div>
+                        <p id="progress-amount"> </p>
+                        <div class="progress-bar">
+                            <div class="progress-done" data-done="50"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="course-container">
+                <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
+                <div class="course-info">
+                    <h3>Principles</h3>
+                    <!-- Empty div to group progress and label together for layout -->
+                    <div>
+                        <p id="progress-amount"> </p>
+                        <div class="progress-bar">
+                            <div class="progress-done" data-done="50"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
+
     </main>
 
-    <div class="footer">
+    <footer>
         <div class="footer-row-container">
             <a href="#" class="footer-row-links">
                 Policy & Terms
@@ -188,7 +215,7 @@ $user->findUser($_SESSION['user']);
             <img src=assets/logo/logo-horizontal-2.svg alt="Site Logo">
         </div>
 
-    </div>
+    </footer>
     <script src="js/main.js"></script>
 </body>
 

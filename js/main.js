@@ -59,3 +59,16 @@ const menuControl = e => {
 
 document.querySelector('#close-menu').addEventListener("click", menuControl);
 document.querySelector('#open-menu').addEventListener("click", menuControl);
+
+// Progress Bar Concept - will be adapted when the courses are created dynamically
+
+
+const progressBar = document.querySelector('.progress-done');
+// Use set timeout to add an animation to it
+setTimeout(() => {
+    // Set the width of the blue section to how much progress has been made
+    progressBar.style.width = progressBar.getAttribute('data-done') + '%';
+    progressBar.style.opacity = 1;
+    // Set text above progress bar to the amount of progress made
+    document.querySelector('#progress-amount').textContent = 'Progress: ' + progressBar.getAttribute('data-done') + '%';
+}, 200)

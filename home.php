@@ -12,6 +12,9 @@ $user->findUser($_SESSION['user']);
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/responsive-tablet.css">
     <link rel="stylesheet" href="styles/responsive-mobile.css">
+    <link rel="stylesheet" href="styles/general-styles.css">
+    <link rel="stylesheet" href="styles/general-styles-mobile.css">
+    <link rel="stylesheet" href="styles/general-styles-tablet.css">
     <script src="https://kit.fontawesome.com/96867cee00.js"></script>
     <title>E-Rights</title>
 
@@ -99,39 +102,39 @@ $user->findUser($_SESSION['user']);
 
 
 
-    <div class="footer">
-        <div class="footer-row-container">
-            <a href="#" class="footer-row-links">
-                Policy & Terms
-            </a>
-            <a href="#" class="footer-row-links">
-                E-RIGHTS-Corporation 2020
-            </a>
-            <a href="#" class="footer-row-links">
-                Help
-            </a>
-            <div class="footer-social-media">
-                <a href="#" class="footer-social-media-icons">
-                    <i class="fab fa-facebook-square"></i>
+        <div class="footer">
+            <div class="footer-row-container">
+                <a href="#" class="footer-row-links">
+                    Policy & Terms
                 </a>
-                <a href="#" class="footer-social-media-icons">
-                    <i class="fab fa-instagram"></i>
+                <a href="#" class="footer-row-links">
+                    E-RIGHTS-Corporation 2020
                 </a>
-                <a href="#" class="footer-social-media-icons">
-                    <i class="fab fa-twitter"></i>
+                <a href="#" class="footer-row-links">
+                    Help
                 </a>
-                <a href="#" class="footer-social-media-icons">
-                    <i class="fab fa-youtube"></i>
-                </a>
+                <div class="footer-social-media">
+                    <a href="#" class="footer-social-media-icons">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="#" class="footer-social-media-icons">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-social-media-icons">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="footer-social-media-icons">
+                        <i class="fab fa-youtube"></i>
+                    </a>
 
+                </div>
+
+            </div>
+            <div class="footer-image">
+                <img src=assets/logo/logo-horizontal-2.svg alt="404">
             </div>
 
         </div>
-        <div class="footer-image">
-            <img src=assets/logo/logo-horizontal-2.svg alt="404">
-        </div>
-
-    </div>
 </body>
 
 </html>
