@@ -481,15 +481,6 @@
 
 /* course box */
 
-.course-container {
-    height: 60vh;
-    width: 80vw;
-    border-radius: 20px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-    background-color: white;
-    margin-top: 20vh;
-}
-
 .course-header {
     height: 8vh;
     width: 80vw;
@@ -624,21 +615,6 @@
 
 
 
-.course-color:nth-of-type(1) {
-    background-color: #009180;
-}
-
-.course-color:nth-of-type(2) {
-    background-color: #00B9C8;
-}
-
-.course-color:nth-of-type(3) {
-    background-color: #B5C7DC;
-}
-
-.course-color:nth-of-type(4) {
-    background-color: #389BA3;
-}
 
 .course-box-wrapper:hover .course-color {
     width: 14vw;
@@ -1471,3 +1447,56 @@
 .signup {
     float: left;
 }
+
+/* All Courses Page */
+
+.all-courses-page {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10vw;
+}
+
+.all-courses-page .general-container {
+    margin-top: 5vh;
+    width: 80vw;
+    min-height: 50vh;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .2fr .8fr;
+    justify-items: center;
+    align-items: center;
+    padding: 0 5em;
+
+}
+
+.all-courses-page .general-container h2 {
+    justify-self: start;
+    grid-row: 1;
+    grid-column: 1/4;
+}
+
+
+
+
+/* 
+.course-color:nth-of-type(1) {
+    background-color: #009180;
+}
+
+.course-color:nth-of-type(2) {
+    background-color: #00B9C8;
+}
+
+.course-color:nth-of-type(3) {
+    background-color: #B5C7DC;
+}
+
+.course-color:nth-of-type(4) {
+    background-color: #389BA3;
+}
+
+*/

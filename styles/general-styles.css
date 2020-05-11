@@ -73,7 +73,7 @@ button:hover {
 .general-container {
     background: #ffffff;
     box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.4);
-    border-radius: 5em;
+    border-radius: 4em;
 }
 
 /* Navigation */
@@ -191,6 +191,60 @@ nav img {
     font-size: 14vh;
     font-weight: bold;
 }
+
+/* Courses */
+
+.course-container {
+    width: 12vw;
+    height: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 2em 2em;
+    transition: all .3s ease-in-out;
+
+}
+
+.course-container:hover {
+    box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.4);
+    width: 13vw;
+
+    height: 16vw;
+}
+
+.course-container img {
+    width: 100%;
+    border-radius: 2em 2em 0em 0em;
+    background-color: #009180;
+
+}
+
+.course-info {
+    position: relative;
+    text-align: center;
+    border-radius: 0em 0em 3em 3em;
+    height: 14vh;
+    background: #ffffff;
+    width: 100%;
+    padding: .5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.course-info h3 {
+
+    font-size: 1.7em;
+    font-weight: 500;
+}
+
+.course-container progress {
+    background: blue;
+}
+
 
 /* Footer Styling */
 footer {
