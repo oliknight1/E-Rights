@@ -195,8 +195,8 @@ nav img {
 /* Courses */
 
 .course-container {
-    width: 12vw;
-    height: 15vw;
+    width: 13vw;
+    height: 16vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -209,9 +209,9 @@ nav img {
 
 .course-container:hover {
     box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.4);
-    width: 13vw;
+    width: 14vw;
 
-    height: 16vw;
+    height: 17vw;
 }
 
 .course-container img {
@@ -225,14 +225,15 @@ nav img {
     position: relative;
     text-align: center;
     border-radius: 0em 0em 3em 3em;
-    height: 14vh;
+    height: 100%;
     background: #ffffff;
     width: 100%;
-    padding: .5em;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: column;
+    align-self: center;
+    justify-content: space-between;
+    padding: 0.5em 1.5em 1em 1.5em;
+
 }
 
 .course-info h3 {
@@ -241,10 +242,32 @@ nav img {
     font-weight: 500;
 }
 
-.course-container progress {
-    background: blue;
+.course-info p {
+    font-size: .9em;
+    color: #686868;
 }
 
+/* Custom progress bar styling */
+.progress-bar {
+    position: relative;
+    height: 2vh;
+    width: 100%;
+    background-color: #d0d0d0;
+    border-radius: 3em;
+    margin-top: 1vh;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
+
+
+}
+
+.progress-done {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(to right, #40b8f0, var(--main-blue));
+    border-radius: 3em;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
 
 /* Footer Styling */
 footer {
