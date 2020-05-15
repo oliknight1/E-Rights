@@ -22,8 +22,8 @@ class Api
                 $returnData = $this->db->getData('courses', array($col, '=', $data));
                 return json_encode($returnData->firstResult());
 
-                // Tag GET parameter was set, so return all courses with that tag
-            case 'tag':
+                // category GET parameter was set, so return all courses with that category
+            case 'category':
                 $returnData = $this->db->getData('courses', array($col, '=', $data));
                 return json_encode($returnData->allResults());
         }

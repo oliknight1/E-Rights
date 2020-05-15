@@ -8,7 +8,7 @@ if (!empty($_GET)) {
         switch ($key) {
             case 'name':
                 return print_r($api->getCourse($key, $value));
-            case 'tag':
+            case 'category':
                 return print_r($api->getCourse($key, $value));
         }
     }
