@@ -681,16 +681,6 @@
 
 /* Home */
 
-.home-wrapper {
-    height: auto;
-    width: 100vw;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-
 
 /* Blue version of the profile icon */
 .blue-icon {
