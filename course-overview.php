@@ -82,32 +82,33 @@
     </nav>
 
     <main class="course-overview">
-
         <h1>Course Name</h1>
-        <div class="overview-wrapper">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Harum laboriosam at mollitia nihil! Corrupti magnam magni dolorem sunt,
-                quia assumenda cupiditate, possimus quisquam animi temporibus architecto itaque veniam debitis fuga!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Harum laboriosam at mollitia nihil! Corrupti magnam magni dolorem sunt,
-                quia assumenda cupiditate, possimus quisquam animi temporibus architecto itaque veniam debitis fuga!</p>
-            <div class="img-list-container">
-                <div>
-                    <img src='assets/illustrations/course-images/principles.svg'>
-                    <button>Start</button>
-                </div>
-
-
-                <ul>
-                    <li>5 - 15 Minutes</li>
-                    <li>Easy</li>
-                    <li>Level 1 Required</li>
-                </ul>
+        <div class="general-container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolor expedita dicta corrupti ut, maxime ab, voluptate ipsum aperiam rem suscipit, dignissimos sequi debitis eos maiores eius facilis omnis qui!Repudiandae earum necessitatibus fuga natus optio voluptatem eveniet. Laborum, ducimus natus! Consectetur excepturi illo doloremque fugiat molestias quisquam nemo minima explicabo blanditiis earum quis, nesciunt beatae sequi velit ullam exercitationem.</p>
+            <div>
+                <img src="assets/illustrations/course-images/data.svg" alt="">
+                <a href="#"> <button>Start Course</button></a>
             </div>
+            <ul>
+                <li>
+                    <i class="fas fa-clock"></i>
+                    <p>5 - 15 Minutes</p>
+                </li>
+                <li>
+                    <i class="fas fa-user-shield"></i>
+                    <p>Easy</p>
+                </li>
+                <li>
+                    <i class="fas fa-book-reader"></i>
+                    <p>GDPR</p>
+                </li>
+            </ul>
+
         </div>
 
 
     </main>
-    <div class="footer">
+    <footer>
         <div class="footer-row-container">
             <a href="#" class="footer-row-links">
                 Policy & Terms
@@ -139,8 +140,8 @@
             <img src=assets/logo/logo-horizontal-2.svg alt="Site Logo">
         </div>
 
-    </div>
-    <script src="js/main.js"></script>
+
+        <script src="js/main.js"></script>
 </body>
 
 </html>
