@@ -1,4 +1,4 @@
-const loginImg = document.querySelector(".login-img-container img");
+/*const loginImg = document.querySelector(".login-img-container img");
 if (loginImg) {
     loginImg.addEventListener("load", () => {
         // Use opacity as some browsers will not attempt to load an image if display:none
@@ -62,13 +62,112 @@ document.querySelector('#open-menu').addEventListener("click", menuControl);
 
 // Progress Bar Concept - will be adapted when the courses are created dynamically
 
+*/
 
-const progressBar = document.querySelector('.progress-done');
-// Use set timeout to add an animation to it
-setTimeout(() => {
+
+
+
+
+window.onload = function() {
+    if(document.querySelector(".general-container")) {
+        fetchData();
+    }
+    
+};
+
+//FOR REFERENCE
+function loadProgressUnadapted() {
+    const progressBar = document.querySelector('.progress-done');
+    // Use set timeout to add an animation to it
+    setTimeout(() => {
     // Set the width of the blue section to how much progress has been made
     progressBar.style.width = progressBar.getAttribute('data-done') + '%';
     progressBar.style.opacity = 1;
     // Set text above progress bar to the amount of progress made
     document.querySelector('#progress-amount').textContent = 'Progress: ' + progressBar.getAttribute('data-done') + '%';
-}, 200)
+    }, 200);
+}
+
+function loadProgress(progDone,progAmount) {
+    // Use set timeout to add an animation to it
+    setTimeout(() => {
+    // Set the width of the blue section to how much progress has been made
+    console.log(progDone);
+    console.log(progDone.getAttribute('data-done'));
+    progDone.style.width = progDone.getAttribute('data-done') + '%';
+    progDone.style.opacity = 1;
+    // Set text above progress bar to the amount of progress made
+    progAmount.textContent = 'Progress: ' + progDone.getAttribute('data-done') + '%';
+    }, 200);
+}
+
+function fetchData(category) {
+    var url = "api.php?";
+    if(arguments == 1) {
+        for(var i = 0;i < category.length;i++) {
+            category.replace(' ','_');
+            category.replace('%20','_');
+            
+        }
+        url += "?category="+category;
+    }
+    var results;
+    var xml = new XMLHttpRequest();
+    xml.open("GET",url,true);
+    xml.responseType = 'json';
+    xml.send();
+    xml.onreadystatechange = () => {
+        if(xml.readyState == 4 && xml.status == 200) {
+            results = xml.response;
+            console.log(results);
+            generateResultDivs(results);
+        }
+    };
+}
+
+
+
+function generateResultDivs(result) {
+    var generalContainer = document.querySelector(".general-container");
+    if(result) {
+        result.forEach(element => {
+            var courseContainer = document.createElement("div");
+            courseContainer.className = "course-container";
+            generateResultImage(courseContainer,"assets/illustrations/course-images/GDPR.svg");
+            generateCourseInfo(courseContainer,element);
+            generalContainer.appendChild(courseContainer);
+        });
+
+        for(var i = 0;i < result.length;i++) {
+            loadProgress(document.getElementsByClassName("progress-done")[i],document.getElementsByClassName("progress-amount")[i]);
+        }
+    }
+
+}
+
+function generateResultImage(div,imageSRC) {
+    var image = document.createElement("img");
+    image.src = imageSRC;
+    div.appendChild(image);
+}
+
+function generateCourseInfo(div,result) {
+    var courseInfo = document.createElement("div");
+    courseInfo.className = "course-info";
+    var heading = document.createElement("h3");
+    heading.innerHTML = result.name;
+    courseInfo.appendChild(heading);
+    var progressContainer = document.createElement("div");
+    var progressAmount = document.createElement("p");
+    progressAmount.className = "progress-amount";
+    progressContainer.appendChild(progressAmount);
+    var progressBar = document.createElement("div");
+    progressBar.className = "progress-bar";
+    var progressDone = document.createElement("div");
+    progressDone.className = "progress-done";
+    progressDone.dataset.done = Math.floor((Math.random()*100)+1);
+    progressBar.appendChild(progressDone);
+    progressContainer.appendChild(progressBar);
+    courseInfo.appendChild(progressContainer);
+    div.appendChild(courseInfo);
+}
