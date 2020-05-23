@@ -4,7 +4,6 @@ require_once 'core/init.php';
 $user = new User();
 $user->findUser($_SESSION['user']);
 
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
