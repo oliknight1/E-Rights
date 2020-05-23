@@ -1102,34 +1102,41 @@
 .course-overview .general-container {
     width: 80%;
     height: 70%;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr .5fr;
+    justify-items: center;
     align-items: center;
-    justify-content: space-between;
     padding: 0 3vw;
 
 }
 
 .course-overview .general-container p {
-    width: 30%;
+    width: 100%;
     font-size: 1.3em;
+    grid-column-start: 1;
 }
 
-.course-overview .general-container div {
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-}
+
 
 .course-overview .general-container img {
-    width: 60%;
+
+    width: 80%;
+    grid-column-start: 2;
+
+}
+
+.course-overview .general-container a {
+
+    grid-column-start: 2;
+
+    grid-row-start: 2;
+
 }
 
 .course-overview .general-container ul {
-    width: 30%;
+    grid-column-start: 3;
+
 
 
 }

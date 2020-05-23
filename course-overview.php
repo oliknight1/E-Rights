@@ -85,10 +85,10 @@
         <h1>Course Name</h1>
         <div class="general-container">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolor expedita dicta corrupti ut, maxime ab, voluptate ipsum aperiam rem suscipit, dignissimos sequi debitis eos maiores eius facilis omnis qui!Repudiandae earum necessitatibus fuga natus optio voluptatem eveniet. Laborum, ducimus natus! Consectetur excepturi illo doloremque fugiat molestias quisquam nemo minima explicabo blanditiis earum quis, nesciunt beatae sequi velit ullam exercitationem.</p>
-            <div>
-                <img src="assets/illustrations/course-images/data.svg" alt="">
-                <a href="#"> <button>Start Course</button></a>
-            </div>
+
+            <img src="assets/illustrations/course-images/data.svg" alt="">
+            <a href="#"> <button>Start Course</button></a>
+
             <ul>
                 <li>
                     <i class="fas fa-clock"></i>
