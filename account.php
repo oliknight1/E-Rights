@@ -3,6 +3,8 @@
 require_once 'core/init.php';
 $user = new User();
 $user->findUser($_SESSION['user']);
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -91,16 +93,16 @@ $user->findUser($_SESSION['user']);
         <!-- Part with the user icon and stats -->
         <div class="account-overview">
             <div class="overview-container">
-                <div class="profile-icon blue-icon">
-                    <p>T</p>
+                <div class="profile-icon">
+                    <p><?php echo $user->getData()["username"][0] ?></p>
                 </div>
                 <!-- Div is just used to group together the <h2> and <ul> -->
                 <div>
                     <h2>USERNAME</h2>
                     <ul>
-                        <li>In Progress: NUMBER</li>
-                        <li>Assigned: NUMBER</li>
-                        <li>Certificates: NUMBER</li>
+                        <li>In Progress: <?php echo $user->getData()["in_progress_num"] ?> </li>
+                        <li>Assigned: <?php echo $user->getData()["assigned_num"] ?> </li>
+                        <li>Certificates: <?php echo $user->getData()["certificates_num"] ?> </li>
                     </ul>
                 </div>
             </div>
@@ -112,15 +114,15 @@ $user->findUser($_SESSION['user']);
                 <ul>
                     <li>
                         <h3>Username</h3>
-                        <p>USERNAME</p>
+                        <p><?php echo $user->getData()["username"] ?></p>
                     </li>
                     <li>
                         <h3>Security Question</h3>
-                        <p>QUESTION</p>
+                        <p><?php echo $user->getData()["security_question"] ?></p>
                     </li>
                     <li>
-                        <h3>Security Question</h3>
-                        <p>ANSWER</p>
+                        <h3>Security Answer</h3>
+                        <p><?php echo $user->getData()["security_answer"] ?></p>
                     </li>
                 </ul>
 
@@ -130,7 +132,7 @@ $user->findUser($_SESSION['user']);
         </div>
 
     </main>
-    <div class="footer">
+    <footer>
         <div class="footer-row-container">
             <a href="#" class="footer-row-links">
                 Policy & Terms
@@ -162,7 +164,7 @@ $user->findUser($_SESSION['user']);
             <img src=assets/logo/logo-horizontal-2.svg alt="Site Logo">
         </div>
 
-    </div>
+    </footer>
     <script src="js/main.js"></script>
 </body>
 

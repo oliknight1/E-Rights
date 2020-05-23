@@ -1184,7 +1184,7 @@
 /*  Darkens the image */
 .login-img-container img {
     filter: brightness(50%);
-    transform: translateY(-25%);
+    transform: translateY(-13%);
     width: 100%;
 }
 
