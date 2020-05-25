@@ -91,10 +91,10 @@ $user->findUser($_SESSION['user']);
     <main class="my-learning">
         <div class="assigned-bar">
             <ul>
-                <li class="selected">Assigned</li>
-                <li>In Progress</li>
-                <li>Completed</li>
-                <li>Certificates</li>
+                <li id="assigned" class="selected">Assigned</li>
+                <li id="in-prog">In Progress</li>
+                <li id="completed">Completed</li>
+                <li id="certifs">Certificates</li>
             </ul>
         </div>
         <!-- Container around the list of courses -->

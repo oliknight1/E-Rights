@@ -71,9 +71,62 @@ document.querySelector('#open-menu').addEventListener("click", menuControl);
 window.onload = function() {
     if(document.querySelector(".general-container")) {
         fetchData();
+        document.getElementById("in-prog").onclick = function () { inProgressSelected(); }
+        document.getElementById("assigned").onclick = function () {
+            assignedSelected();
+        }
+        document.getElementById("completed").onclick = function () {
+            completedSelected();
+        }
     }
     
 };
+
+function assignedSelected() {
+    document.querySelector(".selected").classList.remove("selected");
+    document.querySelector("#assigned").classList += "selected";
+    var results = document.getElementsByClassName("course-container");
+    if(results) {
+        for(let i = 0;i < results.length; i++) {
+            results[i].style.display = "flex";
+        }
+    }
+}
+
+
+function inProgressSelected() {
+    document.querySelector(".selected").classList.remove("selected");
+    document.querySelector("#in-prog").classList += "selected";
+    var results = document.getElementsByClassName("course-container");
+    if(results) {
+        for(let i = 0;i < results.length; i++) {
+            var dataDone = results[i].querySelector(".progress-done").getAttribute('data-done');
+            console.log(dataDone);
+            if(dataDone < 1 || dataDone > 99) {
+                console.log("lmao");
+                results[i].style.display = "none";
+            } else {
+                results[i].style.display = "flex";
+            }
+        }
+    }
+}
+
+function completedSelected() {
+    document.querySelector(".selected").classList.remove("selected");
+    document.querySelector("#completed").classList += "selected";
+    var results = document.getElementsByClassName("course-container");
+    if(results) {
+        for(let i = 0;i < results.length; i++) {
+            var dataDone = results[i].querySelector(".progress-done").getAttribute('data-done');
+            if(dataDone != 100) {
+                results[i].style.display = "none";
+            } else {
+                results[i].style.display = "flex";
+            }
+        }
+    }
+}
 
 //FOR REFERENCE
 function loadProgressUnadapted() {
@@ -165,7 +218,10 @@ function generateCourseInfo(div,result) {
     progressBar.className = "progress-bar";
     var progressDone = document.createElement("div");
     progressDone.className = "progress-done";
-    progressDone.dataset.done = Math.floor((Math.random()*100)+1);
+    var progressTesting = Math.floor((Math.random()*100)+1);
+    if(progressTesting > 90) { progressTesting = 100; }
+    progressDone.dataset.done = progressTesting;
+    
     progressBar.appendChild(progressDone);
     progressContainer.appendChild(progressBar);
     courseInfo.appendChild(progressContainer);
