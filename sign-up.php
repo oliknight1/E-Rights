@@ -45,7 +45,7 @@ if (Input::exists()) {
                 // In full version this would not be hard coded
                 $user->assignCourse(Input::getInput('username'), 1);
                 $user->assignCourse(Input::getInput('username'), 2);
-                Redirect::redirectTo('index.php');
+                Redirect::redirectTo('home.php');
             } catch (Exception $e) {
 
                 die($e->getMessage());
