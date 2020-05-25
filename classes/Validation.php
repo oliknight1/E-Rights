@@ -5,7 +5,6 @@ class Validation
     private $passed = false;
     private $errors = array();
     private $db = null;
-
     public function __construct()
     {
         $this->db = Database::getInstance();
@@ -14,6 +13,8 @@ class Validation
     // $request will be what sort of request is passed into the function e.g POST
     public function checkData($request, $inputNames = array())
     {
+
+
         // $inputName will be 'password' 'username' etc.,
         // $rules are the rules attached to the input, e.g min length
         foreach ($inputNames as $inputName => $rules) {

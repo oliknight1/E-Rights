@@ -2,7 +2,7 @@
 require_once 'core/init.php';
 $user = new User();
 $user->findUser($_SESSION['user']);
-print_r($user->getData());
+
 ?>
 
 <html lang="en">
