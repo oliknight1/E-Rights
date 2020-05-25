@@ -134,6 +134,12 @@ nav img {
 
 }
 
+/* home styles*/
+
+.all-courses-page .general-container{
+    margin-top: 15vh;
+}
+
 .home-info-container {
     height: 45vh;
     width: 100vw;
