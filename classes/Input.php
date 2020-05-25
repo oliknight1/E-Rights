@@ -8,12 +8,8 @@ class Input
             case 'post':
                 // Ternary operator, essentially an if statement
                 return (!empty($_POST)) ? true : false;
-                break;
             case 'get':
                 return (!empty($_GET)) ? true : false;
-
-                break;
-
             default:
                 return false;
                 break;

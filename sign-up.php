@@ -2,51 +2,59 @@
 require_once 'core/init.php';
 
 if (Input::exists()) {
-    if (Token::checkToken(Input::getInput('token')))
+    if (Token::checkToken(Input::getInput('token'))) {
         $validate = new Validation();
 
-    // Checks the input fields against certain validation checks
-    $validation = $validate->checkData($_POST, array(
-        'username' => array(
-            'name' => 'username',
-            'required' => true,
-            'min' => 3,
-            'max' => 30,
-            'unique' => 'users'
-        ),
-        'password' => array(
-            'name' => 'password',
-            'required' => true,
-            'min' => 5
-        ),
-        'repeat-password' => array(
-            'name' => 'repated password',
-            'required' => true,
-            'matches' => 'password'
-        ),
-        'security-answer' => array(
-            'name' => 'security answer',
-            'required' => true,
-            'min' => 3
-        ),
+        // Checks the input fields against certain validation checks
+        $validation = $validate->checkData($_POST, array(
+            'username' => array(
+                'name' => 'username',
+                'required' => true,
+                'min' => 3,
+                'max' => 30,
+                'unique' => 'users'
+            ),
+            'password' => array(
+                'name' => 'password',
+                'required' => true,
+                'min' => 5
+            ),
+            'repeat-password' => array(
+                'name' => 'repated password',
+                'required' => true,
+                'matches' => 'password'
+            ),
+            'security-answer' => array(
+                'name' => 'security answer',
+                'required' => true,
+                'min' => 3
+            ),
 
-    ));
-    if ($validation->checkPassed()) {
-        $user = new User();
-        try {
-            $user->createUser(array(
-                'username' => Input::getInput('username'),
-                'password' => password_hash(Input::getInput('password'), PASSWORD_DEFAULT),
-                'security_question' => Input::getInput('security-question'),
-                'security_answer' =>  Input::getInput('security-answer'),
-            ));
-            Redirect::redirectTo('index.php');
-        } catch (Exception $e) {
-            die($e->getMessage());
-        }
-    } else {
-        foreach ($validation->displayErrors() as $error) {
-            //   DISPLAY ERRORS HERE!!!!
+        ));
+        if ($validation->checkPassed()) {
+            $user = new User();
+            try {
+
+                $user->createUser(array(
+                    'username' => Input::getInput('username'),
+                    'password' => password_hash(Input::getInput('password'), PASSWORD_DEFAULT),
+                    'security_question' => Input::getInput('security-question'),
+                    'security_answer' =>  Input::getInput('security-answer'),
+                ));
+                // 1 & 2 relate to the two courses we have created,
+                // In full version this would not be hard coded
+                $user->assignCourse(Input::getInput('username'), 1);
+                $user->assignCourse(Input::getInput('username'), 2);
+                Redirect::redirectTo('index.php');
+            } catch (Exception $e) {
+
+                die($e->getMessage());
+            }
+        } else {
+            foreach ($validation->displayErrors() as $error) {
+                //   DISPLAY ERRORS HERE!!!!
+
+            }
         }
     }
 }
@@ -95,8 +103,8 @@ if (Input::exists()) {
                          hidden means it cannot be seen by the use
                     -->
                     <option value="" selected disabled hidden>Security Question</option>
-                    <option value="0">Test quesion 1</option>
-                    <option value="1">Test quesion 2</option>
+                    <option value="Test question 1">Test quesion 1</option>
+                    <option value="Test questiuon 2">Test quesion 2</option>
                 </select>
 
 
@@ -109,7 +117,8 @@ if (Input::exists()) {
                 <button>Sign Up</button>
                 <!-- Creates a token that is unique to the user, protects against CSRF attacks  -->
                 <!-- This token is also set as a session to the user -->
-                <input type="hidden" name="token" value=" <?php echo Token::createToken() ?>">
+                <input type="hidden" name="token" value=<?php echo Token::createToken() ?>>
+
             </form>
         </div>
 
