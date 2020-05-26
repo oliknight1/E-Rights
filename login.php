@@ -53,7 +53,7 @@ if (Input::exists()) {
         <div class="login-img-container">
             <img src="./assets/login-img.jpeg" alt="">
         </div>
-
+        <!-- Contains only the image shown on the left -->
         <div class="user-form-container">
 
             <img src="assets/illustrations/login-illustration.svg" alt="">
