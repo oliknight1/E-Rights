@@ -17,6 +17,8 @@ $user->findUser($_SESSION['user']);
     <link rel="stylesheet" href="styles/general-styles-mobile.css">
     <link rel="stylesheet" href="styles/general-styles-tablet.css">
     <script src="https://kit.fontawesome.com/96867cee00.js"></script>
+ 
+    
     <title>E-Rights</title>
 </head>
 
@@ -97,94 +99,17 @@ $user->findUser($_SESSION['user']);
     <main class="my-learning">
         <div class="assigned-bar">
             <ul>
-                <li class="selected">Assigned</li>
-                <li>In Progress</li>
-                <li>Completed</li>
-                <li>Certificates</li>
+                <li id="assigned" class="selected">Assigned</li>
+                <li id="in-prog">In Progress</li>
+                <li id="completed">Completed</li>
+                <li id="certifs">Certificates</li>
             </ul>
         </div>
         <!-- Container around the list of courses -->
         <div class="general-container">
 
             <!-- Course box -->
-            <div class="course-container">
-                <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
-                <div class="course-info">
-                    <h3>Principles</h3>
-                    <!-- Empty div to group progress and label together for layout -->
-                    <div>
-                        <p id="progress-amount"> </p>
-                        <div class="progress-bar">
-                            <div class="progress-done" data-done="50"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="course-container">
-                <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
-                <div class="course-info">
-                    <h3>Principles</h3>
-                    <!-- Empty div to group progress and label together for layout -->
-                    <div>
-                        <p id="progress-amount"> </p>
-                        <div class="progress-bar">
-                            <div class="progress-done" data-done="50"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="course-container">
-                <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
-                <div class="course-info">
-                    <h3>Principles</h3>
-                    <!-- Empty div to group progress and label together for layout -->
-                    <div>
-                        <p id="progress-amount"> </p>
-                        <div class="progress-bar">
-                            <div class="progress-done" data-done="50"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="course-container">
-                <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
-                <div class="course-info">
-                    <h3>Principles</h3>
-                    <!-- Empty div to group progress and label together for layout -->
-                    <div>
-                        <p id="progress-amount"> </p>
-                        <div class="progress-bar">
-                            <div class="progress-done" data-done="50"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="course-container">
-                <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
-                <div class="course-info">
-                    <h3>Principles</h3>
-                    <!-- Empty div to group progress and label together for layout -->
-                    <div>
-                        <p id="progress-amount"> </p>
-                        <div class="progress-bar">
-                            <div class="progress-done" data-done="50"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="course-container">
-                <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
-                <div class="course-info">
-                    <h3>Principles</h3>
-                    <!-- Empty div to group progress and label together for layout -->
-                    <div>
-                        <p id="progress-amount"> </p>
-                        <div class="progress-bar">
-                            <div class="progress-done" data-done="50"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
 
         </div>
@@ -224,7 +149,7 @@ $user->findUser($_SESSION['user']);
         </div>
 
     </footer>
-    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 
