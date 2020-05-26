@@ -2,8 +2,12 @@
 
 require_once 'core/init.php';
 $user = new User();
-$user->findUser($_SESSION['user']);
 
+if (isset($_SESSION['user'])) {
+    $user->findUser($_SESSION['user']);
+} else {
+    Redirect::redirectTo("login.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

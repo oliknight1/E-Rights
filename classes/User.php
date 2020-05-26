@@ -46,6 +46,7 @@ class User
                 return true;
             }
         }
+        return false;
     }
     public function login($username = null, $password = null)
     {
