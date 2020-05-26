@@ -2,7 +2,12 @@
 
 require_once 'core/init.php';
 $user = new User();
-$user->findUser($_SESSION['user']);
+
+if (isset($_SESSION['user'])) {
+    $user->findUser($_SESSION['user']);
+} else {
+    Redirect::redirectTo("login.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,8 +22,8 @@ $user->findUser($_SESSION['user']);
     <link rel="stylesheet" href="styles/general-styles-mobile.css">
     <link rel="stylesheet" href="styles/general-styles-tablet.css">
     <script src="https://kit.fontawesome.com/96867cee00.js"></script>
- 
-    
+
+
     <title>E-Rights</title>
 </head>
 

@@ -1,3 +1,14 @@
+<?php
+
+require_once 'core/init.php';
+$user = new User();
+
+if (isset($_SESSION['user'])) {
+    $user->findUser($_SESSION['user']);
+} else {
+    Redirect::redirectTo("login.php");
+}
+?>
 <html lang="en">
 
 <head>
