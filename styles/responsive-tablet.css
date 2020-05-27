@@ -11,7 +11,7 @@
     }
 
     .profile-icon {
-        width: 40vw !important;
+        width: 35vw !important;
     }
 
     .overview-container h2 {
@@ -285,7 +285,6 @@
     /* course box */
 
     .course-container {
-        margin-top: 10vh;
         height: 30vh;
     }
 
@@ -398,7 +397,7 @@
 
     .home-info-profile-content-amount {
         font-size: 3vh;
-        margin-top: -3vh;
+ 
     }
 
 }
@@ -684,7 +683,6 @@
     /* course box */
 
     .course-container {
-        margin-top: 10vh;
         height: 30vh;
     }
 
@@ -971,6 +969,8 @@
         font-size: 1.3em;
     }
 
+   
+
     /* welcome */
 
     .welcome-buttons-text {
@@ -1138,6 +1138,8 @@
 
 
     /* info box */
+
+    
 
     .home-info-profile-icon {
         width: 16vw;

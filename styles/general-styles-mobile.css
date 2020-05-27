@@ -102,6 +102,32 @@
     nav img {
         padding-left: 0;
     }
+
+     /* footer */
+
+    .footer-row-container {
+        flex-direction: column;
+        width: 90vw;
+        height: 20vh
+    }
+
+    .footer-row-text {
+        width: 90vw;
+    }
+
+    .footer-row-links {
+        font-size: 1.5vh;
+        margin-right: 6vw;
+    }
+
+    .footer-social-media {
+        margin-top: 5vh;
+        width: 60vw;
+    }
+
+     .footer-image {
+        width: 35vw;
+    }
 }
 
 /* Medium Phones */
@@ -113,6 +139,57 @@
     .hamburger-menu header p {
         font-size: 1.7em;
     }
+
+    /*footer*/
+
+    .footer-row-container {
+        flex-direction: column;
+        width: 90vw;
+        height: 20vh
+    }
+
+    .footer-row-text {
+        width: 90vw;
+    }
+
+    .footer-row-links {
+        font-size: 1.5vh;
+        margin-right: 6vw;
+    }
+
+    .footer-social-media {
+        margin-top: 5vh;
+        width: 60vw;
+    }
+
+     .footer-image {
+        width: 35vw;
+    }
+
+
+     /* course */
+
+    .all-courses-page .general-container {
+    padding: 0em;
+    min-height: 35vh;
+    }
+
+    .all-courses-page .general-container h2 {
+    padding: 4vw;
+    }
+
+    .course-container {
+        width: 18vw;
+    }
+
+    .progress-bar {
+        height: 1vh;
+    }
+
+    .course-info h3 {
+    font-size: 1.4em;
+    font-weight: 500;
+}
 
 }
 
@@ -216,6 +293,20 @@
     nav img {
         padding-left: 0;
     }
+
+    /*footer*/
+    .footer-row-container {
+        flex-direction: column;
+    }
+
+    .footer-row-text {
+        width: 80vw;
+    }
+
+    .footer-social-media {
+        width: 60vw;
+  
+    }
 }
 
 /* Landscape Styles */
@@ -227,10 +318,99 @@
     .link-container a {
         font-size: 4vh;
     }
+
+    /*footer*/
+
+    .footer-row-text {
+        width: 50vw;
+    }
+
+    .footer-row-links {
+        font-size: 2.5vh;
+    }
+
+    .footer-social-media {
+      width:25vw;
+    }
+
+    .footer-social-media a{
+       font-size: 5.5vh;
+    }
+
+    /* course */
+
+    .all-courses-page .general-container {
+    padding: 0em;
+    min-height: 70vh;
+    }
+
+    .all-courses-page .general-container h2 {
+    padding: 4vw;
+    }
+
+    .course-container {
+        width: 18vw;
+    }
+
+    .progress-bar {
+        height: 1vh;
+    }
+
+    .course-info h3 {
+    font-size: .8em;
+    }
+
+    .course-info p {
+    font-size: .6em;
+}
+
+    .course-container img {
+    border-radius: 1em 1em 0em 0em;
+    }
+
+    .course-info {
+    border-radius: 0em 0em 1em 1em;
+    }
 }
 
 /* Medium Phones */
-@media screen and (min-width: 667px) and (max-width:736px) and (orientation: landscape) {}
+@media screen and (min-width: 667px) and (max-width:736px) and (orientation: landscape) {
+
+    /* course */
+
+    .all-courses-page .general-container {
+    padding: 0em;
+    min-height: 70vh;
+    }
+
+    .all-courses-page .general-container h2 {
+    padding: 4vw;
+    }
+
+    .course-container {
+        width: 18vw;
+    }
+
+    .progress-bar {
+        height: 1vh;
+    }
+
+    .course-info h3 {
+    font-size: 1.2em;
+    }
+
+    .course-info p {
+    font-size: .7em;
+}
+
+    .course-container img {
+    border-radius: 1.5em 1.5em 0em 0em;
+    }
+
+    .course-info {
+    border-radius: 0em 0em 1.5em 1.5em;
+    }
+}
 
 /* Large Phones */
 @media screen and (min-width: 736px) and (max-width:812px) and (orientation: landscape) {
@@ -238,6 +418,41 @@
 
     .link-container a {
         font-size: 4vh;
+    }
+
+    /* course */
+
+    .all-courses-page .general-container {
+    padding: 0em;
+    min-height: 70vh;
+    }
+
+    .all-courses-page .general-container h2 {
+    padding: 4vw;
+    }
+
+    .course-container {
+        width: 18vw;
+    }
+
+    .progress-bar {
+        height: 1vh;
+    }
+
+    .course-info h3 {
+    font-size: 1.2em;
+    }
+
+    .course-info p {
+    font-size: .7em;
+}
+
+    .course-container img {
+    border-radius: 1.5em 1.5em 0em 0em;
+    }
+
+    .course-info {
+    border-radius: 0em 0em 1.5em 1.5em;
     }
 
 }
