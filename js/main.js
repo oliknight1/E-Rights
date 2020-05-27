@@ -17,19 +17,28 @@ function togglePasswordVisibility(textBoxID) {
     }
 }
 
-//If the welcome-slide class exists, runs the slideshow
+//Onloads
+
+var slideNum = 0;
 
 window.onload = function() {
-    if(document.querySelector(".welcome-slide")) {
-        var slideNum = 0;
-        this.slideShow()
+    if(document.querySelector(".welcome-body") !== null) {
+        this.slideShow();
     }
-    
+    if(document.querySelector(".general-container")) {
+    fetchData();
+    document.getElementById("in-prog").onclick = function () { inProgressSelected(); }
+    document.getElementById("assigned").onclick = function () {
+            assignedSelected();
+        }
+    document.getElementById("completed").onclick = function () {
+            completedSelected();
+        }
+    }
 };
 
  function slideShow() {
      slideNum++;
-     console.log(slideNum);
      var slides = document.getElementsByClassName("welcome-slide");
      if (slideNum == slides.length) {
          slideNum = 0;
