@@ -17,28 +17,35 @@ function togglePasswordVisibility(textBoxID) {
     }
 }
 
-// var slideNum = 0;
-// slideShow();
+//If the welcome-slide class exists, runs the slideshow
 
-// function slideShow() {
-//     slideNum++;
-//     console.log(slideNum);
-//     var slides = document.getElementsByClassName("welcome-slide");
-//     if (slideNum == slides.length) {
-//         slideNum = 0;
-//     }
-//     for (var i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//     }
-//     slides[slideNum].style.display = "flex";
+window.onload = function() {
+    if(document.querySelector(".welcome-slide")) {
+        var slideNum = 0;
+        this.slideShow()
+    }
+    
+};
 
-//     var dots = document.getElementsByClassName("welcome-dot");
-//     for (var j = 0; j < dots.length; j++) {
-//         dots[j].className = dots[j].className.replace(" welcome-dot-selected", "");
-//     }
-//     dots[slideNum].className += " welcome-dot-selected";
-//     setTimeout(slideShow, 5000);
-// }
+ function slideShow() {
+     slideNum++;
+     console.log(slideNum);
+     var slides = document.getElementsByClassName("welcome-slide");
+     if (slideNum == slides.length) {
+         slideNum = 0;
+     }
+     for (var i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";
+     }
+     slides[slideNum].style.display = "flex";
+
+     var dots = document.getElementsByClassName("welcome-dot");
+     for (var j = 0; j < dots.length; j++) {
+         dots[j].className = dots[j].className.replace(" welcome-dot-selected", "");
+     }
+     dots[slideNum].className += " welcome-dot-selected";
+     setTimeout(slideShow, 5000);
+ }
 
 // Hamburger menu 
 
