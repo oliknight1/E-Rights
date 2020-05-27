@@ -622,15 +622,6 @@
     transition: all .3s ease-in-out;
 }
 
-.welcome-slide {
-    height: 35vh;
-    width: 55vw;
-
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    transition: ease-in-out .3s;
-}
 
 
 
