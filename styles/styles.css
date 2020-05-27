@@ -419,11 +419,14 @@
 }
 
 .welcome-slide {
-    height: 35vh;
-    width: 55vw;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
+    animation-name: slidein-right;
+    animation-duration: 5s;
+    -webkit-animation-name: slidein-right;
+    -webkit-animation-duration: 5s;
+    display: none;
 }
 
 
@@ -437,8 +440,6 @@
 .welcome-dot-container {
     text-align: center;
     margin-top: 2vh;
-
-
 }
 
 .welcome-dot {
@@ -457,6 +458,24 @@
     width: 14px;
     background-color: #1B9DD9;
     transition: ease-in-out .2s;
+}
+
+.welcome-hidden-href {
+    display: none;
+}
+
+@keyframes slidein-right {
+    0% { margin-right:50%; opacity: 0; }
+    20% { margin-right: 0%; opacity: 1; }
+    80% { margin-right: 0%; opacity: 1; }
+    100% { margin-right:-50%; opacity: 0; }
+}
+
+@-webkit-keyframes slidein-right {
+    0% { margin-right:50%; opacity: 0; }
+    20% { margin-right: 0%; opacity: 1; }
+    80% { margin-right: 0%; opacity: 1; }
+    100% { margin-right:-50%; opacity: 0; }
 }
 
 @-webkit-keyframes fade {
