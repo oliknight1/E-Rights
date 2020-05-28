@@ -330,7 +330,7 @@
 
 
 .welcome-split {
-    height: 6vh;
+    height: 14vh;
     border-bottom: thin solid #707070;
 }
 
@@ -361,6 +361,35 @@
     flex-direction: row;
     align-items: center;
     background-color: white;
+}
+
+.welcome-page {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10vw;
+}
+
+.welcome-page .general-container {
+    margin-top: 5vh;
+    width: 80vw;
+    min-height: 50vh;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .2fr .8fr;
+    justify-items: center;
+    align-items: center;
+    padding: 0 5em;
+
+}
+
+.welcome-page .general-container h2 {
+    justify-self: start;
+    grid-row: 1;
+    grid-column: 1/4;
 }
 
 .welcome-slide {
@@ -586,22 +615,6 @@
     font-size: 3vh;
 }
 
-.welcome-slider-button {
-    height: 4vh;
-    width: 8vw;
-    background-color: var(--main-blue);
-    color: white;
-    font-size: 2vh;
-
-    font-family: 'Raleway';
-    text-align: center;
-    color: #707070;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
 
 
 

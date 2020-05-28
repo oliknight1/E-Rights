@@ -438,6 +438,120 @@
         margin-bottom: 8vh;
     }
 
+         /* welcome */
+
+.welcome-title {
+   z-index: 2;
+   margin-top: -20vh;
+   font-size: 5vh;
+   padding-left: 20vw;
+   width: 50vw;
+   height: 6vh;
+}
+
+.welcome-body {
+    height: 60vh    
+}
+
+.welcome-logo {
+    width: 30vw
+}
+
+.welcome-logo img{
+    width: 35vw
+}
+
+.welcome-buttons {
+    width: 21vw;
+    height: 4vh;
+    border-radius: 50px;
+    border: 1.5px solid var(--main-blue);
+}
+
+.welcome-buttons i {
+    font-size: 2vh;
+}
+
+.welcome-buttons-text {
+    font-size: 1.6vh;
+    width: 12vw;
+}
+
+.welcome-button-icon {
+    margin-right: 2vw;
+}
+
+.circle-box {
+    height: 30vh;
+    width: 45vw;
+    margin-top: -8vh;
+}
+
+.welcome-text-box {
+    height: 25vh;
+
+}
+
+.welcome-text {
+    font-size: 1.2vh;
+    width: 43vw;
+    height: 60vh;
+    margin-left: 41vw;
+}
+
+.welcome-course-container{ 
+    margin-top: -50vh;
+    height: 35vh;
+}
+
+.welcome-slider-container {
+    width: 80vw;
+}
+
+.welcome-slider-name {
+    width: 70vw;
+}
+
+.welcome-slider-text {
+    width: 65vw;
+    font-size: 1.7vh;
+}
+
+.welcome-slider-button {
+    width: 25vw;
+    border-radius: 35px;
+}
+
+   .welcome-dot {
+        height: 10px;
+        width: 10px;
+    }
+
+    .welcome-dot-selected {
+        height: 15px;
+        width: 15px;
+    }
+
+    .welcome-page .general-container {
+        margin-top: -15vh;
+        min-height: 25vh;
+        border-radius: 1em;
+    }
+
+    @keyframes slidein-right {
+    0% { margin-right:25%; opacity: 0; }
+    20% { margin-right: 0%; opacity: 1; }
+    80% { margin-right: 0%; opacity: 1; }
+    100% { margin-right:-25%; opacity: 0; }
+}
+
+    @-webkit-keyframes slidein-right {
+    0% { margin-right:25%; opacity: 0; }
+    20% { margin-right: 0%; opacity: 1; }
+    80% { margin-right: 0%; opacity: 1; }
+    100% { margin-right:-25%; opacity: 0; }
+}
+
 }
 
 /* Medium Phones */
@@ -589,10 +703,6 @@
         height: 35vh;
     }
 
-    .welcome-split {
-        margin-top: -35vh;
-    }
-
     .welcome-slider-container {
         width: 80vw;
     }
@@ -612,15 +722,34 @@
     }
 
     .welcome-dot {
-        height: 30px;
-        width: 30px;
+        height: 15px;
+        width: 15px;
     }
 
     .welcome-dot-selected {
-        height: 34px;
-        width: 34px;
+        height: 20px;
+        width: 20px;
     }
 
+    .welcome-page .general-container {
+        margin-top: -15vh;
+        min-height: 25vh;
+        border-radius: 2em;
+    }
+
+    @keyframes slidein-right {
+    0% { margin-right:25%; opacity: 0; }
+    20% { margin-right: 0%; opacity: 1; }
+    80% { margin-right: 0%; opacity: 1; }
+    100% { margin-right:-25%; opacity: 0; }
+}
+
+    @-webkit-keyframes slidein-right {
+    0% { margin-right:25%; opacity: 0; }
+    20% { margin-right: 0%; opacity: 1; }
+    80% { margin-right: 0%; opacity: 1; }
+    100% { margin-right:-25%; opacity: 0; }
+}
 
 
     .user-form-container button {
@@ -1039,7 +1168,21 @@
         font-size: 1.2em;
     }
 
-    /* welcome */
+     /* welcome */
+
+    @keyframes slidein-right {
+    0% { margin-right:25%; opacity: 0; }
+    20% { margin-right: 0%; opacity: 1; }
+    80% { margin-right: 0%; opacity: 1; }
+    100% { margin-right:-25%; opacity: 0; }
+}
+
+    @-webkit-keyframes slidein-right {
+    0% { margin-right:25%; opacity: 0; }
+    20% { margin-right: 0%; opacity: 1; }
+    80% { margin-right: 0%; opacity: 1; }
+    100% { margin-right:-25%; opacity: 0; }
+}
 
     .welcome-title {
         z-index: 2;
@@ -1104,10 +1247,6 @@
         height: 35vh;
     }
 
-    .welcome-split {
-        margin-top: -35vh;
-    }
-
     .welcome-slider-container {
         width: 80vw;
     }
@@ -1134,6 +1273,12 @@
     .welcome-dot-selected {
         height: 34px;
         width: 34px;
+    }
+
+    .welcome-page .general-container {
+        margin-top: -15vh;
+        min-height: 25vh;
+        border-radius: 2em;
     }
 
 
@@ -1546,6 +1691,43 @@
     .course-content {
         padding: 0;
     }
+
+
+    
+    /* welcome */
+
+    .welcome-buttons-text {
+        width: 8vw;
+    }
+
+    .circle-box {
+        height: 60vh;
+        width: 36vw;
+        margin-top: 5vh;
+    }
+
+    .welcome-page .general-container {
+        padding: 0 2.5em;
+        border-radius: 2em;
+    } 
+    
+    .welcome-page .general-container h2 {
+        font-size: 1.5em;
+    }
+
+    @keyframes slidein-right {
+        0% { margin-right:25%; opacity: 0; }
+        20% { margin-right: 0%; opacity: 1; }
+        80% { margin-right: 0%; opacity: 1; }
+        100% { margin-right:-25%; opacity: 0; }
+    }
+
+    @-webkit-keyframes slidein-right {
+        0% { margin-right:25%; opacity: 0; }
+        20% { margin-right: 0%; opacity: 1; }
+        80% { margin-right: 0%; opacity: 1; }
+        100% { margin-right:-25%; opacity: 0; }
+    }
 }
 
 /* Medium Phones */
@@ -1618,7 +1800,39 @@
         font-size: 1.6em;
     }
 
+    /* welcome */
 
+    .welcome-buttons-text {
+        width: 8vw;
+    }
+
+    .circle-box {
+        height: 60vh;
+        width: 36vw;
+        margin-top: 5vh;
+    }
+
+    .welcome-page .general-container {
+        padding: 0 2.5em;
+    } 
+    
+    .welcome-page .general-container h2 {
+        font-size: 2em;
+    }
+
+    @keyframes slidein-right {
+        0% { margin-right:25%; opacity: 0; }
+        20% { margin-right: 0%; opacity: 1; }
+        80% { margin-right: 0%; opacity: 1; }
+        100% { margin-right:-25%; opacity: 0; }
+    }
+
+    @-webkit-keyframes slidein-right {
+        0% { margin-right:25%; opacity: 0; }
+        20% { margin-right: 0%; opacity: 1; }
+        80% { margin-right: 0%; opacity: 1; }
+        100% { margin-right:-25%; opacity: 0; }
+    }
 
 }
 
@@ -1845,4 +2059,38 @@
     .course-content {
         padding: 2rem;
     }
+
+
+    /* welcome */
+
+    .welcome-buttons-text {
+    width: 8vw;
+    }
+
+    .circle-box {
+    height: 60vh;
+    margin-top: 5vh;
+    }
+
+    .welcome-page .general-container {
+    padding: 0 2.5em;
+    } 
+    
+    .welcome-page .general-container h2 {
+    font-size: 2em;
+    }
+
+          @keyframes slidein-right {
+    0% { margin-right:25%; opacity: 0; }
+    20% { margin-right: 0%; opacity: 1; }
+    80% { margin-right: 0%; opacity: 1; }
+    100% { margin-right:-25%; opacity: 0; }
+}
+
+@-webkit-keyframes slidein-right {
+    0% { margin-right:25%; opacity: 0; }
+    20% { margin-right: 0%; opacity: 1; }
+    80% { margin-right: 0%; opacity: 1; }
+    100% { margin-right:-25%; opacity: 0; }
+}
 }
