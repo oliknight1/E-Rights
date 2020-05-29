@@ -194,7 +194,7 @@ function scrollLeft(section) {
 function scrollRight(section) {
     var allContainers;
     var containerNum;
-    if(section = "assigned") {
+    if(section == "assigned") {
         allContainers = allAssigned;
         containerNum = currentAssigned;
     } else {
