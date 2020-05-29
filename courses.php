@@ -44,8 +44,7 @@
                     All Courses
                 </div>
                 <div class="home-info-text-content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro in adipisci dolor quia obcaecati nemo
-                    quis! Tenetur magni deleniti illo quo sapiente laboriosam illum, qui minus totam hic ut quibusdam.
+                    This is the courses page, here you will find all of the courses we provide. Click on a course to find out more! 
                 </div>
 
             </div>
