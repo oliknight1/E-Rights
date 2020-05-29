@@ -103,13 +103,13 @@ if (isset($_SESSION['user'])) {
     <main class="account-wrapper">
         <!-- Part with the user icon and stats -->
         <div class="account-overview">
-            <div class="overview-container">
+            <div class="general-container">
                 <div class="profile-icon">
                     <p><?php echo $user->getData()["username"][0] ?></p>
                 </div>
                 <!-- Div is just used to group together the <h2> and <ul> -->
                 <div>
-                    <h2>USERNAME</h2>
+                    <h2><?php echo $user->getData()["username"] ?></h2>
                     <ul>
                         <li>In Progress: <?php echo $user->getData()["in_progress_num"] ?> </li>
                         <li>Assigned: <?php echo $user->getData()["assigned_num"] ?> </li>
@@ -120,7 +120,7 @@ if (isset($_SESSION['user'])) {
         </div>
         <!-- Users details such as username and security password -->
         <div class="account-details">
-            <div class="details-container">
+            <div class="general-container">
                 <h2>Your information</h2>
                 <ul>
                     <li>

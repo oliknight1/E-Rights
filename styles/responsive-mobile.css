@@ -122,26 +122,21 @@
         border: none;
     }
 
-    .profile-icon {
-        width: 50vw;
-    }
-
     .profile-icon p {
         font-size: 1.4em;
     }
 
-    .overview-container {
-        width: 90%;
-        border-radius: 3em;
+    .account-wrapper .general-container {
+        border-radius: 2em;
     }
 
-    .overview-container h2 {
+    .account-wrapper .general-container h2 {
         font-size: 1.8em;
         text-align: center;
         margin-top: 2vh;
     }
 
-    .overview-container li {
+    .account-wrapper .general-container li {
         font-size: 1.2em;
     }
 
@@ -157,19 +152,13 @@
         height: fit-content;
     }
 
-    .details-container h2 {
-        display: inline-block;
-        font-size: 1.8em;
-        margin-bottom: 5vh;
+    .account-details .general-container {
+        align-items: center;
+        padding: 0;
     }
 
-    .details-container h3 {
-
-        margin-bottom: 3vh;
-    }
-
-    .details-container p {
-        width: 100%;
+    .account-details .general-container p {
+        width: 60vw;
     }
 
     /* My Learning Page */
@@ -949,26 +938,21 @@
         border: none;
     }
 
-    .profile-icon {
-        width: 50vw;
-    }
-
     .profile-icon p {
         font-size: 1.4em;
     }
 
-    .overview-container {
-        width: 90%;
-        border-radius: 3em;
+    .account-wrapper .general-container {
+        border-radius: 2em;
     }
 
-    .overview-container h2 {
+    .account-wrapper .general-container h2 {
         font-size: 1.8em;
         text-align: center;
         margin-top: 2vh;
     }
 
-    .overview-container li {
+    .account-wrapper .general-container li {
         font-size: 1.2em;
     }
 
@@ -984,18 +968,13 @@
         height: fit-content;
     }
 
-    .details-container h2 {
-        display: inline-block;
-        font-size: 1.8em;
-        margin-bottom: 5vh;
+    .account-details .general-container {
+        align-items: center;
+        padding: 0;
     }
 
-    .details-container h3 {
-        margin-bottom: 2vh;
-    }
-
-    .details-container p {
-        width: 100%;
+    .account-details .general-container p {
+        width: 60vw;
     }
 
     /* My Learning Page Styling */
@@ -1481,56 +1460,56 @@
 @media screen and (min-width: 568px) and (max-width:667px) and (orientation: landscape) {
 
     /* Navigation */
-
-    .link-container a {
-        font-size: 4vh;
+    .account-wrapper {
+        flex-direction: column;
+        height: 200vh;
     }
 
-    /* Account Page */
-
-    .overview-container {
-        border-radius: 3em;
+    .account-overview {
+        width: 100vw;
+        height: 100vh;
+        border: none;
     }
 
-    .account-overview h2 {
-        font-size: 1.5em;
+    .profile-icon p {
+        font-size: 1.4em;
+    }
+
+    .account-wrapper .general-container {
+        border-radius: 2em;
+        width: 60%;
+        height: 90%;
+    }
+
+    .account-wrapper .general-container h2 {
+        font-size: 1.8em;
         text-align: center;
+        margin-top: 2vh;
     }
 
-    .overview-container li {
-        font-size: .8em;
+    .account-wrapper .general-container li {
+        font-size: 1.2em;
     }
 
-    .profile-icon {
-        width: 15vw;
+    .account-details {
+        width: 100vw;
+
     }
 
     .details-container {
-        padding: .5em;
-    }
-
-    .details-container h2 {
-        font-size: 1.8em;
-    }
-
-    .details-container ul {
-        width: 100%;
+        width: 90%;
+        border-radius: 3em;
+        padding: 2em 2em;
         height: fit-content;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-items: center;
+    }
+
+    .account-details .general-container {
         align-items: center;
+        padding: 0;
     }
 
-
-    .details-container h3 {
-        font-size: .9em;
-
-    }
-
-    .details-container p {
-        padding: .2em;
+    .account-details .general-container p {
+        width: 40vw;
         font-size: .8em;
     }
 
@@ -1783,50 +1762,57 @@
 
     /* Account Page */
 
-    .overview-container {
-        border-radius: 3em;
+    .account-wrapper {
+        flex-direction: column;
+        height: 200vh;
     }
 
-    .account-overview h2 {
-        font-size: 1.5em;
+    .account-overview {
+        width: 100vw;
+        height: 100vh;
+        border: none;
+    }
+
+    .profile-icon p {
+        font-size: 1.4em;
+    }
+
+    .account-wrapper .general-container {
+        border-radius: 2em;
+        width: 60%;
+        height: 90%;
+    }
+
+    .account-wrapper .general-container h2 {
+        font-size: 1.8em;
         text-align: center;
+        margin-top: 2vh;
     }
 
-    .overview-container li {
-        font-size: .8em;
+    .account-wrapper .general-container li {
+        font-size: 1.2em;
     }
 
-    .profile-icon {
-        width: 15vw;
+    .account-details {
+        width: 100vw;
+
     }
 
     .details-container {
-        padding: 1em;
-    }
-
-    .details-container h2 {
-        font-size: 1.8em;
-    }
-
-    .details-container ul {
-        width: 100%;
+        width: 90%;
+        border-radius: 3em;
+        padding: 2em 2em;
         height: fit-content;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-items: center;
+    }
+
+    .account-details .general-container {
         align-items: center;
+        padding: 0;
     }
 
-
-
-    .details-container h3 {
-        font-size: 1.1em;
-    }
-
-    .details-container p {
-        padding: .4em;
-        font-size: .9em;
+    .account-details .general-container p {
+        width: 40vw;
+        font-size: .8em;
     }
 
     /* 404 */
