@@ -49,7 +49,7 @@ h2 {
     --darker-blue: #082e40;
     --main-blue: #189dd9;
     --placeholder-col: #969494;
-    --heading-col: #494949;
+    --heading-col: #707070;
 
 }
 
@@ -69,6 +69,8 @@ button {
 
 button:hover {
     cursor: pointer;
+    background-color: var(--heading-col);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .general-container {
@@ -134,11 +136,6 @@ nav img {
 
 }
 
-/* home styles*/
-
-.all-courses-page .general-container {
-    margin-top: 15vh;
-}
 
 .home-info-container {
     height: 45vh;
@@ -198,6 +195,7 @@ nav img {
     font-size: 14vh;
     font-weight: bold;
 }
+
 
 /* Courses */
 
@@ -329,5 +327,106 @@ footer {
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    width: 65vw;
+    width: 40vw;
+}
+
+
+/* rights/principles learning */
+
+.learning-container {
+    height: 85vh;
+    width: 100vw;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.learning-titles-container {
+    height: 25vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+.learning-titles-container h1 {
+    padding: 1rem 3rem;
+    font-weight: 700;
+    padding-top: 2rem;
+}
+
+.learning-titles-container h2 {
+    padding: 0rem 3rem;
+    font-weight: 700;
+    font-family: "raleway";
+    font-size: 5vh;
+    color: var(--main-blue);
+}
+
+.learning-content {
+    width: 70vw;
+    height: 40vh;
+     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 4rem;
+}
+
+.learning-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.learning-space {
+    height: 5vh;
+}
+
+.learning-content h3 {
+    font-weight: 300;
+    font-family: "raleway";
+    font-size: 3.5vh;
+     color: var(--heading-col);
+    padding-right: 4rem;
+    padding-top: -5rem;
+    margin-top: 0.5rem;
+}
+
+.learning-content b {
+    font-weight: 600;
+    font-family: "raleway";
+    font-size: 3.5vh;
+    color: var(--main-blue);
+}
+
+.learning-image img {
+     width: 10vw;
+}
+
+.learning-buttons {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.learning-button-left {
+    height: 10vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+     margin-left: 4vw;
+}
+
+.learning-button-right {
+    height: 10vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 4vw;
+
 }
