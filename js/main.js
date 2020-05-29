@@ -104,7 +104,6 @@ function changeSlide(id) {
 
 //const progressBar = document.querySelector('.progress-done');
 // Use set timeout to add an animation to it
-setTimeout(() => {
 
 
 
@@ -261,10 +260,8 @@ function generateCourseInfo(div,result) {
     progressDone.className = "progress-done";
     var progressTesting = Math.floor((Math.random()*100)+1);
     progressDone.dataset.done = progressTesting;
-    
     progressBar.appendChild(progressDone);
     progressContainer.appendChild(progressBar);
     courseInfo.appendChild(progressContainer);
     div.appendChild(courseInfo);
 }
-
