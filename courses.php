@@ -1,3 +1,14 @@
+<?php
+
+require_once 'core/init.php';
+$user = new User();
+
+if (isset($_SESSION['user'])) {
+    $user->findUser($_SESSION['user']);
+} else {
+    Redirect::redirectTo("login.php");
+}
+?>
 <html lang="en">
 
 <head>
@@ -6,330 +17,147 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/responsive-tablet.css">
     <link rel="stylesheet" href="styles/responsive-mobile.css">
+    <link rel="stylesheet" href="styles/general-styles.css">
+    <link rel="stylesheet" href="styles/general-styles-mobile.css">
+    <link rel="stylesheet" href="styles/general-styles-tablet.css">
     <script src="https://kit.fontawesome.com/96867cee00.js"></script>
 </head>
 
 <body>
+    <nav>
+        <!-- Hamburger Menu -->
+
+        <!-- Button that the user clicks -->
+        <i class="fas fa-bars" id="open-menu"></i>
+
+        <!-- Menu with links -->
+        <div class="hamburger-menu">
+            <header>
+                <p> Hi <?php echo $user->getData()['username'] ?>!</p>
+                <i class="fas fa-times" id="close-menu"></i>
+            </header>
+            <ul>
+                <li>
+                    <a href="home.php">
+                        <div class="icon-container">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.php">
+                        <div class="icon-container">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <p>All Courses</p>
+                </li>
+                </a>
+                <li>
+                    <a href="my-learning.php">
+                        <div class="icon-container">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <p> My Learning</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="account.php">
+                        <div class="icon-container">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <p>Account</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Navbar -->
+        <a href="home.php">
+            <img src=assets/logo/logo-horizontal-2.svg alt="Site Logo">
+        </a>
+
+        <div class="link-container">
+            <a href="home.php">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="courses.php">
+                <i class="fas fa-book-open"></i>
+                <p>All Courses</p>
+            </a>
+            <a href="my-learning.php">
+                <i class="fas fa-graduation-cap"></i>
+                <span>My Learning</span>
+            </a>
+            <a href="account.php">
+                <i class="fas fa-user"></i>
+                <span>Account</span>
+            </a>
+        </div>
+
+    </nav>
     <div class="home-wrapper">
-        <nav>
-            <div class="logo">
-                <a href="home.php">
-                    <img src="assets/logo/logo-horizontal-2.svg" alt="Site Logo">
-                </a>
-            </div>
-            <div class="link-container">
-                <a href="#">
-                    <i class="fas fa-home"></i>
-                    <span>Home</span>
-                </a>
-                <a href="#">
-                    <i class="fas fa-book-open"></i>
-                    <p>All Courses</p>
-                </a>
-                <a href="#">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>My Learning</span>
-                </a>
-                <a href="#">
-                    <i class="fas fa-user"></i>
-                    <span>Account</span>
-                </a>
-            </div>
-        </nav>
-
-        <div class="home-info-container">
-            <div class="home-info-text-container">
-
-                <div class="home-info-text-title">
-                    All Courses
-                </div>
-                <div class="home-info-text-content">
-                    This is the courses page, here you will find all of the courses we provide. Click on a course to find out more! 
-                </div>
-
-            </div>
-            <div class="home-info-profile-container">
-
-                <div class="profile-icon">
-                    T
-                </div>
-                <div class="home-info-profile-content">
-
-                    <div class="home-info-profile-content-box">
-
-                        <div class="home-info-profile-content-title">
-                            Assigned
-                        </div>
-                        <div class="home-info-profile-content-amount">
-                            4
-                        </div>
-
-                    </div>
-
-                    <div class="home-info-profile-content-box">
-
-                        <div class="home-info-profile-content-title">
-                            Completed
-                        </div>
-                        <div class="home-info-profile-content-amount">
-                            0
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
 
 
 
-
-
-
-        <div class="course-container">
-
-            <div class="course-header">
-                General Data Protection Regulation
-            </div>
-            <div class="course-content">
-                <div class="course-wrapper">
-                    <div class="course-box-wrapper">
-                        <a href="#">
-                            <div class="course-box">
-                                <div class="course-color">
-                                    <div class="course-img">
-                                        <img src="assets/illustrations/course-images/principles.svg"
-                                            alt="Principles Course">
-                                    </div>
-
-                                </div>
-                                <div class="course-text">
-                                    <p>Principles</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-
-                <div class="course-wrapper">
-                    <div class="course-box-wrapper">
-                        <a href="#">
-                            <div class="course-box">
-                                <div class="course-color">
-                                    <div class="course-img">
-                                        <img src="assets/illustrations/course-images/rights.svg" alt="Rights Course">
-                                    </div>
-
-                                </div>
-                                <div class="course-text">
-                                    <p>Rights</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-
-                <div class="course-wrapper">
-                    <div class="course-box-wrapper">
-                        <a href="#">
-                            <div class="course-box">
-                                <div class="course-color">
-                                    <div class="course-img">
-                                        <img src="assets/illustrations/course-images/GDPR.svg" alt="GDPR Course">
-                                    </div>
-
-                                </div>
-                                <div class="course-text">
-                                    <p>GDPR</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-
-                <div class="course-wrapper">
-                    <div class="course-box-wrapper">
-                        <a href="#">
-                            <div class="course-box">
-                                <div class="course-color">
-                                    <div class="course-img">
-                                        <img src="assets/illustrations/course-images/data.svg" alt="Data Course">
-                                    </div>
-
-                                </div>
-                                <div class="course-text">
-
-
-                                    <p>Data Minimalism</p>
-
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-
-            </div>
-
-        </div>
-
-        <div class="course-container">
-
-            <div class="course-header">
-                Online Safety
-            </div>
-            <div class="course-content">
-
-                <div class="course-wrapper">
-                    <div class="course-box-wrapper">
-                        <a href="construction.html"></a>
-                        <div class="course-box">
-                            <div class="course-color">
-                                <div class="course-img">
-                                    <img src="assets/illustrations/course-images/virus.svg" alt="Viruses Course">
-                                </div>
-
-                            </div>
-                            <div class="course-text">
-                                <p>Virus Prevention</p>
+        <main class="all-courses-page">
+            <!-- Container around the list of courses -->
+            <div class="general-container">
+                <h2> General Data Protection Regulation</h2>
+                <!-- Course box -->
+                <div class="course-container">
+                    <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
+                    <div class="course-info">
+                        <h3>Principles</h3>
+                        <!-- Empty div to group progress and label together for layout -->
+                        <div>
+                            <p id="progress-amount"> </p>
+                            <div class="progress-bar">
+                                <div class="progress-done" data-done="50"></div>
                             </div>
                         </div>
-                        </a>
                     </div>
                 </div>
-
-
-                <div class="course-wrapper">
-                    <div class="course-box-wrapper">
-                        <a href="construction.html">
-                            <div class="course-box">
-                                <div class="course-color">
-                                    <div class="course-img">
-                                        <img src="assets/illustrations/course-images/danger.svg"
-                                            alt="Downloading Dangers Course">
-                                    </div>
-
-                                </div>
-                                <div class="course-text">
-                                    <p>Downloading Dangers</p>
-                                </div>
+                <div class="course-container">
+                    <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
+                    <div class="course-info">
+                        <h3>Principles</h3>
+                        <!-- Empty div to group progress and label together for layout -->
+                        <div>
+                            <p id="progress-amount"> </p>
+                            <div class="progress-bar">
+                                <div class="progress-done" data-done="50"></div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
-
-
-
-                <a>
-                    <div class="course-box-wrapper">
-
+                <div class="course-container">
+                    <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
+                    <div class="course-info">
+                        <h3>Principles</h3>
+                        <!-- Empty div to group progress and label together for layout -->
+                        <div>
+                            <p id="progress-amount"> </p>
+                            <div class="progress-bar">
+                                <div class="progress-done" data-done="50"></div>
+                            </div>
+                        </div>
                     </div>
-                </a>
-
-                <a>
-                    <div class="course-box-wrapper">
-
-                    </div>
-                </a>
+                </div>
 
 
             </div>
-
-        </div>
-
-
-
-
-        <div class="course-container">
-
-            <div class="course-header">
-                Cyber Security
-            </div>
-            <div class="course-content">
-
-
-
-                <div class="course-wrapper">
-                    <div class="course-box-wrapper">
-                        <a href="construction.html">
-                            <div class="course-box">
-                                <div class="course-color">
-                                    <div class="course-img">
-                                        <img src="assets/illustrations/course-images/breach.svg"
-                                            alt="Data Breaches Course">
-                                    </div>
-
-                                </div>
-                                <div class="course-text">
-                                    <p>Data Breaches</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-
-                <div class="course-wrapper">
-                    <div class="course-box-wrapper">
-                        <a href="construction.html">
-                            <div class="course-box">
-                                <div class="course-color">
-                                    <div class="course-img">
-                                        <img src="assets/illustrations/course-images/scam.svg"
-                                            alt="Online Scams Course">
-                                    </div>
-
-                                </div>
-                                <div class="course-text">
-                                    <p>Online Scams</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-
-                <div class="course-wrapper">
-                    <div class="course-box-wrapper">
-                        <a href="construction.html">
-                            <div class="course-box">
-                                <div class="course-color">
-                                    <div class="course-img">
-                                        <img src="assets/illustrations/course-images/privacy.svg" alt="Privacy Course">
-                                    </div>
-
-                                </div>
-                                <div class="course-text">
-                                    <p>Privacy</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-
-                <a>
-                    <div class="course-box-wrapper">
-
-                    </div>
-                </a>
-
-
-            </div>
-
-        </div>
-
+        </main>
 
 
     </div>
 
 
-    <div class="footer">
+
+
+
+    <footer>
         <div class="footer-row-container">
             <div class="footer-row-text">
                 <a href="#" class="footer-row-links">
@@ -363,7 +191,8 @@
             <img src=assets/logo/logo-horizontal-2.svg alt="404">
         </div>
 
-    </div>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

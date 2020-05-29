@@ -74,13 +74,19 @@
         font-size: 1.8em;
         color: var(--heading-col);
         position: relative;
-        display: flex;
-        flex-direction: row;
+
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
         background: #ffffff;
         border-radius: 5em;
         padding: .5em .8em;
         margin: 5vh 0;
+    }
+
+    .hamburger-menu li a {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        color: var(--heading-col);
     }
 
     .hamburger-menu li i {
@@ -592,7 +598,7 @@
 
     /* Sign up styles */
     .signup-title {
-
+        margin-bottom: 10vh !important;
         padding: 0;
     }
 
@@ -604,12 +610,13 @@
     }
 
     .signup img {
-        width: 50%;
+        width: 50% !important;
+        margin-top: 10vh !important;
     }
 
     .signup input,
     .signup select {
-        font-size: .9em !important;
+        font-size: 1.3em !important;
     }
 
     /* course */
@@ -722,6 +729,208 @@
     }
 
     .welcome-dot {
+        height: 30px;
+        width: 30px;
+    }
+
+    .welcome-dot-selected {
+        height: 34px;
+        width: 34px;
+    }
+
+
+
+    .user-form-container button {
+        font-size: 1.2em;
+    }
+
+    .signup-title {
+        margin-top: 0vh;
+        margin-bottom: 3vh;
+    }
+
+    /* Sign up styles */
+    .signup-title h1 {
+        font-size: 2em;
+    }
+
+    /* 404 */
+
+    .container-404 {
+        width: 95vw;
+    }
+
+    .image-404 img {
+        width: 70vw;
+        height: 25vh;
+    }
+
+    .header-404 {
+        font-size: 3vh;
+        padding-top: 0vh;
+    }
+
+    .text-404 {
+        font-size: 2.5vh;
+    }
+
+    .button-container-404 {
+        width: 50vw;
+    }
+
+    .button-404 {
+        width: 50vw;
+        border-radius: 55px;
+    }
+
+    .button-404:active {
+        width: 50vw;
+        height: 7.5vh;
+    }
+
+
+
+    /* construction */
+
+    .construction-container {
+        width: 95vw;
+    }
+
+    .construction-image img {
+        width: 70vw;
+        height: 25vh;
+    }
+
+    .construction-header {
+        font-size: 3vh;
+        padding-top: 0vh;
+    }
+
+    .construction-text {
+        font-size: 2.5vh;
+    }
+
+
+    /* course box */
+
+    .course-header {
+        font-size: 2.5vh;
+    }
+
+    .course-box {
+        height: 20vh;
+        width: 27vw;
+    }
+
+    .course-color {
+        width: 27vw;
+        height: 16vh;
+    }
+
+    .course-text {
+        width: 26vw;
+        font-size: 2vh;
+    }
+
+    .course-img img {
+        width: 20vw;
+        height: 10vh;
+    }
+
+
+    /* footer */
+
+    .footer-row-container {
+        flex-direction: column;
+        width: 90vw;
+        height: 20vh
+    }
+
+    .footer-row-text {
+        width: 90vw;
+    }
+
+    .footer-row-links {
+        font-size: 1.5vh;
+        margin-right: 6vw;
+    }
+
+    .footer-social-media {
+        margin-top: 5vh;
+        width: 60vw;
+    }
+
+    .footer-image {
+        width: 40vw;
+    }
+
+
+
+    /* info bar */
+    .home-info-container {
+        flex-direction: column;
+    }
+
+    .home-info-profile-container {
+        flex-direction: row;
+        width: 90vw;
+    }
+
+    .home-info-text-container {
+        width: 80vw;
+        height: 25vh;
+    }
+
+    .home-info-text-content {
+        width: 80vw;
+        height: 10vh;
+        font-size: 1.5vh;
+    }
+
+    .home-info-text-title {
+        height: 8vh;
+        margin-top: 2vh;
+        width: 70vw;
+        font-size: 5vh;
+    }
+
+    .home-info-profile-content-box {
+        margin-right: 8vw;
+    }
+
+    .home-info-profile-content {
+        width: 60vw;
+        margin-left: 4vw;
+        margin-top: 10vh;
+    }
+
+    .profile-icon {
+        width: 40vw;
+        height: 20vh;
+    }
+
+    .home-info-profile-content-title {
+        font-size: 2.5vh;
+        width: 25vw;
+    }
+
+    .home-info-profile-content-amount {
+        margin-bottom: 8vh;
+    }
+
+
+
+    .link-container a {
+        font-size: 4vh;
+    }
+
+    /* Account Page */
+
+    .overview-container {
+        border-radius: 3em;
+    }
+
+    .welcome-dot {
         height: 15px;
         width: 15px;
     }
@@ -821,6 +1030,7 @@
     .construction-text {
         font-size: 2.5vh;
     }
+
 
 
     /* course box */
@@ -1686,11 +1896,11 @@
         margin-left: 5vw;
     }
 
-
     /*course */
     .course-content {
         padding: 0;
     }
+
 
 
     
@@ -1728,6 +1938,7 @@
         80% { margin-right: 0%; opacity: 1; }
         100% { margin-right:-25%; opacity: 0; }
     }
+
 }
 
 /* Medium Phones */

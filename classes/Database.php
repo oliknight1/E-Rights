@@ -45,8 +45,9 @@ class Database
     }
 
     // Use preapred statments and binding values to protect against SQL injection 
-    public function query($sql, $params = array())
+    public function queryDb($sql, $params = array())
     {
+
         // Set error to false to make sure we do not return an error from a query that has been made previously
         $this->error = false;
         // Check if query has been prepared successfully
@@ -54,6 +55,7 @@ class Database
             $x = 1;
             // Check if parameters exist
             if (count($params)) {
+
                 foreach ($params as $param) {
                     // Binds the parameter at position $x to $param
                     // e.g if $x = 1, we bind the first ? in the prepared query to $param
@@ -63,6 +65,7 @@ class Database
             }
             // Execute the query and check that it has been successful
             if ($this->query->execute()) {
+
 
 
                 // Fetch the object of the results
@@ -80,7 +83,6 @@ class Database
 
     public function action($action, $table, $where = array())
     {
-
         // Check that when the fucntion is called, $where has all the parameters it needs
         if (count($where) === 3) {
 
@@ -98,8 +100,7 @@ class Database
             }
 
             // Make sure there isn't an error in the query
-            if (!$this->query($sql, array($value))->error()) {
-
+            if (!$this->queryDb($sql, array($value))->error()) {
                 return $this;
             }
         } else {
@@ -107,7 +108,7 @@ class Database
             $sql = "{$action} FROM {$table}";
 
             // Make sure there isn't an error in the query
-            if (!$this->query($sql)->error()) {
+            if (!$this->queryDb($sql)->error()) {
                 return $this;
             }
         }
@@ -116,7 +117,6 @@ class Database
 
     public function getData($table, $where = null)
     {
-
         // Passes parameters to action()
         return $this->action('SELECT *', $table, $where);
     }
@@ -124,7 +124,10 @@ class Database
 
     public function insertData($table, $fields = array())
     {
+
+
         if (count($fields)) {
+
             $keys = array_keys($fields);
             $values = '';
             $x = 1;
@@ -142,12 +145,9 @@ class Database
 
             // Implode will add a ` , between each of the $keys
             // This allows us to make an reuseable insert query without always needing to know the table and what is going to be inserted
-            $sql = "INSERT INTO users (`" . implode('`, `', $keys) . "`) VALUES({$values})";
-
-
-
+            $sql = "INSERT INTO {$table} (`" . implode('`, `', $keys) . "`) VALUES({$values})";
             // Checks if the sql query worked correctly
-            if (!$this->query($sql, $fields)->error()) {
+            if (!$this->queryDb($sql, $fields)->error()) {
                 return true;
             }
         }

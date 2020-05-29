@@ -2,7 +2,12 @@
 
 require_once 'core/init.php';
 $user = new User();
-$user->findUser($_SESSION['user']);
+
+if (isset($_SESSION['user'])) {
+    $user->findUser($_SESSION['user']);
+} else {
+    Redirect::redirectTo("login.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +22,8 @@ $user->findUser($_SESSION['user']);
     <link rel="stylesheet" href="styles/general-styles-mobile.css">
     <link rel="stylesheet" href="styles/general-styles-tablet.css">
     <script src="https://kit.fontawesome.com/96867cee00.js"></script>
+
+
     <title>E-Rights</title>
 </head>
 
@@ -30,33 +37,41 @@ $user->findUser($_SESSION['user']);
         <!-- Menu with links -->
         <div class="hamburger-menu">
             <header>
-                <p> Hi aaaaaaaaaaaaaaa!</p>
+                <p> Hi <?php echo $user->getData()['username'] ?>!</p>
                 <i class="fas fa-times" id="close-menu"></i>
             </header>
             <ul>
                 <li>
-                    <div class="icon-container">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    Home
+                    <a href="home.php">
+                        <div class="icon-container">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <p>Home</p>
+                    </a>
                 </li>
                 <li>
-                    <div class="icon-container">
-                        <i class="fas fa-book-open"></i>
-                    </div>
-                    All Courses
+                    <a href="courses.php">
+                        <div class="icon-container">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <p>All Courses</p>
+                </li>
+                </a>
+                <li>
+                    <a href="my-learning.php">
+                        <div class="icon-container">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <p> My Learning</p>
+                    </a>
                 </li>
                 <li>
-                    <div class="icon-container">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    My Learning
-                </li>
-                <li>
-                    <div class="icon-container">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    Account
+                    <a href="account.php">
+                        <div class="icon-container">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <p>Account</p>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -71,15 +86,15 @@ $user->findUser($_SESSION['user']);
                 <i class="fas fa-home"></i>
                 <span>Home</span>
             </a>
-            <a href="#">
+            <a href="courses.php">
                 <i class="fas fa-book-open"></i>
                 <p>All Courses</p>
             </a>
-            <a href="#">
+            <a href="my-learning.php">
                 <i class="fas fa-graduation-cap"></i>
                 <span>My Learning</span>
             </a>
-            <a href="#">
+            <a href="account.php">
                 <i class="fas fa-user"></i>
                 <span>Account</span>
             </a>
@@ -89,94 +104,17 @@ $user->findUser($_SESSION['user']);
     <main class="my-learning">
         <div class="assigned-bar">
             <ul>
-                <li class="selected">Assigned</li>
-                <li>In Progress</li>
-                <li>Completed</li>
-                <li>Certificates</li>
+                <li id="assigned" class="selected">Assigned</li>
+                <li id="in-prog">In Progress</li>
+                <li id="completed">Completed</li>
+                <li id="certifs">Certificates</li>
             </ul>
         </div>
         <!-- Container around the list of courses -->
         <div class="general-container">
 
             <!-- Course box -->
-            <div class="course-container">
-                <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
-                <div class="course-info">
-                    <h3>Principles</h3>
-                    <!-- Empty div to group progress and label together for layout -->
-                    <div>
-                        <p id="progress-amount"> </p>
-                        <div class="progress-bar">
-                            <div class="progress-done" data-done="50"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="course-container">
-                <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
-                <div class="course-info">
-                    <h3>Principles</h3>
-                    <!-- Empty div to group progress and label together for layout -->
-                    <div>
-                        <p id="progress-amount"> </p>
-                        <div class="progress-bar">
-                            <div class="progress-done" data-done="50"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="course-container">
-                <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
-                <div class="course-info">
-                    <h3>Principles</h3>
-                    <!-- Empty div to group progress and label together for layout -->
-                    <div>
-                        <p id="progress-amount"> </p>
-                        <div class="progress-bar">
-                            <div class="progress-done" data-done="50"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="course-container">
-                <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
-                <div class="course-info">
-                    <h3>Principles</h3>
-                    <!-- Empty div to group progress and label together for layout -->
-                    <div>
-                        <p id="progress-amount"> </p>
-                        <div class="progress-bar">
-                            <div class="progress-done" data-done="50"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="course-container">
-                <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
-                <div class="course-info">
-                    <h3>Principles</h3>
-                    <!-- Empty div to group progress and label together for layout -->
-                    <div>
-                        <p id="progress-amount"> </p>
-                        <div class="progress-bar">
-                            <div class="progress-done" data-done="50"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="course-container">
-                <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
-                <div class="course-info">
-                    <h3>Principles</h3>
-                    <!-- Empty div to group progress and label together for layout -->
-                    <div>
-                        <p id="progress-amount"> </p>
-                        <div class="progress-bar">
-                            <div class="progress-done" data-done="50"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
 
         </div>
@@ -216,7 +154,7 @@ $user->findUser($_SESSION['user']);
         </div>
 
     </footer>
-    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 
