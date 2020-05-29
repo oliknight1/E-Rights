@@ -225,7 +225,7 @@ function generateResultDivs(result) {
         result.forEach(element => {
             var courseLink = document.createElement("a");
             var courseContainer = document.createElement("div");
-            courseLink.href = "course-overview.php";
+            courseLink.href = "course-overview.php?name="+element.name;
             courseContainer.className = "course-container";
             generateResultImage(courseContainer,"assets/illustrations/course-images/GDPR.svg");
             generateCourseInfo(courseContainer,element);
