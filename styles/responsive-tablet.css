@@ -278,30 +278,60 @@
         width: 24px;
     }
 
-     .welcome-page .general-container {
-      padding: 0em;
+    .welcome-page .general-container {
+        padding: 0em;
         min-height: 35vh;
     }
 
     .welcome-page .general-container h2 {
-      padding: 4vw;
+        padding: 4vw;
     }
 
- 
-   @keyframes slidein-right {
-    0% { margin-right:25%; opacity: 0; }
-    20% { margin-right: 0%; opacity: 1; }
-    80% { margin-right: 0%; opacity: 1; }
-    100% { margin-right:-25%; opacity: 0; }
-}
 
-@-webkit-keyframes slidein-right {
-    0% { margin-right:25%; opacity: 0; }
-    20% { margin-right: 0%; opacity: 1; }
-    80% { margin-right: 0%; opacity: 1; }
-    100% { margin-right:-25%; opacity: 0; }
-}
-   
+    @keyframes slidein-right {
+        0% {
+            margin-right: 25%;
+            opacity: 0;
+        }
+
+        20% {
+            margin-right: 0%;
+            opacity: 1;
+        }
+
+        80% {
+            margin-right: 0%;
+            opacity: 1;
+        }
+
+        100% {
+            margin-right: -25%;
+            opacity: 0;
+        }
+    }
+
+    @-webkit-keyframes slidein-right {
+        0% {
+            margin-right: 25%;
+            opacity: 0;
+        }
+
+        20% {
+            margin-right: 0%;
+            opacity: 1;
+        }
+
+        80% {
+            margin-right: 0%;
+            opacity: 1;
+        }
+
+        100% {
+            margin-right: -25%;
+            opacity: 0;
+        }
+    }
+
 
     /* course box */
 
@@ -418,7 +448,7 @@
 
     .home-info-profile-content-amount {
         font-size: 3vh;
- 
+
     }
 
 }
@@ -592,19 +622,49 @@
         margin-left: 35vw;
     }
 
-       @keyframes slidein-right {
-    0% { margin-right:25%; opacity: 0; }
-    20% { margin-right: 0%; opacity: 1; }
-    80% { margin-right: 0%; opacity: 1; }
-    100% { margin-right:-25%; opacity: 0; }
-}
+    @keyframes slidein-right {
+        0% {
+            margin-right: 25%;
+            opacity: 0;
+        }
 
-@-webkit-keyframes slidein-right {
-    0% { margin-right:25%; opacity: 0; }
-    20% { margin-right: 0%; opacity: 1; }
-    80% { margin-right: 0%; opacity: 1; }
-    100% { margin-right:-25%; opacity: 0; }
-}
+        20% {
+            margin-right: 0%;
+            opacity: 1;
+        }
+
+        80% {
+            margin-right: 0%;
+            opacity: 1;
+        }
+
+        100% {
+            margin-right: -25%;
+            opacity: 0;
+        }
+    }
+
+    @-webkit-keyframes slidein-right {
+        0% {
+            margin-right: 25%;
+            opacity: 0;
+        }
+
+        20% {
+            margin-right: 0%;
+            opacity: 1;
+        }
+
+        80% {
+            margin-right: 0%;
+            opacity: 1;
+        }
+
+        100% {
+            margin-right: -25%;
+            opacity: 0;
+        }
+    }
 
     /*  Login page stylings */
 
@@ -867,29 +927,59 @@
     }
 
     @keyframes slidein-right {
-    0% { margin-right:25%; opacity: 0; }
-    20% { margin-right: 0%; opacity: 1; }
-    80% { margin-right: 0%; opacity: 1; }
-    100% { margin-right:-25%; opacity: 0; }
-}
+        0% {
+            margin-right: 25%;
+            opacity: 0;
+        }
 
-@-webkit-keyframes slidein-right {
-    0% { margin-right:25%; opacity: 0; }
-    20% { margin-right: 0%; opacity: 1; }
-    80% { margin-right: 0%; opacity: 1; }
-    100% { margin-right:-25%; opacity: 0; }
-}
+        20% {
+            margin-right: 0%;
+            opacity: 1;
+        }
 
-      /* course */
+        80% {
+            margin-right: 0%;
+            opacity: 1;
+        }
+
+        100% {
+            margin-right: -25%;
+            opacity: 0;
+        }
+    }
+
+    @-webkit-keyframes slidein-right {
+        0% {
+            margin-right: 25%;
+            opacity: 0;
+        }
+
+        20% {
+            margin-right: 0%;
+            opacity: 1;
+        }
+
+        80% {
+            margin-right: 0%;
+            opacity: 1;
+        }
+
+        100% {
+            margin-right: -25%;
+            opacity: 0;
+        }
+    }
+
+    /* course */
 
     .welcome-page .general-container {
-    padding: 0em;
-    min-height: 25vh;
-    margin-top: -15vh;
+        padding: 0em;
+        min-height: 25vh;
+        margin-top: -15vh;
     }
 
     .welcome-page .general-container h2 {
-    padding: 4vw;
+        padding: 4vw;
     }
 
 
@@ -1016,7 +1106,7 @@
         font-size: 1.3em;
     }
 
-   
+
 
     /* welcome */
 
@@ -1050,12 +1140,12 @@
     }
 
     .welcome-buttons-text {
-      font-size: 2.5vh;
-      width: 8vw;
+        font-size: 2.5vh;
+        width: 8vw;
     }
 
     .welcome-slider-container {
-       width: 65vw;
+        width: 65vw;
     }
 
 
@@ -1189,12 +1279,12 @@
     }
 
     .welcome-buttons-text {
-      font-size: 2.5vh;
-      width: 8vw;
+        font-size: 2.5vh;
+        width: 8vw;
     }
 
     .welcome-slider-container {
-       width: 65vw;
+        width: 65vw;
     }
 
 
@@ -1212,7 +1302,7 @@
 
     /* info box */
 
-    
+
 
     .home-info-profile-icon {
         width: 16vw;
