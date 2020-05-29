@@ -14,11 +14,11 @@
         width: 40vw !important;
     }
 
-    .overview-container h2 {
+    .account-wrapper .general-container h2 {
         font-size: 3em !important;
     }
 
-    .overview-container li {
+    .account-wrapper .general-container li {
         font-size: 1.8em !important;
     }
 
@@ -427,48 +427,39 @@
         font-size: 1.4em;
     }
 
-    .overview-container {
-        width: 90%;
-        border-radius: 3em;
-    }
 
-    .overview-container h2 {
+
+    .account-wrapper .general-container h2 {
         font-size: 5em !important;
         text-align: center;
         margin-top: 2vh;
     }
 
-    .overview-container li {
+    .account-wrapper .general-container li {
         font-size: 2.5em !important;
     }
+
 
     .account-details {
         width: 100vw;
 
     }
 
-    .details-container {
+    .account-details .general-container {
         width: 90%;
-        border-radius: 3em;
         padding: 2em 2em;
         height: fit-content;
         padding: 4em !important;
+        align-items: center !important;
+
     }
 
-    .details-container h2 {
-        display: inline-block;
-        font-size: 4em !important;
-        margin-bottom: 5vh;
-    }
 
-    .details-container h3 {
-        font-size: 3em;
-        margin-bottom: 3vh;
-    }
 
-    .details-container p {
-        font-size: 2em;
-        width: 100%;
+
+    .account-details .general-container p {
+
+        width: 50vw !important;
     }
 
     /* My Learning Styling */
@@ -870,12 +861,12 @@
 
     /* Account Styling */
 
-    .account-overview {
-        width: 50%;
+    .account-details .general-container {
+        border-radius: 2em;
     }
 
-    .profile-icon {
-        width: 20vw;
+    .account-details .general-container p {
+        width: 30vw;
     }
 
     /* 404 */
