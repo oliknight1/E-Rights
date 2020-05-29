@@ -319,7 +319,7 @@
 
 
 .welcome-split {
-    height: 6vh;
+    height: 14vh;
     border-bottom: thin solid #707070;
 }
 
@@ -350,6 +350,35 @@
     flex-direction: row;
     align-items: center;
     background-color: white;
+}
+
+.welcome-page {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10vw;
+}
+
+.welcome-page .general-container {
+    margin-top: 5vh;
+    width: 80vw;
+    min-height: 50vh;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .2fr .8fr;
+    justify-items: center;
+    align-items: center;
+    padding: 0 5em;
+
+}
+
+.welcome-page .general-container h2 {
+    justify-self: start;
+    grid-row: 1;
+    grid-column: 1/4;
 }
 
 .welcome-slide {
@@ -408,11 +437,14 @@
 }
 
 .welcome-slide {
-    height: 35vh;
-    width: 55vw;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
+    animation-name: slidein-right;
+    animation-duration: 5s;
+    -webkit-animation-name: slidein-right;
+    -webkit-animation-duration: 5s;
+    display: none;
 }
 
 
@@ -426,8 +458,6 @@
 .welcome-dot-container {
     text-align: center;
     margin-top: 2vh;
-
-
 }
 
 .welcome-dot {
@@ -446,6 +476,24 @@
     width: 14px;
     background-color: #1B9DD9;
     transition: ease-in-out .2s;
+}
+
+.welcome-hidden-href {
+    display: none;
+}
+
+@keyframes slidein-right {
+    0% { margin-right:50%; opacity: 0; }
+    20% { margin-right: 0%; opacity: 1; }
+    80% { margin-right: 0%; opacity: 1; }
+    100% { margin-right:-50%; opacity: 0; }
+}
+
+@-webkit-keyframes slidein-right {
+    0% { margin-right:50%; opacity: 0; }
+    20% { margin-right: 0%; opacity: 1; }
+    80% { margin-right: 0%; opacity: 1; }
+    100% { margin-right:-50%; opacity: 0; }
 }
 
 @-webkit-keyframes fade {
@@ -556,22 +604,6 @@
     font-size: 3vh;
 }
 
-.welcome-slider-button {
-    height: 4vh;
-    width: 8vw;
-    background-color: var(--main-blue);
-    color: white;
-    font-size: 2vh;
-
-    font-family: 'Raleway';
-    text-align: center;
-    color: #707070;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
 
 
 
@@ -592,15 +624,6 @@
     transition: all .3s ease-in-out;
 }
 
-.welcome-slide {
-    height: 35vh;
-    width: 55vw;
-
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    transition: ease-in-out .3s;
-}
 
 
 
@@ -668,7 +691,71 @@
 
 
 
-/* Home */
+/* home styles*/
+
+.all-courses-page .general-container{
+    margin-top: 15vh;
+}
+
+.home-info-container {
+    height: 45vh;
+    width: 100vw;
+    background-color: var(--main-blue);
+    z-index: -1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.home-info-text-container {
+    height: 30vh;
+    width: 50vw;
+}
+
+.home-info-text-title {
+    height: 10vh;
+    width: 35vw;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 6vh;
+    font-weight: bold;
+}
+
+.home-info-text-content {
+    height: 15vh;
+    width: 42vw;
+    margin-left: 2vw;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 2vh;
+}
+
+.home-info-profile-container {
+    height: 40vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-icon {
+    height: 26vh;
+    width: 14vw;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--main-blue);
+    font-family: 'Raleway';
+    font-size: 14vh;
+    font-weight: bold;
+}
+
 
 
 /* Blue version of the profile icon */
@@ -676,6 +763,8 @@
     background: var(--main-blue);
     color: #ffffff;
 }
+
+
 
 .home-info-profile-content {
     height: 15vh;
@@ -1371,7 +1460,7 @@
 }
 
 .all-courses-page .general-container {
-    margin-top: 5vh;
+    margin-top: 10vh;
     width: 80vw;
     min-height: 50vh;
     height: fit-content;

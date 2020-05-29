@@ -36,6 +36,34 @@
     .footer-social-media-icons {
         font-size: 2.5vh;
     }
+
+    .footer-row-text {
+    width: 60vw;
+    }
+
+    /* course */
+
+    .all-courses-page .general-container {
+    padding: 0em;
+    min-height: 35vh;
+    }
+
+    .all-courses-page .general-container h2 {
+    padding: 4vw;
+    }
+
+    .course-container {
+        width: 18vw;
+    }
+
+    .progress-bar {
+        height: 1vh;
+    }
+
+    .course-info h3 {
+    font-size: 1.4em;
+    font-weight: 500;
+}
 }
 
 /* Large tablets  */
@@ -145,6 +173,10 @@
         height: 20vh;
     }
 
+     .footer-row-text {
+        width: 60vw;
+    }
+
     .footer-row-container {
         width: 90vw;
     }
@@ -155,6 +187,29 @@
 
     .footer-social-media {
         width: 25vw;
+    }
+
+    .footer-social-media-icons {
+    font-size: 3.5vh;
+    }
+
+    /* course */
+
+    .all-courses-page .general-container {
+    padding: 0em;
+    min-height: 25vh;
+    }
+
+    .all-courses-page .general-container h2 {
+    padding: 4vw;
+    }
+
+    .course-container {
+        width: 18vw;
+    }
+
+    .progress-bar {
+        height: 1vh;
     }
 
 }
@@ -176,6 +231,26 @@
     .hamburger-menu li {
         font-size: 2.7em !important;
     }
+
+
+     /* Course */
+
+    .course-container img {
+    border-radius: 1.5em 1.5em 0em 0em;
+    }
+
+    .course-info h3 {
+    font-size: 1.2em;
+    font-weight: 500;
+    }
+
+    .course-info p {
+    font-size: .6em;
+    }
+
+    .course-info {
+    border-radius: 0em 0em 1.5em 1.5em;
+}
 }
 
 /* Large tablets  */
