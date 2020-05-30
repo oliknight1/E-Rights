@@ -144,9 +144,8 @@ function inProgressSelected() {
     if (results) {
         for (let i = 0; i < results.length; i++) {
             var dataDone = results[i].querySelector(".progress-done").getAttribute('data-done');
-            console.log(dataDone);
             if (dataDone < 1 || dataDone > 99) {
-                console.log("lmao");
+
                 results[i].style.display = "none";
             } else {
                 results[i].style.display = "flex";
@@ -190,8 +189,8 @@ function loadProgress(progDone, progAmount) {
     // Use set timeout to add an animation to it
     setTimeout(() => {
         // Set the width of the blue section to how much progress has been made
-        console.log(progDone);
-        console.log(progDone.getAttribute('data-done'));
+
+
         progDone.style.width = progDone.getAttribute('data-done') + '%';
         progDone.style.opacity = 1;
         // Set text above progress bar to the amount of progress made
@@ -217,7 +216,7 @@ function fetchData(category) {
     xml.onreadystatechange = () => {
         if (xml.readyState == 4 && xml.status == 200) {
             results = xml.response;
-            console.log(results);
+
             generateResultDivs(results);
         }
     };
