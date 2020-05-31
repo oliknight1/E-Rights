@@ -107,7 +107,10 @@ function changeSlide(id) {
 
 
 
-
+var allAssigned = [];
+var allInProg = [];
+var currentAssigned = 0;
+var currentInProg = 0;
 
 window.onload = function() {
     if(document.querySelector(".my-learning")) {
