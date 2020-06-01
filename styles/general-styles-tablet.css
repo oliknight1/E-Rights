@@ -63,7 +63,41 @@
     .course-info h3 {
     font-size: 1.4em;
     font-weight: 500;
-}
+    }
+
+    /* rights/principles learning */
+
+    .learning-titles-container{
+        height: 15vh;
+    }
+
+    .learning-content {
+        height: 60vh;
+        flex-direction: column-reverse;
+    }
+
+    .learning-buttons button{
+        font-size: 2.5rem;
+    }
+
+    .learning-content h3 {
+        font-size: 2.5vh;
+    }
+
+    .learning-image img {
+        width: 20vw;
+        margin-bottom: 5vh;
+    }
+
+    .learning-titles-container h1 {
+        font-size: 4em;
+        padding: 1rem 4rem;
+    }
+
+    .learning-titles-container h2 {
+        font-size: 3vh;
+        padding: 0rem 4rem;
+    }
 }
 
 /* Large tablets  */
@@ -212,12 +246,49 @@
         height: 1vh;
     }
 
+
+    /* rights/principles learning */
+
+    .learning-titles-container{
+        height: 15vh;
+    }
+
+    .learning-content {
+        height: 60vh;
+        flex-direction: column-reverse;
+    }
+
+    .learning-buttons button{
+        font-size: 3rem;
+    }
+
+    .learning-content h3 {
+    font-size: 2.5vh;
+    }
+
+    .learning-image img {
+    width: 20vw;
+    margin-bottom: 5vh;
+    }
+
+    .learning-titles-container h1 {
+        font-size: 6em;
+        padding: 2rem 6rem;
+    }
+
+    .learning-titles-container h2 {
+        font-size: 3vh;
+        padding: 0rem 6rem;
+    }
+
 }
 
 /* Landscape styles */
 
 /* Small tablets  */
 @media screen and (min-width:1024px) and (max-width:1366px) and (orientation: landscape) {
+
+    
     /* Navigation styling */
 
     .hamburger-menu header p {
@@ -250,7 +321,27 @@
 
     .course-info {
     border-radius: 0em 0em 1.5em 1.5em;
-}
+    }
+
+
+    /* rights/principles learning */
+
+    .learning-titles-container h1 {
+        font-size: 3em;
+        padding: 0.7rem 3rem;
+    }
+
+    .learning-titles-container h2 {
+        font-size: 4vh;
+    }
+
+    .learning-titles-container{
+        height: 20vh;
+    }
+
+    .learning-buttons button{
+        font-size: 1.5rem;
+    }
 }
 
 /* Large tablets  */

@@ -112,6 +112,7 @@ function changeSlide(id) {
 window.onload = function () {
     if (document.querySelector(".general-container")) {
         fetchData();
+
         document.getElementById("in-prog").onclick = function () {
             inProgressSelected();
         }
@@ -120,10 +121,123 @@ window.onload = function () {
         }
         document.getElementById("completed").onclick = function () {
             completedSelected();
+
         }
     }
 
 };
+
+function modifyMobileCourseView() {
+    var allGeneralContainers = document.getElementsByClassName("general-container");
+    var allAssignedCourseContainers = allGeneralContainers[0].getElementsByClassName("course-container");
+    currentAssigned = 0;
+    if(allAssignedCourseContainers) {
+        for(var i = 0; i < allAssignedCourseContainers.length;i++) {
+            allAssigned[i] = allAssignedCourseContainers[i];
+        }
+    }
+    currentInProg = 0;
+    var allInProgCourseContainers = allGeneralContainers[1];
+    if(allInProgCourseContainers) {
+        for(var i = 0; i < allInProgCourseContainers.length;i++) {
+            allInProg[i] = allInProgCourseContainers[i];
+        }
+    }
+    var leftButton1 = document.createElement("BUTTON");
+    var rightButton1 = document.createElement("BUTTON");
+    leftButton1.innerHTML = "<-";
+    rightButton1.innerHTML = "->";
+    leftButton1.onclick = function() { scrollLeft("assigned"); }
+    rightButton1.onclick = function () { scrollRight("assigned"); }
+    leftButton1.classList.add("scroll-left-button");
+    rightButton1.classList.add("scroll-right-button");
+    allGeneralContainers[0].appendChild(leftButton1);
+    allGeneralContainers[0].appendChild(rightButton1);
+    var leftButton2 = document.createElement("BUTTON");
+    var rightButton2 = document.createElement("BUTTON");
+    leftButton2.innerHTML = "<-";
+    rightButton2.innerHTML = "->";
+    leftButton2.onclick = function () { scrollLeft("inprog"); }
+    rightButton2.onclick = function () { scrollRight("inprof"); }
+    leftButton2.classList.add("scroll-left-button");
+    rightButton2.classList.add("scroll-right-button");
+    allGeneralContainers[1].appendChild(leftButton2);
+    allGeneralContainers[1].appendChild(rightButton2);
+    initialiseMobileContainer(allAssigned);
+    initialiseMobileContainer(allInProg);
+}
+
+function scrollLeft(section) {
+    var allContainers;
+    var containerNum;
+    if(section == "assigned") {
+        allContainers = allAssigned;
+        containerNum = currentAssigned;
+    } else {
+        allContainers = allInProg;
+        containerNum = currentInProg;
+    }
+    if(containerNum === 1) {
+        clearAllContainers(allContainers);
+        containerNum = 0;
+        allContainers[0].style.display = "flex";
+        allContainers[1].style.display = "flex";
+    } else if(containerNum > 1) {
+        clearAllContainers(allContainers);
+        containerNum -= 2;
+        allContainers[containerNum].style.display = "flex";
+        allContainers[containerNum+1].style.display = "flex";
+    }
+    if(section == "assigned") {
+        currentAssigned = containerNum;
+    } else {
+        currentInProg = containerNum;
+    }
+}
+
+function scrollRight(section) {
+    var allContainers;
+    var containerNum;
+    if(section == "assigned") {
+        allContainers = allAssigned;
+        containerNum = currentAssigned;
+    } else {
+        allContainers = allInProg;
+        containerNum = currentInProg;
+    }
+    if(containerNum+3 === allContainers.length) {
+        clearAllContainers(allContainers);
+        containerNum++;
+        allContainers[containerNum].style.display = "flex";
+        allContainers[containerNum+1].style.display = "flex";
+    } else if(containerNum+3 < allContainers.length) {
+        clearAllContainers(allContainers);
+        containerNum += 2;
+        allContainers[containerNum].style.display = "flex";
+        allContainers[containerNum].style.display = "flex";
+    }
+    if(section == "assigned") {
+        currentAssigned = containerNum;
+    } else {
+        currentInProg = containerNum;
+    }
+}
+
+function initialiseMobileContainer(containers) {
+    clearAllContainers(containers);
+    if(containers.length > 0) {
+        containers[0].style.display = "flex";
+    }
+    if(containers.length > 1) {
+        containers[1].style.display = "flex";
+    }
+}
+
+function clearAllContainers(containers) {
+    for(var i = 0;i < containers.length;i++) {
+        containers[i].style.display = "none";
+    }
+}
 
 function assignedSelected() {
     document.querySelector(".selected").classList.remove("selected");

@@ -128,6 +128,47 @@
      .footer-image {
         width: 35vw;
     }
+
+
+     /* rights/principles learning */
+
+    .learning-titles-container{
+        height: 10vh;
+    }
+
+    .learning-content {
+        height: 60vh;
+        flex-direction: column-reverse;
+        margin: 0rem;
+    }
+
+    .learning-buttons button{
+        font-size: 1.2rem;
+    }
+
+    .learning-image img {
+        width: 20vw;
+        margin-bottom: 5vh;
+    }
+
+    .learning-titles-container h1 {
+        font-size: 1.5em;
+        padding: 0.4rem 2rem;
+        padding-top: 1rem;
+    }
+
+    .learning-titles-container h2 {
+        font-size: 2vh;
+        padding: 0rem 2rem;
+    }
+
+    .learning-content h3 {
+        font-size: 2.5vh;
+    }
+
+    .learning-text h3 {
+        padding: 0rem;
+    }
 }
 
 /* Medium Phones */
@@ -189,7 +230,47 @@
     .course-info h3 {
     font-size: 1.4em;
     font-weight: 500;
-}
+    }
+
+
+     /* rights/principles learning */
+
+    .learning-titles-container{
+        height: 10vh;
+    }
+
+    .learning-content {
+        height: 60vh;
+        flex-direction: column-reverse;
+        margin: 0rem 1rem;
+    }
+
+    .learning-buttons button{
+        font-size: 1.5rem;
+    }
+
+    .learning-content h3 {
+        font-size: 2.5vh;
+    }
+
+    .learning-image img {
+        width: 20vw;
+        margin-bottom: 5vh;
+    }
+
+    .learning-titles-container h1 {
+        font-size: 2em;
+        padding: 0.4rem 2rem;
+    }
+
+    .learning-titles-container h2 {
+        font-size: 2vh;
+        padding: 0rem 2rem;
+    }
+
+    .learning-text h3 {
+        padding: 0rem;
+    }
 
 }
 
@@ -306,6 +387,45 @@
     .footer-social-media {
         width: 60vw;
   
+    }
+
+    /* rights/principles learning */
+
+    .learning-titles-container{
+        height: 10vh;
+    }
+
+    .learning-content {
+        height: 60vh;
+        flex-direction: column-reverse;
+        margin: 0rem 1rem;
+    }
+
+    .learning-buttons button{
+        font-size: 1.5rem;
+    }
+
+    .learning-content h3 {
+        font-size: 2.5vh;
+    }
+
+    .learning-image img {
+        width: 20vw;
+        margin-bottom: 5vh;
+    }
+
+    .learning-titles-container h1 {
+        font-size: 2em;
+        padding: 0.4rem 2rem;
+    }
+
+    .learning-titles-container h2 {
+        font-size: 2vh;
+        padding: 0rem 2rem;
+    }
+
+    .learning-text h3 {
+        padding: 0rem;
     }
 }
 
