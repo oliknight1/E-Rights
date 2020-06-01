@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/responsive-tablet.css">
-    <link rel="stylesheet" href="../styles/responsive-mobile.css">
-    <link rel="stylesheet" href="../styles/general-styles.css">
-    <link rel="stylesheet" href="../styles/general-styles-mobile.css">
-    <link rel="stylesheet" href="../styles/general-styles-tablet.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive-tablet.css">
+    <link rel="stylesheet" href="styles/responsive-mobile.css">
+    <link rel="stylesheet" href="styles/general-styles.css">
+    <link rel="stylesheet" href="styles/general-styles-mobile.css">
+    <link rel="stylesheet" href="styles/general-styles-tablet.css">
     <script src="https://kit.fontawesome.com/96867cee00.js"></script>
 </head>
 
@@ -55,7 +55,7 @@
 
         <!-- Navbar -->
         <a href="home.php">
-            <img src=../assets/logo/logo-horizontal-2.svg alt="Site Logo">
+            <img src=assets/logo/logo-horizontal-2.svg alt="Site Logo">
         </a>
 
         <div class="link-container">
@@ -83,39 +83,27 @@
     <div class="learning-container">
         <div class="learning-titles-container">
             <h1>The Rights</h1>
-            <h2>2. Right of access</h2>
+            <h2>1. Right to be informed</h2>
         </div>
         <div class="learning-content">
             <div class="learning-text">
                 <h3>
-                    Under the <b>GDPR</b>, individuals have the <b>right to obtain</b>:
-                </h3>
-                <div class="learning-space">
-
-                </div>
-                <h3>
-                    - <b>Confirmation</b> that their data is <b>being processed</b>.
-                </h3>
-                <h3>
-                    - <b>Access</b> to their <b>personal data</b>.
-                </h3>
-                <h3>
-                    - Other supplementary information - this largely corresponds to the information that should be
-                    <b>provided in a privacy
-                        notice</b>.
+                    Encompasses your obligation to provide <b>‘fair processing information’</b>, typically through a
+                    <b>privacy
+                        notice.</b> It emphasises
+                    the need for transparency over how you use <b>personal data.</b>
 
                 </h3>
             </div>
             <div class="learning-image">
-                <img src="../assets/illustrations/learning-images/rights-1.svg" alt="E-Rights Logo">
+                <img src="assets/illustrations/learning-images/rights-1.svg" alt="right to be informed">
             </div>
         </div>
         <div class="learning-buttons">
             <div class="learning-button-left">
-                <a href="rights-learn-1.html"><button>Previous</button></a>
             </div>
             <div class="learning-button-right">
-                <a href="rights-learn-2.html"><button>Next</button></a>
+                <a href="#"><button>Next</button></a>
             </div>
         </div>
     </div>
@@ -154,7 +142,7 @@
 
         </div>
         <div class="footer-image">
-            <img src="../assets/logo/logo-horizontal-2.svg" alt="E-Rights Logo">
+            <img src="assets/logo/logo-horizontal-2.svg" alt="E-Rights Logo">
         </div>
 
     </footer>

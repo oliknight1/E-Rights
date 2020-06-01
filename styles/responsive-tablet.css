@@ -421,6 +421,31 @@
  
     }
 
+    /* results */
+
+    .results-title {
+        height: 7vh;
+        border-bottom: 4px solid var(--main-blue);
+}
+
+    .results-title h1{
+        font-size: 5vh;
+    }
+
+    .results-container img {
+        width: 40vw;
+        margin-top: 8vh;
+    }
+
+    .results-container h2 {
+        font-size: 4.5vh;
+    }
+
+    .results-buttons-container button {
+        font-size: 2vh;
+        margin: 2vh;
+    }
+
 }
 
 /* Large tablets  */
@@ -913,6 +938,31 @@
     .home-info-profile-content-amount {
         font-size: 3vh;
         margin-top: -3vh;
+    }
+
+    /* results */
+
+    .results-title {
+        height: 7vh;
+        border-bottom: 4px solid var(--main-blue);
+}
+
+    .results-title h1{
+        font-size: 5vh;
+    }
+
+    .results-container img {
+        width: 40vw;
+        margin-top: 8vh;
+    }
+
+    .results-container h2 {
+        font-size: 4.5vh;
+    }
+
+    .results-buttons-container button {
+        font-size: 2vh;
+        margin: 4vh;
     }
 
 }

@@ -558,6 +558,36 @@
     100% { margin-right:-25%; opacity: 0; }
 }
 
+/* results */
+
+    .results-title {
+        height: 7vh;
+        border-bottom: 2px solid var(--main-blue);
+}
+
+    .results-title h1{
+        font-size: 5vh;
+    }
+
+    .results-container img {
+        width: 40vw;
+        margin-top: 8vh;
+    }
+
+    .results-container h2 {
+        font-size: 4.5vh;
+        margin-bottom: 4vh;
+    }
+
+    .results-buttons-container button {
+        font-size: 2.5vh;
+        margin: 3vh;
+    }
+
+    .results-buttons-container {
+    flex-direction: column;
+    }
+
 }
 
 /* Medium Phones */
@@ -1118,7 +1148,35 @@
         margin-bottom: 8vh;
     }
 
+    /* results */
 
+    .results-title {
+        height: 7vh;
+        border-bottom: 2px solid var(--main-blue);
+}
+
+    .results-title h1{
+        font-size: 5vh;
+    }
+
+    .results-container img {
+        width: 40vw;
+        margin-top: 8vh;
+    }
+
+    .results-container h2 {
+        font-size: 4.5vh;
+        margin-bottom: 4vh;
+    }
+
+    .results-buttons-container button {
+        font-size: 2.5vh;
+        margin: 3vh;
+    }
+
+    .results-buttons-container {
+    flex-direction: column;
+    }
 }
 /* Large Phones */
 
@@ -1676,7 +1734,35 @@
         margin-bottom: 8vh;
     }
 
+      /* results */
 
+    .results-title {
+        height: 7vh;
+        border-bottom: 2px solid var(--main-blue);
+}
+
+    .results-title h1{
+        font-size: 5vh;
+    }
+
+    .results-container img {
+        width: 40vw;
+        margin-top: 8vh;
+    }
+
+    .results-container h2 {
+        font-size: 4.5vh;
+        margin-bottom: 4vh;
+    }
+
+    .results-buttons-container button {
+        font-size: 2vh;
+        margin: 3vh;
+    }
+
+    .results-buttons-container {
+    flex-direction: column;
+    }
 
 }
 
