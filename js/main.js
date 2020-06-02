@@ -89,6 +89,11 @@ function changeSlide(id) {
 var slideNum;
 var slides;
 var dots;
+var request = new XMLHttpRequest();
+request.open("GET","learning-data.json",false);
+request.send(null);
+var learningJson = JSON.parse(request.responseText);
+var currentLearningSlide = 0;
 
 
 window.onload = function () {
@@ -113,9 +118,76 @@ window.onload = function () {
         dots[1].onclick = function() { changeSlide(1); }
         dots[2].onclick = function() { changeSlide(2); }
         slideShow();
+    } else if(document.querySelector(".learning-container")) {
+        displayLearning(0);
+        document.querySelector(".learning-button-left").onclick = function () {
+            learningButtons(-1); }
+        document.querySelector(".learning-button-right").onclick = function () { learningButtons(1); }
     }
 
 };
+
+
+function learningButtons(change) {
+    var url = window.location;
+    var max = 7;
+    if(url.search) {
+        var GETRequest = url.search.substr(13);
+        if(GETRequest == "principles") {
+            max = 5;
+        }
+    } else {
+        window.location.replace("http://ok131.brighton.domains/ci536/site/e-rights/404.html");
+    }
+    if(currentLearningSlide + change >= 0 && currentLearningSlide+change <= max) {
+        currentLearningSlide += change;
+        displayLearning(currentLearningSlide);
+    }
+}
+
+function displayLearning(learningSlideNum) {
+    var url = window.location;
+    if(url.search) {
+        var GETRequest = url.search.substr(6);
+        if(GETRequest == "GDPR%20rights") {
+            fillLearningContent(learningJson.rights[learningSlideNum],"The Rights");
+        } else if(GETRequest == "GDPR%20principles") {
+            fillLearningContent(learningJson.principles[learningSlideNum],"The Principles");
+        } else {
+            window.location.replace("http://ok131.brighton.domains/ci536/site/e-rights/404.html");
+        }
+    } else {
+        window.location.replace("http://ok131.brighton.domains/ci536/site/e-rights/404.html");
+    }
+}    
+
+function fillLearningContent(JSONContentObject,title) {
+    document.querySelector(".learning-titles-container").querySelector("h1").innerHTML = title;
+    document.querySelector(".learning-titles-container").querySelector("h2").innerHTML = JSONContentObject.name;
+    if(document.querySelector(".learning-text").querySelector("p")) {
+        document.querySelector(".learning-text").removeChild(document.querySelector(".learning-text").querySelector("p"));
+    }
+    var content = document.createElement("p");
+    content.innerHTML = JSONContentObject.content;
+    document.querySelector(".learning-text").appendChild(content);
+    if(JSONContentObject.list) {
+        var newList = document.createElement("ol");
+        for(var i = 0;i < JSONContentObject.list.length;i++) {
+            var newListObject = document.createElement("li");
+            newListObject.innerHTML = JSONContentObject.list[i];
+            newList.appendChild(newListObject);
+        }
+        document.querySelector(".learning-text").appendChild(newList);
+    } else {
+        if(document.querySelector(".learning-text").querySelector("ol")) {
+            var elementToRemove = document.querySelector(".learning-text").querySelector("ol");
+            document.querySelector(".learning-text").removeChild(elementToRemove);
+        }
+    }
+    document.querySelector(".learning-image").querySelector("img").src = "assets/learning-img/"+JSONContentObject.img;
+}
+
+
 
 function modifyMobileCourseView() {
     var allGeneralContainers = document.getElementsByClassName("general-container");
