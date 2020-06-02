@@ -82,25 +82,19 @@
 
     <div class="learning-container">
         <div class="learning-titles-container">
-            <h1>The Rights</h1>
-            <h2>1. Right to be informed</h2>
+            <h1></h1>
+            <h2></h2>
         </div>
         <div class="learning-content">
             <div class="learning-text">
-                <h3>
-                    Encompasses your obligation to provide <b>‘fair processing information’</b>, typically through a
-                    <b>privacy
-                        notice.</b> It emphasises
-                    the need for transparency over how you use <b>personal data.</b>
-
-                </h3>
             </div>
             <div class="learning-image">
-                <img src="assets/illustrations/learning-images/rights-1.svg" alt="right to be informed">
+                <img src="" alt="right to be informed">
             </div>
         </div>
         <div class="learning-buttons">
             <div class="learning-button-left">
+                <a href="#"><button>Back</button></a>
             </div>
             <div class="learning-button-right">
                 <a href="#"><button>Next</button></a>
