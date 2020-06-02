@@ -110,7 +110,7 @@ function changeSlide(id) {
 
 
 window.onload = function () {
-    if (document.querySelector(".general-container")) {
+    if (document.querySelector(".my-learning")) {
         fetchData();
 
         document.getElementById("in-prog").onclick = function () {
