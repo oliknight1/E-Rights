@@ -24,32 +24,32 @@ function togglePasswordVisibility(textBoxID) {
 function slideShow() {
 
     slideNum++;
-    if(slideNum == slides.length) {
+    if (slideNum == slides.length) {
         slideNum = 0;
     }
-    for(var i = 0;i < slides.length;i++) {
+    for (var i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     slides[slideNum].style.display = "flex";
 
 
-    for(var j = 0;j < dots.length; j++) {
-        dots[j].className = dots[j].className.replace(" welcome-dot-selected","");
+    for (var j = 0; j < dots.length; j++) {
+        dots[j].className = dots[j].className.replace(" welcome-dot-selected", "");
     }
     dots[slideNum].className += " welcome-dot-selected";
     var viewCourseHref = document.getElementById("view-course").href;
     var hiddenHrefText = slides[slideNum].getElementsByClassName("welcome-hidden-href")[0].textContent;
     viewCourseHref = hiddenHrefText;
-    setTimeout(slideShow,5000);
+    setTimeout(slideShow, 5000);
 }
 
 function changeSlide(id) {
-    for(var i = 0;i < slides.length;i++) {
+    for (var i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     slides[id].style.display = "flex";
-    for(var j = 0;j < dots.length; j++) {
-        dots[j].className = dots[j].className.replace(" welcome-dot-selected","");
+    for (var j = 0; j < dots.length; j++) {
+        dots[j].className = dots[j].className.replace(" welcome-dot-selected", "");
     }
     dots[id].className += " welcome-dot-selected";
     var viewCourseHref = document.getElementById("view-course").href;
@@ -90,7 +90,7 @@ var slideNum;
 var slides;
 var dots;
 var request = new XMLHttpRequest();
-request.open("GET","learning-data.json",false);
+request.open("GET", "learning-data.json", false);
 request.send(null);
 var learningJson = JSON.parse(request.responseText);
 var currentLearningSlide = 0;
@@ -118,22 +118,32 @@ window.onload = function () {
 
     } else if (document.querySelector(".home-wrapper") || document.querySelector(".all-courses-page")) {
         fetchData();
-    
-    } else if(document.querySelector(".welcome-body")) {
+
+    } else if (document.querySelector(".welcome-body")) {
         slideNum = 0;
         slides = document.getElementsByClassName("welcome-slide");
         dots = document.getElementsByClassName("welcome-dot");
-        dots[0].onclick = function() { changeSlide(0); }
-        dots[1].onclick = function() { changeSlide(1); }
-        dots[2].onclick = function() { changeSlide(2); }
+        dots[0].onclick = function () {
+            changeSlide(0);
+
+        }
+        dots[1].onclick = function () {
+            changeSlide(1);
+        }
+        dots[2].onclick = function () {
+            changeSlide(2);
+        }
         slideShow();
-    } else if(document.querySelector(".learning-container")) {
+    } else if (document.querySelector(".learning-container")) {
         displayLearning(0);
         document.querySelector(".learning-button-left").onclick = function () {
-            learningButtons(-1); }
-        document.querySelector(".learning-button-right").onclick = function () { learningButtons(1); }
-    } else if(document.querySelector(".all-courses-page")) {
-        if(screen.width <= 768) {
+            learningButtons(-1);
+        }
+        document.querySelector(".learning-button-right").onclick = function () {
+            learningButtons(1);
+        }
+    } else if (document.querySelector(".all-courses-page")) {
+        if (screen.width <= 768) {
             modifyMobileCourseView();
         }
 
@@ -145,15 +155,15 @@ window.onload = function () {
 function learningButtons(change) {
     var url = window.location;
     var max = 7;
-    if(url.search) {
+    if (url.search) {
         var GETRequest = url.search.substr(13);
-        if(GETRequest == "principles") {
+        if (GETRequest == "principles") {
             max = 5;
         }
     } else {
         window.location.replace("http://ok131.brighton.domains/ci536/site/e-rights/404.html");
     }
-    if(currentLearningSlide + change >= 0 && currentLearningSlide+change <= max) {
+    if (currentLearningSlide + change >= 0 && currentLearningSlide + change <= max) {
         currentLearningSlide += change;
         displayLearning(currentLearningSlide);
     }
@@ -161,44 +171,44 @@ function learningButtons(change) {
 
 function displayLearning(learningSlideNum) {
     var url = window.location;
-    if(url.search) {
+    if (url.search) {
         var GETRequest = url.search.substr(6);
-        if(GETRequest == "GDPR%20rights") {
-            fillLearningContent(learningJson.rights[learningSlideNum],"The Rights");
-        } else if(GETRequest == "GDPR%20principles") {
-            fillLearningContent(learningJson.principles[learningSlideNum],"The Principles");
+        if (GETRequest == "GDPR%20rights") {
+            fillLearningContent(learningJson.rights[learningSlideNum], "The Rights");
+        } else if (GETRequest == "GDPR%20principles") {
+            fillLearningContent(learningJson.principles[learningSlideNum], "The Principles");
         } else {
             window.location.replace("http://ok131.brighton.domains/ci536/site/e-rights/404.html");
         }
     } else {
         window.location.replace("http://ok131.brighton.domains/ci536/site/e-rights/404.html");
     }
-}    
+}
 
-function fillLearningContent(JSONContentObject,title) {
+function fillLearningContent(JSONContentObject, title) {
     document.querySelector(".learning-titles-container").querySelector("h1").innerHTML = title;
     document.querySelector(".learning-titles-container").querySelector("h2").innerHTML = JSONContentObject.name;
-    if(document.querySelector(".learning-text").querySelector("p")) {
+    if (document.querySelector(".learning-text").querySelector("p")) {
         document.querySelector(".learning-text").removeChild(document.querySelector(".learning-text").querySelector("p"));
     }
     var content = document.createElement("p");
     content.innerHTML = JSONContentObject.content;
     document.querySelector(".learning-text").appendChild(content);
-    if(JSONContentObject.list) {
+    if (JSONContentObject.list) {
         var newList = document.createElement("ol");
-        for(var i = 0;i < JSONContentObject.list.length;i++) {
+        for (var i = 0; i < JSONContentObject.list.length; i++) {
             var newListObject = document.createElement("li");
             newListObject.innerHTML = JSONContentObject.list[i];
             newList.appendChild(newListObject);
         }
         document.querySelector(".learning-text").appendChild(newList);
     } else {
-        if(document.querySelector(".learning-text").querySelector("ol")) {
+        if (document.querySelector(".learning-text").querySelector("ol")) {
             var elementToRemove = document.querySelector(".learning-text").querySelector("ol");
             document.querySelector(".learning-text").removeChild(elementToRemove);
         }
     }
-    document.querySelector(".learning-image").querySelector("img").src = "assets/learning-img/"+JSONContentObject.img;
+    document.querySelector(".learning-image").querySelector("img").src = "assets/learning-img/" + JSONContentObject.img;
 }
 
 
@@ -424,19 +434,22 @@ function fetchData(category) {
 
 
 function generateResultDivs(result) {
-    var generalContainer = document.querySelector(".general-container");
+    var generalContainer = document.querySelectorAll(".general-container");
     if (result) {
-        result.forEach(element => {
-            var courseLink = document.createElement("a");
-            var courseContainer = document.createElement("div");
-            courseLink.href = "course-overview.php?name=" + element.name;
-            courseContainer.className = "course-container";
-            generateResultImage(courseContainer, element);
-            generateCourseInfo(courseContainer, element);
-            courseLink.appendChild(courseContainer);
-            generalContainer.appendChild(courseLink);
+        generalContainer.forEach(cont => {
+            result.forEach(element => {
+                var courseLink = document.createElement("a");
+                var courseContainer = document.createElement("div");
+                courseLink.href = "course-overview.php?name=" + element.name;
+                courseContainer.className = "course-container";
+                generateResultImage(courseContainer, element);
+                generateCourseInfo(courseContainer, element);
+                courseLink.appendChild(courseContainer);
+                cont.appendChild(courseLink);
 
-        });
+            });
+        })
+
         for (var i = 0; i < result.length; i++) {
             loadProgress(document.getElementsByClassName("progress-done")[i], document.getElementsByClassName("progress-amount")[i]);
         }
