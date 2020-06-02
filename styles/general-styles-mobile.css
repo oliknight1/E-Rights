@@ -169,6 +169,50 @@
     .learning-text h3 {
         padding: 0rem;
     }
+
+      /* questions */
+
+    .questions-container h3 {
+    text-align: center;
+    font-size: 2vh;
+    margin-top: 3vh;
+    width: 80vw;
+    }
+
+    .questions-content {
+    width: 100vw;
+    }
+
+    .questions-content img {
+    display: none;
+    }
+
+    input {
+    width: 30px;
+    height: 30px;
+    }
+
+    .question-row label {
+    padding-left: 0vw;
+    font-size: 2vh;
+    }
+
+    .questions-title {
+    height: 6vh;
+    }
+
+    .questions-title h1 {
+    font-size: 4vh;
+    }
+
+    .questions-text {
+        width: 70vw;
+        margin-left: 6vw;
+    }
+
+    .questions {
+        width: 90vw;
+    }
 }
 
 /* Medium Phones */
@@ -272,6 +316,49 @@
         padding: 0rem;
     }
 
+      /* questions */
+
+    .questions-container h3 {
+    text-align: center;
+    font-size: 2vh;
+    margin-top: 3vh;
+    width: 80vw;
+    }
+
+    .questions-content {
+    width: 100vw;
+    }
+
+    .questions-content img {
+    display: none;
+    }
+
+    input {
+    width: 30px;
+    height: 30px;
+    }
+
+    .question-row label {
+    padding-left: 0vw;
+    font-size: 2vh;
+    }
+
+    .questions-title {
+    height: 6vh;
+    }
+
+    .questions-title h1 {
+    font-size: 4vh;
+    }
+
+    .questions-text {
+        width: 70vw;
+        margin-left: 6vw;
+    }
+
+    .questions {
+        width: 90vw;
+    }
 }
 
 /* Large Phones */
@@ -426,6 +513,50 @@
 
     .learning-text h3 {
         padding: 0rem;
+    }
+
+     /* questions */
+
+    .questions-container h3 {
+    text-align: center;
+    font-size: 2vh;
+    margin-top: 3vh;
+    width: 80vw;
+    }
+
+    .questions-content {
+    width: 100vw;
+    }
+
+    .questions-content img {
+    display: none;
+    }
+
+    input {
+    width: 30px;
+    height: 30px;
+    }
+
+    .question-row label {
+    padding-left: 0vw;
+    font-size: 2vh;
+    }
+
+    .questions-title {
+    height: 6vh;
+    }
+
+    .questions-title h1 {
+    font-size: 4vh;
+    }
+
+    .questions-text {
+        width: 70vw;
+        margin-left: 6vw;
+    }
+
+    .questions {
+        width: 90vw;
     }
 }
 

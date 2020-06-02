@@ -101,6 +101,15 @@ var currentInProg = 0;
 
 
 
+<<<<<<< HEAD
+var allAssigned = [];
+var allInProg = [];
+var currentAssigned = 0;
+var currentInProg = 0;
+
+window.onload = function() {
+    if(document.querySelector(".my-learning")) {
+=======
 window.onload = function () {
     if (document.querySelector(".my-learning")) {
         fetchData();
@@ -117,6 +126,7 @@ window.onload = function () {
         }
 
     } else if (document.querySelector(".home-wrapper") || document.querySelector(".all-courses-page")) {
+>>>>>>> 6511d41951a242d32c535b9076efe67cb94b1d0e
         fetchData();
 
     } else if (document.querySelector(".welcome-body")) {

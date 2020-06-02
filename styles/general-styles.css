@@ -430,3 +430,91 @@ footer {
     margin-right: 4vw;
 
 }
+
+/* questions */
+
+.questions-container{
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.questions-title {
+    height: 10vh;
+    width: 80vw;
+    border-bottom: 2px solid var(--main-blue);
+}
+
+.questions-title h1 {
+    font-size: 6vh;
+    padding-left: 5vw;
+}
+
+.questions-container h2{
+    font-size: 2vh;
+    font-weight: 600;
+    margin-top: 3vh;
+}
+
+.questions-container h3 {
+    font-size: 2.5vh;
+    font-weight: 500;
+    margin-top: 5vh;
+    color: var(--heading-col)
+}
+
+.questions-content {
+    width: 70vw;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.questions-content img {
+    width: 15vw;
+    margin-left: 5vw;
+}
+
+.questions {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.question-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 3vh;
+}
+
+.question-row label {
+    padding-left: 1vw;
+    font-size: 2.5vh;
+    color: var(--heading-col)
+}
+
+input {
+    width: 25px;
+    height: 25px;
+    border: thin solid var(--heading-col)
+}
+
+input:hover {
+    border: thin solid var(--main-blue)
+}
+
+input:checked {
+    background-color: var(--main-blue);
+}
+
+.questions-container button {
+    font-size: 3vh;
+}
