@@ -29,6 +29,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #000000;
 }
 
 h1 {
@@ -137,6 +138,65 @@ nav img {
 }
 
 
+.home-info-container {
+    height: 45vh;
+    width: 100vw;
+    background-color: var(--main-blue);
+    z-index: -1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.home-info-text-container {
+    height: 30vh;
+    width: 50vw;
+}
+
+.home-info-text-title {
+    height: 10vh;
+    width: 35vw;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 6vh;
+    font-weight: bold;
+}
+
+.home-info-text-content {
+    height: 15vh;
+    width: 42vw;
+    margin-left: 2vw;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 2vh;
+}
+
+.home-info-profile-container {
+    height: 40vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-icon {
+    height: 26vh;
+    width: 10vw;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--main-blue);
+    font-family: 'Raleway';
+    font-size: 14vh;
+    font-weight: bold;
+}
+
 
 /* Courses */
 
@@ -221,7 +281,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 15vh;
+
 }
 
 .footer-row-container {
@@ -277,7 +337,7 @@ footer {
 .learning-container {
     height: 85vh;
     width: 100vw;
-      display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -306,9 +366,9 @@ footer {
 }
 
 .learning-content {
-    width: 70vw;
+    width: 80vw;
     height: 40vh;
-     display: flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -329,7 +389,7 @@ footer {
     font-weight: 300;
     font-family: "raleway";
     font-size: 3.5vh;
-     color: var(--heading-col);
+    color: var(--heading-col);
     padding-right: 4rem;
     padding-top: -5rem;
     margin-top: 0.5rem;
@@ -338,12 +398,11 @@ footer {
 .learning-content b {
     font-weight: 600;
     font-family: "raleway";
-    font-size: 3.5vh;
     color: var(--main-blue);
 }
 
 .learning-image img {
-     width: 10vw;
+    width: 10vw;
 }
 
 .learning-buttons {
@@ -359,7 +418,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-     margin-left: 4vw;
+    margin-left: 4vw;
 }
 
 .learning-button-right {
@@ -370,4 +429,92 @@ footer {
     align-items: flex-end;
     margin-right: 4vw;
 
+}
+
+/* questions */
+
+.questions-container{
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.questions-title {
+    height: 10vh;
+    width: 80vw;
+    border-bottom: 2px solid var(--main-blue);
+}
+
+.questions-title h1 {
+    font-size: 6vh;
+    padding-left: 5vw;
+}
+
+.questions-container h2{
+    font-size: 2vh;
+    font-weight: 600;
+    margin-top: 3vh;
+}
+
+.questions-container h3 {
+    font-size: 2.5vh;
+    font-weight: 500;
+    margin-top: 5vh;
+    color: var(--heading-col)
+}
+
+.questions-content {
+    width: 70vw;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.questions-content img {
+    width: 15vw;
+    margin-left: 5vw;
+}
+
+.questions {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.question-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 3vh;
+}
+
+.question-row label {
+    padding-left: 1vw;
+    font-size: 2.5vh;
+    color: var(--heading-col)
+}
+
+input {
+    width: 25px;
+    height: 25px;
+    border: thin solid var(--heading-col)
+}
+
+input:hover {
+    border: thin solid var(--main-blue)
+}
+
+input:checked {
+    background-color: var(--main-blue);
+}
+
+.questions-container button {
+    font-size: 3vh;
 }

@@ -2,11 +2,19 @@
 
 require_once 'core/init.php';
 $user = new User();
+$api = new Api();
 
 if (isset($_SESSION['user'])) {
     $user->findUser($_SESSION['user']);
 } else {
     Redirect::redirectTo("login.php");
+}
+
+// Check the GET parameter is set
+if (isset($_GET['name'])) {
+    $name = urldecode($_GET["name"]);
+    // Search courses table for the description
+    $course = json_decode($api->getCourse("name", $name));
 }
 ?>
 <!DOCTYPE html>
@@ -101,12 +109,12 @@ if (isset($_SESSION['user'])) {
     </nav>
 
     <main class="course-overview">
-        <h1>Course Name</h1>
+        <h1> <?php echo $course->name ?> </h1>
         <div class="general-container">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolor expedita dicta corrupti ut, maxime ab, voluptate ipsum aperiam rem suscipit, dignissimos sequi debitis eos maiores eius facilis omnis qui!Repudiandae earum necessitatibus fuga natus optio voluptatem eveniet. Laborum, ducimus natus! Consectetur excepturi illo doloremque fugiat molestias quisquam nemo minima explicabo blanditiis earum quis, nesciunt beatae sequi velit ullam exercitationem.</p>
+            <p><?php echo $course->description ?> </p>
 
             <img src="assets/illustrations/course-images/data.svg" alt="">
-            <a href="#"> <button>Start Course</button></a>
+            <a href="learn.php?name= <?php echo $name ?>"> <button>Start Course</button></a>
 
             <ul>
                 <li>

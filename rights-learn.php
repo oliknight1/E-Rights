@@ -78,62 +78,35 @@
         </div>
 
     </nav>
-    <div class="home-wrapper">
 
 
+    <div class="learning-container">
+        <div class="learning-titles-container">
+            <h1>The Rights</h1>
+            <h2>1. Right to be informed</h2>
+        </div>
+        <div class="learning-content">
+            <div class="learning-text">
+                <h3>
+                    Encompasses your obligation to provide <b>‘fair processing information’</b>, typically through a
+                    <b>privacy
+                        notice.</b> It emphasises
+                    the need for transparency over how you use <b>personal data.</b>
 
-        <main class="all-courses-page">
-            <!-- Container around the list of courses -->
-            <div class="general-container">
-                <h2> General Data Protection Regulation</h2>
-                <!-- Course box -->
-                <div class="course-container">
-                    <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
-                    <div class="course-info">
-                        <h3>Principles</h3>
-                        <!-- Empty div to group progress and label together for layout -->
-                        <div>
-                            <p id="progress-amount"> </p>
-                            <div class="progress-bar">
-                                <div class="progress-done" data-done="50"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="course-container">
-                    <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
-                    <div class="course-info">
-                        <h3>Principles</h3>
-                        <!-- Empty div to group progress and label together for layout -->
-                        <div>
-                            <p id="progress-amount"> </p>
-                            <div class="progress-bar">
-                                <div class="progress-done" data-done="50"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="course-container">
-                    <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
-                    <div class="course-info">
-                        <h3>Principles</h3>
-                        <!-- Empty div to group progress and label together for layout -->
-                        <div>
-                            <p id="progress-amount"> </p>
-                            <div class="progress-bar">
-                                <div class="progress-done" data-done="50"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
+                </h3>
             </div>
-        </main>
-
-
+            <div class="learning-image">
+                <img src="assets/illustrations/learning-images/rights-1.svg" alt="right to be informed">
+            </div>
+        </div>
+        <div class="learning-buttons">
+            <div class="learning-button-left">
+            </div>
+            <div class="learning-button-right">
+                <a href="#"><button>Next</button></a>
+            </div>
+        </div>
     </div>
-
 
 
 
@@ -169,7 +142,7 @@
 
         </div>
         <div class="footer-image">
-            <img src=assets/logo/logo-horizontal-2.svg alt="404">
+            <img src="assets/logo/logo-horizontal-2.svg" alt="E-Rights Logo">
         </div>
 
     </footer>

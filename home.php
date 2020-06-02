@@ -1,8 +1,13 @@
 <?php
+
 require_once 'core/init.php';
 $user = new User();
-$user->findUser($_SESSION['user']);
 
+if (isset($_SESSION['user'])) {
+    $user->findUser($_SESSION['user']);
+} else {
+    Redirect::redirectTo("login.php");
+}
 ?>
 
 <html lang="en">
@@ -141,82 +146,27 @@ $user->findUser($_SESSION['user']);
     </div>
 
     <div class="home-wrapper">
-
-
-
         <main class="all-courses-page">
             <!-- Container around the list of courses -->
-            <div class="general-container">
+            <div class="general-container courses">
                 <h2> Assigned</h2>
                 <!-- Course box -->
-                <div class="course-container">
-                    <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
-                    <div class="course-info">
-                        <h3>Principles</h3>
-                        <!-- Empty div to group progress and label together for layout -->
-                        <div>
-                            <p id="progress-amount"> </p>
-                            <div class="progress-bar">
-                                <div class="progress-done" data-done="50"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="course-container">
-                    <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
-                    <div class="course-info">
-                        <h3>Principles</h3>
-                        <!-- Empty div to group progress and label together for layout -->
-                        <div>
-                            <p id="progress-amount"> </p>
-                            <div class="progress-bar">
-                                <div class="progress-done" data-done="50"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="course-container">
-                    <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
-                    <div class="course-info">
-                        <h3>Principles</h3>
-                        <!-- Empty div to group progress and label together for layout -->
-                        <div>
-                            <p id="progress-amount"> </p>
-                            <div class="progress-bar">
-                                <div class="progress-done" data-done="50"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
 
             </div>
-
             <!-- Container around the list of courses -->
-            <div class="general-container">
+            <div class="general-container courses" id="assigned">
                 <h2> In Progress</h2>
                 <!-- Course box -->
-                <div class="course-container">
-                    <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
-                    <div class="course-info">
-                        <h3>Principles</h3>
-                        <!-- Empty div to group progress and label together for layout -->
-                        <div>
-                            <p id="progress-amount"> </p>
-                            <div class="progress-bar">
-                                <div class="progress-done" data-done="50"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
 
             </div>
-        </main>
+
 
 
     </div>
+    </main>
+
+
+
 
 
 
@@ -258,6 +208,7 @@ $user->findUser($_SESSION['user']);
 
     </footer>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
