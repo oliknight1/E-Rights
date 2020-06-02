@@ -17,29 +17,9 @@ function togglePasswordVisibility(textBoxID) {
     }
 }
 
-//Onloads
+*/
 
-var slideNum;
-var slides;
-var dots;
 
-window.onload = function() {
-    if(document.querySelector(".welcome-body") !== null) {
-        slideNum = 0;
-        slides = document.getElementsByClassName("welcome-slide");
-        dots = document.getElementsByClassName("welcome-dot");
-        dots[0].onclick = function() { changeSlide(0); }
-        dots[1].onclick = function() { changeSlide(1); }
-        dots[2].onclick = function() { changeSlide(2); }
-        slideShow();
-    }
-    if(document.querySelector(".general-container")) {
-        fetchData();
-        document.getElementById("in-prog").onclick = function () { inProgressSelected(); }
-        document.getElementById("assigned").onclick = function () { assignedSelected(); }
-        document.getElementById("completed").onclick = function () {completedSelected();}
-    }
-};
 
 function slideShow() {
 
@@ -106,7 +86,9 @@ function changeSlide(id) {
 // Use set timeout to add an animation to it
 
 
-
+var slideNum;
+var slides;
+var dots;
 
 
 window.onload = function () {
@@ -123,6 +105,14 @@ window.onload = function () {
             completedSelected();
 
         }
+    } else if(document.querySelector(".welcome-body")) {
+        slideNum = 0;
+        slides = document.getElementsByClassName("welcome-slide");
+        dots = document.getElementsByClassName("welcome-dot");
+        dots[0].onclick = function() { changeSlide(0); }
+        dots[1].onclick = function() { changeSlide(1); }
+        dots[2].onclick = function() { changeSlide(2); }
+        slideShow();
     }
 
 };
