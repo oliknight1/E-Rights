@@ -123,6 +123,8 @@ window.onload = function () {
             completedSelected();
 
         }
+    } else if (document.querySelector(".home-wrapper") || document.querySelector(".all-courses-page")) {
+        fetchData();
     }
 
 };
@@ -280,6 +282,7 @@ function completedSelected() {
     document.querySelector(".selected").classList.remove("selected");
     document.querySelector("#completed").classList += "selected";
     var results = document.getElementsByClassName("course-container");
+
     if (results) {
         for (let i = 0; i < results.length; i++) {
             var dataDone = results[i].querySelector(".progress-done").getAttribute('data-done');
@@ -354,10 +357,11 @@ function generateResultDivs(result) {
             var courseContainer = document.createElement("div");
             courseLink.href = "course-overview.php?name=" + element.name;
             courseContainer.className = "course-container";
-            generateResultImage(courseContainer, "assets/illustrations/course-images/GDPR.svg");
+            generateResultImage(courseContainer, element);
             generateCourseInfo(courseContainer, element);
             courseLink.appendChild(courseContainer);
             generalContainer.appendChild(courseLink);
+
         });
         for (var i = 0; i < result.length; i++) {
             loadProgress(document.getElementsByClassName("progress-done")[i], document.getElementsByClassName("progress-amount")[i]);
@@ -365,9 +369,10 @@ function generateResultDivs(result) {
     }
 }
 
-function generateResultImage(div, imageSRC) {
+function generateResultImage(div, element) {
     var image = document.createElement("img");
-    image.src = imageSRC;
+    image.src = "assets/illustrations/course-images/" + element.img;
+    image.style.background = element.colour
     div.appendChild(image);
 }
 

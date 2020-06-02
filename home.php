@@ -146,22 +146,15 @@ if (isset($_SESSION['user'])) {
     </div>
 
     <div class="home-wrapper">
-
-
-
         <main class="all-courses-page">
             <!-- Container around the list of courses -->
-            <div class="general-container">
+            <div class="general-container courses">
                 <h2> Assigned</h2>
                 <!-- Course box -->
 
             </div>
-
-
-
-
             <!-- Container around the list of courses -->
-            <div class="general-container">
+            <div class="general-container courses" id="assigned">
                 <h2> In Progress</h2>
                 <!-- Course box -->
 
@@ -215,6 +208,7 @@ if (isset($_SESSION['user'])) {
 
     </footer>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
