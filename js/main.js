@@ -131,6 +131,7 @@ window.onload = function () {
     } else if(document.querySelector(".all-courses-page")) {
         if(screen.width <= 768) {
             modifyMobileCourseView();
+        }
     }
 
 };
