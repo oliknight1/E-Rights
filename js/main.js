@@ -94,6 +94,11 @@ request.open("GET","learning-data.json",false);
 request.send(null);
 var learningJson = JSON.parse(request.responseText);
 var currentLearningSlide = 0;
+var allAssigned = [];
+var allInProg = [];
+var currentAssigned = 0;
+var currentInProg = 0;
+
 
 
 window.onload = function () {
@@ -123,6 +128,9 @@ window.onload = function () {
         document.querySelector(".learning-button-left").onclick = function () {
             learningButtons(-1); }
         document.querySelector(".learning-button-right").onclick = function () { learningButtons(1); }
+    } else if(document.querySelector(".all-courses-page")) {
+        if(screen.width <= 768) {
+            modifyMobileCourseView();
     }
 
 };
