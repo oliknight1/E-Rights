@@ -114,7 +114,7 @@ if (isset($_GET['name'])) {
             <p><?php echo $course->description ?> </p>
 
             <img src="assets/illustrations/course-images/data.svg" alt="">
-            <a href="#"> <button>Start Course</button></a>
+            <a href="learn.php?name= <?php echo $name ?>"> <button>Start Course</button></a>
 
             <ul>
                 <li>
