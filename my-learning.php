@@ -103,7 +103,7 @@ if (isset($_SESSION['user'])) {
     </nav>
     <main class="my-learning">
         <div class="assigned-bar">
-            <ul>
+            <ul id="bar">
                 <li id="assigned" class="selected">Assigned</li>
                 <li id="in-prog">In Progress</li>
                 <li id="completed">Completed</li>
@@ -111,12 +111,8 @@ if (isset($_SESSION['user'])) {
             </ul>
         </div>
         <!-- Container around the list of courses -->
-        <div class="general-container">
-
+        <div class="general-container courses">
             <!-- Course box -->
-
-
-
         </div>
 
     </main>
@@ -155,6 +151,7 @@ if (isset($_SESSION['user'])) {
 
     </footer>
     <script type="text/javascript" src="js/main.js"></script>
+
 </body>
 
 

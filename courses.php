@@ -103,48 +103,7 @@ if (isset($_SESSION['user'])) {
 
         <main class="all-courses-page">
             <!-- Container around the list of courses -->
-            <div class="general-container">
-                <h2> General Data Protection Regulation</h2>
-                <!-- Course box -->
-                <div class="course-container">
-                    <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
-                    <div class="course-info">
-                        <h3>Principles</h3>
-                        <!-- Empty div to group progress and label together for layout -->
-                        <div>
-                            <p id="progress-amount"> </p>
-                            <div class="progress-bar">
-                                <div class="progress-done" data-done="50"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="course-container">
-                    <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
-                    <div class="course-info">
-                        <h3>Principles</h3>
-                        <!-- Empty div to group progress and label together for layout -->
-                        <div>
-                            <p id="progress-amount"> </p>
-                            <div class="progress-bar">
-                                <div class="progress-done" data-done="50"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="course-container">
-                    <img src="assets/illustrations/course-images/principles.svg" alt="Principles Course">
-                    <div class="course-info">
-                        <h3>Principles</h3>
-                        <!-- Empty div to group progress and label together for layout -->
-                        <div>
-                            <p id="progress-amount"> </p>
-                            <div class="progress-bar">
-                                <div class="progress-done" data-done="50"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="general-container courses">
 
 
             </div>
