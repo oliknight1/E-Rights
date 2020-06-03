@@ -153,7 +153,7 @@ function learningButtons(change) {
     var max = 7;
     if (url.search) {
         var GETRequest = url.search.substr(6);
-        if (GETRequest == "GDPR+principles") {
+        if (GETRequest == "GDPR+Principles") {
             max = 5;
         }
     } else {
@@ -169,9 +169,9 @@ function displayLearning(learningSlideNum) {
     var url = window.location;
     if (url.search) {
         var GETRequest = url.search.substr(6);
-        if (GETRequest == "GDPR+rights") {
+        if (GETRequest == "GDPR+Rights") {
             fillLearningContent(learningJson.rights[learningSlideNum], "The Rights");
-        } else if (GETRequest == "GDPR+principles") {
+        } else if (GETRequest == "GDPR+Principles") {
             fillLearningContent(learningJson.principles[learningSlideNum], "The Principles");
         } else {
             window.location.replace("http://ok131.brighton.domains/ci536/site/e-rights/404.html");
