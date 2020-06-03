@@ -456,9 +456,9 @@
     .results-title {
         height: 7vh;
         border-bottom: 4px solid var(--main-blue);
-}
+    }
 
-    .results-title h1{
+    .results-title h1 {
         font-size: 5vh;
     }
 
@@ -474,6 +474,12 @@
     .results-buttons-container button {
         font-size: 2vh;
         margin: 2vh;
+    }
+
+    .all-courses-page .general-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        row-gap: 20vh;
+        padding: 10em 1em;
     }
 
 }
@@ -1026,9 +1032,9 @@
     .results-title {
         height: 7vh;
         border-bottom: 4px solid var(--main-blue);
-}
+    }
 
-    .results-title h1{
+    .results-title h1 {
         font-size: 5vh;
     }
 
@@ -1046,6 +1052,10 @@
         margin: 4vh;
     }
 
+    .all-courses-page .general-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 9em 2em !important;
+    }
 }
 
 /* Landscape styles */
@@ -1203,6 +1213,12 @@
 
     .home-info-profile-icon {
         width: 18vw;
+    }
+
+    .all-courses-page .general-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 9em 2em !important;
+        row-gap: 20vh !important;
     }
 }
 
@@ -1368,5 +1384,11 @@
     .details-container p {
         font-size: 1.8em;
         width: 30vw;
+    }
+
+    .all-courses-page .general-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 9em 2em !important;
+        row-gap: 20vh !important;
     }
 }

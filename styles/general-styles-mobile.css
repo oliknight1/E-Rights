@@ -278,14 +278,6 @@
 
     /* course */
 
-    .all-courses-page .general-container {
-        padding: 0em;
-        min-height: 35vh;
-    }
-
-    .all-courses-page .general-container h2 {
-        padding: 4vw;
-    }
 
     .course-container {
         width: 18vw;
