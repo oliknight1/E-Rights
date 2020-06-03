@@ -63,15 +63,15 @@
                 <i class="fas fa-home"></i>
                 <span>Home</span>
             </a>
-            <a href="#">
+            <a href="courses.php">
                 <i class="fas fa-book-open"></i>
                 <p>All Courses</p>
             </a>
-            <a href="#">
+            <a href="my-learning.php">
                 <i class="fas fa-graduation-cap"></i>
                 <span>My Learning</span>
             </a>
-            <a href="#">
+            <a href="account.php">
                 <i class="fas fa-user"></i>
                 <span>Account</span>
             </a>
@@ -80,36 +80,63 @@
     </nav>
 
 
-    <div class="learning-container">
-        <div class="learning-titles-container">
+    <div class="questions-container">
+        <div class="questions-title">
             <h1>The Rights</h1>
-            <h2>1. Right to be informed</h2>
         </div>
-        <div class="learning-content">
-            <div class="learning-text">
-                <h3>
-                    Encompasses your obligation to provide <b>‘fair processing information’</b>, typically through a
-                    <b>privacy
-                        notice.</b> It emphasises
-                    the need for transparency over how you use <b>personal data.</b>
 
-                </h3>
+        <h2>Question 2</h2>
+
+        <h3>What does the second principle allow you to do with data collected?
+
+        </h3>
+        <div class="questions-content">
+            <div class="questions">
+
+                <div class="question-row">
+                    <input type="checkbox" value="#">
+                    <div class="questions-text">
+                        <label>Send to other data collecting businesses
+                        </label>
+                    </div>
+
+                </div>
+                <div class="question-row">
+                    <input type="checkbox" value="#">
+                    <div class="questions-text">
+                        <label>Process for scientific purposes
+
+                        </label>
+                    </div>
+
+                </div>
+                <div class="question-row">
+                    <input type="checkbox" value="#">
+                    <div class="questions-text">
+                        <label>Nothing
+
+                        </label>
+                    </div>
+
+                </div>
+                <div class="question-row">
+                    <input type="checkbox" value="#">
+                    <div class="questions-text">
+                        <label>Anything
+                        </label>
+                    </div>
+
+                </div>
+
+
+
             </div>
-            <div class="learning-image">
-                <img src="assets/illustrations/learning-images/rights-1.svg" alt="right to be informed">
-            </div>
+            <img src="assets/learning-img/rights-1.svg">
+
         </div>
-        <div class="learning-buttons">
-            <div class="learning-button-left">
-            </div>
-            <div class="learning-button-right">
-                <a href="#"><button>Next</button></a>
-            </div>
-        </div>
+        <a href="#"><button>Next</button></a>
+
     </div>
-
-
-
 
     <footer>
         <div class="footer-row-container">

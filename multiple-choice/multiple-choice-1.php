@@ -63,15 +63,15 @@
                 <i class="fas fa-home"></i>
                 <span>Home</span>
             </a>
-            <a href="#">
+            <a href="courses.php">
                 <i class="fas fa-book-open"></i>
                 <p>All Courses</p>
             </a>
-            <a href="#">
+            <a href="my-learning.php">
                 <i class="fas fa-graduation-cap"></i>
                 <span>My Learning</span>
             </a>
-            <a href="#">
+            <a href="account.php">
                 <i class="fas fa-user"></i>
                 <span>Account</span>
             </a>

@@ -63,15 +63,15 @@
                 <i class="fas fa-home"></i>
                 <span>Home</span>
             </a>
-            <a href="#">
+            <a href="courses.php">
                 <i class="fas fa-book-open"></i>
                 <p>All Courses</p>
             </a>
-            <a href="#">
+            <a href="my-learning.php">
                 <i class="fas fa-graduation-cap"></i>
                 <span>My Learning</span>
             </a>
-            <a href="#">
+            <a href="account.php">
                 <i class="fas fa-user"></i>
                 <span>Account</span>
             </a>
@@ -80,42 +80,47 @@
     </nav>
 
 
-    <div class="learning-container">
-        <div class="learning-titles-container">
-            <h1>The Principles</h1>
-            <h2>1. Purpose Limitation</h2>
+    <div class="questions-container">
+        <div class="questions-title">
+            <h1>The Rights</h1>
         </div>
-        <div class="learning-content">
-            <div class="learning-text">
-                <h3>
-                    Personal Data shall be <b>collected for specified</b>, explicit and legitimate purposes and not
-                    further
-                    processed in a manner
-                    that is incompatible with those purposes; <b>further processing</b> for archiving purposes in the
-                    public
-                    interest, scientific
-                    or historical research purposes or statistical purposes shall not be considered to be
-                    <b>incompatible
-                        with the initial</b>
-                    purposes.
 
-                </h3>
+        <h2>Question 6</h2>
+
+        <h3>The fourth principle requires inaccurate data to be erased or rectified without delay
+
+
+
+
+
+        </h3>
+        <div class="questions-content">
+            <div class="questions">
+
+                <div class="question-row">
+                    <input type="checkbox" value="#">
+                    <div class="questions-text">
+                        <label>True
+                        </label>
+                    </div>
+
+                </div>
+                <div class="question-row">
+                    <input type="checkbox" value="#">
+                    <div class="questions-text">
+                        <label>False
+                        </label>
+                    </div>
+
+                </div>
+
             </div>
-            <div class="learning-image">
-                <img src="assets/illustrations/learning-images/rights-1.svg" alt="right to be informed">
-            </div>
+            <img src="assets/learning-img/rights-1.svg">
+
         </div>
-        <div class="learning-buttons">
-            <div class="learning-button-left">
-            </div>
-            <div class="learning-button-right">
-                <a href="#"><button>Next</button></a>
-            </div>
-        </div>
+        <a href="#"><button>Next</button></a>
+
     </div>
-
-
-
 
     <footer>
         <div class="footer-row-container">
