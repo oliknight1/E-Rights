@@ -59,31 +59,26 @@ function changeSlide(id) {
 }
 // Hamburger menu 
 
-/*const menuControl = e => {
+const menuControl = e => {
 
     const overlay = document.querySelector('.hamburger-menu');
     const overlayChildren = document.querySelector('.hamburger-menu>*');
     if (e.target.id === 'open-menu') {
         overlay.style.transform = 'translateX(0)';
         overlayChildren.style.opacity = 1;
+        document.querySelector("body").style.overflow = "hidden";
 
     } else {
         overlay.style.transform = 'translateX(-100%)';
-
         overlayChildren.style.opacity = 0;
+        document.querySelector("body").style.overflow = "auto";
+
     }
 }
 
-//document.querySelector('#close-menu').addEventListener("click", menuControl);
-//document.querySelector('#open-menu').addEventListener("click", menuControl);
+document.querySelector('#close-menu').addEventListener("click", menuControl);
+document.querySelector('#open-menu').addEventListener("click", menuControl);
 
-// Progress Bar Concept - will be adapted when the courses are created dynamically
-
-*/
-
-
-//const progressBar = document.querySelector('.progress-done');
-// Use set timeout to add an animation to it
 
 
 var slideNum;
@@ -448,11 +443,11 @@ function generateResultDivs(result) {
                 cont.appendChild(courseLink);
 
             });
+            for (var i = 0; i < result.length * generalContainer.length; i++) {
+                loadProgress(document.getElementsByClassName("progress-done")[i], document.getElementsByClassName("progress-amount")[i]);
+            }
         })
 
-        for (var i = 0; i < result.length; i++) {
-            loadProgress(document.getElementsByClassName("progress-done")[i], document.getElementsByClassName("progress-amount")[i]);
-        }
     }
 }
 
