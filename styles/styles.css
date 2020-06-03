@@ -1347,6 +1347,7 @@
     border: var(--main-blue) 3px solid;
     outline: none;
     margin: 2vh 0;
+    height: 5vh;
 
 }
 
