@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/responsive-tablet.css">
-    <link rel="stylesheet" href="styles/responsive-mobile.css">
-    <link rel="stylesheet" href="styles/general-styles.css">
-    <link rel="stylesheet" href="styles/general-styles-mobile.css">
-    <link rel="stylesheet" href="styles/general-styles-tablet.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/responsive-tablet.css">
+    <link rel="stylesheet" href="../styles/responsive-mobile.css">
+    <link rel="stylesheet" href="../styles/general-styles.css">
+    <link rel="stylesheet" href="../styles/general-styles-mobile.css">
+    <link rel="stylesheet" href="../styles/general-styles-tablet.css">
     <script src="https://kit.fontawesome.com/96867cee00.js"></script>
 </head>
 
@@ -55,7 +55,7 @@
 
         <!-- Navbar -->
         <a href="home.php">
-            <img src=assets/logo/logo-horizontal-2.svg alt="Site Logo">
+            <img src="../assets/logo/logo-horizontal-2.svg" alt="Site Logo">
         </a>
 
         <div class="link-container">
@@ -80,6 +80,7 @@
     </nav>
 
 
+
     <div class="questions-container">
         <div class="questions-title">
             <h1>The Rights</h1>
@@ -96,7 +97,7 @@
             <div class="questions">
 
                 <div class="question-row">
-                    <input type="checkbox" value="#">
+                    <input type="radio" value="#">
                     <div class="questions-text">
                         <label>Data to be deleted as soon as it’s inaccurate
                         </label>
@@ -104,7 +105,7 @@
 
                 </div>
                 <div class="question-row">
-                    <input type="checkbox" value="#">
+                    <input type="radio" value="#">
                     <div class="questions-text">
                         <label>Data to be kept as accurate as possible
                         </label>
@@ -112,7 +113,7 @@
 
                 </div>
                 <div class="question-row">
-                    <input type="checkbox" value="#">
+                    <input type="radio" value="#">
                     <div class="questions-text">
                         <label>Data minimisation
                         </label>
@@ -120,7 +121,7 @@
 
                 </div>
                 <div class="question-row">
-                    <input type="checkbox" value="#">
+                    <input type="radio" value="#">
                     <div class="questions-text">
                         <label>Data to only be processed for lawful reasons
 
@@ -130,7 +131,7 @@
 
                 </div>
                  <div class="question-row">
-                    <input type="checkbox" value="#">
+                    <input type="radio" value="#">
                     <div class="questions-text">
                         <label>Data to be rectified if found to be inaccurate
 
@@ -182,11 +183,11 @@
 
         </div>
         <div class="footer-image">
-            <img src="assets/logo/logo-horizontal-2.svg" alt="E-Rights Logo">
+            <img src="../assets/logo/logo-horizontal-2.svg" alt="E-Rights Logo">
         </div>
 
     </footer>
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

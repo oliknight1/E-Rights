@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/responsive-tablet.css">
-    <link rel="stylesheet" href="styles/responsive-mobile.css">
-    <link rel="stylesheet" href="styles/general-styles.css">
-    <link rel="stylesheet" href="styles/general-styles-mobile.css">
-    <link rel="stylesheet" href="styles/general-styles-tablet.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/responsive-tablet.css">
+    <link rel="stylesheet" href="../styles/responsive-mobile.css">
+    <link rel="stylesheet" href="../styles/general-styles.css">
+    <link rel="stylesheet" href="../styles/general-styles-mobile.css">
+    <link rel="stylesheet" href="../styles/general-styles-tablet.css">
     <script src="https://kit.fontawesome.com/96867cee00.js"></script>
 </head>
 
@@ -55,7 +55,7 @@
 
         <!-- Navbar -->
         <a href="home.php">
-            <img src=assets/logo/logo-horizontal-2.svg alt="Site Logo">
+            <img src="../assets/logo/logo-horizontal-2.svg" alt="Site Logo">
         </a>
 
         <div class="link-container">
@@ -93,7 +93,7 @@
             <div class="questions">
 
                 <div class="question-row">
-                    <input type="checkbox" value="#">
+                    <input type="radio" value="#">
                     <div class="questions-text">
                         <label>the right to do whatever you like
 
@@ -102,7 +102,7 @@
 
                 </div>
                 <div class="question-row">
-                    <input type="checkbox" value="#">
+                    <input type="radio" value="#">
                     <div class="questions-text">
                         <label>the right to access your personal information
 
@@ -111,7 +111,7 @@
 
                 </div>
                 <div class="question-row">
-                    <input type="checkbox" value="#">
+                    <input type="radio" value="#">
                     <div class="questions-text">
                         <label>the right to browse the internet
 
@@ -121,7 +121,7 @@
 
                 </div>
                 <div class="question-row">
-                    <input type="checkbox" value="#">
+                    <input type="radio" value="#">
                     <div class="questions-text">
                         <label>the right to restrict your data from being processed
                         </label>
@@ -139,7 +139,7 @@
 
     </div>
 
-    <footer>
+   <footer>
         <div class="footer-row-container">
             <div class="footer-row-text">
                 <a href="#" class="footer-row-links">
@@ -170,11 +170,11 @@
 
         </div>
         <div class="footer-image">
-            <img src="assets/logo/logo-horizontal-2.svg" alt="E-Rights Logo">
+            <img src="../assets/logo/logo-horizontal-2.svg" alt="E-Rights Logo">
         </div>
 
     </footer>
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
