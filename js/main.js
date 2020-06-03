@@ -647,6 +647,7 @@ function generateResultDivs(result) {
             for (var i = 0; i < result.length * generalContainer.length; i++) {
                 loadProgress(document.getElementsByClassName("progress-done")[i], document.getElementsByClassName("progress-amount")[i]);
             }
+            loopTimes = 0;
         })
 
     }
