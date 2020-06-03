@@ -113,7 +113,7 @@ if (isset($_SESSION['user'])) {
         <div class="home-info-profile-container">
 
             <div class="profile-icon">
-                T
+                <?php echo $user->getData()['username'][0] ?>
             </div>
             <div class="home-info-profile-content">
 
@@ -123,7 +123,7 @@ if (isset($_SESSION['user'])) {
                         Assigned
                     </div>
                     <div class="home-info-profile-content-amount">
-                        4
+                        0
                     </div>
 
                 </div>
