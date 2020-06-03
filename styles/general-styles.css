@@ -235,6 +235,32 @@ nav img {
 
 }
 
+.course-container-2 {
+    width: 13vw;
+    height: 16vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 2em 2em;
+    transition: all .3s ease-in-out;
+
+
+}
+
+.course-container-2:hover {
+    box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.4);
+}
+
+.course-container-2 img {
+    width: 100%;
+    height: 16vh;
+    border-radius: 2em 2em 0em 0em;
+    background-color: #00B9C8;
+
+}
+
 .course-info {
     position: relative;
     text-align: center;
