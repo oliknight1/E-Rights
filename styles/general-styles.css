@@ -184,9 +184,16 @@ nav img {
     flex-direction: column;
 }
 
+.profile-icon-container {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .profile-icon {
-    height: 26vh;
-    width: 10vw;
+
     background-color: #ffffff;
     border-radius: 50%;
     display: flex;

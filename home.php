@@ -102,18 +102,20 @@ if (isset($_SESSION['user'])) {
         <div class="home-info-text-container">
 
             <div class="home-info-text-title">
-                All Courses
+                <p>Hi <?php echo $user->getData()['username'] ?>!</p>
             </div>
             <div class="home-info-text-content">
-               Welcome to E-Rights home, you can access all of your assignment and outstanding tasks here.
+                Welcome to E-Rights home, you can access all of your assignment and outstanding tasks here.
             </div>
 
         </div>
         <div class="home-info-profile-container">
-
-            <div class="profile-icon">
-                <?php echo $user->getData()['username'][0] ?>
+            <div class="profile-icon-container">
+                <div class="profile-icon">
+                    <?php echo $user->getData()['username'][0] ?>
+                </div>
             </div>
+
             <div class="home-info-profile-content">
 
                 <div class="home-info-profile-content-box">
