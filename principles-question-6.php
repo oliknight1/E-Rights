@@ -118,14 +118,14 @@ if (isset($_SESSION['user'])) {
             <div class="questions">
 
                 <div class="question-row">
-                    <input type="radio" value="#">
+                    <input type="radio" value="#" name="option">
                     <div class="questions-text">
                         <label>True</label>
                     </div>
 
                 </div>
                 <div class="question-row">
-                    <input type="radio" value="#">
+                    <input type="radio" value="#" name="option">
                     <div class="questions-text">
                         <label>False
                         </label>

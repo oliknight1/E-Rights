@@ -99,7 +99,7 @@ if (isset($_SESSION['user'])) {
     </nav>
 
 
-    <div class="questions-container">
+    <div class="questions-container" id="rights">
         <div class="questions-title">
             <h1>The Rights</h1>
         </div>
@@ -108,24 +108,20 @@ if (isset($_SESSION['user'])) {
 
         <h3>Which of these are subject rights?
         </h3>
-        <div class="questions-content">
+        <div class="questions-content" id="question-1">
             <div class="questions">
 
                 <div class="question-row">
                     <input type="checkbox" value="#">
                     <div class="questions-text">
-                        <label>Rights in relation to automated decision making and profiling
-
-                        </label>
+                        <label>Rights in relation to automated decision making and profiling</label>
                     </div>
 
                 </div>
                 <div class="question-row">
                     <input type="checkbox" value="#">
                     <div class="questions-text">
-                        <label>The right to object
-
-                        </label>
+                        <label>The right to object</label>
                     </div>
 
                 </div>
@@ -142,27 +138,21 @@ if (isset($_SESSION['user'])) {
                 <div class="question-row">
                     <input type="checkbox" value="#">
                     <div class="questions-text">
-                        <label>The right to erasure
-
-                        </label>
+                        <label>The right to erasure</label>
                     </div>
 
                 </div>
                   <div class="question-row">
                     <input type="checkbox" value="#">
                     <div class="questions-text">
-                        <label>The right to rectification
-
-                        </label>
+                        <label>The right to rectification</label>
                     </div>
 
                 </div>
                   <div class="question-row">
                     <input type="checkbox" value="#">
                     <div class="questions-text">
-                        <label>The right to be informed
-
-                        </label>
+                        <label>The right to be informed</label>
                     </div>
 
                 </div>
@@ -173,7 +163,7 @@ if (isset($_SESSION['user'])) {
             <img src="assets/learning-img/rights-1.svg">
 
         </div>
-        <a href="#"><button>Next</button></a>
+        <a href="#"><button id="next-button">Next</button></a>
 
     </div>
 

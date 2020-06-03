@@ -159,12 +159,96 @@ window.onload = function () {
 
 };
 
+function nextRightsQuestion() {
+    if(document.querySelector("#question-1")) {
+        if(checkCheckboxAnswer() == "") {
+            alert("Please select an answer before moving on");
+        } else if(checkCheckboxAnswer() == "Rights in relation to automated decision making and profilingThe right to objectThe right to erasureThe right to rectificationThe right to be informed") {
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/rights-question-2.php?q=1");
+        } else {
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/rights-question-2.php?q=0");
+        }
+    } else if(document.querySelector("#question-2")) {
+        score = window.location.search.substr(3);
+        if(checkCheckboxAnswer() == "") {
+            alert("Please select an answer before moving on");
+        } else if(checkCheckboxAnswer() == "The right to objectThe right to erasure") {
+            score++;
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/rights-question-3.php?q="+score);
+        } else {
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/rights-question-3.php?q="+score);
+        }
+    } else if(document.querySelector("#question-3")) {
+        score = window.location.search.substr(3);
+        if(!checkRadioAnswer()) {
+            alert("Please select an answer before moving on");
+        } else if(checkRadioAnswer() == "The right to object") {
+            score++;
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/rights-question-4.php?q="+score);
+        } else {
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/rights-question-4.php?q="+score);
+        }
+    } else if(document.querySelector("#question-4")) {
+        score = window.location.search.substr(3);
+        if(!checkRadioAnswer()) {
+            alert("Please select an answer before moving on");
+        } else if(checkRadioAnswer() == "the right to access your personal information") {
+            score++;
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/rights-question-5.php?q="+score);
+        } else {
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/rights-question-5.php?q="+score);
+        }
+    } else if(document.querySelector("#question-5")) {
+        score = window.location.search.substr(3);
+        if(!checkRadioAnswer()) {
+            alert("Please select an answer before moving on");
+        } else if(checkRadioAnswer() == "False") {
+            score++;
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/rights-question-6.php?q="+score);
+        } else {
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/rights-question-6.php?q="+score);
+        }
+    } else if(document.querySelector("#question-6")) {
+        score = window.location.search.substr(3);
+        if(!checkRadioAnswer()) {
+            alert("Please select an answer before moving on");
+        } else if(checkRadioAnswer() == "True") {
+            score++;
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/rights-question-7.php?q="+score);
+        } else {
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/rights-question-7.php?q="+score);
+        }
+    } else if(document.querySelector("#question-7")) {
+        score = window.location.search.substr(3);
+        if(!checkRadioAnswer()) {
+            alert("Please select an answer before moving on");
+        } else if(checkRadioAnswer() == "fair processing information") {
+            score++;
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/rights-question-8.php?q="+score);
+        } else {
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/rights-question-8.php?q="+score);
+        }
+    } else if(document.querySelector("#question-8")) {
+        score = window.location.search.substr(3);
+        if(!checkRadioAnswer()) {
+            alert("Please select an answer before moving on");
+        } else if(checkRadioAnswer() == "Forgotten") {
+            score++;
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/results.php?r="+score);
+        } else {
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/results.php?r="+score);
+        }
+    }
+}
+
 function prepareResults() {
     var score = window.location.search.substr(3);
     var course = window.location.search.substr(1,2);
     if(course == "p=") {
+        document.querySelector(".results-buttons-container").querySelector("a").href = "http://sp1178.brighton.domains/erightsfinal/principles-question-1.php";
         var courseMax = 6;
     } else {
+        document.querySelector(".results-buttons-container").querySelector("a").href = "http://sp1178.brighton.domains/erightsfinal/rights-question-1.php";
         var courseMax = 8
     }
     document.querySelector(".results-container").querySelector("h2").textContent = "Your Score is "+score+"/"+courseMax;
@@ -263,7 +347,7 @@ function learningButtons(change) {
             max = 5;
         }
     } else {
-        window.location.replace("http://ok131.brighton.domains/ci536/site/e-rights/404.html");
+        window.location.replace("http://sp1178.brighton.domains/erightsfinal/404.html");
     }
     if (currentLearningSlide + change >= 0 && currentLearningSlide + change <= max) {
         currentLearningSlide += change;
@@ -291,10 +375,10 @@ function displayLearning(learningSlideNum,max) {
         } else if (GETRequest == "GDPR+Principles") {
             fillLearningContent(learningJson.principles[learningSlideNum], "The Principles");
         } else {
-            window.location.replace("http://ok131.brighton.domains/ci536/site/e-rights/404.html");
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/404.html");
         }
     } else {
-        window.location.replace("http://ok131.brighton.domains/ci536/site/e-rights/404.html");
+        window.location.replace("http://sp1178.brighton.domains/erightsfinal/404.html");
     }
 }
 
@@ -492,20 +576,6 @@ function completedSelected() {
     }
 }
 
-//FOR REFERENCE
-function loadProgressUnadapted() {
-    const progressBar = document.querySelector('.progress-done');
-    // Use set timeout to add an animation to it
-    setTimeout(() => {
-
-        // Set the width of the blue section to how much progress has been made
-        progressBar.style.width = progressBar.getAttribute('data-done') + '%';
-        progressBar.style.opacity = 1;
-        // Set text above progress bar to the amount of progress made
-        document.querySelector('#progress-amount').textContent = 'Progress: ' + progressBar.getAttribute('data-done') + '%';
-
-    }, 200);
-}
 
 function loadProgress(progDone, progAmount) {
     // Use set timeout to add an animation to it
@@ -548,17 +618,30 @@ function fetchData(category) {
 
 function generateResultDivs(result) {
     var generalContainer = document.querySelectorAll(".general-container");
+    var loopTimes = 0;
+    var home = false;
+    if(document.querySelector(".home-info-container")) {
+        console.log("home detected");
+        home = true;
+        loopTimes = 0;
+    }
     if (result) {
         generalContainer.forEach(cont => {
             result.forEach(element => {
-                var courseLink = document.createElement("a");
-                var courseContainer = document.createElement("div");
-                courseLink.href = "course-overview.php?name=" + element.name;
-                courseContainer.className = "course-container";
-                generateResultImage(courseContainer, element);
-                generateCourseInfo(courseContainer, element);
-                courseLink.appendChild(courseContainer);
-                cont.appendChild(courseLink);
+                if(loopTimes < 2) {
+                    console.log("uhh");
+                    var courseLink = document.createElement("a");
+                    var courseContainer = document.createElement("div");
+                    courseLink.href = "course-overview.php?name=" + element.name;
+                    courseContainer.className = "course-container";
+                    generateResultImage(courseContainer, element);
+                    generateCourseInfo(courseContainer, element);
+                    courseLink.appendChild(courseContainer);
+                    cont.appendChild(courseLink);
+                    if(home) {
+                        loopTimes++;
+                    }
+                }
 
             });
             for (var i = 0; i < result.length * generalContainer.length; i++) {
