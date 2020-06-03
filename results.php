@@ -88,7 +88,7 @@
         <h2></h2>
 
         <div class="results-buttons-container">
-            <a href="http://sp1178.brighton.domains/erightsfinal/principles-question-1.php"><button>Try Again</button></a>
+            <a href="#"><button>Try Again</button></a>
         </div>
     </div>
 
