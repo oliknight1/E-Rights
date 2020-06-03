@@ -491,7 +491,7 @@
         font-size: 1.2vh;
         width: 43vw;
         height: 60vh;
-          margin-left: 46vw;
+        margin-left: 46vw;
     }
 
     .welcome-course-container {
@@ -510,7 +510,7 @@
     .welcome-slider-text {
         width: 65vw;
         font-size: 1.7vh;
-     
+
     }
 
     .welcome-slider-button {
@@ -578,14 +578,14 @@
         }
     }
 
-/* results */
+    /* results */
 
     .results-title {
         height: 7vh;
         border-bottom: 2px solid var(--main-blue);
-}
+    }
 
-    .results-title h1{
+    .results-title h1 {
         font-size: 5vh;
     }
 
@@ -605,11 +605,11 @@
     }
 
     .results-buttons-container {
-    flex-direction: column;
+        flex-direction: column;
     }
 
 
-     /* courses */
+    /* courses */
 
     .welcome-page .general-container {
         grid-template-columns: 1fr 1fr;
@@ -618,9 +618,12 @@
     }
 
     .all-courses-page .general-container {
+        width: 90vw;
         grid-template-columns: 1fr 1fr;
-        padding: 0 1em;
-        min-height: 30vh;
+        padding: 8em 0;
+        height: fit-content;
+        row-gap: 40vh;
+
     }
 
 
@@ -1133,9 +1136,9 @@
     .results-title {
         height: 7vh;
         border-bottom: 2px solid var(--main-blue);
-}
+    }
 
-    .results-title h1{
+    .results-title h1 {
         font-size: 5vh;
     }
 
@@ -1155,10 +1158,10 @@
     }
 
     .results-buttons-container {
-    flex-direction: column;
+        flex-direction: column;
     }
 
-     /* courses */
+    /* courses */
 
     .welcome-page .general-container {
         grid-template-columns: 1fr 1fr;
@@ -1167,10 +1170,14 @@
     }
 
     .all-courses-page .general-container {
+        width: 90vw;
         grid-template-columns: 1fr 1fr;
-        padding: 0 1em;
-        min-height: 30vh;
+        padding: 8em 0;
+        height: fit-content;
+        row-gap: 40vh;
+
     }
+
 }
 
 /* Large Phones */
@@ -1701,14 +1708,14 @@
         margin-bottom: 8vh;
     }
 
-      /* results */
+    /* results */
 
     .results-title {
         height: 7vh;
         border-bottom: 2px solid var(--main-blue);
-}
+    }
 
-    .results-title h1{
+    .results-title h1 {
         font-size: 5vh;
     }
 
@@ -1728,7 +1735,7 @@
     }
 
     .results-buttons-container {
-    flex-direction: column;
+        flex-direction: column;
     }
 
     /* courses */
@@ -1739,11 +1746,7 @@
         min-height: 30vh;
     }
 
-    .all-courses-page .general-container {
-        grid-template-columns: 1fr 1fr;
-        padding: 0 1em;
-        min-height: 30vh;
-    }
+
 
 }
 
