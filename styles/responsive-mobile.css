@@ -608,6 +608,22 @@
     flex-direction: column;
     }
 
+
+     /* courses */
+
+    .welcome-page .general-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 1em;
+        min-height: 30vh;
+    }
+
+    .all-courses-page .general-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 1em;
+        min-height: 30vh;
+    }
+
+
 }
 
 /* Medium Phones */
@@ -667,31 +683,6 @@
     .signup input,
     .signup select {
         font-size: 1.3em !important;
-    }
-
-    /* course */
-
-
-    /* making it so only two course display on mobile */
-    .course-content>div:nth-child(3) {
-        visibility: hidden;
-    }
-
-    .course-content>div:nth-child(4) {
-        visibility: hidden;
-    }
-
-    .course-content {
-        grid-template-columns: repeat(auto-fit, minmax(35vw, 1fr));
-        padding: 0;
-    }
-
-    .course-container {
-        height: 35vh;
-    }
-
-    .course-wrapper {
-        margin-top: -10vh;
     }
 
 
@@ -860,32 +851,6 @@
         font-size: 2.5vh;
     }
 
-
-    /* course box */
-
-    .course-header {
-        font-size: 2.5vh;
-    }
-
-    .course-box {
-        height: 20vh;
-        width: 27vw;
-    }
-
-    .course-color {
-        width: 27vw;
-        height: 16vh;
-    }
-
-    .course-text {
-        width: 26vw;
-        font-size: 2vh;
-    }
-
-    .course-img img {
-        width: 20vw;
-        height: 10vh;
-    }
 
 
     /* footer */
@@ -1111,41 +1076,6 @@
         font-size: 2.5vh;
     }
 
-
-
-    /* course box */
-
-    .course-header {
-        font-size: 2.5vh;
-    }
-
-    .course-box {
-        height: 20vh;
-        width: 27vw;
-    }
-
-    .course-color {
-        width: 27vw;
-        height: 16vh;
-    }
-
-    .course-text {
-        width: 26vw;
-        font-size: 2vh;
-    }
-
-    .course-img img {
-        width: 20vw;
-        height: 10vh;
-    }
-
-
-
-
-
-
-
-
     /* info bar */
     .home-info-container {
         flex-direction: column;
@@ -1226,6 +1156,20 @@
 
     .results-buttons-container {
     flex-direction: column;
+    }
+
+     /* courses */
+
+    .welcome-page .general-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 1em;
+        min-height: 30vh;
+    }
+
+    .all-courses-page .general-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 1em;
+        min-height: 30vh;
     }
 }
 
@@ -1621,54 +1565,6 @@
     }
 
 
-    /* making it so only two course display on mobile */
-    .course-content>div:nth-child(3) {
-        visibility: hidden;
-    }
-
-    .course-content>div:nth-child(4) {
-        visibility: hidden;
-    }
-
-    .course-content {
-        grid-template-columns: repeat(auto-fit, minmax(35vw, 1fr));
-        padding: 0;
-    }
-
-    .course-container {
-        height: 35vh;
-    }
-
-    .course-wrapper {
-        margin-top: -10vh;
-    }
-
-    /* course box */
-
-    .course-header {
-        font-size: 2.5vh;
-    }
-
-    .course-box {
-        height: 20vh;
-        width: 27vw;
-    }
-
-    .course-color {
-        width: 27vw;
-        height: 16vh;
-    }
-
-    .course-text {
-        width: 26vw;
-        font-size: 2vh;
-    }
-
-    .course-img img {
-        width: 20vw;
-        height: 10vh;
-    }
-
     /* Course Overview Styling */
     .course-overview {
         height: fit-content;
@@ -1833,6 +1729,20 @@
 
     .results-buttons-container {
     flex-direction: column;
+    }
+
+    /* courses */
+
+    .welcome-page .general-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 1em;
+        min-height: 30vh;
+    }
+
+    .all-courses-page .general-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 1em;
+        min-height: 30vh;
     }
 
 }
