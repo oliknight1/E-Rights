@@ -491,7 +491,7 @@
         font-size: 1.2vh;
         width: 43vw;
         height: 60vh;
-        margin-left: 41vw;
+          margin-left: 46vw;
     }
 
     .welcome-course-container {
@@ -510,6 +510,7 @@
     .welcome-slider-text {
         width: 65vw;
         font-size: 1.7vh;
+     
     }
 
     .welcome-slider-button {
@@ -751,7 +752,7 @@
         font-size: 1.2vh;
         width: 43vw;
         height: 60vh;
-        margin-left: 41vw;
+        margin-left: 46vw;
     }
 
     .welcome-course-container {
@@ -773,18 +774,18 @@
     }
 
     .welcome-slider-button {
-        width: 20vw;
+        width: 25vw;
         border-radius: 35px;
     }
 
     .welcome-dot {
-        height: 30px;
-        width: 30px;
+        height: 15px;
+        width: 15px;
     }
 
     .welcome-dot-selected {
-        height: 34px;
-        width: 34px;
+        height: 20px;
+        width: 20px;
     }
 
 
@@ -1577,7 +1578,7 @@
         font-size: 1.2vh;
         width: 43vw;
         height: 60vh;
-        margin-left: 41vw;
+        margin-left: 46vw;
     }
 
     .welcome-course-container {
@@ -1599,18 +1600,18 @@
     }
 
     .welcome-slider-button {
-        width: 20vw;
+        width: 25vw;
         border-radius: 35px;
     }
 
     .welcome-dot {
-        height: 30px;
-        width: 30px;
+        height: 15px;
+        width: 15px;
     }
 
     .welcome-dot-selected {
-        height: 34px;
-        width: 34px;
+        height: 20px;
+        width: 20px;
     }
 
     .welcome-page .general-container {
