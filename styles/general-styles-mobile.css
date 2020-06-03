@@ -213,6 +213,30 @@
     .questions {
         width: 90vw;
     }
+
+    /* courses */
+
+    .general-container h2 {
+        font-size: 1.5em;
+        padding: 0.5rem;
+    }
+
+    .course-container {
+    width: 25vw;
+    }
+
+    .course-container img {
+    border-radius: 1em 1em 0em 0em;
+    }
+
+    .course-info {
+    border-radius: 0em 0em 1em 1em;
+    padding: 0.5em 0em 1em 0em;
+    }
+
+    .course-info h3 {
+    font-size: 0.9em;
+    }
 }
 
 /* Medium Phones */
@@ -358,6 +382,30 @@
 
     .questions {
         width: 90vw;
+    }
+
+    /* courses */
+
+    .general-container h2 {
+        font-size: 1.5em;
+        padding: 0.5rem;
+    }
+
+    .course-container {
+    width: 25vw;
+    }
+
+    .course-container img {
+    border-radius: 1em 1em 0em 0em;
+    }
+
+    .course-info {
+    border-radius: 0em 0em 1em 1em;
+    padding: 0.5em 0em 1em 0em;
+    }
+
+    .course-info h3 {
+    font-size: 0.9em;
     }
 }
 
@@ -557,6 +605,30 @@
 
     .questions {
         width: 90vw;
+    }
+
+    /* courses */
+
+    .general-container h2 {
+        font-size: 1.5em;
+        padding: 0.5rem;
+    }
+
+    .course-container {
+    width: 25vw;
+    }
+
+    .course-container img {
+    border-radius: 1em 1em 0em 0em;
+    }
+
+    .course-info {
+    border-radius: 0em 0em 1em 1em;
+    padding: 0.5em 0em 1em 0em;
+    }
+
+    .course-info h3 {
+    font-size: 0.9em;
     }
 }
 
