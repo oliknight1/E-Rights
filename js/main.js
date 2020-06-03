@@ -347,7 +347,7 @@ function learningButtons(change) {
             max = 5;
         }
     } else {
-        window.location.replace("http://ok131.brighton.domains/ci536/site/e-rights/404.html");
+        window.location.replace("http://sp1178.brighton.domains/erightsfinal/404.html");
     }
     if (currentLearningSlide + change >= 0 && currentLearningSlide + change <= max) {
         currentLearningSlide += change;
@@ -375,10 +375,10 @@ function displayLearning(learningSlideNum,max) {
         } else if (GETRequest == "GDPR+Principles") {
             fillLearningContent(learningJson.principles[learningSlideNum], "The Principles");
         } else {
-            window.location.replace("http://ok131.brighton.domains/ci536/site/e-rights/404.html");
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/404.html");
         }
     } else {
-        window.location.replace("http://ok131.brighton.domains/ci536/site/e-rights/404.html");
+        window.location.replace("http://sp1178.brighton.domains/erightsfinal/404.html");
     }
 }
 
