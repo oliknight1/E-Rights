@@ -8,8 +8,7 @@ if (isset($_SESSION['user'])) {
     $user->findUser($_SESSION['user']);
 } else {
     Redirect::redirectTo("login.php");
-}
-
+};
 // Check the GET parameter is set
 if (isset($_GET['name'])) {
     $name = urldecode($_GET["name"]);
@@ -114,7 +113,7 @@ if (isset($_GET['name'])) {
             <p><?php echo $course->description ?> </p>
 
             <img src="assets/illustrations/course-images/data.svg" alt="">
-            <a href="learn.php?name= <?php echo $name ?>"> <button>Start Course</button></a>
+            <a href=<?php echo "learn.php?name=" . $name ?>> <button>Start Course</button></a>
 
             <ul>
                 <li>
