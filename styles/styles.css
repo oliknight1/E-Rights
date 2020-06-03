@@ -1343,11 +1343,11 @@
     padding: .4em 1.5em;
     font-size: 1.4em;
     text-align: left;
-    border-radius: 1em;
+    border-radius: 4em;
     border: var(--main-blue) 3px solid;
     outline: none;
     margin: 2vh 0;
-    height: 5vh;
+    height: 7vh;
 
 }
 

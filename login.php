@@ -2,6 +2,8 @@
 
 require_once 'core/init.php';
 
+$errorMessage = "";
+
 if (Input::exists()) {
 
     // Check the token is correct to protect against CSRF attacks
@@ -21,11 +23,9 @@ if (Input::exists()) {
             if ($login) {
 
                 Redirect::redirectTo('home.php');
-            }
-        } else {
-            foreach ($validation->displayErrors() as $error) {
-                // DISPLAY ERRORS HERE!!
-
+            } else {
+                $errorMessage = "There was a problem logging in. Please try again";
+                echo '<script type="text/javascript">alert("' . $errorMessage . '")</script>';
             }
         }
     }
@@ -69,6 +69,7 @@ if (Input::exists()) {
                 <!-- Token protects against CSRF attacks -->
                 <input type="hidden" name="token" value='<?php echo Token::createToken(); ?>'>
                 <button>Sign in</button>
+
             </form>
         </div>
     </div>
