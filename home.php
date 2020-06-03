@@ -112,7 +112,7 @@ if (isset($_SESSION['user'])) {
         <div class="home-info-profile-container">
             <div class="profile-icon-container">
                 <div class="profile-icon">
-                    <?php echo $user->getData()['username'][0] ?>
+                    <?php echo strtoupper($user->getData()['username'][0]) ?>
                 </div>
             </div>
 

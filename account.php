@@ -106,7 +106,7 @@ if (isset($_SESSION['user'])) {
             <div class="general-container">
                 <div class="profile-icon-container">
                     <div class="profile-icon">
-                        <p><?php echo $user->getData()["username"][0] ?></p>
+                        <p> <?php echo strtoupper($user->getData()['username'][0]) ?></p>
                     </div>
                 </div>
                 <!-- Div is just used to group together the <h2> and <ul> -->
