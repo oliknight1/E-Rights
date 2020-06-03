@@ -184,9 +184,16 @@ nav img {
     flex-direction: column;
 }
 
+.profile-icon-container {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .profile-icon {
-    height: 26vh;
-    width: 10vw;
+
     background-color: #ffffff;
     border-radius: 50%;
     display: flex;
@@ -435,7 +442,7 @@ footer {
 
 /* questions */
 
-.questions-container{
+.questions-container {
     height: 85vh;
     width: 100vw;
     display: flex;
@@ -455,7 +462,7 @@ footer {
     padding-left: 5vw;
 }
 
-.questions-container h2{
+.questions-container h2 {
     font-size: 2vh;
     font-weight: 600;
     margin-top: 3vh;
