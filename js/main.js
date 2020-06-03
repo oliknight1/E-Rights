@@ -76,8 +76,7 @@ const menuControl = e => {
     }
 }
 
-document.querySelector('#close-menu').addEventListener("click", menuControl);
-document.querySelector('#open-menu').addEventListener("click", menuControl);
+
 
 
 
@@ -142,7 +141,9 @@ window.onload = function () {
         if (screen.width <= 768) {
             modifyMobileCourseView();
         }
-
+    } if(document.querySelector("#close-menu")) {
+        document.querySelector('#close-menu').addEventListener("click", menuControl);
+        document.querySelector('#open-menu').addEventListener("click", menuControl);
     }
 
 };
