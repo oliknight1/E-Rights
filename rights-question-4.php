@@ -185,15 +185,6 @@ if (isset($_SESSION['user'])) {
 
                 </div>
 
-<<<<<<< HEAD
-            </div>
-            <div class="footer-image">
-                <img src=assets/logo/logo-horizontal-2.svg alt="404">
-            </div>
-
-        </footer>
-    <script src="../js/main.js"></script>
-=======
         </div>
         <div class="footer-image">
             <img src="assets/logo/logo-horizontal-2.svg" alt="E-Rights Logo">
@@ -201,7 +192,6 @@ if (isset($_SESSION['user'])) {
 
     </footer>
     <script src="js/main.js"></script>
->>>>>>> d60eb03bc8004c1635de39e01c501a914f6aae03
 </body>
 
 </html>
