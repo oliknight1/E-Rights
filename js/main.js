@@ -150,7 +150,7 @@ window.onload = function () {
 
 function learningButtons(change) {
     var url = window.location;
-    var max = 7;
+    var max = 8;
     if (url.search) {
         var GETRequest = url.search.substr(6);
         if (GETRequest == "GDPR+Principles") {
