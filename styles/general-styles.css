@@ -381,14 +381,13 @@ footer {
 .learning-text {
     display: flex;
     flex-direction: column;
-
 }
 
 .learning-space {
     height: 5vh;
 }
 
-.learning-content h3 {
+.learning-content p {
     font-weight: 300;
     font-family: "raleway";
     font-size: 3.5vh;
