@@ -104,25 +104,43 @@ if (isset($_SESSION['user'])) {
             <h1>The Rights</h1>
         </div>
 
-        <h2>Question 8</h2>
+        <h2>Question 1</h2>
 
-        <h3>Fill in the Blank: The right to erasure is also known as “the right to be _____”
-
+        <h3>Which of these are subject rights?
         </h3>
         <div class="questions-content">
             <div class="questions">
 
                 <div class="question-row">
-                    <input type="radio" value="#">
+                    <input type="checkbox" value="#">
                     <div class="questions-text">
-                        <label>fair processing information
+                        <label>Rights in relation to automated decision making and profiling
 
                         </label>
                     </div>
 
                 </div>
                 <div class="question-row">
-                    <input type="radio" value="#">
+                    <input type="checkbox" value="#">
+                    <div class="questions-text">
+                        <label>The right to object
+
+                        </label>
+                    </div>
+
+                </div>
+                <div class="question-row">
+                    <input type="checkbox" value="#">
+                    <div class="questions-text">
+                        <label>The right to party
+
+
+                        </label>
+                    </div>
+
+                </div>
+                <div class="question-row">
+                    <input type="checkbox" value="#">
                     <div class="questions-text">
                         <label>The right to erasure
 
@@ -130,8 +148,8 @@ if (isset($_SESSION['user'])) {
                     </div>
 
                 </div>
-                 <div class="question-row">
-                    <input type="radio" value="#">
+                  <div class="question-row">
+                    <input type="checkbox" value="#">
                     <div class="questions-text">
                         <label>The right to rectification
 
@@ -139,18 +157,20 @@ if (isset($_SESSION['user'])) {
                     </div>
 
                 </div>
-                 <div class="question-row">
-                    <input type="radio" value="#">
+                  <div class="question-row">
+                    <input type="checkbox" value="#">
                     <div class="questions-text">
-                        <label>Rights in relation to automated decision making and profiling.
+                        <label>The right to be informed
 
                         </label>
                     </div>
 
                 </div>
 
+
+
             </div>
-            <img src="assets/learning-img/rights-1.svg">
+            <img src="../assets/learning-img/rights-1.svg">
 
         </div>
         <a href="#"><button>Next</button></a>

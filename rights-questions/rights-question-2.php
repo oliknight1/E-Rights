@@ -104,10 +104,9 @@ if (isset($_SESSION['user'])) {
             <h1>The Rights</h1>
         </div>
 
-        <h2>Question 8</h2>
+        <h2>Question 1</h2>
 
-        <h3>Fill in the Blank: The right to erasure is also known as “the right to be _____”
-
+        <h3>Which of these rights allow any form of modification to your data?
         </h3>
         <div class="questions-content">
             <div class="questions">
@@ -115,7 +114,18 @@ if (isset($_SESSION['user'])) {
                 <div class="question-row">
                     <input type="radio" value="#">
                     <div class="questions-text">
-                        <label>fair processing information
+                        <label>Rights in relation to automated decision making and profiling
+
+
+                        </label>
+                    </div>
+
+                </div>
+                <div class="question-row">
+                    <input type="radio" value="#">
+                    <div class="questions-text">
+                        <label>The right to object
+
 
                         </label>
                     </div>
@@ -126,31 +136,45 @@ if (isset($_SESSION['user'])) {
                     <div class="questions-text">
                         <label>The right to erasure
 
+
+
                         </label>
                     </div>
 
                 </div>
-                 <div class="question-row">
+                <div class="question-row">
                     <input type="radio" value="#">
                     <div class="questions-text">
                         <label>The right to rectification
 
+
                         </label>
                     </div>
 
                 </div>
-                 <div class="question-row">
+                  <div class="question-row">
                     <input type="radio" value="#">
                     <div class="questions-text">
-                        <label>Rights in relation to automated decision making and profiling.
+                        <label>The right to be informed
+
+                        </label>
+                    </div>
+
+                </div>
+                  <div class="question-row">
+                    <input type="radio" value="#">
+                    <div class="questions-text">
+                        <label>The right to access
 
                         </label>
                     </div>
 
                 </div>
 
+
+
             </div>
-            <img src="assets/learning-img/rights-1.svg">
+            <img src="../assets/learning-img/rights-1.svg">
 
         </div>
         <a href="#"><button>Next</button></a>

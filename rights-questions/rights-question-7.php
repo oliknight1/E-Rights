@@ -131,13 +131,8 @@ if (isset($_SESSION['user'])) {
                     </div>
 
                 </div>
-<<<<<<< HEAD
                  <div class="question-row">
                     <input type="radio" value="#">
-=======
-                <div class="question-row">
-                    <input type="checkbox" value="#">
->>>>>>> 08367c6d6ef1cb4777047f824e439c5ac1f2ac68
                     <div class="questions-text">
                         <label>The right to rectification
 
@@ -145,13 +140,8 @@ if (isset($_SESSION['user'])) {
                     </div>
 
                 </div>
-<<<<<<< HEAD
                  <div class="question-row">
                     <input type="radio" value="#">
-=======
-                <div class="question-row">
-                    <input type="checkbox" value="#">
->>>>>>> 08367c6d6ef1cb4777047f824e439c5ac1f2ac68
                     <div class="questions-text">
                         <label>Rights in relation to automated decision making and profiling.
 
