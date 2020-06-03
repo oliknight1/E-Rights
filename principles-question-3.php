@@ -14,12 +14,12 @@ if (isset($_SESSION['user'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/responsive-tablet.css">
-    <link rel="stylesheet" href="../styles/responsive-mobile.css">
-    <link rel="stylesheet" href="../styles/general-styles.css">
-    <link rel="stylesheet" href="../styles/general-styles-mobile.css">
-    <link rel="stylesheet" href="../styles/general-styles-tablet.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive-tablet.css">
+    <link rel="stylesheet" href="styles/responsive-mobile.css">
+    <link rel="stylesheet" href="styles/general-styles.css">
+    <link rel="stylesheet" href="styles/general-styles-mobile.css">
+    <link rel="stylesheet" href="styles/general-styles-tablet.css">
     <script src="https://kit.fontawesome.com/96867cee00.js"></script>
 </head>
 
@@ -74,7 +74,7 @@ if (isset($_SESSION['user'])) {
 
         <!-- Navbar -->
         <a href="home.php">
-            <img src="../assets/logo/logo-horizontal-2.svg" alt="Site Logo">
+            <img src="assets/logo/logo-horizontal-2.svg" alt="Site Logo">
         </a>
 
         <div class="link-container">
@@ -99,9 +99,9 @@ if (isset($_SESSION['user'])) {
     </nav>
 
 
-    <div class="questions-container">
+    <div class="questions-container" id="principles">
         <div class="questions-title">
-            <h1>The Rights</h1>
+            <h1>The Principles</h1>
         </div>
 
         <h2>Question 3</h2>
@@ -110,20 +110,18 @@ if (isset($_SESSION['user'])) {
 
 
         </h3>
-        <div class="questions-content">
+        <div class="questions-content" id="question-3">
             <div class="questions">
 
                 <div class="question-row">
-                    <input type="radio" value="#">
+                    <input type="checkbox" value="#">
                     <div class="questions-text">
-                        <label>Limited to what is necessary
-
-                        </label>
+                        <label>Limited to what is necessary</label>
                     </div>
 
                 </div>
                 <div class="question-row">
-                    <input type="radio" value="#">
+                    <input type="checkbox" value="#">
                     <div class="questions-text">
                         <label>In as much detail as possible
 
@@ -133,7 +131,7 @@ if (isset($_SESSION['user'])) {
 
                 </div>
                 <div class="question-row">
-                    <input type="radio" value="#">
+                    <input type="checkbox" value="#">
                     <div class="questions-text">
                         <label>As much as you want to process
 
@@ -143,26 +141,16 @@ if (isset($_SESSION['user'])) {
 
                 </div>
                 <div class="question-row">
-                    <input type="radio" value="#">
+                    <input type="checkbox" value="#">
                     <div class="questions-text">
-                        <label>Adequately
-
-                        </label>
+                        <label>Adequately</label>
                     </div>
 
                 </div>
-<<<<<<< HEAD
                  <div class="question-row">
-                    <input type="radio" value="#">
-=======
-                <div class="question-row">
                     <input type="checkbox" value="#">
->>>>>>> 08367c6d6ef1cb4777047f824e439c5ac1f2ac68
                     <div class="questions-text">
-                        <label>Relevantly
-
-
-                        </label>
+                        <label>Relevantly</label>
                     </div>
 
                 </div>
@@ -173,7 +161,7 @@ if (isset($_SESSION['user'])) {
             <img src="assets/learning-img/rights-1.svg">
 
         </div>
-        <a href="#"><button>Next</button></a>
+        <a href="#"><button id="next-button">Next</button></a>
 
     </div>
 
@@ -208,11 +196,11 @@ if (isset($_SESSION['user'])) {
 
         </div>
         <div class="footer-image">
-            <img src="../assets/logo/logo-horizontal-2.svg" alt="E-Rights Logo">
+            <img src="assets/logo/logo-horizontal-2.svg" alt="E-Rights Logo">
         </div>
 
     </footer>
-    <script src="../js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

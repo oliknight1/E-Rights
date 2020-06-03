@@ -90,6 +90,7 @@ var allAssigned = [];
 var allInProg = [];
 var currentAssigned = 0;
 var currentInProg = 0;
+var score=0;
 
 
 
@@ -139,6 +140,17 @@ window.onload = function () {
         if (screen.width <= 768) {
             modifyMobileCourseView();
         }
+    } else if(document.querySelector(".questions-container")) {
+        if(document.querySelector("#principles")) {
+            document.querySelector("#next-button").onclick = function () {
+            nextPrincipleQuestion(); }
+        } else {
+            document.querySelector("#next-button").onclick = function () {
+            nextRightsQuestion(); }
+        }
+
+    } else if(document.querySelector(".results-container")) {
+        prepareResults();
     }
     if (document.querySelector("#close-menu")) {
         document.querySelector('#close-menu').addEventListener("click", menuControl);
@@ -146,6 +158,100 @@ window.onload = function () {
     }
 
 };
+
+function prepareResults() {
+    var score = window.location.search.substr(3);
+    var course = window.location.search.substr(1,2);
+    if(course == "p=") {
+        var courseMax = 6;
+    } else {
+        var courseMax = 8
+    }
+    document.querySelector(".results-container").querySelector("h2").textContent = "Your Score is "+score+"/"+courseMax;
+}
+
+function nextPrincipleQuestion() {
+    if(document.querySelector("#question-1")) {
+        if(!checkRadioAnswer()) {
+            alert("Please select an answer before moving on");
+        } else if(checkRadioAnswer() == "Identity of the controllers and purposes of processing the data") {
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/principles-question-2.php?q=1");
+        } else {
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/principles-question-2.php?q=0");
+        }
+    } else if(document.querySelector("#question-2")) {
+        score = window.location.search.substr(3);
+        if(!checkRadioAnswer()) {
+            alert("Please select an answer before moving on");
+        } else if(checkRadioAnswer() == "Process for scientific purposes") {
+            score++;
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/principles-question-3.php?q="+score);
+        } else {
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/principles-question-3.php?q="+score);
+        }
+    } else if(document.querySelector("#question-3")) {
+        score = window.location.search.substr(3);
+        if(checkCheckboxAnswer() == "") {
+            alert("Please select an answer before moving on");
+        } else if(checkCheckboxAnswer() == "Limited to what is necessaryAdequatelyRelevantly") {
+            score++;
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/principles-question-4.php?q="+score);
+        } else {
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/principles-question-4.php?q="+score);
+        }
+    } else if(document.querySelector("#question-4")) {
+        score = window.location.search.substr(3);
+        if(checkCheckboxAnswer() == "") {
+            alert("Please select an answer before moving on");
+        } else if(checkCheckboxAnswer() == "Data to be kept as accurate as possibleData to be rectified if found to be inaccurate") {
+            score++;
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/principles-question-5.php?q="+score);
+        } else {
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/principles-question-5.php?q="+score);
+        }
+    } else if(document.querySelector("#question-5")) {
+        score = window.location.search.substr(3);
+        if(!checkRadioAnswer()) {
+            alert("Please select an answer before moving on");
+        } else if(checkRadioAnswer() == "True") {
+            score++;
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/principles-question-6.php?q="+score);
+        } else {
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/principles-question-6.php?q="+score);
+        }
+    } else if(document.querySelector("#question-6")) {
+        score = window.location.search.substr(3);
+        if(!checkRadioAnswer()) {
+            alert("Please select an answer before moving on");
+        } else if(checkRadioAnswer() == "True") {
+            score++;
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/results.php?q="+score);
+        } else {
+            window.location.replace("http://sp1178.brighton.domains/erightsfinal/results.php?p="+score);
+        }
+    }
+}
+
+function checkCheckboxAnswer() {
+    var allOptions = document.getElementsByClassName("question-row");
+    var finalAnswer = "";
+    for(var i = 0;i < allOptions.length;i++) {
+        if(allOptions[i].querySelector("input").checked) {
+            finalAnswer += allOptions[i].querySelector("label").textContent;
+        }
+    }
+    return finalAnswer;
+}
+
+function checkRadioAnswer() {
+    var allOptions = document.getElementsByClassName("question-row");
+    for(var i = 0;i < allOptions.length;i++) {
+        if(allOptions[i].querySelector("input").checked) {
+            return allOptions[i].querySelector("label").textContent;
+        }
+    }
+    return null;
+}
 
 
 function learningButtons(change) {
