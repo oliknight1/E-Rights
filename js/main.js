@@ -267,11 +267,22 @@ function learningButtons(change) {
     }
     if (currentLearningSlide + change >= 0 && currentLearningSlide + change <= max) {
         currentLearningSlide += change;
-        displayLearning(currentLearningSlide);
+        displayLearning(currentLearningSlide,max);
     }
 }
 
-function displayLearning(learningSlideNum) {
+function displayLearning(learningSlideNum,max) {
+    console.log(max);
+    if(learningSlideNum == max) {
+        document.querySelector(".learning-button-right").querySelector("button").textContent = "Quiz!"
+        if(max == 5) {
+            document.querySelector(".learning-button-right").querySelector("a").href = "http://sp1178.brighton.domains/erightsfinal/principles-question-1.php";
+        } else {
+            document.querySelector(".learning-button-right").querySelector("a").href = "http://sp1178.brighton.domains/erightsfinal/rights-question-1.php";
+        }
+    } else {
+        document.querySelector(".learning-button-right").querySelector("button").textContent = "Next"
+    }
     var url = window.location;
     if (url.search) {
         var GETRequest = url.search.substr(6);
