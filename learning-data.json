@@ -44,7 +44,20 @@
             "name": "Right to object",
             "number": 7,
             "img": "rights-7.svg",
-            "content": ""
+            "content": "Individuals have the right to object to:",
+            "list": [
+                "Processing based on legitimate interests or the performance of a task in the  public interest/exercise of official authority (including profiling)",
+                "Direct marketing (including profiling) Processing for purposes of scientific / historical research and statistics "
+            ]
+        },
+        {
+            "name": "Right to object",
+            "number": 7,
+            "img": "rights-7.svg",
+            "content": "Individuals have the right to object to:",
+            "list": [
+                "You can demonstrate compelling legitimate grounds for the processing, which override the interests, right and freedoms of the individual"
+            ]
         },
         {
             "name": "Rights in relation to automated decision making and profiling.",
