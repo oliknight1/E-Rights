@@ -1,6 +1,6 @@
 <?php
 require_once 'core/init.php';
-
+$errorMessage = "";
 if (Input::exists()) {
     if (Token::checkToken(Input::getInput('token'))) {
         $validate = new Validation();
@@ -51,10 +51,8 @@ if (Input::exists()) {
                 die($e->getMessage());
             }
         } else {
-            foreach ($validation->displayErrors() as $error) {
-                //   DISPLAY ERRORS HERE!!!!
-
-            }
+            $errorMessage = "There was an error with your account details. Please try again";
+            echo '<script type="text/javascript">alert("' . $errorMessage . '")</script>';
         }
     }
 }
@@ -105,7 +103,7 @@ if (Input::exists()) {
                     <option value="" selected disabled hidden>Security Question</option>
                     <option value="Favourite Colour">Favourite Colour</option>
                     <option value="Name of First Pet">Name of First Pet</option>
-                     <option value="Favourite Film">Favourite Film</option>
+                    <option value="Favourite Film">Favourite Film</option>
                 </select>
 
 
@@ -119,6 +117,7 @@ if (Input::exists()) {
                 <!-- Creates a token that is unique to the user, protects against CSRF attacks  -->
                 <!-- This token is also set as a session to the user -->
                 <input type="hidden" name="token" value=<?php echo Token::createToken() ?>>
+
 
             </form>
         </div>
