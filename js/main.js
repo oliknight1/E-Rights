@@ -358,7 +358,7 @@ function learningButtons(change) {
 }
 
 function displayLearning(learningSlideNum, max) {
-    console.log(max);
+
     if (learningSlideNum == max) {
         document.querySelector(".learning-button-right").querySelector("button").textContent = "Quiz!"
         if (max == 5) {
@@ -631,7 +631,7 @@ function generateResultDivs(result) {
         generalContainer.forEach(cont => {
             result.forEach(element => {
                 if (loopTimes < 2) {
-                    console.log("uhh");
+
                     var courseLink = document.createElement("a");
                     var courseContainer = document.createElement("div");
                     courseLink.href = "course-overview.php?name=" + element.name;
