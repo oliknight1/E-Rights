@@ -103,8 +103,9 @@ if (Input::exists()) {
                          hidden means it cannot be seen by the use
                     -->
                     <option value="" selected disabled hidden>Security Question</option>
-                    <option value="Test question 1">Test quesion 1</option>
-                    <option value="Test questiuon 2">Test quesion 2</option>
+                    <option value="Favourite Colour">Favourite Colour</option>
+                    <option value="Name of First Pet">Name of First Pet</option>
+                     <option value="Favourite Film">Favourite Film</option>
                 </select>
 
 

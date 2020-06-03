@@ -96,6 +96,7 @@ var currentInProg = 0;
 
 
 
+
 window.onload = function () {
     if (document.querySelector(".my-learning")) {
         fetchData();
