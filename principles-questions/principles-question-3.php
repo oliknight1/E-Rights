@@ -1,3 +1,14 @@
+<?php
+
+require_once 'core/init.php';
+$user = new User();
+
+if (isset($_SESSION['user'])) {
+    $user->findUser($_SESSION['user']);
+} else {
+    Redirect::redirectTo("login.php");
+}
+?>
 <html lang="en">
 
 <head>
@@ -22,33 +33,41 @@
         <!-- Menu with links -->
         <div class="hamburger-menu">
             <header>
-                <p> Hi aaaaaaaaaaaaaaa!</p>
+                <p> Hi <?php echo $user->getData()['username'] ?>!</p>
                 <i class="fas fa-times" id="close-menu"></i>
             </header>
             <ul>
                 <li>
-                    <div class="icon-container">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    Home
+                    <a href="home.php">
+                        <div class="icon-container">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <p>Home</p>
+                    </a>
                 </li>
                 <li>
-                    <div class="icon-container">
-                        <i class="fas fa-book-open"></i>
-                    </div>
-                    All Courses
+                    <a href="courses.php">
+                        <div class="icon-container">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <p>All Courses</p>
+                </li>
+                </a>
+                <li>
+                    <a href="my-learning.php">
+                        <div class="icon-container">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <p> My Learning</p>
+                    </a>
                 </li>
                 <li>
-                    <div class="icon-container">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    My Learning
-                </li>
-                <li>
-                    <div class="icon-container">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    Account
+                    <a href="account.php">
+                        <div class="icon-container">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <p>Account</p>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -132,10 +151,10 @@
                     </div>
 
                 </div>
-                 <div class="question-row">
+                <div class="question-row">
                     <input type="checkbox" value="#">
                     <div class="questions-text">
-                        <label>Relevantly 
+                        <label>Relevantly
 
 
                         </label>

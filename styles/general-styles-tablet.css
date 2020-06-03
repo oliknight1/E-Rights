@@ -38,18 +38,18 @@
     }
 
     .footer-row-text {
-    width: 60vw;
+        width: 60vw;
     }
 
     /* course */
 
     .all-courses-page .general-container {
-    padding: 0em;
-    min-height: 35vh;
+        padding: 0em;
+        min-height: 35vh;
     }
 
     .all-courses-page .general-container h2 {
-    padding: 4vw;
+        padding: 4vw;
     }
 
     .course-container {
@@ -61,13 +61,13 @@
     }
 
     .course-info h3 {
-    font-size: 1.4em;
-    font-weight: 500;
+        font-size: 1.4em;
+        font-weight: 500;
     }
 
     /* rights/principles learning */
 
-    .learning-titles-container{
+    .learning-titles-container {
         height: 15vh;
     }
 
@@ -76,7 +76,7 @@
         flex-direction: column-reverse;
     }
 
-    .learning-buttons button{
+    .learning-buttons button {
         font-size: 2.5rem;
     }
 
@@ -102,36 +102,36 @@
     /* questions */
 
     .questions-container h3 {
-    text-align: center;
-    font-size: 2vh;
-    margin-top: 3vh;
-    width: 80vw;
+        text-align: center;
+        font-size: 2vh;
+        margin-top: 3vh;
+        width: 80vw;
     }
 
     .questions-content {
-    width: 90vw;
+        width: 90vw;
     }
 
     .questions-content img {
-    display: none;
+        display: none;
     }
 
     input {
-    width: 50px;
-    height: 50px;
+        width: 50px;
+        height: 50px;
     }
 
     .question-row label {
-    padding-left: 3vw;
-    font-size: 2vh;
+        padding-left: 3vw;
+        font-size: 2vh;
     }
 
     .questions-title {
-    height: 6vh;
+        height: 6vh;
     }
 
     .questions-title h1 {
-    font-size: 4vh;
+        font-size: 4vh;
     }
 }
 
@@ -242,7 +242,7 @@
         height: 20vh;
     }
 
-     .footer-row-text {
+    .footer-row-text {
         width: 60vw;
     }
 
@@ -259,18 +259,18 @@
     }
 
     .footer-social-media-icons {
-    font-size: 3.5vh;
+        font-size: 3.5vh;
     }
 
     /* course */
 
     .all-courses-page .general-container {
-    padding: 0em;
-    min-height: 25vh;
+        padding: 0em;
+        min-height: 25vh;
     }
 
     .all-courses-page .general-container h2 {
-    padding: 4vw;
+        padding: 4vw;
     }
 
     .course-container {
@@ -284,7 +284,7 @@
 
     /* rights/principles learning */
 
-    .learning-titles-container{
+    .learning-titles-container {
         height: 15vh;
     }
 
@@ -293,17 +293,17 @@
         flex-direction: column-reverse;
     }
 
-    .learning-buttons button{
+    .learning-buttons button {
         font-size: 3rem;
     }
 
     .learning-content p {
-    font-size: 2.5vh;
+        font-size: 2.5vh;
     }
 
     .learning-image img {
-    width: 20vw;
-    margin-bottom: 5vh;
+        width: 20vw;
+        margin-bottom: 5vh;
     }
 
     .learning-titles-container h1 {
@@ -319,36 +319,36 @@
     /* questions */
 
     .questions-container h3 {
-    text-align: center;
-    font-size: 2vh;
-    margin-top: 3vh;
-    width: 80vw;
+        text-align: center;
+        font-size: 2vh;
+        margin-top: 3vh;
+        width: 80vw;
     }
 
     .questions-content {
-    width: 90vw;
+        width: 90vw;
     }
 
     .questions-content img {
-    display: none;
+        display: none;
     }
 
     input {
-    width: 50px;
-    height: 50px;
+        width: 50px;
+        height: 50px;
     }
 
     .question-row label {
-    padding-left: 3vw;
-    font-size: 2vh;
+        padding-left: 3vw;
+        font-size: 2vh;
     }
 
     .questions-title {
-    height: 8vh;
+        height: 8vh;
     }
 
     .questions-title h1 {
-    font-size: 5vh;
+        font-size: 5vh;
     }
 
 }
@@ -358,7 +358,7 @@
 /* Small tablets  */
 @media screen and (min-width:1024px) and (max-width:1366px) and (orientation: landscape) {
 
-    
+
     /* Navigation styling */
 
     .hamburger-menu header p {
@@ -374,23 +374,23 @@
     }
 
 
-     /* Course */
+    /* Course */
 
     .course-container img {
-    border-radius: 1.5em 1.5em 0em 0em;
+        border-radius: 1.5em 1.5em 0em 0em;
     }
 
     .course-info h3 {
-    font-size: 1.2em;
-    font-weight: 500;
+        font-size: 1.2em;
+        font-weight: 500;
     }
 
     .course-info p {
-    font-size: .6em;
+        font-size: .6em;
     }
 
     .course-info {
-    border-radius: 0em 0em 1.5em 1.5em;
+        border-radius: 0em 0em 1.5em 1.5em;
     }
 
 
@@ -405,11 +405,11 @@
         font-size: 4vh;
     }
 
-    .learning-titles-container{
+    .learning-titles-container {
         height: 20vh;
     }
 
-    .learning-buttons button{
+    .learning-buttons button {
         font-size: 1.5rem;
     }
 }
