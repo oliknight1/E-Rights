@@ -148,11 +148,7 @@ if (isset($_SESSION['user'])) {
 
                 </div>
                  <div class="question-row">
-<<<<<<< HEAD:principles-questions/principles-question-3.php
-                    <input type="radio" value="#">
-=======
                     <input type="checkbox" value="#">
->>>>>>> df692caa47b607baeaf927486dfdc16e27992384:principles-question-3.php
                     <div class="questions-text">
                         <label>Relevantly</label>
                     </div>
@@ -169,41 +165,41 @@ if (isset($_SESSION['user'])) {
 
     </div>
 
-  <footer>
-        <div class="footer-row-container">
-            <div class="footer-row-text">
-                <a href="#" class="footer-row-links">
-                    Policy & Terms
-                </a>
-                <a href="#" class="footer-row-links">
-                    E-RIGHTS-Corporation 2020
-                </a>
-                <a href="#" class="footer-row-links">
-                    Help
-                </a>
-            </div>
-            <div class="footer-social-media">
-                <a href="#" class="footer-social-media-icons">
-                    <i class="fab fa-facebook-square"></i>
-                </a>
-                <a href="#" class="footer-social-media-icons">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" class="footer-social-media-icons">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="footer-social-media-icons">
-                    <i class="fab fa-youtube"></i>
-                </a>
+ <footer>
+            <div class="footer-row-container">
+                <div class="footer-row-text">
+                    <a href="construction.html" class="footer-row-links">
+                        Policy & Terms
+                    </a>
+                    <a href="construction.html" class="footer-row-links">
+                        E-RIGHTS-Corporation 2020
+                    </a>
+                    <a href="construction.html" class="footer-row-links">
+                        Help
+                    </a>
+                </div>
+                <div class="footer-social-media">
+                    <a href="404.html" class="footer-social-media-icons">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="404.html" class="footer-social-media-icons">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="404.html" class="footer-social-media-icons">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="404.html" class="footer-social-media-icons">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                </div>
 
             </div>
+            <div class="footer-image">
+                <img src=assets/logo/logo-horizontal-2.svg alt="404">
+            </div>
 
-        </div>
-        <div class="footer-image">
-            <img src="assets/logo/logo-horizontal-2.svg" alt="E-Rights Logo">
-        </div>
-
-    </footer>
+        </footer>
     <script src="js/main.js"></script>
 </body>
 

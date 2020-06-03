@@ -141,40 +141,40 @@ if (isset($_SESSION['user'])) {
     </div>
 
    <footer>
-        <div class="footer-row-container">
-            <div class="footer-row-text">
-                <a href="#" class="footer-row-links">
-                    Policy & Terms
-                </a>
-                <a href="#" class="footer-row-links">
-                    E-RIGHTS-Corporation 2020
-                </a>
-                <a href="#" class="footer-row-links">
-                    Help
-                </a>
-            </div>
-            <div class="footer-social-media">
-                <a href="#" class="footer-social-media-icons">
-                    <i class="fab fa-facebook-square"></i>
-                </a>
-                <a href="#" class="footer-social-media-icons">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" class="footer-social-media-icons">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="footer-social-media-icons">
-                    <i class="fab fa-youtube"></i>
-                </a>
+            <div class="footer-row-container">
+                <div class="footer-row-text">
+                    <a href="construction.html" class="footer-row-links">
+                        Policy & Terms
+                    </a>
+                    <a href="construction.html" class="footer-row-links">
+                        E-RIGHTS-Corporation 2020
+                    </a>
+                    <a href="construction.html" class="footer-row-links">
+                        Help
+                    </a>
+                </div>
+                <div class="footer-social-media">
+                    <a href="404.html" class="footer-social-media-icons">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="404.html" class="footer-social-media-icons">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="404.html" class="footer-social-media-icons">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="404.html" class="footer-social-media-icons">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                </div>
 
             </div>
+            <div class="footer-image">
+                <img src=assets/logo/logo-horizontal-2.svg alt="404">
+            </div>
 
-        </div>
-        <div class="footer-image">
-            <img src="assets/logo/logo-horizontal-2.svg" alt="E-Rights Logo">
-        </div>
-
-    </footer>
+        </footer>
     <script src="js/main.js"></script>
 </body>
 
