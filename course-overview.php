@@ -15,6 +15,7 @@ if (isset($_GET['name'])) {
     // Search courses table for the description
     $course = json_decode($api->getCourse("name", $name));
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -113,11 +114,12 @@ if (isset($_GET['name'])) {
             <p><?php echo $course->description ?> </p>
 
             <img src="assets/illustrations/course-images/data.svg" alt="">
-            <a href=<?php echo "learn.php?name=" . $name ?>> <button>Start Course</button></a>
+
+            <a href="learn.php?name=<?php echo urlencode($name) ?>"> <button>Start Course</button></a>
 
             <ul>
                 <li>
-                    <i class="fas fa-clock"></i>
+                    <i class=" fas fa-clock"></i>
                     <p>5 - 15 Minutes</p>
                 </li>
                 <li>

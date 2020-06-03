@@ -19,8 +19,6 @@ function togglePasswordVisibility(textBoxID) {
 
 */
 
-
-
 function slideShow() {
 
     slideNum++;
@@ -141,7 +139,8 @@ window.onload = function () {
         if (screen.width <= 768) {
             modifyMobileCourseView();
         }
-    } if(document.querySelector("#close-menu")) {
+    }
+    if (document.querySelector("#close-menu")) {
         document.querySelector('#close-menu').addEventListener("click", menuControl);
         document.querySelector('#open-menu').addEventListener("click", menuControl);
     }
