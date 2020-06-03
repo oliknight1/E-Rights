@@ -14,12 +14,12 @@ if (isset($_SESSION['user'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/responsive-tablet.css">
-    <link rel="stylesheet" href="../styles/responsive-mobile.css">
-    <link rel="stylesheet" href="../styles/general-styles.css">
-    <link rel="stylesheet" href="../styles/general-styles-mobile.css">
-    <link rel="stylesheet" href="../styles/general-styles-tablet.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive-tablet.css">
+    <link rel="stylesheet" href="styles/responsive-mobile.css">
+    <link rel="stylesheet" href="styles/general-styles.css">
+    <link rel="stylesheet" href="styles/general-styles-mobile.css">
+    <link rel="stylesheet" href="styles/general-styles-tablet.css">
     <script src="https://kit.fontawesome.com/96867cee00.js"></script>
 </head>
 
@@ -74,7 +74,7 @@ if (isset($_SESSION['user'])) {
 
         <!-- Navbar -->
         <a href="home.php">
-            <img src="../assets/logo/logo-horizontal-2.svg" alt="Site Logo">
+            <img src="assets/logo/logo-horizontal-2.svg" alt="Site Logo">
         </a>
 
         <div class="link-container">
@@ -99,40 +99,75 @@ if (isset($_SESSION['user'])) {
     </nav>
 
 
-
     <div class="questions-container">
         <div class="questions-title">
             <h1>The Rights</h1>
         </div>
 
-        <h2>Question 6</h2>
+        <h2>Question 1</h2>
 
-        <h3>The fourth principle requires inaccurate data to be erased or rectified without delay
-
-
-
-
-
+        <h3>Which of these are subject rights?
         </h3>
         <div class="questions-content">
             <div class="questions">
 
                 <div class="question-row">
-                    <input type="radio" value="#">
+                    <input type="checkbox" value="#">
                     <div class="questions-text">
-                        <label>True
+                        <label>Rights in relation to automated decision making and profiling
+
                         </label>
                     </div>
 
                 </div>
                 <div class="question-row">
-                    <input type="radio" value="#">
+                    <input type="checkbox" value="#">
                     <div class="questions-text">
-                        <label>False
+                        <label>The right to object
+
                         </label>
                     </div>
 
                 </div>
+                <div class="question-row">
+                    <input type="checkbox" value="#">
+                    <div class="questions-text">
+                        <label>The right to party
+
+
+                        </label>
+                    </div>
+
+                </div>
+                <div class="question-row">
+                    <input type="checkbox" value="#">
+                    <div class="questions-text">
+                        <label>The right to erasure
+
+                        </label>
+                    </div>
+
+                </div>
+                  <div class="question-row">
+                    <input type="checkbox" value="#">
+                    <div class="questions-text">
+                        <label>The right to rectification
+
+                        </label>
+                    </div>
+
+                </div>
+                  <div class="question-row">
+                    <input type="checkbox" value="#">
+                    <div class="questions-text">
+                        <label>The right to be informed
+
+                        </label>
+                    </div>
+
+                </div>
+
+
 
             </div>
             <img src="assets/learning-img/rights-1.svg">
@@ -142,7 +177,7 @@ if (isset($_SESSION['user'])) {
 
     </div>
 
-   <footer>
+    <footer>
         <div class="footer-row-container">
             <div class="footer-row-text">
                 <a href="#" class="footer-row-links">
@@ -173,11 +208,11 @@ if (isset($_SESSION['user'])) {
 
         </div>
         <div class="footer-image">
-            <img src="../assets/logo/logo-horizontal-2.svg" alt="E-Rights Logo">
+            <img src="assets/logo/logo-horizontal-2.svg" alt="E-Rights Logo">
         </div>
 
     </footer>
-    <script src="../js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -221,6 +221,7 @@ nav img {
     border-radius: 2em 2em;
     transition: all .3s ease-in-out;
 
+
 }
 
 .course-container:hover {
@@ -229,6 +230,7 @@ nav img {
 
 .course-container img {
     width: 100%;
+    height: 16vh;
     border-radius: 2em 2em 0em 0em;
     background-color: #009180;
 
@@ -291,6 +293,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 10vh;
 
 }
 

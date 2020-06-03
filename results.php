@@ -85,11 +85,10 @@
         </div>
         <img src=assets/illustrations/results.svg alt="Site Logo">
         <h3> Well Done! </h3>
-        <h2> Your score = 8/8</h2>
+        <h2></h2>
 
         <div class="results-buttons-container">
-            <a href="#"><button>View Results</button></a>
-            <a href="#"><button>Try Again</button></a>
+            <a href="http://sp1178.brighton.domains/erightsfinal/principles-question-1.php"><button>Try Again</button></a>
         </div>
     </div>
 

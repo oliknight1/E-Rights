@@ -1347,6 +1347,7 @@
     border: var(--main-blue) 3px solid;
     outline: none;
     margin: 2vh 0;
+    height: 5vh;
 
 }
 
@@ -1470,11 +1471,11 @@
     min-height: 50vh;
     height: fit-content;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .2fr .8fr;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     justify-items: center;
     align-items: center;
-    padding: 0 5em;
+    padding: 5em;
+    row-gap: 10vh;
 
 }
 
