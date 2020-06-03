@@ -153,8 +153,8 @@ function learningButtons(change) {
     var url = window.location;
     var max = 7;
     if (url.search) {
-        var GETRequest = url.search.substr(13);
-        if (GETRequest == "principles") {
+        var GETRequest = url.search.substr(6);
+        if (GETRequest == "GDPR%20principles") {
             max = 5;
         }
     } else {
