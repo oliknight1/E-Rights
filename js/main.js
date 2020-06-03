@@ -576,20 +576,6 @@ function completedSelected() {
     }
 }
 
-//FOR REFERENCE
-function loadProgressUnadapted() {
-    const progressBar = document.querySelector('.progress-done');
-    // Use set timeout to add an animation to it
-    setTimeout(() => {
-
-        // Set the width of the blue section to how much progress has been made
-        progressBar.style.width = progressBar.getAttribute('data-done') + '%';
-        progressBar.style.opacity = 1;
-        // Set text above progress bar to the amount of progress made
-        document.querySelector('#progress-amount').textContent = 'Progress: ' + progressBar.getAttribute('data-done') + '%';
-
-    }, 200);
-}
 
 function loadProgress(progDone, progAmount) {
     // Use set timeout to add an animation to it
@@ -632,17 +618,30 @@ function fetchData(category) {
 
 function generateResultDivs(result) {
     var generalContainer = document.querySelectorAll(".general-container");
+    var loopTimes = 0;
+    var home = false;
+    if(document.querySelector(".home-info-container")) {
+        console.log("home detected");
+        home = true;
+        loopTimes = 0;
+    }
     if (result) {
         generalContainer.forEach(cont => {
             result.forEach(element => {
-                var courseLink = document.createElement("a");
-                var courseContainer = document.createElement("div");
-                courseLink.href = "course-overview.php?name=" + element.name;
-                courseContainer.className = "course-container";
-                generateResultImage(courseContainer, element);
-                generateCourseInfo(courseContainer, element);
-                courseLink.appendChild(courseContainer);
-                cont.appendChild(courseLink);
+                if(loopTimes < 2) {
+                    console.log("uhh");
+                    var courseLink = document.createElement("a");
+                    var courseContainer = document.createElement("div");
+                    courseLink.href = "course-overview.php?name=" + element.name;
+                    courseContainer.className = "course-container";
+                    generateResultImage(courseContainer, element);
+                    generateCourseInfo(courseContainer, element);
+                    courseLink.appendChild(courseContainer);
+                    cont.appendChild(courseLink);
+                    if(home) {
+                        loopTimes++;
+                    }
+                }
 
             });
             for (var i = 0; i < result.length * generalContainer.length; i++) {
