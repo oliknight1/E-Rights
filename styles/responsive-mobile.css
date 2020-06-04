@@ -409,14 +409,15 @@
         font-size: 5vh;
     }
 
-    .home-info-profile-content-box {
+     .home-info-profile-content-box {
         margin-right: 8vw;
+            height: 8vh;
+            margin-top: 3vh;
     }
 
     .home-info-profile-content {
         width: 60vw;
-        margin-left: 4vw;
-        margin-top: 10vh;
+        flex-direction: column;
     }
 
     .profile-icon {
@@ -432,6 +433,8 @@
     .home-info-profile-content-amount {
         margin-bottom: 8vh;
     }
+
+    
 
     /* welcome */
 
@@ -534,6 +537,20 @@
         border-radius: 1em;
     }
 
+    /* home */
+
+    .home-page .general-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 1em 2em;
+    height: 50vh;
+    margin-top: 10vh;
+    width: 90vw;
+}
+
+.home-page .course-container {
+        width: 30vw;
+    }
+
     @keyframes slidein-right {
         0% {
             margin-right: 25%;
@@ -612,6 +629,12 @@
     /* courses */
 
     .welcome-page .general-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 1em;
+        min-height: 30vh;
+    }
+
+    .home-page .general-container {
         grid-template-columns: 1fr 1fr;
         padding: 0 1em;
         min-height: 30vh;
@@ -914,12 +937,13 @@
 
     .home-info-profile-content-box {
         margin-right: 8vw;
+            height: 8vh;
+            margin-top: 3vh;
     }
 
     .home-info-profile-content {
         width: 60vw;
-        margin-left: 4vw;
-        margin-top: 10vh;
+        flex-direction: column;
     }
 
     .profile-icon {
@@ -936,6 +960,9 @@
         margin-bottom: 8vh;
     }
 
+    .home-page .course-container {
+        width: 30vw;
+    }
 
 
     .link-container a {
@@ -960,6 +987,13 @@
 
     .welcome-page .general-container {
         margin-top: -15vh;
+        min-height: 25vh;
+        border-radius: 2em;
+    }
+
+    /*home */
+
+     .home-page .general-container {
         min-height: 25vh;
         border-radius: 2em;
     }
@@ -1079,57 +1113,6 @@
         font-size: 2.5vh;
     }
 
-    /* info bar */
-    .home-info-container {
-        flex-direction: column;
-    }
-
-    .home-info-profile-container {
-        flex-direction: row;
-        width: 90vw;
-    }
-
-    .home-info-text-container {
-        width: 80vw;
-        height: 25vh;
-    }
-
-    .home-info-text-content {
-        width: 80vw;
-        height: 10vh;
-        font-size: 1.5vh;
-    }
-
-    .home-info-text-title {
-        height: 8vh;
-        margin-top: 2vh;
-        width: 70vw;
-        font-size: 5vh;
-    }
-
-    .home-info-profile-content-box {
-        margin-right: 8vw;
-    }
-
-    .home-info-profile-content {
-        width: 60vw;
-        margin-left: 4vw;
-        margin-top: 10vh;
-    }
-
-    .profile-icon {
-        width: 40vw;
-        height: 20vh;
-    }
-
-    .home-info-profile-content-title {
-        font-size: 2.5vh;
-        width: 25vw;
-    }
-
-    .home-info-profile-content-amount {
-        margin-bottom: 8vh;
-    }
 
     /* results */
 
@@ -1164,6 +1147,12 @@
     /* courses */
 
     .welcome-page .general-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 1em;
+        min-height: 30vh;
+    }
+
+     .home-page .general-container {
         grid-template-columns: 1fr 1fr;
         padding: 0 1em;
         min-height: 30vh;
@@ -1571,6 +1560,20 @@
         border-radius: 2em;
     }
 
+    /* home  */
+
+    .home-page .general-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 1em 2em;
+    height: 50vh;
+    margin-top: 10vh;
+    width: 90vw;
+    }
+
+    .home-page .course-container {
+        width: 30vw;
+    }
+
 
     /* Course Overview Styling */
     .course-overview {
@@ -1690,8 +1693,7 @@
 
     .home-info-profile-content {
         width: 60vw;
-        margin-left: 4vw;
-        margin-top: 10vh;
+
     }
 
     .profile-icon {
@@ -1741,6 +1743,12 @@
     /* courses */
 
     .welcome-page .general-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 1em;
+        min-height: 30vh;
+    }
+
+    .home-page .general-container {
         grid-template-columns: 1fr 1fr;
         padding: 0 1em;
         min-height: 30vh;
@@ -1979,7 +1987,18 @@
     }
 
 
+    /* home */
 
+     .home-page .general-container {
+        padding: 0 2.5em;
+        border-radius: 2em;
+        height: 70vh;
+        margin-bottom: 10vh;
+    }
+
+    .home-page .general-container h2 {
+        font-size: 1.5em;
+    }
 
     /* welcome */
 
@@ -2180,6 +2199,16 @@
             margin-right: -25%;
             opacity: 0;
         }
+    }
+
+    /* home */
+
+    .home-page .general-container {
+        padding: 0 2.5em;
+    }
+
+    .home-page .general-container h2 {
+        font-size: 2em;
     }
 
 }
@@ -2478,4 +2507,17 @@
             opacity: 0;
         }
     }
+
+    /* home */
+
+    .home-page .general-container {
+        padding: 0 2.5em;
+           height: 70vh;
+        margin-bottom: 10vh;
+    }
+
+    .home-page .general-container h2 {
+        font-size: 2em;
+    }
 }
+

@@ -451,6 +451,15 @@
 
     }
 
+    .home-page .general-container {
+        padding: 0em;
+        min-height: 35vh;
+    }
+
+    .home-page .general-container h2 {
+        padding: 4vw;
+    }
+
     /* results */
 
     .results-title {
@@ -1025,6 +1034,16 @@
     .home-info-profile-content-amount {
         font-size: 3vh;
         margin-top: -3vh;
+    }
+
+     .home-page .general-container {
+        padding: 0em;
+        min-height: 25vh;
+        margin-top: -15vh;
+    }
+
+    .home-page .general-container h2 {
+        padding: 4vw;
     }
 
     /* results */
