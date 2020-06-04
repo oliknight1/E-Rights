@@ -534,6 +534,14 @@
         border-radius: 1em;
     }
 
+    /* home */
+
+     .home-page .general-container {
+        margin-top: -15vh;
+        min-height: 25vh;
+        border-radius: 1em;
+    }
+
     @keyframes slidein-right {
         0% {
             margin-right: 25%;
@@ -612,6 +620,12 @@
     /* courses */
 
     .welcome-page .general-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 1em;
+        min-height: 30vh;
+    }
+
+    .home-page .general-container {
         grid-template-columns: 1fr 1fr;
         padding: 0 1em;
         min-height: 30vh;
@@ -964,6 +978,14 @@
         border-radius: 2em;
     }
 
+    /*home */
+
+     .home-page .general-container {
+        margin-top: -15vh;
+        min-height: 25vh;
+        border-radius: 2em;
+    }
+
     @keyframes slidein-right {
         0% {
             margin-right: 25%;
@@ -1164,6 +1186,12 @@
     /* courses */
 
     .welcome-page .general-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 1em;
+        min-height: 30vh;
+    }
+
+     .home-page .general-container {
         grid-template-columns: 1fr 1fr;
         padding: 0 1em;
         min-height: 30vh;
@@ -1571,6 +1599,14 @@
         border-radius: 2em;
     }
 
+    /* home  */
+
+    .home-page .general-container {
+        margin-top: -15vh;
+        min-height: 25vh;
+        border-radius: 2em;
+    }
+
 
     /* Course Overview Styling */
     .course-overview {
@@ -1741,6 +1777,12 @@
     /* courses */
 
     .welcome-page .general-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 1em;
+        min-height: 30vh;
+    }
+
+    .home-page .general-container {
         grid-template-columns: 1fr 1fr;
         padding: 0 1em;
         min-height: 30vh;
@@ -1979,7 +2021,16 @@
     }
 
 
+    /* home */
 
+     .home-page .general-container {
+        padding: 0 2.5em;
+        border-radius: 2em;
+    }
+
+    .home-page .general-container h2 {
+        font-size: 1.5em;
+    }
 
     /* welcome */
 
@@ -2180,6 +2231,16 @@
             margin-right: -25%;
             opacity: 0;
         }
+    }
+
+    /* home */
+
+    .home-page .general-container {
+        padding: 0 2.5em;
+    }
+
+    .home-page .general-container h2 {
+        font-size: 2em;
     }
 
 }
@@ -2477,5 +2538,15 @@
             margin-right: -25%;
             opacity: 0;
         }
+    }
+
+    /* home */
+
+    .home-page .general-container {
+        padding: 0 2.5em;
+    }
+
+    .home-page .general-container h2 {
+        font-size: 2em;
     }
 }

@@ -147,7 +147,7 @@ if (isset($_SESSION['user'])) {
     </div>
 
     <div class="home-wrapper">
-        <main class="all-courses-page">
+        <main class="home-page">
             <!-- Container around the list of courses -->
             <div class="general-container courses">
                 <h2> Assigned</h2>
