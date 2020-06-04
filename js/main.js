@@ -35,9 +35,14 @@ function slideShow() {
         dots[j].className = dots[j].className.replace(" welcome-dot-selected", "");
     }
     dots[slideNum].className += " welcome-dot-selected";
-    var viewCourseHref = document.getElementById("view-course").href;
-    var hiddenHrefText = slides[slideNum].getElementsByClassName("welcome-hidden-href")[0].textContent;
-    viewCourseHref = hiddenHrefText;
+    var viewCourse = document.getElementById("view-course");
+    if(changeViewCourse) {
+        viewCourse.onclick = function () { window.location.replace("http://sp1178.brighton.domains/erightsfinal/course-overview.php?name=GDPR%20Principles") };
+        changeViewCourse = !changeViewCourse;
+    } else {
+        viewCourse.onclick = function () { window.location.replace("http://sp1178.brighton.domains/erightsfinal/course-overview.php?name=GDPR%20Rights") };
+        changeViewCourse = !changeViewCourse
+    }
     setTimeout(slideShow, 5000);
 }
 
@@ -77,7 +82,7 @@ const menuControl = e => {
 
 
 
-
+var changeViewCourse = true;
 var slideNum;
 var slides;
 var dots;
