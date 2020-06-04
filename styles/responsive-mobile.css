@@ -433,6 +433,8 @@
         margin-bottom: 8vh;
     }
 
+    
+
     /* welcome */
 
     .welcome-title {
@@ -536,10 +538,16 @@
 
     /* home */
 
-     .home-page .general-container {
-        margin-top: -15vh;
-        min-height: 25vh;
-        border-radius: 1em;
+    .home-page .general-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 1em 2em;
+    height: 50vh;
+    margin-top: 10vh;
+    width: 90vw;
+}
+
+.home-page .course-container {
+        width: 30vw;
     }
 
     @keyframes slidein-right {
@@ -950,6 +958,9 @@
         margin-bottom: 8vh;
     }
 
+    .home-page .course-container {
+        width: 30vw;
+    }
 
 
     .link-container a {
@@ -1602,9 +1613,15 @@
     /* home  */
 
     .home-page .general-container {
-        margin-top: -15vh;
-        min-height: 25vh;
-        border-radius: 2em;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 1em 2em;
+    height: 50vh;
+    margin-top: 10vh;
+    width: 90vw;
+    }
+
+    .home-page .course-container {
+        width: 30vw;
     }
 
 
