@@ -2043,6 +2043,8 @@
      .home-page .general-container {
         padding: 0 2.5em;
         border-radius: 2em;
+        height: 70vh;
+        margin-bottom: 10vh;
     }
 
     .home-page .general-container h2 {
@@ -2561,6 +2563,8 @@
 
     .home-page .general-container {
         padding: 0 2.5em;
+           height: 70vh;
+        margin-bottom: 10vh;
     }
 
     .home-page .general-container h2 {
