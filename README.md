@@ -6,7 +6,7 @@ E-learning web application prototype
 ### Using GitHub
 Clone the repository to your local machine. When you want to make changes first switch to the 'testing' branch, and then create a new branch from there, __be careful not branch directly from master.__ Then when you think your feature is complete push it into testing and we will all test to make sure it fully works, only then do we push to master branch
 
-**DO NOT EDIT FILES DIRECTLY IN THE MASTER BRANCH!**
+**Do not edit directly on the master branch!**
 
 
 Super easy to make that mistake but can lead to trouble.
